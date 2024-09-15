@@ -1,3 +1,4 @@
+import { MailTwoTone } from '@ant-design/icons';
 import { Input } from 'antd';
 const { Search } = Input;
 
@@ -9,14 +10,15 @@ const KeepInTouch = () => {
             backgroundRepeat: 'no-repeat',
             // backgroundSize: 'cover', // Ensures the image scales properly
         }}>
-            <div className="flex flex-col gap-3 justify-center items-center w-[70%] mx-auto py-10" >
+            <div className="flex flex-col gap-3 justify-center items-center w-[70%] mx-auto py-[85px]" >
                 <p className='font-bold text-4xl'>Lets Keep In Touch!</p>
-                <p className='font-semibold text-2xl'>Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!</p>
+                <p className='font-semibold text-2xl text-center'>Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!</p>
                 <Search
-                    placeholder="input search text"
+                    placeholder="Enter Email ID"
                     allowClear
-                    enterButton="Search"
+                    enterButton="Subscribe"
                     size="large"
+                    prefix={<MailTwoTone style={{ fontSize: '26px' }} />}
                     onSearch={(e) => {
                         console.log("KEEP IN TOUCH COMPONENT :", e?.target?.value);
                     }}

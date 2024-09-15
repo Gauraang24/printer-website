@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.certificates-container {
+    display: flex;
+    gap: 10px;
+    animation: scroll 4s linear infinite;
+    /* Adjust duration for smooth scrolling */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Scroll entire width of the duplicated items */
+    }
+}
