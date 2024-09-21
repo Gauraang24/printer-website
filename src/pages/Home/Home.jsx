@@ -3,7 +3,7 @@
 import { Carousel } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import OurCertifications from "../../commonComponents/OurCertifications";
-import { serviceSupport } from "../../staticData/Data";
+import { certificatesData, serviceSupport } from "../../staticData/Data";
 
 const Home = () => {
     // const [data, setData] = useState([]);
@@ -44,12 +44,64 @@ const Home = () => {
                     </div>
                 </Carousel>
             </div>
-
             {/* CERTIFICATE SECTION */}
+            <div>
+
+                <div className="flex w-[80%] mx-auto justify-between items-center py-[62px]">
+
+                    {certificatesData.map((item) => {
+                        return <div key={item.key} className="flex flex-col justify-center items-center w-[350px] h-[350px] bg-white rounded-2xl gap-5">
+                            <img src={item.link} alt={`${item.title} logo`} />
+                        </div>
+                    })}
+                </div>
+            </div>
+
 
             {/* ABOUT US SECTION  */}
+            <div className="h-auto" style={{
+                backgroundImage: 'url(images/home/about-us-section-bg.svg)',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover', // Ensures the image scales properly
+            }}>
+
+                <div className="w-[80%] mx-auto">
+                    <div className="w-max mx-auto py-[85px]">
+                        <p className=" text-[35px] font-bold border-b border-black">About Us</p>
+                    </div>
+                    <div className="flex justify-between items-center pb-[85px]">
+                        <div className="w-1/2 flex justify-center items-center">
+
+                            <img src="./images/home/printer.svg" alt="Printer" className="w-[500px] h-[480px]" />
+                        </div>
+                        <div className="w-1/2">
+                            <p className="text-[35px] leading-[53px] text-justify">The "<b>CWC</b>" brand is a product brand that serves as a testament to the reliability of E-Compusell Pvt. Ltd. It is a dynamic and innovative Start-up specializing in designing, developing, and manufacturing high-quality <b>Make-In-India</b> Laser Printers & Laser Multifunction Printers (MFPs) for a wide range of customers. CWC team comprises of experts in the printing industry who have years of experience and knowledge to draw upon. We leverage our knowledge of the industry and invest in research and development to create products that will meet the evolving needs of customers.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
             {/* PRODUCT SECTION */}
+            <div className="w-full h-auto">
+
+                <Carousel Carousel arrows infinite={true} autoplay className="w-full h-auto customArrows">
+                    <div className="w-[80%]">
+                        <div className="flex justify-between items-center pb-[85px]">
+                            <div className="w-1/2 flex justify-center items-center">
+
+                                <img src="./images/home/printer.svg" alt="Printer" className="w-[500px] h-[480px]" />
+                            </div>
+                            <div className="w-1/2">
+                                <p className="text-[35px] leading-[53px] text-justify">The "<b>CWC</b>" brand is a product brand that serves as a testament to the reliability of E-Compusell Pvt. Ltd. It is a dynamic and innovative Start-up specializing in designing, developing, and manufacturing high-quality <b>Make-In-India</b> Laser Printers & Laser Multifunction Printers (MFPs) for a wide range of customers. CWC team comprises of experts in the printing industry who have years of experience and knowledge to draw upon. We leverage our knowledge of the industry and invest in research and development to create products that will meet the evolving needs of customers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </Carousel>
+
+            </div>
 
             {/* SERVICE & SUPPORT SECTION */}
             <div style={{
@@ -67,7 +119,6 @@ const Home = () => {
                     {serviceSupport.map((item, index) => {
                         return <div key={index} className="flex flex-col justify-center items-center w-[350px] h-[350px] bg-white rounded-2xl gap-5">
                             <img src={item.link} alt={`${item.title} logo`} />
-                            <p className="text-[30px] font-bold ">{item.title}</p>
                         </div>
                     })}
                 </div>

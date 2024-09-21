@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // Import Link
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -6,11 +7,7 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const offset = window.scrollY;
-            if (offset > 2) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
+            setScrolled(offset > 2);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -28,14 +25,13 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`w-full   py-4 ${scrolled ? "bg-white shadow-2xl" : "bg-transparent"} transition-colors duration-300 `}>
+        <nav className={`w-full py-4 ${scrolled ? "bg-white shadow-2xl" : "bg-transparent"} transition-colors duration-300`}>
             <div className="w-full max-w-[80%] mx-auto flex justify-between items-center">
-
                 <img src="images/nav-logo.svg" alt="CWC Logo" />
                 <ul className="flex gap-5">
                     {navList.map(list => (
                         <li key={list.key} className="font-bold text-xl">
-                            <a href={list.link}>{list.title}</a>
+                            <Link to={list.link}>{list.title}</Link>
                         </li>
                     ))}
                 </ul>

@@ -38,3 +38,26 @@ export const serviceSupport = [
         name: "operationVideo"
     },
 ];
+
+export const certificatesData = [
+    {
+        title: "Make In India",
+        link: "images/home/make-in-india-seeklogo.svg",
+        key: "makeInIndia"
+    },
+    {
+        title: "Vocal For Local",
+        link: "images/home/vocal-for-local.svg",
+        key: "vocalForLocal"
+    },
+    {
+        title: "Startup India",
+        link: "images/home/startup-India.svg",
+        key: "startUpIndia"
+    },
+    {
+        title: "Atma Nirbhar Bharat",
+        link: "images/home/aatmanirbhar-bharat.svg",
+        key: "AtmaNirbharBharat"
+    },
+]
