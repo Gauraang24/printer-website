@@ -1,5 +1,6 @@
 // import { useEffect, useState } from "react";
 // import * as XLSX from "xlsx";
+import { Carousel } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import OurCertifications from "../../commonComponents/OurCertifications";
 import { serviceSupport } from "../../staticData/Data";
@@ -24,9 +25,25 @@ const Home = () => {
     //         .catch((error) => console.error("Error fetching Excel file:", error));
     // }, []);
 
+
+
     return (
-        <div className="border-2 !h-full bg-[#f6f6f6]">
+        <div className=" !h-full bg-[#f6f6f6]">
             {/* Banner Section */}
+            <div className="w-full overflow-x-auto ">
+
+                <Carousel Carousel arrows infinite={true} autoplay className="w-full h-auto">
+                    <div>
+                        <img className="w-full h-auto object-contains" src="images/home/home_main_banner.svg" alt="Banner" />
+                    </div>
+                    <div>
+                        <img className="w-full h-auto" src="images/home/home_main_banner.svg" alt="Banner" />
+                    </div>
+                    <div>
+                        <img className="w-full h-auto" src="images/home/home_main_banner.svg" alt="Banner" />
+                    </div>
+                </Carousel>
+            </div>
 
             {/* CERTIFICATE SECTION */}
 
@@ -61,7 +78,7 @@ const Home = () => {
 
             {/* KEEP IN TOUCH SECTION  */}
             <KeepInTouch />
-        </div>
+        </div >
     )
 }
 
