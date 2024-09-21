@@ -5,25 +5,23 @@ import OpenRoute from './routing/OpenRoute';
 import { Spin } from 'antd'; // Import Ant Design's Spin component
 
 // Dynamically import the pages
-const Home = lazy(() => import('./pages/Home'));
-const Contact = lazy(() => import('./pages/Contact'));
-const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs'));
-const Product = lazy(() => import('./pages/Product/Product'));
-const Ewaste = lazy(() => import('./pages/EWaste/Ewaste'));
+const Home = lazy(() => import('./pages/Home/Home.jsx'));
+const Contact = lazy(() => import('./pages/Contact/index.jsx'));
+const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs.jsx'));
+const Product = lazy(() => import('./pages/Product/Product.jsx'));
+const Ewaste = lazy(() => import('./pages/EWaste/Ewaste.jsx'));
 
 function App() {
   return (
     <Router>
-      {/* Wrap routes inside Suspense for lazy loading */}
       <Suspense
         fallback={
-          <div className="loading-screen">
-            <Spin size="large" /> {/* AntD Spin component as the fallback */}
+          <div className=" w-screen h-screen flex justify-between items-center ">
+            <Spin tip="Loading" className=' mx-auto' size="large"></Spin>
           </div>
         }
       >
         <Routes>
-          {/* Common routes wrapped by OpenRoute */}
           <Route element={<OpenRoute />}>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
@@ -32,6 +30,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
           </Route>
         </Routes>
+
       </Suspense>
     </Router>
   );
