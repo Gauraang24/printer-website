@@ -3,7 +3,7 @@
 import { Carousel } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import OurCertifications from "../../commonComponents/OurCertifications";
-import { certificatesData, serviceSupport } from "../../staticData/Data";
+import { certificatesData, homeCarousalData, productCarousalData, serviceSupport } from "../../staticData/Data";
 
 const Home = () => {
     // const [data, setData] = useState([]);
@@ -28,20 +28,16 @@ const Home = () => {
 
 
     return (
-        <div className=" !h-full bg-[#f6f6f6]">
+        <section className=" !h-full bg-[#f6f6f6]">
             {/* Banner Section */}
             <div className="w-full overflow-x-auto ">
 
                 <Carousel Carousel arrows infinite={true} autoplay className="w-full h-auto">
-                    <div>
-                        <img className="w-full h-auto object-contains" src="images/home/home_main_banner.svg" alt="Banner" />
-                    </div>
-                    <div>
-                        <img className="w-full h-auto" src="images/home/home_main_banner.svg" alt="Banner" />
-                    </div>
-                    <div>
-                        <img className="w-full h-auto" src="images/home/home_main_banner.svg" alt="Banner" />
-                    </div>
+                    {homeCarousalData.map((i) => {
+                        return <div key={i.key}>
+                            <img className="w-full h-auto object-contains" src={i.link} alt={i.alt} />
+                        </div>
+                    })}
                 </Carousel>
             </div>
             {/* CERTIFICATE SECTION */}
@@ -76,7 +72,7 @@ const Home = () => {
                             <img src="./images/home/printer.svg" alt="Printer" className="w-[500px] h-[480px]" />
                         </div>
                         <div className="w-1/2">
-                            <p className="text-[35px] leading-[53px] text-justify">The "<b>CWC</b>" brand is a product brand that serves as a testament to the reliability of E-Compusell Pvt. Ltd. It is a dynamic and innovative Start-up specializing in designing, developing, and manufacturing high-quality <b>Make-In-India</b> Laser Printers & Laser Multifunction Printers (MFPs) for a wide range of customers. CWC team comprises of experts in the printing industry who have years of experience and knowledge to draw upon. We leverage our knowledge of the industry and invest in research and development to create products that will meet the evolving needs of customers.</p>
+                            <p className="text-[35px] leading-[53px] text-justify">The &quot;<b>CWC</b>&quot; brand is a product brand that serves as a testament to the reliability of E-Compusell Pvt. Ltd. It is a dynamic and innovative Start-up specializing in designing, developing, and manufacturing high-quality <b>Make-In-India</b> Laser Printers & Laser Multifunction Printers (MFPs) for a wide range of customers. CWC team comprises of experts in the printing industry who have years of experience and knowledge to draw upon. We leverage our knowledge of the industry and invest in research and development to create products that will meet the evolving needs of customers.</p>
                         </div>
                     </div>
                 </div>
@@ -84,21 +80,49 @@ const Home = () => {
             </div>
 
             {/* PRODUCT SECTION */}
-            <div className="w-full h-auto">
+            <div className="w-screen h-auto">
 
-                <Carousel Carousel arrows infinite={true} autoplay className="w-full h-auto customArrows">
-                    <div className="w-[80%]">
-                        <div className="flex justify-between items-center pb-[85px]">
-                            <div className="w-1/2 flex justify-center items-center">
+                <div className="w-max mx-auto pt-[85px]">
+                    <p className=" text-[35px] font-bold border-b border-black">Product</p>
+                </div>
 
-                                <img src="./images/home/printer.svg" alt="Printer" className="w-[500px] h-[480px]" />
+                <Carousel Carousel arrows infinite={true} autoplay className="customArrows flex justify-between ">
+                    {
+                        productCarousalData.map((i, index) => {
+                            return <div className="!w-[80%] mx-auto !block my-[62px] bg-white rounded-3xl py-14 shadow-lg" key={index}>
+                                <div className="flex justify-between items-center pb-[85px]">
+                                    <div className="w-1/2 flex justify-center items-center">
+
+                                        <img src={i?.imgLink} alt="Printer" className="w-[500px] h-[480px]" />
+                                    </div>
+                                    <div className="w-1/2">
+                                        <div className="mb-12">
+                                            <p className="text-[32px] font-bold">{i?.printerName}</p>
+                                            <p className="text-[25px] font-bold">{i?.type}</p>
+                                        </div>
+
+                                        <div className="mb-12">
+                                            {i?.specification.map(spec => {
+                                                return <div key={spec.key} className="flex justify-between items-center w-[650px]">
+                                                    <p className="text-[25px] font-medium w-1/2">{spec?.title}</p>
+                                                    <p className="text-[25px] font-medium w-1/2 text-left">{spec?.desc}</p>
+                                                </div>
+                                            })}
+                                        </div>
+
+                                        <div className="flex items-center gap-7">
+                                            <p className="text-[25px] font-bold">Available on</p>
+                                            {
+                                                i?.availableOn.map(img => {
+                                                    return <img src={img?.link} alt={img?.title} key={img?.key} />
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="w-1/2">
-                                <p className="text-[35px] leading-[53px] text-justify">The "<b>CWC</b>" brand is a product brand that serves as a testament to the reliability of E-Compusell Pvt. Ltd. It is a dynamic and innovative Start-up specializing in designing, developing, and manufacturing high-quality <b>Make-In-India</b> Laser Printers & Laser Multifunction Printers (MFPs) for a wide range of customers. CWC team comprises of experts in the printing industry who have years of experience and knowledge to draw upon. We leverage our knowledge of the industry and invest in research and development to create products that will meet the evolving needs of customers.</p>
-                            </div>
-                        </div>
-                    </div>
-
+                        })
+                    }
                 </Carousel>
 
             </div>
@@ -129,7 +153,7 @@ const Home = () => {
 
             {/* KEEP IN TOUCH SECTION  */}
             <KeepInTouch />
-        </div >
+        </section >
     )
 }
 

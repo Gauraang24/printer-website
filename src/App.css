@@ -34,3 +34,31 @@ body {
 .slick-arrow {
     margin: 0 31px 0 15px !important;
 }
+
+.customArrows>.slick-arrow {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    background: #fff !important;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.customArrows>.slick-arrow::after {
+    width: 20px !important;
+    height: 20px !important;
+    color: black;
+}
+
+.customArrows>.slick-prev::after {
+    position: relative;
+    top: 0%;
+    left: 5%;
+
+}
+
+.customArrows>.slick-next::after {
+    position: relative;
+    top: 0%;
+    left: -5%;
+}
