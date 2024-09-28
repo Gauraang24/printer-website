@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react';
 import './App.css';
 import OpenRoute from './routing/OpenRoute';
 import { Spin } from 'antd'; // Import Ant Design's Spin component
+import ProductDetails from './pages/ProductDetails/ProductDetails.jsx';
 
 // Dynamically import the pages
 const Home = lazy(() => import('./pages/Home/Home.jsx'));
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/products" element={<Product />} />
+            <Route path="/product-details/:productId" element={<ProductDetails />} />
             <Route path="/e-waste" element={<Ewaste />} />
             <Route path="/about-us" element={<AboutUs />} />
           </Route>
