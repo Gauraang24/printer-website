@@ -5,7 +5,7 @@ const { Search } = Input;
 const KeepInTouch = () => {
     return (
         <div className='bg-cover bg-no-repeat bg-center' style={{
-            backgroundImage: 'url(images/keep_in_touch_bg.svg)',
+            backgroundImage: 'url(/images/keep_in_touch_bg.svg)',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             // backgroundSize: 'cover', // Ensures the image scales properly

@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100vw !important;
     overflow-x: hidden;
+    background: #f7f7f7;
 }
 
 .certificates-container {
