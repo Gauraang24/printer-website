@@ -27,7 +27,7 @@ const Navbar = () => {
     return (
         <nav className={`w-full py-4 ${scrolled ? "bg-white shadow-2xl" : "bg-transparent"} transition-colors duration-300`}>
             <div className="w-full max-w-[80%] mx-auto flex justify-between items-center">
-                <img src="images/nav-logo.svg" alt="CWC Logo" />
+                <img src="/images/nav-logo.svg" alt="CWC Logo" />
                 <ul className="flex gap-5">
                     {navList.map(list => (
                         <li key={list.key} className="font-bold text-xl">

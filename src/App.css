@@ -64,3 +64,9 @@ body {
     top: 0%;
     left: -5%;
 }
+
+/* Collapse CSS  */
+
+.ant-collapse{
+    background: #fff !important;
+}

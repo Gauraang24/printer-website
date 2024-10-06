@@ -18,7 +18,7 @@ export const printersCollection = [
                 title: "CWC M2010DN/W",
                 link: "images/productPage/CWC_M3.png",
                 key: "M3",
-                navigate: "cwc-m2010dn/w",
+                navigate: "cwc-m2010dnw",
             },
             {
                 title: "CWC MB5020N/W",

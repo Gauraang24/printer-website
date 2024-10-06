@@ -196,7 +196,7 @@ export const printerDetails = {
             ],
         },
     },
-    "cwc-m2010dn/w": {
+    "cwc-m2010dnw": {
         title: "CWC M2010DN/W Multifunction Laser Printer",
         specSummary: [
             "Printing speed (A4): 23ppm",
