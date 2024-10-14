@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Footer = () => {
+    const navigate = useNavigate()
     return (
         <div className="bg-[#2f2f2f]">
             <div className="flex w-[80%] mx-auto pt-14 pb-20">
@@ -22,7 +25,9 @@ const Footer = () => {
                         <div>
                             <ul className="flex flex-col gap-7 mt-11">
                                 <li className="text-[18px] font-medium">Company Profile</li>
-                                <li className="text-[18px] font-medium">Warranty Check</li>
+                                <li className="text-[18px] font-medium" onClick={() => {
+                                    navigate('/warranty')
+                                }}>Warranty Check</li>
                                 <li className="text-[18px] font-medium">Operation Videos</li>
                             </ul>
                         </div>

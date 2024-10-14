@@ -27,7 +27,9 @@ const Contact = () => {
       </div>
       {/* Service and Consultation */}
       <div className="w-[80%] mx-auto mt-[80px]">
-        <Divider className="!my-20">
+        <Divider className="!my-20" style={{
+          borderColor: '#000',
+        }}>
           <p className="text-4xl font-bold">SERVICE AND CONSULTATION</p>
         </Divider>
 

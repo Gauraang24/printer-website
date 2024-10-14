@@ -11,6 +11,7 @@ const Contact = lazy(() => import('./pages/Contact/index.jsx'));
 const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs.jsx'));
 const Product = lazy(() => import('./pages/Product/Product.jsx'));
 const Ewaste = lazy(() => import('./pages/EWaste/Ewaste.jsx'));
+const Warranty = lazy(() => import('./pages/Warranty/Warranty.jsx'));
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/product-details/:productId" element={<ProductDetails />} />
             <Route path="/e-waste" element={<Ewaste />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/warranty" element={<Warranty />} />
           </Route>
         </Routes>
 
