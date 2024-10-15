@@ -21,9 +21,7 @@ const Warranty = () => {
                 </Divider>
 
                 <div className="bg-white w-[80%] mx-auto py-12 rounded-2xl shadow-2xl">
-
-                    <div className="flex flex-col gap-12 items-center">
-
+                    <div className="w-[90%] mx-auto flex flex-col gap-12 items-center">
                         <p className="text-[35px] font-medium text-center ">
                             To Check Warranty Status, Enter your serial no.
                         </p>
@@ -40,7 +38,10 @@ const Warranty = () => {
                                 }}
                             /> */}
 
-                            <Input placeholder="Enter Serial Number" className="h-14 text-[22px] border-0" />
+                            <Input
+                                placeholder="Enter Serial Number"
+                                className="h-14 text-[22px] border-0"
+                            />
                         </div>
 
                         <div>
@@ -48,6 +49,36 @@ const Warranty = () => {
                                 <p className="text-[20px]  font-semibold">Submit</p>
                             </Button>
                         </div>
+
+                        {/* warranty info section  */}
+                        <div className="flex items-stretch justify-center w-full gap-1">
+                            <div className="bg-[#f5f5f5] shadow-down flex-1 flex justify-center items-center py-6 rounded-l-xl">
+                                <div className="text-center">
+                                    <p className="text-[22px] font-medium">Model</p>
+                                    <p className="text-[16px] font-light">CWC P5040DN/W</p>
+                                </div>
+                            </div>
+                            <div className="bg-[#f5f5f5] shadow-down flex-[2] flex-grow flex justify-center items-center py-6">
+                                <div className="text-center">
+                                    <p className="text-[22px] font-medium">SERIAL NUMBER</p>
+                                    <p className="text-[16px] font-light">
+                                        CWCP5040DNW052024A001
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="bg-[#f5f5f5] shadow-down flex-1 flex justify-center items-center py-6 rounded-r-xl">
+                                <div className="text-center">
+                                    <p className="text-[22px] font-medium">STATUS</p>
+                                    <p className="text-[16px] font-light text-center">
+                                        Purchase Date : 12/01/2024 <br />
+                                        Warranty Date : 11/01/2025
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
