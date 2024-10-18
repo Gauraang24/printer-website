@@ -2,9 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import './App.css';
 import OpenRoute from './routing/OpenRoute';
-import { Spin } from 'antd'; // Import Ant Design's Spin component
+import { Spin } from 'antd';
 import ProductDetails from './pages/ProductDetails/ProductDetails.jsx';
-// import Downloads from '';
 
 // Dynamically import the pages
 const Home = lazy(() => import('./pages/Home/Home.jsx'));

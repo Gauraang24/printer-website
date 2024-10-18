@@ -1,5 +1,6 @@
 import { Button, Divider, Input } from "antd";
 import React, { useState } from "react";
+import KeepInTouch from "../../commonComponents/KeepInTouch";
 
 const Downloads = () => {
   const [activeTab, setActiveTab] = useState("DRIVER");
