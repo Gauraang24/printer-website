@@ -1,7 +1,7 @@
 import { Collapse, Divider } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { dos, eWasteCollectionData } from "../../staticData/ewaste";
-import { CheckCircleFilled, CheckCircleTwoTone, CheckOutlined } from "@ant-design/icons";
+import { CheckCircleFilled, CheckOutlined } from "@ant-design/icons";
 
 const Ewaste = () => {
   return (

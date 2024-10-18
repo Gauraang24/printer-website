@@ -4,6 +4,7 @@ import './App.css';
 import OpenRoute from './routing/OpenRoute';
 import { Spin } from 'antd'; // Import Ant Design's Spin component
 import ProductDetails from './pages/ProductDetails/ProductDetails.jsx';
+// import Downloads from '';
 
 // Dynamically import the pages
 const Home = lazy(() => import('./pages/Home/Home.jsx'));
@@ -12,6 +13,7 @@ const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs.jsx'));
 const Product = lazy(() => import('./pages/Product/Product.jsx'));
 const Ewaste = lazy(() => import('./pages/EWaste/Ewaste.jsx'));
 const Warranty = lazy(() => import('./pages/Warranty/Warranty.jsx'));
+const Downloads = lazy(()=> import("./pages/Downloads/Downloads.jsx"))
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
             <Route path="/e-waste" element={<Ewaste />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/warranty" element={<Warranty />} />
+            <Route path="/download" element={<Downloads />} />
+
           </Route>
         </Routes>
 
