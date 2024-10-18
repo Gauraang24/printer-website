@@ -134,8 +134,8 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className="bg-[#2f2f2f] px-8">
-            <div className="w-full max-w-screen-xl mx-auto pt-24 pb-6">
+        <div className="bg-[#2f2f2f] px-8 w-full">
+            <div className="max-w-screen-xl mx-auto pt-24 pb-6">
                 <div className={`flex ${isMobile ? 'flex-wrap' : 'flex-row'} justify-between items-start gap-6`}>
 
                     {/* Logo Section */}
@@ -169,7 +169,7 @@ const Footer = () => {
                     <div className={`text-white flex flex-col mb-6 ${isMobile ? 'order-last w-full' : ''}`}>
                         <p className="text-[30px] font-bold pb-6">STAY&nbsp;CONNECTED</p>
                         <hr className="!w-[50%]" />
-                        <div className="flex gap-7 mt-11 cursor-pointer">
+                        <div className="flex lg:gap-7 xl:gap-7 gap-4 mt-11 cursor-pointer">
                             <img src="/images/footerIcons/Instagram.svg" width={window.outerWidth <= 1190 ? 52 : 62} height={window.outerWidth <= 1190 ? 52 : 62} alt="Instagram Logo" />
                             <img src="/images/footerIcons/Facebook.svg" width={window.outerWidth <= 1190 ? 52 : 62} height={window.outerWidth <= 1190 ? 52 : 62} alt="Facebook Logo" />
                             <img src="/images/footerIcons/LinkedIn.svg" width={window.outerWidth <= 1190 ? 52 : 62} height={window.outerWidth <= 1190 ? 52 : 62} alt="LinkedIn Logo" />
@@ -194,12 +194,12 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
+                <hr className="my-4" />
             </div>
 
-            <hr className="mb-4" />
 
-            <div className="flex pb-8 xl:items-start justify-center items-center w-[80%] h-[62px] mx-auto">
-                <div className='text-white py-4 text-[20px] font-bold'>
+            <div className="flex xl:items-start justify-center items-center w-[80%] h-[62px] mx-auto">
+                <div className='text-white py-2 text-[20px] font-bold'>
                     Copyright © 2024 E-Compusell Private Limited. All Rights Reserved
                 </div>
             </div>
