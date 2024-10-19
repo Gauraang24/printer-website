@@ -17,32 +17,35 @@ const AboutUs = () => {
 
       {/* Company Profile  */}
       <div className="w-[80%] mx-auto mb-20">
-        <Divider className="!my-20" style={{
-          borderColor: '#000',
-        }}>
-          <p className="text-4xl font-bold px-10">Company Profile</p>
+        <Divider
+          className="!my-20"
+          style={{
+            borderColor: "#000",
+          }}
+        >
+          <p className="lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl 2xs:text-lg font-bold px-10">Company Profile</p>
         </Divider>
 
-        <div className="w-full flex min-[1080px]:!flex-row flex-col-reverse">
-          <div className="min-[1080px]:!w-[45%] w-full flex flex-col justify-between p-4">
+        <div className="w-full flex lg:flex-row flex-col-reverse">
+          <div className="lg:w-[45%] w-full flex flex-col justify-between p-4">
             <p
-              className="text-[30px] font-bold mb-3"
+              className="lg:text-[30px] sm:text-[25px] text-[22px] font-bold mb-3"
               dangerouslySetInnerHTML={{
                 __html: aboutUs.companyProfile.heading,
               }}
             ></p>
-            <p className="text-[25px] font-medium">
+            <p className="lg:text-[25px] sm:text-[20px] text-[18px] font-medium">
               {aboutUs.companyProfile.desc}
             </p>
           </div>
-          <div className="w-[55%] border-2">
+          <div className="lg:w-[55%] border-2">
             {/* <img src="" alt="Logo" /> */}
             IMAGE LOGO GOES HERE
           </div>
         </div>
       </div>
 
-      {/* image section 1st */}
+      {/* Image Section 1st */}
       <div className="w-[80%] mx-auto mb-20">
         <img
           src="images/aboutUs/about_1.png"
@@ -51,14 +54,14 @@ const AboutUs = () => {
         />
       </div>
 
-      {/* mid info section  */}
+      {/* Mid Info Section */}
       <div className="w-[80%] mx-auto mb-20">
-        <p className="text-[30px] font-semibold text-justify">
+        <p className="lg:text-[30px] sm:text-[25px] text-[18px] font-semibold text-justify">
           {aboutUs?.info}
         </p>
       </div>
 
-      {/* image section 2nd */}
+      {/* Image Section 2nd */}
       <div className="w-[80%] mx-auto mb-20">
         <img
           src="images/aboutUs/about_2.png"
@@ -67,36 +70,37 @@ const AboutUs = () => {
         />
       </div>
 
-      {/* mid info section 2nd */}
+      {/* Mid Info Section 2nd */}
       <div className="w-[80%] mx-auto mb-20">
-        <p className="text-[30px] font-semibold text-justify">
+        <p className="lg:text-[30px] sm:text-[25px] text-[18px]  font-semibold text-justify">
           {aboutUs?.info2}
         </p>
       </div>
 
       {/* Image Section 3rd */}
-
       <div className="w-[80%] mx-auto mb-20">
-
-        <div>
-          <div className="min-[1080px]:flex min-[1080px]:flex-row flex-col justify-between">
-            <img src="images/aboutUs/mission.png" alt="our mission" className="min-[1080px]:w-[47%] h-auto w-full mb-[6%]" />
-            <img src="images/aboutUs/vision.png" alt="our vision" className="min-[1080px]:w-[47%] h-auto w-full mb-[6%]" />
-          </div>
-
-          <div>
-            <img src="images/aboutUs/aim.png" alt="aim" />
-
-          </div>
+        <div className="flex flex-col lg:flex-row justify-between">
+          <img
+            src="images/aboutUs/mission.png"
+            alt="our mission"
+            className="lg:w-[47%] w-full h-auto mb-6"
+          />
+          <img
+            src="images/aboutUs/vision.png"
+            alt="our vision"
+            className="lg:w-[47%] w-full h-auto mb-6"
+          />
         </div>
 
-
+        <div>
+          <img src="images/aboutUs/aim.png" alt="aim" className="w-full h-auto" />
+        </div>
       </div>
 
-      {/* Certifications  */}
+      {/* Certifications */}
       <OurCertifications />
 
-      {/* Keep In Touch  */}
+      {/* Keep In Touch */}
       <KeepInTouch />
     </section>
   );
