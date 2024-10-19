@@ -6,15 +6,8 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [logoSrc, setLogoSrc] = useState('/images/nav-logo.svg');
     const [drawerVisible, setDrawerVisible] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(window.outerWidth);
 
-    const updateLogo = () => {
-        const screenWidth = window.outerWidth;
-        if (screenWidth <= 1080) {
-            setLogoSrc('/images/home/cwc-logo-copyright.svg');
-        } else {
-            setLogoSrc('/images/nav-logo.svg');
-        }
-    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,15 +15,28 @@ const Navbar = () => {
             setScrolled(offset > 2);
         };
 
+        const handleResize = () => {
+            setScreenWidth(window.outerWidth);
+        };
+
         updateLogo();
 
-        window.addEventListener('resize', updateLogo);
+        window.addEventListener('resize', handleResize);
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener('resize', updateLogo);
+            window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [screenWidth]);
+
+    const updateLogo = () => {
+        if (screenWidth < 640) {
+            setLogoSrc('/images/home/cwc-logo-copyright.svg');
+        } else {
+            setLogoSrc('/images/nav-logo.svg');
+        }
+    };
+
 
     const navList = [
         { title: "HOME", key: "1", link: "/" },
@@ -52,21 +58,24 @@ const Navbar = () => {
         <>
             <nav className={`w-full py-3 ${scrolled ? "bg-white shadow-2xl" : "bg-transparent"} transition-colors duration-300`}>
                 <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center px-4">
-                    <img src={logoSrc} alt="LogoCWC " className="lg:w-28 lg:h-[65px] md:w-24 md:h-[60px] w-20 h-[55px] ms-3" />
-                    {window.outerWidth <= 1080 ? (
-                        <img src="/images/home/Menu.svg" alt="Menu" onClick={showDrawer} className="cursor-pointer lg:w-[75px] h-auto md:w-[65px] w-[45px] me-4" />
-                    ) : (
-                        <ul className='flex gap-3 md:gap-5 lg:gap-6 ml-4 md:ml-6'>
-                            {navList.map(list => (
-                                <li key={list.key} className="font-bold text-md lg:text-lg xl:text-xl">
-                                    <Link to={list.link}>{list.title}</Link>
-                                </li>
-                            ))}
-                        </ul>
-                    )}
+                    <img src={logoSrc} alt="LogoCWC " className="lg:w-28 lg:h-[65px] md:w-24 md:h-[60px] sm:w-20 sm:h-[55px] w-18 h-[50px] ms-3" />
+                    <img
+                        src="/images/home/Menu.svg"
+                        alt="Menu"
+                        onClick={showDrawer}
+                        className="cursor-pointer block sm:hidden !w-[40px]  me-2"
+                    />
+                    <ul className='hidden sm:flex gap-3 md:gap-5 lg:gap-6 ml-4 md:ml-6'>
+                        {navList.map(list => (
+                            <li key={list.key} className="font-bold text-md lg:text-lg xl:text-xl me-4">
+                                <Link to={list.link}>{list.title}</Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
 
-                {window.outerWidth <= 1080 && (
+
+                {screenWidth < 640 && (
                     <Drawer
                         placement="right"
                         onClose={closeDrawer}
@@ -96,19 +105,6 @@ const Navbar = () => {
                     </Drawer>
                 )}
             </nav>
-
-            {/* <nav className={`w-full py-4 ${scrolled ? "bg-white shadow-2xl" : "bg-transparent"} transition-colors duration-300`}>
-<div className="w-full max-w-[80%] mx-auto flex justify-between items-center">
-    <img src="/images/nav-logo.svg" alt="CWC Logo" />
-    <ul className="flex gap-5">
-        {navList.map(list => (
-            <li key={list.key} className="font-bold text-xl">
-                <Link to={list.link}>{list.title}</Link>
-            </li>
-        ))}
-    </ul>
-</div>
-</nav> */}
         </>
     );
 };
