@@ -10,15 +10,16 @@ const KeepInTouch = () => {
             backgroundRepeat: 'no-repeat',
             // backgroundSize: 'cover', // Ensures the image scales properly
         }}>
-            <div className="flex flex-col gap-3 justify-center items-center w-[70%] mx-auto py-[85px]" >
-                <p className='font-bold text-4xl'>Lets Keep In Touch!</p>
-                <p className='font-semibold text-2xl text-center'>Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!</p>
+            <div className="flex flex-col gap-3 justify-center items-center w-[80%] mx-auto 2xl:py-[85px] xl:py-[60px] lg:py-[30px] sm:py-[25px] 2xs:py-[20px]" >
+                <p className='font-bold xl:text-[35px] lg:text-[25px] md:text-[20px] 2xs:text-[18px]'>Lets Keep In Touch!</p>
+                <p className='font-semibold xl:text-[26px] lg:text-[22px] md:text-[18px] 2xs:text-[14px] text-center'>Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!</p>
                 <Search
                     placeholder="Enter Email ID"
                     allowClear
                     enterButton="Subscribe"
                     size="large"
-                    prefix={<MailTwoTone style={{ fontSize: '26px' }} />}
+                    className=''
+                    prefix={<MailTwoTone className='' style={{ fontSize: '26px' }} />}
                     onSearch={(e) => {
                         console.log("KEEP IN TOUCH COMPONENT :", e?.target?.value);
                     }}

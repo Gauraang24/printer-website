@@ -5,6 +5,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '400px',  // Custom extra small breakpoint
+        '2xs': '300px', // Custom smaller breakpoint for tiny screens
+        },
       animation: {
         "loop-scroll": "loop-scroll 60s linear infinite"
       },
@@ -18,4 +22,3 @@ export default {
   },
   plugins: [],
 }
-
