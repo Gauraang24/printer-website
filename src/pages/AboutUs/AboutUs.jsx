@@ -17,7 +17,9 @@ const AboutUs = () => {
 
       {/* Company Profile  */}
       <div className="w-[80%] mx-auto mb-20">
-        <Divider className="!my-20">
+        <Divider className="!my-20" style={{
+          borderColor: '#000',
+        }}>
           <p className="text-4xl font-bold px-10">Company Profile</p>
         </Divider>
 
