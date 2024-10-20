@@ -86,7 +86,7 @@ const Home = () => {
       >
         <div className="w-[90%] 2xl:w-[80%]  mx-auto">
           <div className="w-max mx-auto 2xl:py-[85px] xl:py-[60px] lg:py-[30px] sm:py-[25px] 2xs:py-[20px]">
-            <p className=" lg:text-[25px] xl:text-[35px] md:text-[20px] font-bold border-b border-black">
+            <p className="xl:text-[35px] lg:text-[25px]  md:text-[20px] font-bold border-b border-black">
               About Us
             </p>
           </div>

@@ -1,87 +1,103 @@
 import { Divider, Segmented } from "antd";
 import { useEffect, useState } from "react";
-import { cartridgeCollection, printersCollection } from "../../staticData/productData";
+import {
+  cartridgeCollection,
+  printersCollection,
+} from "../../staticData/productData";
 import { useNavigate } from "react-router-dom";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 
 const constants = {
-    PRINTER: "1",
-    CARTRIDGE: "2",
+  PRINTER: "1",
+  CARTRIDGE: "2",
 };
 const Product = () => {
-    const [activeTab, setActiveTab] = useState(constants.PRINTER)
-    const [productData, setProductData] = useState(printersCollection)
+  const [activeTab, setActiveTab] = useState(constants.PRINTER);
+  const [productData, setProductData] = useState(printersCollection);
 
-    useEffect(() => {
-        if (activeTab === constants.PRINTER) {
-            setProductData(printersCollection)
-        } else {
-            setProductData(cartridgeCollection)
-        }
-    }, [activeTab])
+  useEffect(() => {
+    if (activeTab === constants.PRINTER) {
+      setProductData(printersCollection);
+    } else {
+      setProductData(cartridgeCollection);
+    }
+  }, [activeTab]);
 
-    const options = [
-        {
-            label: "Printer",
-            value: constants.PRINTER,
-        },
-        {
-            label: "Cartridge",
-            value: constants.CARTRIDGE,
-        },
-    ];
-    const navigate = useNavigate()
-    return (
-        <section className="bg-[#f7f7f7]">
-            {/* Banner Section */}
-            <div className="w-full">
-                <img
-                    src="/images/productPage/Banner.jpg"
-                    alt="Banner"
-                    className="w-full h-auto"
-                />
-            </div>
+  const options = [
+    {
+      label: "Printer",
+      value: constants.PRINTER,
+    },
+    {
+      label: "Cartridge",
+      value: constants.CARTRIDGE,
+    },
+  ];
+  const navigate = useNavigate();
+  return (
+    <section className="bg-[#f7f7f7]">
+      {/* Banner Section */}
+      <div className="w-full">
+        <img
+          src="/images/productPage/Banner.jpg"
+          alt="Banner"
+          className="w-full h-auto"
+        />
+      </div>
 
-            {/* ProductSection */}
+      {/* ProductSection */}
 
-            <div className="w-full py-[63px]">
-                <div className="w-max mx-auto">
-                    <Segmented
-                        options={options}
-                        onChange={(value) => {
-                            setActiveTab(value)
-                        }}
-                    />
-                </div>
-            </div>
-            <div className="w-[80%] mx-auto pb-20">
-                {productData.map((i, key) => {
-                    return <div key={key} className="">
-                        <div>
-                            <Divider className="!mb-4">
-                                <p className="text-[35px] font-bold">{i.heading}</p>
-                            </Divider>
-                        </div>
-                        <div className="flex flex-wrap gap-24 justify-center">
+      <div className="w-full xl:py-[63px] lg:py-[50px] md:py-[40px] sm:py-[30px] 2xs:py-[20px]">
+        <div className="w-max mx-auto">
+          <Segmented
+            options={options}
+            onChange={(value) => {
+              setActiveTab(value);
+            }}
+          />
+        </div>
+      </div>
+      <div className="w-[90%] mx-auto xl:pb-20 lg:pb-16 md:pb-14 sm:pb-10 2xs:pb-8">
+        {productData.map((i, key) => {
+          return (
+            <div key={key}>
+              <div>
+                <Divider className="!mb-8 !mt-0">
+                  <p className="xl:text-[35px] lg:text-[25px] md:text-[20px] font-bold">{i.heading}</p>
+                </Divider>
+              </div>
 
-                            {i.data.map((prod) => {
-                                return <div key={prod.key} onClick={() => {
-                                    navigate(`/product-details/${prod.navigate}`)
-                                }} className="w-[450px] rounded-2xl bg-white h-[450px] flex flex-col items-center p-4 justify-center border gap-24">
-                                    <div className="!w-[300px] !h-[300px] flex justify-center  items-center">
-                                        <img src={prod.link} alt={prod.title} className="w-auto h-auto object-cover" />
-
-                                    </div>
-                                    <p className="font-bold text-[22px]">{prod.title}</p>
-                                </div>
-                            })}
-                        </div>
+              {/* Grid layout for product items */}
+              <div className="grid grid-cols-3 2xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  2xs:gap-2 md:gap-6 sm:gap-6 lg:gap-8 justify-center pb-8">
+                {i.data.map((prod) => {
+                  return (
+                    <div
+                      key={prod.key}
+                      onClick={() =>
+                        navigate(`/product-details/${prod.navigate}`)
+                      }
+                      className="aspect-square 2xs:rounded-md md:rounded-lg lg:rounded-2xl bg-white flex flex-col items-center p-4 justify-center border"
+                    >
+                      <div className="h-[100px] w-[100px] xs:h-[150px] xs:w-[150px] sm:w-[200px]  sm:h-[200px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] flex justify-center items-center">
+                        <img
+                          src={prod.link}
+                          alt={prod.title}
+                          className="w-auto h-auto object-cover"
+                        />
+                      </div>
+                      <p className="font-bold xl:text-[22px] lg:text-[18px] md:text-[16px] sm:text-[14px] 2xs:text-[10px] 2xs:mt-3 sm:mt-5 lg:mt-8">{prod.title}</p>
                     </div>
+                  );
                 })}
+              </div>
             </div>
-            <KeepInTouch/>
-        </section>
-    );
+          );
+        })}
+      </div>
+
+      <KeepInTouch />
+    </section>
+  );
 };
 
 export default Product;
