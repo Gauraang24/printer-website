@@ -1,6 +1,10 @@
-import React from 'react';
+import { useNavigate } from "react-router-dom";
+
 
 const Footer = () => {
+
+    const navigate = useNavigate()
+
     return (
         <div className="bg-[#2f2f2f] px-8 w-full">
             <div className="max-w-screen-xl mx-auto lg:pt-24 pt-16 pb-6">

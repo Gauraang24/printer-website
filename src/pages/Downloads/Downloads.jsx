@@ -1,5 +1,5 @@
 import { Button, Divider, Input } from "antd";
-import React, { useState } from "react";
+import { useState } from "react";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 
 const Downloads = () => {
@@ -29,9 +29,9 @@ const Downloads = () => {
         />
       </div>
 
-      <div className="w-[80%] mx-auto my-[80px]">
-        <Divider className="!my-20 !border-black">
-          <p className="text-4xl font-bold px-20">{activeTab}</p>
+      <div className="w-[95%] lg:w-[80%] mx-auto 2xs:my-[30px] sm:my-[40px] md:my-[50px] lg:my-[60px] xl:my-[70px] 2xl:my-[80px]">
+        <Divider className="2xs:!my-8 xs:!my-10 sm:!my-12 md:!my-16 lg:!my-[70px] xl:!my-20 !border-black">
+          <p className="lg:text-3xl md:text-2xl sm:text-xl xs:text-lg 2xs:text-base font-bold px-10">{activeTab}</p>
         </Divider>
 
         <div className="flex gap-5">
@@ -41,11 +41,9 @@ const Downloads = () => {
               return (
                 <div
                   key={i.key}
-                  className={`cursor-pointer ${
-                    i.label !== "APP" && "border-b-2"
-                  }  border-black p-6 text-[35px] font-bold ${
-                    activeTab === i?.label ? "text-blue-600" : ""
-                  }`}
+                  className={`cursor-pointer ${i.label !== "APP" && "border-b-2"
+                    }  border-black p-6 2xs:text-[18px] sm:text-[23px] xmd:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[35px] font-bold ${activeTab === i?.label ? "text-blue-600" : ""
+                    }`}
                   onClick={() => {
                     setActiveTab(i.label);
                   }}
@@ -60,11 +58,11 @@ const Downloads = () => {
           <div className="w-[70%] bg-white rounded-2xl p-8 flex flex-col gap-10">
             {activeTab === "APP" ? (
               <div className="h-full flex items-center justify-center">
-                <p className="text-[35px] font-bold">Our App is Launching Soon!</p>
+                <p className="2xs:text-[18px] sm:text-[23px] xmd:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[35px] font-bold">Our App is Launching Soon!</p>
               </div>
             ) : (
               <>
-                <p className="text-[35px] font-bold">Search by Product Name</p>
+                <p className="2xs:text-[18px] sm:text-[23px] xmd:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[35px]  font-bold">Search by Product Name</p>
 
                 <div className="border-b border-black">
                   <Input

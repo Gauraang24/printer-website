@@ -94,9 +94,9 @@ const ProductDetails = () => {
             </p>
 
             <div>
-              {printerDetails[params.productId]?.specSummary.map((i) => {
+              {printerDetails[params.productId]?.specSummary.map((i, idx) => {
                 return (
-                  <p className="2xs:text-[13px] xs:text-sm sm:text-sm md:text-lg lg:text-xl xl:text-2xl pb-1 lg:pb-2">
+                  <p key={idx} className="2xs:text-[13px] xs:text-sm sm:text-sm md:text-lg lg:text-xl xl:text-2xl pb-1 lg:pb-2">
                     {i}
                   </p>
                 );
@@ -130,18 +130,18 @@ const ProductDetails = () => {
 
         <div>
           {Object.entries(printerDetails?.[params.productId]?.details).map(
-            ([key, value]) => {
+            ([key, value], index) => {
               return (
-                <div className="flex flex-col xmd:flex-row justify-between 2xs:mt-4 xs:mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-14 2xl:mt-20">
+                <div key={index} className="flex flex-col xmd:flex-row justify-between 2xs:mt-4 xs:mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-14 2xl:mt-20">
                   <div className="w-full xmd:w-1/3 ">
                     <p className="2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-base 2xs:text-sm font-bold border-b border-black w-max">
                       {convertToPrintSpecification(key)}
                     </p>
                   </div>
                   <div className="w-full mt-5 xmd:w-2/3  md:ml-5">
-                    {value.map((items) => {
+                    {value.map((items, idx) => {
                       return (
-                        <div className="flex justify-between flex-1 ">
+                        <div key={idx} className="flex justify-between flex-1 ">
                           <p className="w-1/2 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm 2xs:text-xs font-medium leading-[50px]">
                             {items?.title}
                           </p>
