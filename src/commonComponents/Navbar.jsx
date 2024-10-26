@@ -7,6 +7,7 @@ const Navbar = () => {
     const [logoSrc, setLogoSrc] = useState('/images/nav-logo.svg');
     const [drawerVisible, setDrawerVisible] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.outerWidth);
+    const [activeTab, setActiveTab] = useState();
 
 
     useEffect(() => {
@@ -54,21 +55,26 @@ const Navbar = () => {
         setDrawerVisible(false);
     };
 
+    const handleNavClick = (key) => {
+        setActiveTab(key);
+        closeDrawer();
+    };
+
     return (
         <>
             <nav className={`w-full py-3 ${scrolled ? "bg-white shadow-2xl" : "bg-transparent"} transition-colors duration-300`}>
                 <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center px-4">
-                    <img src={logoSrc} alt="LogoCWC " className="lg:w-28 lg:h-[65px] md:w-24 md:h-[60px] sm:w-20 sm:h-[55px] w-18 h-[50px] ms-3" />
+                    <img src={logoSrc} alt="LogoCWC " className="lg:w-28 lg:h-[65px] sm:w-24 sm:h-[50px] xs:w-20 xs:h-[40px] w-18 h-[32px] ms-3" />
                     <img
                         src="/images/home/Menu.svg"
                         alt="Menu"
                         onClick={showDrawer}
-                        className="cursor-pointer block sm:hidden !w-[40px]  me-2"
+                        className="cursor-pointer block sm:hidden xs:w-10 w-8 me-2"
                     />
                     <ul className='hidden sm:flex gap-3 md:gap-5 lg:gap-6 ml-4 md:ml-6'>
                         {navList.map(list => (
-                            <li key={list.key} className="font-bold text-md lg:text-lg xl:text-xl me-4">
-                                <Link to={list.link}>{list.title}</Link>
+                            <li key={list.key} className={`font-bold sm:text-sm md:text-md lg:text-lg xl:text-xl me-4  ${activeTab === list.key ? 'border-b-2 border-blue-500 text-blue-500' : 'text-black'}`}>
+                                <Link to={list.link} onClick={() => setActiveTab(list.key)}>{list.title}</Link>
                             </li>
                         ))}
                     </ul>
@@ -95,8 +101,8 @@ const Navbar = () => {
 
                         <ul className="flex flex-col gap-3 mt-8">
                             {navList.map(list => (
-                                <li key={list.key} className="flex justify-between items-center font-bold text-xl py-4 border-b">
-                                    <Link to={list.link} className="flex-1">{list.title}</Link>
+                                <li key={list.key} className={`flex justify-between items-center font-bold text-xl py-4 border-b ${activeTab === list.key ? 'border-b-2 border-blue-500 text-blue-500' : 'text-black'}`}>
+                                    <Link to={list.link} className='flex-1' onClick={() => handleNavClick(list.key)}>{list.title}</Link>
                                     <img src="/images/home/arrow.svg" alt="Arrow Icon" className="ml-3 w-[30px]" />
                                 </li>
                             ))}
