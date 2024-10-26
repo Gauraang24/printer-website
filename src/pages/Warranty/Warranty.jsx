@@ -40,7 +40,7 @@ const Warranty = () => {
     return (
         <section>
             {/* Banner */}
-            <div className="w-full">
+            <div className="w-full mt-[100px] sm:mt-0">
                 <img
                     src="/images/warranty/Warranty.png"
                     alt="Banner"

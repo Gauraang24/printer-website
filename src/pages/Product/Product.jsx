@@ -37,7 +37,7 @@ const Product = () => {
   return (
     <section className="bg-[#f7f7f7]">
       {/* Banner Section */}
-      <div className="w-full">
+      <div className="w-full mt-[100px] sm:mt-0">
         <img
           src="/images/productPage/Banner.jpg"
           alt="Banner"

@@ -1,8 +1,9 @@
 import { Collapse, Divider } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
-import { donts, dos, eWasteCollectionData } from "../../staticData/ewaste";
+import { donts, dos } from "../../staticData/ewaste";
 import { CheckCircleFilled, CheckOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
+import { ewasteData } from "../../../public/excel_files/ewastedata";
 
 const Ewaste = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
@@ -23,7 +24,7 @@ const Ewaste = () => {
   return (
     <section>
       {/* Banner Section */}
-      <div className="w-full">
+      <div className="w-full mt-[100px] sm:mt-0">
         <img
           src="/images/ewaste/Banner.png"
           alt="Banner"
@@ -51,7 +52,7 @@ const Ewaste = () => {
         <div className="w-[80%] mx-auto">
           <Divider className="">
             <p className="2xs:text-[20px] sm:text-[23px] xmd:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[35px] font-bold  px-8 md:px-10 lg:px-14 xl:px-20">
-              Do's and Don’ts
+              {`Do's and Don’ts`}
             </p>
           </Divider>
         </div>
@@ -62,15 +63,15 @@ const Ewaste = () => {
               <CheckCircleFilled style={{ fontSize: isLargeScreen ? "55px" : "25px", color: "#fff" }} />
               <div className="flex-1">
                 <p className="text-white 2xs:text-[18px] sm:text-[20px] md:text-[24px] lg:text-[27px] xl:text-[31px] font-extrabold text-center">
-                  Do's
+                  {`Do's`}
                 </p>
               </div>
             </div>
 
             <div className="mb-10">
-              {dos.map((i) => {
+              {dos.map((i, index) => {
                 return (
-                  <div className="mx-[10%] flex justify-between items- gap-5 mb-4">
+                  <div key={index} className="mx-[10%] flex justify-between items- gap-5 mb-4">
                     <CheckOutlined
                       style={{
                         fontSize: "40px",
@@ -103,15 +104,15 @@ const Ewaste = () => {
               />
               <div className="flex-1">
                 <p className="text-white 2xs:text-[18px] sm:text-[20px] md:text-[24px] lg:text-[27px] xl:text-[31px] font-extrabold text-center">
-                  Dont's
+                  {`Dont's`}
                 </p>
               </div>
             </div>
 
             <div className="mb-10">
-              {donts.map((i) => {
+              {donts.map((i, index) => {
                 return (
-                  <div className="mx-[10%] flex items-center gap-5 mb-4">
+                  <div key={index} className="mx-[10%] flex items-center gap-5 mb-4">
                     <CheckOutlined
                       style={{
                         fontSize: "40px",
@@ -153,15 +154,40 @@ const Ewaste = () => {
         </p>
 
         <div className="w-full gap-2 justify-around flex flex-wrap">
-          {eWasteCollectionData.map((item) => {
+          {ewasteData.map((item, index) => {
             return (
               <Collapse
+                key={index}
                 className="w-full sm:w-[49%]"
                 items={[
                   {
                     key: "1",
-                    label: item?.title,
-                    children: <p>testset</p>,
+                    label: item?.state,
+                    children: <div>
+                      <div className="flex h-auto">
+                        <p className="w-1/2 text-start">Location</p>
+                        <p className="w-1/2 ">{item?.location}</p>
+                      </div>
+                      <div className="flex h-auto">
+                        <p className="w-1/2 text-start">Address</p>
+                        <p className="w-1/2 ">{item?.address}</p>
+                      </div>
+                      <div className="flex h-auto">
+                        <p className="w-1/2 text-start">Contact Person</p>
+                        <div className="w-1/2 ">
+                          <p><span>Contact person :</span>{item?.contactPerson?.name}</p>
+                          <p><span>Contact person :</span>{item?.contactPerson?.centralizedContactPerson}</p>
+                        </div>
+                      </div>
+                      <div className="flex h-auto">
+                        <p className="w-1/2 text-start">Contact Number</p>
+                        <div className="w-1/2 ">
+                          <p><span>Toll Number :</span>{item?.contactNumber?.tollNo}</p>
+                          <p><span>Contact Number :</span>{item?.contactNumber?.contactNo}</p>
+                          <p><span>Centralized Number :</span>{item?.contactNumber?.centralizedNo}</p>
+                        </div>
+                      </div>
+                    </div>,
                   },
                 ]}
               />

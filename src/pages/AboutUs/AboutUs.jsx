@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <section>
       {/* Banner Section  */}
-      <div className="w-full">
+      <div className="w-full mt-[100px] sm:mt-0">
         <img
           src="/images/aboutUs/Banner.png"
           alt="Banner"

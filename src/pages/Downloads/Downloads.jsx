@@ -21,7 +21,7 @@ const Downloads = () => {
   return (
     <section>
       {/* Banner */}
-      <div className="w-full">
+      <div className="w-full mt-[100px] sm:mt-0">
         <img
           src="/images/download/downloadBanner.png"
           alt="Banner"

@@ -261,10 +261,27 @@ const Contact = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleFormSubmit = async (values) => {
+    try {
+      const response = await fetch("./sendEmail.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(values),
+      });
+
+      const result = await response.text();
+      console.log(result);  // Handle success/failure response here
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   return (
     <section className="bg-[#f7f7f7]">
       {/* Banner Section */}
-      <div className="w-full">
+      <div className="w-full mt-[100px] sm:mt-0">
         <img
           src="/images/contactUs/Banner.png"
           alt="Banner"
@@ -365,13 +382,14 @@ const Contact = () => {
           </p>
 
         </Divider>
-        <Form
+        {/* <Form
           form={form}
           name="validateOnly"
           layout="vertical"
           autoComplete="off"
           className=" flex flex-col flex-wrap mb-10 mt-10"
-        >
+        > */}
+        <Form form={form} name="validateOnly" layout="vertical" autoComplete="off" onFinish={handleFormSubmit}>
           <div className={`flex ${isMobile ? 'flex-row gap-10' : 'flex-col'} flex-1`}>
             <Form.Item
               name="name"
@@ -387,7 +405,7 @@ const Contact = () => {
               <Input className="h-14 text-[22px]" />
             </Form.Item>
             <Form.Item
-              name={["user", "email"]}
+              name="email"
               label="Email"
               rules={[
                 {

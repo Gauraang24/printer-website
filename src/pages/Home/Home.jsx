@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <section className=" !h-full bg-[#f6f6f6]">
       {/* Banner Section */}
-      <div className="w-full overflow-x-auto ">
+      <div className="w-full overflow-x-auto mt-[100px] sm:mt-0">
         <Carousel
           Carousel
           arrows
