@@ -161,7 +161,7 @@ const Ewaste = () => {
                 className="w-full sm:w-[49%]"
                 items={[
                   {
-                    key: "1",
+                    key: { index },
                     label: item?.state,
                     children: <div>
                       <div className="flex h-auto">

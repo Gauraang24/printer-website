@@ -7,6 +7,8 @@ import {
   productCarousalData,
   serviceSupport,
 } from "../../staticData/Data";
+import HeadingFont from "../../commonComponents/Texts/HeadingFont";
+import { fontmd, pblg, pylg } from "../../utils/constant";
 
 
 const Home = () => {
@@ -36,7 +38,7 @@ const Home = () => {
       </div>
       {/* CERTIFICATE SECTION */}
       <div>
-        <div className="flex w-[90%] 2xs:w-[95%] xs:[90%] lg:w-[80%] mx-auto justify-between items-center xl:py-[62px] lg:py-[50px] md:py-[40px] sm:py-[30px] 2xs:py-5 ">
+        <div className={`flex w-[90%] gap-4 sm:w-[80%] sm:max-w-[1200px] mx-auto justify-between items-center ${pylg}`}>
           {certificatesData.map((item) => {
             return (
               <div
@@ -64,13 +66,11 @@ const Home = () => {
           backgroundSize: "cover", // Ensures the image scales properly
         }}
       >
-        <div className="w-[90%] 2xl:w-[80%]  mx-auto">
-          <div className="w-max mx-auto 2xl:py-[85px] xl:py-[60px] lg:py-[30px] sm:py-[25px] 2xs:py-[20px]">
-            <p className="xl:text-[35px] lg:text-[25px]  md:text-[20px] font-bold border-b border-black">
-              About Us
-            </p>
+        <div className=" w-[90%] sm:w-[80%] sm:max-w-[1200px]  mx-auto">
+          <div className={`w-max mx-auto ${pylg}`}>
+            <HeadingFont text={'About Us'} className={'border-b border-black font-bold'} />
           </div>
-          <div className="flex flex-col sm:flex-row justify-between gap-5 items-center 2xl:pb-[85px] xl:pb-[60px] lg:pb-[30px] sm:pb-[25px]">
+          <div className={`flex flex-col sm:flex-row justify-between gap-5 items-center ${pblg}`}>
             <div className="w-1/3 lg:w-1/2 flex justify-center items-center mb-5 sm:mb-0">
               <img
                 src="./images/home/printer.svg"
@@ -79,7 +79,7 @@ const Home = () => {
               />
             </div>
             <div className="w-2/3 lg:w-1/2 2xs:hidden sm:flex">
-              <p className="2xl:text-[25px] xl:text-[22px] md:text-[20px] sm:text-[18px] sm:leading-[25px] text-justify">
+              <p className={`${fontmd} sm:leading-[25px] text-justify`}>
                 The &quot;<b>CWC</b>&quot; brand is a product brand that serves
                 as a testament to the reliability of E-Compusell Pvt. Ltd. It is
                 a dynamic and innovative Start-up specializing in designing,
@@ -95,7 +95,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="sm:hidden w-[90%] mx-auto">
+      <div className="sm:hidden w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto">
         <p
           className="text-[14px] leading-[20px] text-justify 2xs:py-4 xs:py-6"
         >
@@ -113,23 +113,21 @@ const Home = () => {
 
       {/* PRODUCT SECTION */}
       <div className="w-screen h-auto">
-        <div className="w-max mx-auto 2xl:py-[85px] xl:py-[60px] lg:py-[30px] sm:py-[25px] 2xs:py-[20px]">
-          <p className=" xl:text-[35px] lg:text-[25px] md:text-[20px] font-bold border-b border-black">
-            Product
-          </p>
+        <div className={`w-max mx-auto ${pylg}`}>
+          <HeadingFont text={'Product'} className={'border-b border-black font-bold'} />
         </div>
 
         <Carousel
           Carousel
           arrows
           infinite={true}
-          autoplay
+          // autoplay
           className="customArrows flex justify-between "
         >
           {productCarousalData.map((i, index) => {
             return (
               <div
-                className="!w-[80%] mx-auto !block bg-white rounded-3xl py-4 sm:py-5 md:py-7 lg:py-14 shadow-lg  2xl:mb-[85px] xl:mb-[60px] lg:mb-[30px] sm:mb-[25px] 2xs:mb-[20px]"
+                className="!w-[90%] sm:!w-[80%] !max-w-[1200px] mx-auto !block bg-white rounded-3xl py-4 sm:py-5 md:py-7 lg:py-14 shadow-lg  2xl:mb-[85px] xl:mb-[60px] lg:mb-[30px] sm:mb-[25px] 2xs:mb-[20px]"
                 key={index}
               >
                 <div className="flex flex-col sm:flex-row justify-between items-center">
@@ -140,12 +138,10 @@ const Home = () => {
                       className="2xl:w-[500px] 2xl:h-[500px] xl:w-[400px] xl:[400px] lg:w-[300px] lg:h-[300px] md:w-[250px] md:h-[250px] sm:w-[200px] sm:h-[200px] 2xs:h-[100px] 2xs:w-[100px]"
                     />
                   </div>
-                  <div className=" sm:w-1/2">
+                  <div className="w-[80%] sm:w-1/2 ">
                     <div className="2xs:mb-4 sm:mb-6 md:mb-8 lg:mb-12">
-                      <p className="text-center sm:text-left 2xl:text-[32px] xl:text-[28px] lg:text-[24px] md:text-[22px] sm:text-[20px] 2xs:text-[14px] font-bold">
-                        {i?.printerName}
-                      </p>
-                      <p className="text-center sm:text-left 2xl:text-[25px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[20px] 2xs:text-[14px] font-bold">
+                      <HeadingFont text={i?.printerName} className={'text-center sm:text-left font-bold'} />
+                      <p className={`text-center sm:text-left ${fontmd} font-bold`}>
                         {i?.type}
                       </p>
                     </div>
@@ -155,12 +151,12 @@ const Home = () => {
                         return (
                           <div
                             key={spec.key}
-                            className="flex justify-between items-center w-full"
+                            className="flex justify-between items-center gap-2 w-full"
                           >
-                            <p className="2xl:text-[25px] xl:text-[22px] md:text-[14px] sm:text-[13px] 2xs:text-[12px] font-medium w-1/2">
+                            <p className={`${fontmd} font-medium w-1/2`}>
                               {spec?.title}
                             </p>
-                            <p className="2xl:text-[25px] xl:text-[22px] md:text-[14px] sm:text-[13px] 2xs:text-[12px] font-medium w-1/2 text-left">
+                            <p className={`${fontmd} font-medium w-1/2 text-left`}>
                               {spec?.desc}
                             </p>
                           </div>
@@ -168,8 +164,8 @@ const Home = () => {
                       })}
                     </div>
 
-                    <div className="flex items-center sm:gap-4 md:gap-5 lg:gap-7">
-                      <p className=" xl:text-[25px] lg:text-[22px] font-bold">
+                    <div className="flex justify-center sm:justify-normal items-center gap-5 sm:gap-4 md:gap-5 lg:gap-7">
+                      <p className={` ${fontmd} font-bold`}>
                         Available on
                       </p>
                       {i?.availableOn.map((img) => {
@@ -200,13 +196,11 @@ const Home = () => {
           // backgroundSize: 'cover', // Ensures the image scales properly
         }}
       >
-        <div className="w-max mx-auto 2xl:py-[85px] xl:py-[60px] lg:py-[30px] sm:py-[25px] 2xs:py-[20px]">
-          <p className="xl:text-[35px] lg:text-[25px] md:text-[20px] font-bold border-b border-black">
-            Service & Support
-          </p>
+        <div className={`w-max mx-auto ${pylg}`}>
+          <HeadingFont text={'Service & Support'} className={'border-b border-black font-bold'} />
         </div>
 
-        <div className="flex w-[90%] sm:w-[80%] mx-auto justify-between items-center 2xs:pb-6 sm:pb-6 md:pb-8 lg:pb-12">
+        <div className={`flex w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto gap-4 sm:gap-0 justify-center sm:justify-between items-center ${pblg}`}>
           {serviceSupport.map((item, index) => {
             return (
               <div
