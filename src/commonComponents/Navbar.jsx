@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // Import Link
+import { Link, useLocation } from "react-router-dom"; // Import Link
 import { Drawer } from "antd";
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
     const [drawerVisible, setDrawerVisible] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.outerWidth);
     const [activeTab, setActiveTab] = useState("1");
-
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,6 +20,18 @@ const Navbar = () => {
             setScreenWidth(window.outerWidth);
         };
 
+        if (location.pathname === "/") {
+            setActiveTab("1");
+        } else if (location.pathname === "/products") {
+            setActiveTab("2");
+        } else if (location.pathname === "/e-waste") {
+            setActiveTab("3");
+        } else if (location.pathname === "/about-us") {
+            setActiveTab("4");
+        } else if (location.pathname === "/contact") {
+            setActiveTab("5");
+        }
+
         updateLogo();
 
         window.addEventListener('resize', handleResize);
@@ -28,7 +40,7 @@ const Navbar = () => {
             window.removeEventListener("scroll", handleScroll);
             window.removeEventListener('resize', handleResize);
         };
-    }, [screenWidth]);
+    }, [screenWidth, location.pathname]);
 
     const updateLogo = () => {
         if (screenWidth < 640) {
@@ -87,7 +99,7 @@ const Navbar = () => {
                         onClose={closeDrawer}
                         width={420}
                         closable={false}
-                        visible={drawerVisible}
+                        open={drawerVisible}
                         style={{ backgroundColor: '#f6f6f6' }}
                     >
                         <div className="flex justify-end items-center w-full">

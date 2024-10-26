@@ -1,4 +1,3 @@
-import { Divider } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import OurCertifications from "../../commonComponents/OurCertifications";
 import { aboutUs } from "../../staticData/aboutUs";

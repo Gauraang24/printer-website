@@ -3,7 +3,7 @@ import {
   MailOutlined,
   PhoneTwoTone,
 } from "@ant-design/icons";
-import { Button, Divider, Form, Input } from "antd";
+import { Button, Form, Input } from "antd";
 import { contactDetails } from "../../staticData/contact";
 import {
   FacebookOutlined,
@@ -12,21 +12,10 @@ import {
   XOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
-import { useEffect, useState } from "react";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
 
 const Contact = () => {
   const [form] = Form.useForm();
-  const [isMobile, setIsMobile] = useState(window.outerWidth >= 969);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.outerWidth >= 969);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const handleFormSubmit = async (values) => {
     try {
@@ -39,7 +28,7 @@ const Contact = () => {
       });
 
       const result = await response.text();
-      console.log(result); 
+      console.log(result);
     } catch (error) {
       console.error("Error submitting form:", error);
     }
@@ -62,17 +51,19 @@ const Contact = () => {
           title={'SERVICE AND CONSULTATION'}
         />
 
-        <div className="w-[80%] mx-auto flex justify-around items-center bg-white rounded-2xl shadow-2xl flex-wrap">
-          <div className="flex flex-col justify-center items-center m-4 sm:!p-6">
+        <div className="w-[80%] mx-auto flex flex-col lg:flex-row justify-around items-center bg-white rounded-2xl shadow-2xl">
+          <div className="flex flex-col justify-center items-center m-4 lg:!p-6 p-4">
             <div className="text-5xl"><MailOutlined /></div>
             <div className="mt-2">Complaints</div>
-            <div className="font-extrabold sm:text-lg text-md">service@ecompusell.com</div>
+            <div className="font-extrabold sm:text-lg xs:text-md 2xs:text-sm">service@ecompusell.com</div>
           </div>
-          {isMobile && (<div className="border-r-2 border-black h-28"></div>)}
-          <div className="flex flex-col justify-center items-center m-4 sm:!p-6">
+
+          <div className="border-r-2 border-black h-28 hidden lg:block mx-4" />
+
+          <div className="flex flex-col justify-center items-center m-4 lg:!p-6 p-4">
             <div className="text-5xl"><MailOutlined /></div>
             <div className="mt-2">Business</div>
-            <div className="font-extrabold sm:text-lg text-md">info@ecompusell.com</div>
+            <div className="font-extrabold sm:text-lg xs:text-md 2xs:text-sm">info@ecompusell.com</div>
           </div>
         </div>
       </div>
@@ -84,8 +75,8 @@ const Contact = () => {
           title={'CONTACT DETAILS'}
         />
 
-        <div className="w-[95%] md:w-[80%] bg-white p-6 md:p-8 mx-auto rounded-2xl shadow-2xl flex flex-col lg:flex-row">
-          <div className={`pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 ${isMobile ? '' : 'mt-[6%]'}`}>
+        <div className="w-[90%] lg:w-[80%] bg-white p-6 mx-auto rounded-2xl shadow-2xl flex flex-col lg:flex-row">
+          <div className="pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 mt-6 lg:mt-0">
             <div className="flex flex-col gap-5 flex-1">
               {contactDetails.mobileNumbers.map((mobile, index) => (
                 <div key={index} className="flex items-center gap-5">
@@ -103,16 +94,16 @@ const Contact = () => {
             </div>
           </div>
 
-          {isMobile && <div className="border-r-2 border-black h-60"></div>}
+          <div className="border-r-2 border-black h-60 hidden lg:block mx-4" />
 
-          <div className={`pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 ${isMobile ? '' : 'mt-[6%]'}`}>
-            <div className={`flex items-center gap-5 ${isMobile ? 'justify-center' : ''}`}>
+          <div className="pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 mt-6 lg:mt-0">
+            <div className="flex items-center gap-5">
               <EnvironmentOutlined style={{ fontSize: "30px" }} />
               <p className="text-[16px] md:text-[18px] font-medium">{contactDetails?.address}</p>
             </div>
 
             <div className="flex flex-col gap-5 lg:my-5">
-              <p className="text-[18px] md:text-[20px] font-bold lg:mt-[6]">SOCIAL MEDIA</p>
+              <p className="text-[18px] md:text-[20px] font-bold lg:mt-6">SOCIAL MEDIA</p>
               <div className="flex justify-between gap-3">
                 {contactDetails?.socialMedia?.map((social, index) => {
                   const icons = {
@@ -150,7 +141,7 @@ const Contact = () => {
           className=" flex flex-col flex-wrap mb-10 mt-10"
         > */}
         <Form form={form} name="validateOnly" layout="vertical" autoComplete="off" onFinish={handleFormSubmit}>
-          <div className={`flex ${isMobile ? 'flex-row gap-10' : 'flex-col'} flex-1`}>
+          <div className="flex flex-col md:flex-row md:gap-10">
             <Form.Item
               name="name"
               label="Your Name"
