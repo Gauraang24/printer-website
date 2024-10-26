@@ -9,82 +9,82 @@ const Footer = () => {
         <div className="bg-[#2f2f2f] px-8 w-full">
             <div className="max-w-screen-xl mx-auto lg:pt-24 pt-16 pb-6">
                 {/* Footer Content */}
-                <div className="flex flex-wrap lg:flex-row justify-between items-start gap-6">
+                <div className="custom-footer flex xl:flex-row justify-between items-start lg:gap-6 md:gap-4 gap-2">
 
                     {/* Logo Section */}
                     <div className="flex justify-center mb-6">
                         <img
                             src='/images/home/cwc-logo-copyright.svg'
                             alt="CWC Logo"
-                            className="lg:w-[150px] lg:h-[128px]"
+                            className="lg:w-[150px] lg:h-[128px] sm:w-[120px] sm:h-[78px] xs:w-[100px] xs:h-[72px] w-[80px] h-[66px]"
                         />
                     </div>
 
                     {/* Shop Online Section */}
                     <div className="text-white flex flex-col mb-6">
-                        <p className="lg:text-[30px] text-[25px] font-bold pb-6">SHOP&nbsp;ONLINE</p>
+                        <p className="lg:text-[30px] sm:text-[25px] text-[18px] font-bold lg:pb-6 sm:pb-4 pb-2">SHOP&nbsp;ONLINE</p>
                         <hr className="w-[50%]" />
-                        <ul className="flex flex-col gap-7 mt-11">
-                            <li className="lg:text-[18px] font-medium">AMAZON</li>
+                        <ul className="flex flex-col gap-7 lg:mt-11 sm:mt-9 mt-4">
+                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">AMAZON</li>
                         </ul>
                     </div>
 
                     {/* Important Links Section */}
                     <div className="text-white flex flex-col mb-6">
-                        <p className="lg:text-[30px] text-[25px] font-bold pb-6">IMPORTANT&nbsp;LINKS</p>
+                        <p className="lg:text-[30px] sm:text-[25px] text-[18px] font-bold lg:pb-6 sm:pb-4 pb-2">IMPORTANT&nbsp;LINKS</p>
                         <hr className="w-[50%]" />
-                        <ul className="flex flex-col gap-7 mt-11">
-                            <li className="lg:text-[18px] font-medium">Company Profile</li>
-                            <li className="lg:text-[18px] font-medium cursor-pointer" onClick={() => navigate('/warranty')}>
+                        <ul className="flex flex-col gap-7 lg:mt-11 sm:mt-9 mt-4">
+                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">Company Profile</li>
+                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium cursor-pointer" onClick={() => navigate('/warranty')}>
                                 Warranty Check
                             </li>
-                            <li className="lg:text-[18px] font-medium">Operation Videos</li>
+                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">Operation Videos</li>
                         </ul>
                     </div>
 
                     {/* Stay Connected Section */}
                     <div className="text-white flex flex-col mb-6">
-                        <p className="lg:text-[30px] text-[25px] font-bold pb-6">STAY&nbsp;CONNECTED</p>
+                        <p className="lg:text-[30px] sm:text-[25px] text-[18px] font-bold lg:pb-6 sm:pb-4 pb-2">STAY&nbsp;CONNECTED</p>
                         <hr className="w-[50%]" />
-                        <div className="flex gap-4 lg:gap-7 mt-11 cursor-pointer">
+                        <div className="flex gap-4 lg:gap-7 lg:mt-11 sm:mt-9 mt-4 cursor-pointer">
                             <img
                                 src="/images/footerIcons/Instagram.svg"
-                                className="sm:w-[52px] lg:w-[62px] sm:h-[52px] lg:h-[62px] w-[45px] h-[45px]"
+                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
                                 alt="Instagram Logo"
                             />
                             <img
                                 src="/images/footerIcons/Facebook.svg"
-                                className="sm:w-[52px] lg:w-[62px] sm:h-[52px] lg:h-[62px]  w-[45px] h-[45px]"
+                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
                                 alt="Facebook Logo"
                             />
                             <img
                                 src="/images/footerIcons/LinkedIn.svg"
-                                className="sm:w-[52px] lg:w-[62px] sm:h-[52px] lg:h-[62px]  w-[45px] h-[45px]"
+                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
                                 alt="LinkedIn Logo"
                             />
                             <img
                                 src="/images/footerIcons/TwitterX.svg"
-                                className="sm:w-[52px] lg:w-[62px] sm:h-[52px] lg:h-[62px] w-[45px] h-[45px]"
+                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
                                 alt="Twitter Logo"
                             />
                             <img
                                 src="/images/footerIcons/YouTube.svg"
-                                className="sm:w-[52px] lg:w-[62px] sm:h-[52px] lg:h-[62px]  w-[45px] h-[45px]"
+                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[36px]"
                                 alt="YouTube Logo"
                             />
                         </div>
                         <ul className="max-w-[445px] flex flex-col gap-7 mt-7">
                             <li className="flex items-center gap-4">
-                                <img src="/images/footerIcons/Phone.svg" className="w-[40px] h-[40px]" alt="Phone Icon" />
-                                <p className="lg:text-[18px] font-medium">1800 212 7110</p>
+                                <img src="/images/footerIcons/Phone.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px] " alt="Phone Icon" />
+                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">1800 212 7110</p>
                             </li>
                             <li className="flex items-center gap-4">
-                                <img src="/images/footerIcons/Mail.svg" className="w-[40px] h-[40px]" alt="Mail Icon" />
-                                <p className="lg:text-[18px] font-medium">info@ecompusell.com</p>
+                                <img src="/images/footerIcons/Mail.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px]" alt="Mail Icon" />
+                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">info@ecompusell.com</p>
                             </li>
                             <li className="flex items-center gap-4">
-                                <img src="/images/footerIcons/Location.svg" className="w-[40px] h-[40px]" alt="Location Icon" />
-                                <p className="lg:text-[18px] font-medium">
+                                <img src="/images/footerIcons/Location.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px]" alt="Location Icon" />
+                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">
                                     Office No. 13, 1st Floor, Aditya Centeegra, Fergusson College Rd, Shivajinagar, Pune, Maharashtra – 411004
                                 </p>
                             </li>
@@ -96,8 +96,8 @@ const Footer = () => {
                 <hr className="my-6 border-gray-400" />
 
                 {/* Copyright and Design/Development Section */}
-                <div className="flex lg:justify-between justify-center gap-3 items-center flex-col lg:flex-row text-white lg:text-[18px]">
-                    <p className="mb-4 lg:mb-0 lg:font-bold font-medium text-center">Copyright © 2024 E-Compusell Private Limited. All Rights Reserved</p>
+                <div className="flex lg:justify-between justify-center gap-3 items-center flex-col lg:flex-row text-white lg:text-[18px] sm:text-[14px] text-[10px]">
+                    <p className="sm:mb-4 lg:mb-0 lg:font-bold font-medium text-center">Copyright © 2024 E-Compusell Private Limited. All Rights Reserved</p>
                     <p className='lg:font-bold text-center font-medium'>Design & Development by 8Bit Creation</p>
                 </div>
             </div>

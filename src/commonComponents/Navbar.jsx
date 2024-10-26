@@ -7,7 +7,7 @@ const Navbar = () => {
     const [logoSrc, setLogoSrc] = useState('/images/nav-logo.svg');
     const [drawerVisible, setDrawerVisible] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.outerWidth);
-    const [activeTab, setActiveTab] = useState();
+    const [activeTab, setActiveTab] = useState("1");
 
 
     useEffect(() => {
