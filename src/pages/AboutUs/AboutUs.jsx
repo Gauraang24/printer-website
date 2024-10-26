@@ -2,6 +2,7 @@ import { Divider } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import OurCertifications from "../../commonComponents/OurCertifications";
 import { aboutUs } from "../../staticData/aboutUs";
+import { CustomDivider } from "../../commonComponents/CustomDivider";
 
 const AboutUs = () => {
   return (
@@ -17,14 +18,10 @@ const AboutUs = () => {
 
       {/* Company Profile  */}
       <div className="w-[80%] mx-auto mb-20">
-        <Divider
-          className="!my-20"
-          style={{
-            borderColor: "#000",
-          }}
-        >
-          <p className="lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl 2xs:text-lg font-bold px-10">Company Profile</p>
-        </Divider>
+        <CustomDivider
+          title={'Company Profile'}
+        />
+
 
         <div className="w-full flex lg:flex-row flex-col-reverse">
           <div className="lg:w-[45%] w-full flex flex-col justify-between p-4">
