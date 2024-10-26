@@ -263,7 +263,7 @@ const Contact = () => {
 
   const handleFormSubmit = async (values) => {
     try {
-      const response = await fetch("./sendEmail.php", {
+      const response = await fetch("/php/sendEmail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
