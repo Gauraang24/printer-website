@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { printerDetails } from "../../staticData/productDetailData";
-import { Button, Carousel, Divider } from "antd";
+import { Button, Carousel } from "antd";
 import { convertToPrintSpecification } from "../../utils/functions";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { fontlg, fontmd, fontsm, mtlg, mtMd, mylg } from "../../utils/constant";

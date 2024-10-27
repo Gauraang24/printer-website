@@ -1,4 +1,4 @@
-import { Button, Divider, Input, Segmented } from "antd";
+import { Button, Input, Segmented } from "antd";
 import { useState } from "react";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { fontlg, fontmd, fontsm, fontxs, mblg, mylg, pMd, pSm, ptlg, pySm } from "../../utils/constant";
