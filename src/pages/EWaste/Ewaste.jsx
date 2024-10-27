@@ -153,46 +153,91 @@ const Ewaste = () => {
           by M/s. GLOBAL WASTE SOLUTION.
         </p>
 
-        <div className="w-full gap-2 justify-around flex flex-wrap">
-          {ewasteData.map((item, index) => {
-            return (
-              <Collapse
-                key={index}
-                className="w-full sm:w-[49%]"
-                items={[
-                  {
-                    key: { index },
-                    label: item?.state,
-                    children: <div>
-                      <div className="flex h-auto">
-                        <p className="w-1/2 text-start">Location</p>
-                        <p className="w-1/2 ">{item?.location}</p>
-                      </div>
-                      <div className="flex h-auto">
-                        <p className="w-1/2 text-start">Address</p>
-                        <p className="w-1/2 ">{item?.address}</p>
-                      </div>
-                      <div className="flex h-auto">
-                        <p className="w-1/2 text-start">Contact Person</p>
-                        <div className="w-1/2 ">
-                          <p><span>Contact person :</span>{item?.contactPerson?.name}</p>
-                          <p><span>Contact person :</span>{item?.contactPerson?.centralizedContactPerson}</p>
-                        </div>
-                      </div>
-                      <div className="flex h-auto">
-                        <p className="w-1/2 text-start">Contact Number</p>
-                        <div className="w-1/2 ">
-                          <p><span>Toll Number :</span>{item?.contactNumber?.tollNo}</p>
-                          <p><span>Contact Number :</span>{item?.contactNumber?.contactNo}</p>
-                          <p><span>Centralized Number :</span>{item?.contactNumber?.centralizedNo}</p>
-                        </div>
-                      </div>
-                    </div>,
-                  },
-                ]}
-              />
-            );
-          })}
+        <div className="w-full gap-2 justify-around flex">
+          <div className="w-1/2">
+            {ewasteData.map((item, index) => {
+              if (index % 2 === 0)
+                return (
+                  <Collapse
+                    key={index}
+                    className="w-full mb-2"
+                    items={[
+                      {
+                        key: { index },
+                        label: item?.state,
+                        children: <div>
+                          <div className="flex h-auto">
+                            <p className="w-1/2 text-start">Location</p>
+                            <p className="w-1/2 ">{item?.location}</p>
+                          </div>
+                          <div className="flex h-auto">
+                            <p className="w-1/2 text-start">Address</p>
+                            <p className="w-1/2 ">{item?.address}</p>
+                          </div>
+                          <div className="flex h-auto">
+                            <p className="w-1/2 text-start">Contact Person</p>
+                            <div className="w-1/2 ">
+                              <p><span>Contact person :</span>{item?.contactPerson?.name}</p>
+                              <p><span>Contact person :</span>{item?.contactPerson?.centralizedContactPerson}</p>
+                            </div>
+                          </div>
+                          <div className="flex h-auto">
+                            <p className="w-1/2 text-start">Contact Number</p>
+                            <div className="w-1/2 ">
+                              <p><span>Toll Number :</span>{item?.contactNumber?.tollNo}</p>
+                              <p><span>Contact Number :</span>{item?.contactNumber?.contactNo}</p>
+                              <p><span>Centralized Number :</span>{item?.contactNumber?.centralizedNo}</p>
+                            </div>
+                          </div>
+                        </div>,
+                      },
+                    ]}
+                  />
+                );
+            })}
+          </div>
+          <div className="w-1/2">
+            {ewasteData.map((item, index) => {
+              if (index % 2 !== 0)
+                return (
+                  <Collapse
+                    key={index}
+                    className="w-full mb-2"
+                    items={[
+                      {
+                        key: { index },
+                        label: item?.state,
+                        children: <div>
+                          <div className="flex h-auto">
+                            <p className="w-1/2 text-start">Location</p>
+                            <p className="w-1/2 ">{item?.location}</p>
+                          </div>
+                          <div className="flex h-auto">
+                            <p className="w-1/2 text-start">Address</p>
+                            <p className="w-1/2 ">{item?.address}</p>
+                          </div>
+                          <div className="flex h-auto">
+                            <p className="w-1/2 text-start">Contact Person</p>
+                            <div className="w-1/2 ">
+                              <p><span>Contact person :</span>{item?.contactPerson?.name}</p>
+                              <p><span>Contact person :</span>{item?.contactPerson?.centralizedContactPerson}</p>
+                            </div>
+                          </div>
+                          <div className="flex h-auto">
+                            <p className="w-1/2 text-start">Contact Number</p>
+                            <div className="w-1/2 ">
+                              <p><span>Toll Number :</span>{item?.contactNumber?.tollNo}</p>
+                              <p><span>Contact Number :</span>{item?.contactNumber?.contactNo}</p>
+                              <p><span>Centralized Number :</span>{item?.contactNumber?.centralizedNo}</p>
+                            </div>
+                          </div>
+                        </div>,
+                      },
+                    ]}
+                  />
+                );
+            })}
+          </div>
         </div>
       </div>
 
