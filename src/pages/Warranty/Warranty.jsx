@@ -1,50 +1,52 @@
-import { Button, Select } from "antd";
+import { Button, Input, Select } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
-import { useEffect, useState } from "react";
-import * as XLSX from "xlsx";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
-import { fontlg, fontsm, fontxs, mylg, pylg } from "../../utils/constant";
+import { fontlg, fontmd, fontsm, fontxs, mylg, pylg } from "../../utils/constant";
+import { warranty } from "../../staticData/warrantyData";
+import { useEffect, useState } from "react";
+
+//TOAST MESSAGE
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Warranty = () => {
-    const [warrantyData, setWarrantyData] = useState([])
-    console.log("warranty data", warrantyData)
+
+    const [data, setData] = useState(null)
+    const [inputValue, setInputValue] = useState("")
 
     useEffect(() => {
-        // Load the Excel file from the public directory
-        fetch(`${import.meta.env.VITE_APP_API_ENDPOINT}/excel_files/warrantyData.xlsx`)
-            .then((response) => response.arrayBuffer()) // Fetch the binary data
-            .then((buffer) => {
-                const workbook = XLSX.read(buffer, { type: "array" });
-                const sheetName = workbook.SheetNames[0];
-                const sheet = workbook.Sheets[sheetName];
-                const sheetData = XLSX.utils.sheet_to_json(sheet);
-                const data = sheetData.map(i => {
-                    return {
-
-                        label: i?.['Sr.No'],
-                        purchaseDate: i?.['Purchase Date'],
-                        warrentyDate: i?.['Warrenty Date']
-                    }
-                })
-
-                setWarrantyData(data);
-            })
-            .catch((error) => console.error("Error fetching Excel file:", error));
-    }, []);
+        if (inputValue.length === 0) {
+            setData(null)
+        }
+    }, [inputValue])
 
 
-    const onChange = (value) => {
-        console.log(`selected ${value}`);
-    };
-    const onSearch = (value) => {
-        console.log('search:', value);
-    };
+    const onSubmit = () => {
+        const data = warranty.find(i => i.serialNo === inputValue)
+
+        if (data === undefined) {
+            toast.error("Item not found,Please enter correct serial Number.", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                transition: Slide,
+            });
+        } else {
+            setData(data)
+        }
+    }
+
     return (
         <section>
             {/* Banner */}
             <div className="w-full mt-[100px] sm:mt-0">
                 <img
-                    src="/images/warranty/Warranty.png"
+                    src="./images/warranty/Warranty.png"
                     alt="Banner"
                     className="w-full h-auto"
                 />
@@ -75,35 +77,31 @@ const Warranty = () => {
                                 }}
                             /> */}
 
-                            {/* <Input
+                            <Input
                                 placeholder="Enter Serial Number"
-                                className="h-14 text-[22px] border-0"
-                            /> */}
-
-                            <Select
-                                showSearch
-                                placeholder="Enter Serial Number"
-                                optionFilterProp="label"
-                                onChange={onChange}
-                                className="w-full"
-                                onSearch={onSearch}
-                                options={warrantyData}
+                                className={`h-14 ${fontmd} border-0`}
+                                onChange={(e) => {
+                                    setInputValue(e.target.value)
+                                }}
                             />
+
                         </div>
 
                         <div>
-                            <Button type="primary" htmlType="submit" className={`2xs:h-8 xs:h-10 sm:h-12 lg:h-14 !w-52`}>
+                            <Button disabled={!inputValue.length} type="primary" htmlType="submit" className={`2xs:h-8 xs:h-10 sm:h-12 lg:h-14 !w-52`} onClick={() => {
+                                onSubmit()
+                            }}>
                                 <p className="${fontsm}  font-semibold">Submit</p>
                             </Button>
                         </div>
 
                         {/* warranty info section  */}
-                        <div className="flex flex-col sm:flex-row items-stretch justify-center w-full gap-2 sm:gap-1">
+                        {data !== null && <div className="flex flex-col sm:flex-row items-stretch justify-center w-full gap-2 sm:gap-1">
                             <div className="bg-[#f5f5f5] shadow-down flex-[1] flex-grow flex justify-center  items-center p-2 py-2 xs:py-4 sm:py-6 rounded-xl">
                                 <div className="text-center">
                                     <p className={`${fontsm} font-medium`}>SERIAL NUMBER</p>
                                     <p className={`${fontxs} font-light`}>
-                                        CWCP5040DNW052024A001
+                                        {data?.serialNo || "-"}
                                     </p>
                                 </div>
                             </div>
@@ -111,12 +109,14 @@ const Warranty = () => {
                                 <div className="text-center">
                                     <p className={`${fontsm} font-medium`}>STATUS</p>
                                     <p className={`${fontxs} font-light text-center`} >
-                                        Purchase Date : 12/01/2024 <br />
-                                        Warranty Date : 11/01/2025
+                                        Purchase Date : {data?.purchaseDate
+                                            || "-"} <br />
+                                        Warranty Date : {data?.warrantyDate
+                                            || "-"}
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div>}
 
 
 
@@ -128,6 +128,19 @@ const Warranty = () => {
             <>
                 <KeepInTouch />
             </>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+                transition={Slide}
+            />
         </section >
     );
 };

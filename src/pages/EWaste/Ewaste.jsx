@@ -70,7 +70,7 @@ const Ewaste = () => {
       {/* Banner Section */}
       <div className="w-full mt-[100px] sm:mt-0">
         <img
-          src="/images/ewaste/Banner.png"
+          src="./images/ewaste/Banner.png"
           alt="Banner"
           className="w-full h-auto"
         />

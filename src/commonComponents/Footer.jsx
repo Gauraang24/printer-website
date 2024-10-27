@@ -14,7 +14,7 @@ const Footer = () => {
                     {/* Logo Section */}
                     <div className="flex justify-center mb-6">
                         <img
-                            src='/images/home/cwc-logo-copyright.svg'
+                            src='./images/home/cwc-logo-copyright.svg'
                             alt="CWC Logo"
                             className="lg:w-[150px] lg:h-[128px] sm:w-[120px] sm:h-[78px] xs:w-[100px] xs:h-[72px] w-[80px] h-[66px]"
                         />

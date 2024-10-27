@@ -49,6 +49,7 @@ const Home = () => {
                   src={item.link}
                   alt={`${item.title} logo`}
                   className="xl:p-8 lg:p-6 md:p-6 sm:p-6 2xs:p-4"
+                  loading="lazy"
                 />
               </div>
             );
@@ -76,6 +77,7 @@ const Home = () => {
                 src="./images/home/printer.svg"
                 alt="Printer"
                 className="2xl:w-[500px] 2xl:h-[500px] xl:w-[400px] xl:h-[400px] lg:w-[300px] lg:h-[300px] md:w-[300px] md:h-[300px] sm:w-[250px] sm:h-250px"
+                loading="lazy"
               />
             </div>
             <div className="w-2/3 lg:w-1/2 2xs:hidden sm:flex">
@@ -136,6 +138,7 @@ const Home = () => {
                       src={i?.imgLink}
                       alt="Printer"
                       className="2xl:w-[500px] 2xl:h-[500px] xl:w-[400px] xl:[400px] lg:w-[300px] lg:h-[300px] md:w-[250px] md:h-[250px] sm:w-[200px] sm:h-[200px] 2xs:h-[100px] 2xs:w-[100px]"
+                      loading="lazy"
                     />
                   </div>
                   <div className="w-[80%] sm:w-1/2 ">
@@ -175,6 +178,7 @@ const Home = () => {
                             alt={img?.title}
                             key={img?.key}
                             className="w-[150px] h-auto lg:w-[100px] md:w-[90px] sm:w-[60px] 2xs:w-[60px]"
+                            loading="lazy"
                           />
                         );
                       })}
@@ -211,6 +215,7 @@ const Home = () => {
                   src={item.link}
                   alt={`${item.title} logo`}
                   className="xl:w-[180px] xl:h-[180px] lg:w-[150px] lg:h-[150px] md:w-[120px] md:h-[120px] sm:h-[80px] sm:w-[80px] 2xs:w-[60px] 2xs:h-[60px]"
+                  loading="lazy"
                 />
               </div>
             );

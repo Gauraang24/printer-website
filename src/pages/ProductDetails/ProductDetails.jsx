@@ -10,20 +10,20 @@ import { CustomDivider } from "../../commonComponents/CustomDivider";
 const ProductDetails = () => {
   const params = useParams();
   const [currentImg, setCurrentImg] = useState(
-    "/images/productPage/CWC_M2.png"
+    "./images/productPage/CWC_M2.png"
   );
   const staticData = [
     {
       key: "1",
-      link: "/images/productPage/CWC_M1.png",
+      link: "./images/productPage/CWC_M1.png",
     },
     {
       key: "1",
-      link: "/images/productPage/CWC_M2.png",
+      link: "./images/productPage/CWC_M2.png",
     },
     {
       key: "1",
-      link: "/images/productPage/CWC_M3.png",
+      link: "./images/productPage/CWC_M3.png",
     },
   ];
   return (
@@ -31,7 +31,7 @@ const ProductDetails = () => {
       {/* Banner Section */}
       <div className="w-full mt-[100px] sm:mt-0">
         <img
-          src="/images/productPage/Banner.jpg"
+          src="./images/productPage/Banner.jpg"
           alt="Banner"
           className="w-full h-auto"
         />

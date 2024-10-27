@@ -96,7 +96,7 @@ const Contact = () => {
       {/* Banner Section */}
       <div className="w-full mt-[100px] sm:mt-0">
         <img
-          src="/images/contactUs/Banner.png"
+          src="./images/contactUs/Banner.png"
           alt="Banner"
           className="w-full h-auto"
         />

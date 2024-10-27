@@ -29,7 +29,7 @@ const Downloads = () => {
       {/* Banner */}
       <div className="w-full mt-[100px] sm:mt-0">
         <img
-          src="/images/download/downloadBanner.png"
+          src="./images/download/downloadBanner.png"
           alt="Banner"
           className="w-full h-auto"
         />

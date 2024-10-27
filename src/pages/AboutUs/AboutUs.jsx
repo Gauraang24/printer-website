@@ -10,7 +10,7 @@ const AboutUs = () => {
       {/* Banner Section  */}
       <div className="w-full mt-[100px] sm:mt-0">
         <img
-          src="/images/aboutUs/Banner.png"
+          src="./images/aboutUs/Banner.png"
           alt="Banner"
           className="w-full h-auto"
         />

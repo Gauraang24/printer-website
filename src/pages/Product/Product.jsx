@@ -41,7 +41,7 @@ const Product = () => {
       {/* Banner Section */}
       <div className="w-full mt-[100px] sm:mt-0">
         <img
-          src="/images/productPage/Banner.jpg"
+          src="./images/productPage/Banner.jpg"
           alt="Banner"
           className="w-full h-auto"
         />
