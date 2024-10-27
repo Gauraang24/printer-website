@@ -1,17 +1,21 @@
-import { Collapse, Divider } from "antd";
+import { Collapse } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { donts, dos } from "../../staticData/ewaste";
 import { CheckCircleFilled, CheckOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
 import { ewasteData } from "../../../public/excel_files/ewastedata";
+import { fontlg, fontmd, fontsm, fontxs, mtlg, mylg, ptlg } from "../../utils/constant";
+import { CustomDivider } from "../../commonComponents/CustomDivider";
 
 const Ewaste = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
-  console.log("isLargeScreen", isLargeScreen);
+  const [isAboveSM, setIsAboveSM] = useState(window.innerHeight >= 640)
+  console.log("isAboveSm", isAboveSM)
 
   useEffect(() => {
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
+      setIsAboveSM(window.innerWidth >= 640)
     };
 
     window.addEventListener("resize", handleResize);
@@ -21,6 +25,47 @@ const Ewaste = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+
+  const returnCollapse = (item, index) => {
+    return <>
+      <Collapse
+        key={index}
+        className="w-full mb-2"
+        items={[
+          {
+            key: { index },
+            label: item?.state,
+            children: <div>
+              <div className="flex mb-2 h-auto">
+                <p className={`w-1/2 text-start font-bold ${fontxs}`}>Location</p>
+                <p className={`w-1/2 ${fontxs}`}>{item?.location}</p>
+              </div>
+              <div className="flex mb-2 h-auto">
+                <p className={`w-1/2 text-start font-bold ${fontxs}`}>Address</p>
+                <p className={`w-1/2 ${fontxs}`}>{item?.address}</p>
+              </div>
+              <div className="flex mb-2 h-auto">
+                <p className={`w-1/2 text-start font-bold ${fontxs}`}>Contact Person</p>
+                <div className={`w-1/2 ${fontxs}`}>
+                  <p><span className="font-bold">Contact person :</span>{item?.contactPerson?.name}</p>
+                  <p><span className="font-bold">Contact person :</span>{item?.contactPerson?.centralizedContactPerson}</p>
+                </div>
+              </div>
+              <div className="flex mb-2 h-auto">
+                <p className={`w-1/2 text-start font-bold ${fontxs}`}>Contact Number</p>
+                <div className={`w-1/2 ${fontxs}`}>
+                  <p><span className="font-bold">Toll Number :</span>{item?.contactNumber?.tollNo}</p>
+                  <p><span className="font-bold">Contact Number :</span>{item?.contactNumber?.contactNo}</p>
+                  <p><span className="font-bold">Centralized Number :</span>{item?.contactNumber?.centralizedNo}</p>
+                </div>
+              </div>
+            </div>,
+          },
+        ]}
+      />
+    </>
+  }
   return (
     <section>
       {/* Banner Section */}
@@ -32,13 +77,10 @@ const Ewaste = () => {
         />
       </div>
       {/* RoHS Compliance */}
-      <div className="w-[80%] mx-auto 2xs:mt-[30px] sm:mt-[40px] md:mt-[50px] lg:mt-[60px] xl:mt-[70px] 2xl:mt-[80px]">
-        <Divider className="">
-          <p className="2xs:text-[20px] sm:text-[23px] xmd:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[35px] font-bold px-8 md:px-10 lg:px-14 xl:px-20">
-            RoHS Compliance
-          </p>
-        </Divider>
-        <p className="text-justify lg:text-center 2xs:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[23px] 2xl:text-[25px]">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mtlg}`}>
+        <CustomDivider title={'RoHS Compliance'} />
+
+        <p className={`text-justify lg:text-center ${fontmd}`}>
           We are committed to environmental responsibility. Our products are
           designed for longevity and low energy consumption, complying with the
           RoHS directive, which restricts the use of hazardous substances like
@@ -48,21 +90,17 @@ const Ewaste = () => {
       </div>
 
       {/* Dos and Donts  */}
-      <div className="w-full 2xs:mt-[30px] sm:mt-[40px] md:mt-[50px] lg:mt-[60px] xl:mt-[70px] 2xl:mt-[80px]">
-        <div className="w-[80%] mx-auto">
-          <Divider className="">
-            <p className="2xs:text-[20px] sm:text-[23px] xmd:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[35px] font-bold  px-8 md:px-10 lg:px-14 xl:px-20">
-              {`Do's and Don’ts`}
-            </p>
-          </Divider>
+      <div className={`w-full ${mtlg}`}>
+        <div className="w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto">
+          <CustomDivider title={"Do's and Don’ts"} />
         </div>
 
         <div className="flex flex-col md:flex-row bg-[#49B749]">
-          <div className="w-full md:w-[48%] bg-[#49B749] flex items-center  flex-col xl:pt-20 lg:pt-16 md:pt-12 sm:pt-10 2xs:pt-8">
+          <div className={`w-full md:w-[48%] bg-[#49B749] flex items-center  flex-col ${ptlg}`}>
             <div className="h-[50px] w-[150px] lg:h-[90px] lg:w-[260px] border-4 border-white rounded-full flex justify-between gap-2 px-4 items-center mb-10">
               <CheckCircleFilled style={{ fontSize: isLargeScreen ? "55px" : "25px", color: "#fff" }} />
               <div className="flex-1">
-                <p className="text-white 2xs:text-[18px] sm:text-[20px] md:text-[24px] lg:text-[27px] xl:text-[31px] font-extrabold text-center">
+                <p className={`text-white ${fontlg} font-extrabold text-center`}>
                   {`Do's`}
                 </p>
               </div>
@@ -80,7 +118,7 @@ const Ewaste = () => {
                         // marginTop: "10px",
                       }}
                     />
-                    <p className="2xs:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[23px] 2xl:text-[25px] font-medium text-justify text-white">
+                    <p className={`${fontsm} font-medium text-justify text-white`}>
                       {i}
                     </p>
                   </div>
@@ -89,7 +127,7 @@ const Ewaste = () => {
             </div>
           </div>
           <div
-            className="w-full md:w-[52%] bg-[#ED2024] flex items-center flex-col xl:pt-20 lg:pt-16 md:pt-12 sm:pt-10 2xs:pt-8 lg:clip-path-none"
+            className={`w-full md:w-[52%] bg-[#ED2024] flex items-center flex-col ${ptlg} lg:clip-path-none`}
             style={{
               clipPath:
                 isLargeScreen && "polygon(3% 0, 100% 0, 100% 100%, 0% 100%)",
@@ -103,7 +141,7 @@ const Ewaste = () => {
                 }}
               />
               <div className="flex-1">
-                <p className="text-white 2xs:text-[18px] sm:text-[20px] md:text-[24px] lg:text-[27px] xl:text-[31px] font-extrabold text-center">
+                <p className={`text-white ${fontlg} font-extrabold text-center`}>
                   {`Dont's`}
                 </p>
               </div>
@@ -121,7 +159,7 @@ const Ewaste = () => {
                         // marginTop: "10px",
                       }}
                     />
-                    <p className="2xs:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[23px] 2xl:text-[25px] font-medium text-justify text-white">
+                    <p className={`${fontmd} font-medium text-justify text-white`}>
                       {i}
                     </p>
                   </div>
@@ -133,14 +171,11 @@ const Ewaste = () => {
       </div>
 
       {/* E-Waste Collection */}
-      <div className="w-[80%] mx-auto 2xs:my-[30px] sm:my-[40px] md:my-[50px] lg:my-[60px] xl:my-[70px] 2xl:my-[80px]">
-        <Divider className="">
-          <p className="2xs:text-[20px] sm:text-[23px] xmd:text-[25px] md:text-[28px] lg:text-[30px] xl:text-[35px] font-bold  px-8 md:px-10 lg:px-14 xl:px-20">
-            E-Waste Collection
-          </p>
-        </Divider>
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mylg} `}>
 
-        <p className="text-justify 2xs:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[23px] 2xl:text-[25px] mb-12">
+        <CustomDivider title={"E-Waste Collection"} />
+
+        <p className={`text-justify 2xs:text-[14px] ${fontsm} mb-12`}>
           We have signed an agreement with M/s. GLOBAL WASTE SOLUTION, who is an
           authorized dismantler and recycler having authorization from Haryana
           Pollution control board as our new Recycler, who shall be responsible
@@ -154,96 +189,34 @@ const Ewaste = () => {
         </p>
 
         <div className="w-full gap-2 justify-around flex">
-          <div className="w-1/2">
+          <div className={`${isAboveSM ? "w-1/2 " : "w-full"}`}>
             {ewasteData.map((item, index) => {
-              if (index % 2 === 0)
+              if (isAboveSM) {
+                if (index % 2 === 0)
+                  return (
+                    returnCollapse(item, index)
+                  );
+              } else {
                 return (
-                  <Collapse
-                    key={index}
-                    className="w-full mb-2"
-                    items={[
-                      {
-                        key: { index },
-                        label: item?.state,
-                        children: <div>
-                          <div className="flex h-auto">
-                            <p className="w-1/2 text-start">Location</p>
-                            <p className="w-1/2 ">{item?.location}</p>
-                          </div>
-                          <div className="flex h-auto">
-                            <p className="w-1/2 text-start">Address</p>
-                            <p className="w-1/2 ">{item?.address}</p>
-                          </div>
-                          <div className="flex h-auto">
-                            <p className="w-1/2 text-start">Contact Person</p>
-                            <div className="w-1/2 ">
-                              <p><span>Contact person :</span>{item?.contactPerson?.name}</p>
-                              <p><span>Contact person :</span>{item?.contactPerson?.centralizedContactPerson}</p>
-                            </div>
-                          </div>
-                          <div className="flex h-auto">
-                            <p className="w-1/2 text-start">Contact Number</p>
-                            <div className="w-1/2 ">
-                              <p><span>Toll Number :</span>{item?.contactNumber?.tollNo}</p>
-                              <p><span>Contact Number :</span>{item?.contactNumber?.contactNo}</p>
-                              <p><span>Centralized Number :</span>{item?.contactNumber?.centralizedNo}</p>
-                            </div>
-                          </div>
-                        </div>,
-                      },
-                    ]}
-                  />
+                  returnCollapse(item, index)
                 );
+              }
             })}
           </div>
-          <div className="w-1/2">
+          {isAboveSM && <div className="w-1/2">
             {ewasteData.map((item, index) => {
               if (index % 2 !== 0)
                 return (
-                  <Collapse
-                    key={index}
-                    className="w-full mb-2"
-                    items={[
-                      {
-                        key: { index },
-                        label: item?.state,
-                        children: <div>
-                          <div className="flex h-auto">
-                            <p className="w-1/2 text-start">Location</p>
-                            <p className="w-1/2 ">{item?.location}</p>
-                          </div>
-                          <div className="flex h-auto">
-                            <p className="w-1/2 text-start">Address</p>
-                            <p className="w-1/2 ">{item?.address}</p>
-                          </div>
-                          <div className="flex h-auto">
-                            <p className="w-1/2 text-start">Contact Person</p>
-                            <div className="w-1/2 ">
-                              <p><span>Contact person :</span>{item?.contactPerson?.name}</p>
-                              <p><span>Contact person :</span>{item?.contactPerson?.centralizedContactPerson}</p>
-                            </div>
-                          </div>
-                          <div className="flex h-auto">
-                            <p className="w-1/2 text-start">Contact Number</p>
-                            <div className="w-1/2 ">
-                              <p><span>Toll Number :</span>{item?.contactNumber?.tollNo}</p>
-                              <p><span>Contact Number :</span>{item?.contactNumber?.contactNo}</p>
-                              <p><span>Centralized Number :</span>{item?.contactNumber?.centralizedNo}</p>
-                            </div>
-                          </div>
-                        </div>,
-                      },
-                    ]}
-                  />
+                  returnCollapse(item, index)
                 );
             })}
-          </div>
+          </div>}
         </div>
       </div>
 
       {/* Keep In Touch  */}
       <KeepInTouch />
-    </section>
+    </section >
   );
 };
 

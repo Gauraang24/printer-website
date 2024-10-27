@@ -3,6 +3,7 @@
 export const fontlg = '2xl:text-[35px] xl:text-[30px] md:text-[25px] sm:text-[20px] text-[18px]';
 export const fontmd = '2xl:text-[24px] xl:text-[22px] md:text-[20px] sm:text-[18px] text-[16px]';
 export const fontsm = "2xl:text-[22px] xl:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]";
+export const fontxs = "2xl:text-[20px] xl:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]";
 
 
 export const pylg = "2xl:py-[55px] xl:py-[50px] md:py-[45px] sm:py-[40px] xs-py-[35px] py-[30px]";
