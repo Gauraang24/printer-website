@@ -1,7 +1,7 @@
 import { MailTwoTone } from '@ant-design/icons';
 import { Input } from 'antd';
 import HeadingFont from './Texts/HeadingFont';
-import { fontmd, pylg } from '../utils/constant';
+import { fontsm, pylg } from '../utils/constant';
 const { Search } = Input;
 
 const KeepInTouch = () => {
@@ -14,7 +14,7 @@ const KeepInTouch = () => {
         }}>
             <div className={`flex flex-col gap-3 justify-center items-center w-[80%] mx-auto ${pylg} `} >
                 <HeadingFont text={'Lets Keep In Touch!'} className={'border-b border-black font-bold'} />
-                <p className={`font-semibold ${fontmd} text-center`}>Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!</p>
+                <p className={`font-semibold ${fontsm} text-center`}>Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!</p>
                 <Search
                     placeholder="Enter Email ID"
                     allowClear

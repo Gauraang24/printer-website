@@ -8,7 +8,7 @@ import {
   serviceSupport,
 } from "../../staticData/Data";
 import HeadingFont from "../../commonComponents/Texts/HeadingFont";
-import { fontmd, pblg, pylg } from "../../utils/constant";
+import { fontmd, fontsm, pblg, pylg } from "../../utils/constant";
 
 
 const Home = () => {
@@ -153,10 +153,10 @@ const Home = () => {
                             key={spec.key}
                             className="flex justify-between items-center gap-2 w-full"
                           >
-                            <p className={`${fontmd} font-medium w-1/2`}>
+                            <p className={`${fontsm} font-medium w-1/2`}>
                               {spec?.title}
                             </p>
-                            <p className={`${fontmd} font-medium w-1/2 text-left`}>
+                            <p className={`${fontsm} font-medium w-1/2 text-left`}>
                               {spec?.desc}
                             </p>
                           </div>
