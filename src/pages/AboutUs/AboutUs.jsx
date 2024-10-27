@@ -2,6 +2,7 @@ import KeepInTouch from "../../commonComponents/KeepInTouch";
 import OurCertifications from "../../commonComponents/OurCertifications";
 import { aboutUs } from "../../staticData/aboutUs";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
+import { fontlg, fontmd, mblg } from "../../utils/constant";
 
 const AboutUs = () => {
   return (
@@ -16,21 +17,21 @@ const AboutUs = () => {
       </div>
 
       {/* Company Profile  */}
-      <div className="w-[80%] mx-auto mb-20">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
         <CustomDivider
           title={'Company Profile'}
         />
 
 
-        <div className="w-full flex lg:flex-row flex-col-reverse">
-          <div className="lg:w-[45%] w-full flex flex-col justify-between p-4">
+        <div className="w-full flex lg:flex-row flex-col-reverse gap-4">
+          <div className="lg:w-[45%] w-full flex flex-col justify-between">
             <p
-              className="lg:text-[30px] sm:text-[25px] text-[22px] font-bold mb-3"
+              className={`${fontlg} font-bold mb-3`}
               dangerouslySetInnerHTML={{
                 __html: aboutUs.companyProfile.heading,
               }}
             ></p>
-            <p className="lg:text-[25px] sm:text-[20px] text-[18px] font-medium">
+            <p className={`${fontmd} font-medium`}>
               {aboutUs.companyProfile.desc}
             </p>
           </div>
@@ -42,23 +43,23 @@ const AboutUs = () => {
       </div>
 
       {/* Image Section 1st */}
-      <div className="w-[80%] mx-auto mb-20">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg} `}>
         <img
           src="images/aboutUs/about_1.png"
-          className="w-full h-auto"
+          className="w-full h-auto "
           alt="banner"
         />
       </div>
 
       {/* Mid Info Section */}
-      <div className="w-[80%] mx-auto mb-20">
-        <p className="lg:text-[30px] sm:text-[25px] text-[18px] font-semibold text-justify">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+        <p className={`${fontmd} font-semibold text-justify`}>
           {aboutUs?.info}
         </p>
       </div>
 
       {/* Image Section 2nd */}
-      <div className="w-[80%] mx-auto mb-20">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
         <img
           src="images/aboutUs/about_2.png"
           className="w-full h-auto"
@@ -67,14 +68,14 @@ const AboutUs = () => {
       </div>
 
       {/* Mid Info Section 2nd */}
-      <div className="w-[80%] mx-auto mb-20">
-        <p className="lg:text-[30px] sm:text-[25px] text-[18px]  font-semibold text-justify">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+        <p className={`${fontmd} font-semibold text-justify`}>
           {aboutUs?.info2}
         </p>
       </div>
 
       {/* Image Section 3rd */}
-      <div className="w-[80%] mx-auto mb-20">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
         <div className="flex flex-col lg:flex-row justify-between">
           <img
             src="images/aboutUs/mission.png"
