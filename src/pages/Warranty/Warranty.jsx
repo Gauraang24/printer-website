@@ -99,12 +99,6 @@ const Warranty = () => {
 
                         {/* warranty info section  */}
                         <div className="flex flex-col sm:flex-row items-stretch justify-center w-full gap-2 sm:gap-1">
-                            {/* <div className="bg-[#f5f5f5] shadow-down flex-1 flex justify-center items-center py-2 xs:py-4 sm:py-6   rounded-t-xl sm:rounded-l-xl p-2">
-                                <div className="text-center">
-                                    <p className={`${fontsm} font-medium`}>Model</p>
-                                    <p className={`${fontxs} font-light`}>CWC P5040DN/W</p>
-                                </div>
-                            </div> */}
                             <div className="bg-[#f5f5f5] shadow-down flex-[1] flex-grow flex justify-center  items-center p-2 py-2 xs:py-4 sm:py-6 rounded-xl">
                                 <div className="text-center">
                                     <p className={`${fontsm} font-medium`}>SERIAL NUMBER</p>

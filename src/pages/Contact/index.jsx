@@ -14,6 +14,10 @@ import {
 } from "@ant-design/icons";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
 import { fontmd, fontsm, fontxs, mblg, plg, pSm } from "../../utils/constant";
+//TOAST MESSAGE
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Contact = () => {
   const [form] = Form.useForm();
@@ -30,10 +34,20 @@ const Contact = () => {
 
       const result = await response.text();
       console.log(result);
+
+      if (result.includes("Message sent successfully!")) {
+        toast.success("Message sent successfully!");
+      } else if (result.includes("Message delivery failed.")) {
+        toast.error("Message delivery failed.");
+      } else {
+        toast.error("Unexpected response. Please try again.");
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
+      toast.error("An error occurred. Please try again.");
     }
   };
+
 
   return (
     <section className="bg-[#f7f7f7]">
@@ -134,13 +148,6 @@ const Contact = () => {
           title={'PLEASE SUBMIT YOUR REQUEST'}
         />
 
-        {/* <Form
-          form={form}
-          name="validateOnly"
-          layout="vertical"
-          autoComplete="off"
-          className=" flex flex-col flex-wrap mb-10 mt-10"
-        > */}
         <Form form={form} name="validateOnly" layout="vertical" autoComplete="off" onFinish={handleFormSubmit}>
           <div className="flex flex-col md:flex-row md:gap-10">
             <Form.Item
@@ -212,6 +219,8 @@ const Contact = () => {
           ></iframe>
         </div>
       </div>
+
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
     </section>
   );
 };
