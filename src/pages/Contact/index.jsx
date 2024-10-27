@@ -13,6 +13,7 @@ import {
   YoutubeOutlined,
 } from "@ant-design/icons";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
+import { fontmd, fontsm, fontxs, mblg, mtlg, plg, pMd, pSm } from "../../utils/constant";
 
 const Contact = () => {
   const [form] = Form.useForm();
@@ -46,36 +47,36 @@ const Contact = () => {
       </div>
 
       {/* Service and Consultation */}
-      <div className="w-[80%] h-auto mx-auto mt-[80px]">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] h-auto mx-auto`}>
         <CustomDivider
           title={'SERVICE AND CONSULTATION'}
         />
 
-        <div className="w-[80%] mx-auto flex flex-col lg:flex-row justify-around items-center bg-white rounded-2xl shadow-2xl">
-          <div className="flex flex-col justify-center items-center m-4 lg:!p-6 p-4">
+        <div className="w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-around items-center bg-white rounded-2xl shadow-2xl">
+          <div className={`flex flex-col justify-center items-center m-4 ${pSm}`}>
             <div className="text-5xl"><MailOutlined /></div>
             <div className="mt-2">Complaints</div>
-            <div className="font-extrabold sm:text-lg xs:text-md 2xs:text-sm">service@ecompusell.com</div>
+            <div className={`font-extrabold ${fontxs}`}>service@ecompusell.com</div>
           </div>
 
           <div className="border-r-2 border-black h-28 hidden lg:block mx-4" />
 
-          <div className="flex flex-col justify-center items-center m-4 lg:!p-6 p-4">
+          <div className={`flex flex-col justify-center items-center m-4 ${pSm}`}>
             <div className="text-5xl"><MailOutlined /></div>
             <div className="mt-2">Business</div>
-            <div className="font-extrabold sm:text-lg xs:text-md 2xs:text-sm">info@ecompusell.com</div>
+            <div className={`font-extrabold ${fontxs}`}>info@ecompusell.com</div>
           </div>
         </div>
       </div>
 
 
       {/* Contact Details */}
-      <div className="w-[80%] mx-auto mt-[80px]">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto`}>
         <CustomDivider
           title={'CONTACT DETAILS'}
         />
 
-        <div className="w-[90%] lg:w-[80%] bg-white p-6 mx-auto rounded-2xl shadow-2xl flex flex-col lg:flex-row">
+        <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] bg-white ${plg} mx-auto rounded-2xl shadow-2xl flex flex-col lg:flex-row`}>
           <div className="pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 mt-6 lg:mt-0">
             <div className="flex flex-col gap-5 flex-1">
               {contactDetails.mobileNumbers.map((mobile, index) => (
@@ -84,9 +85,9 @@ const Contact = () => {
                     <PhoneTwoTone style={{ fontSize: "30px" }} />
                   </div>
                   <div>
-                    <p className="text-[16px] md:text-[18px] font-medium">{mobile.name}</p>
+                    <p className={`${fontxs} font-medium`}>{mobile.name}</p>
                     {mobile.number.map((number, idx) => (
-                      <p key={idx} className="text-[16px] md:text-[18px] font-medium">{number}</p>
+                      <p key={idx} className={`${fontxs} font-medium`}>{number}</p>
                     ))}
                   </div>
                 </div>
@@ -99,11 +100,11 @@ const Contact = () => {
           <div className="pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 mt-6 lg:mt-0">
             <div className="flex items-center gap-5">
               <EnvironmentOutlined style={{ fontSize: "30px" }} />
-              <p className="text-[16px] md:text-[18px] font-medium">{contactDetails?.address}</p>
+              <p className={`${fontxs} font-medium`}>{contactDetails?.address}</p>
             </div>
 
-            <div className="flex flex-col gap-5 lg:my-5">
-              <p className="text-[18px] md:text-[20px] font-bold lg:mt-6">SOCIAL MEDIA</p>
+            <div className="flex flex-col gap-5 lg:mt-5">
+              <p className={`${fontmd} font-bold lg:mt-6`}>SOCIAL MEDIA</p>
               <div className="flex justify-between gap-3">
                 {contactDetails?.socialMedia?.map((social, index) => {
                   const icons = {
@@ -128,7 +129,7 @@ const Contact = () => {
       </div>
 
       {/* FORM */}
-      <div className="w-[80%] mx-auto mt-[80px]">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto`}>
         <CustomDivider
           title={'PLEASE SUBMIT YOUR REQUEST'}
         />
@@ -151,9 +152,9 @@ const Contact = () => {
                   message: "This field is required",
                 },
               ]}
-              className="flex-1 text-[25px] font-semibold"
+              className={`flex-1 ${fontmd} font-semibold`}
             >
-              <Input className="h-14 text-[22px]" />
+              <Input className={`h-14 ${fontsm}`} />
             </Form.Item>
             <Form.Item
               name="email"
@@ -168,9 +169,9 @@ const Contact = () => {
                   message: "Please enter a valid email",
                 },
               ]}
-              className="flex-1 text-[25px] font-semibold"
+              className={`flex-1 ${fontmd} font-semibold`}
             >
-              <Input className="h-14 text-[22px]" />
+              <Input className={`h-14 ${fontsm}`} />
             </Form.Item>
           </div>
 
@@ -183,23 +184,23 @@ const Contact = () => {
                 message: "This field is required",
               },
             ]}
-            className="mb-10 text-[25px] font-semibold"
+            className={`mb-10  ${fontmd} font-semibold`}
           >
-            <Input.TextArea showCount maxLength={100} className="text-[22px]" />
+            <Input.TextArea showCount maxLength={500} className={`${fontsm}`} />
           </Form.Item>
 
           <Button type="primary" htmlType="submit" className="h-10">
-            <p className="text-[20px] font-semibold">Submit</p>
+            <p className={`${fontsm} font-semibold`}>Submit</p>
           </Button>
         </Form>
       </div>
 
       {/* MAP */}
-      <div className="w-[80%] mx-auto">
+      <div className="w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto">
         <CustomDivider
           title={'WHERE TO FIND US'}
         />
-        <div className="w-full mb-20">
+        <div className={`w-full ${mblg}`}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.058919603211!2d73.8415649!3d18.5262394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbb9c65eeb5e6516!2sAditya%20Centeegra!5e0!3m2!1sen!2sin!4v1667854641152!5m2!1sen!2sin"
             width="600"

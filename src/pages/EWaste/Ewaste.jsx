@@ -10,7 +10,6 @@ import { CustomDivider } from "../../commonComponents/CustomDivider";
 const Ewaste = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
   const [isAboveSM, setIsAboveSM] = useState(window.innerHeight >= 640)
-  console.log("isAboveSm", isAboveSM)
 
   useEffect(() => {
     const handleResize = () => {

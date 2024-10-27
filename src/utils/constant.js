@@ -5,6 +5,9 @@ export const fontmd = '2xl:text-[24px] xl:text-[22px] md:text-[20px] sm:text-[18
 export const fontsm = "2xl:text-[22px] xl:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]";
 export const fontxs = "2xl:text-[20px] xl:text-[18px] md:text-[16px] sm:text-[14px] text-[12px]";
 
+export const plg = "2xl:p-[55px] xl:p-[50px] md:p-[45px] sm:p-[40px] xs-p-[35px] p-[30px]";
+export const pMd = "2xl:p-[30px] xl:p-[28px] md:p-[26px] sm:p-[24px] xs-p-[22px] p-[20px]";
+export const pSm = "2xl:p-[23px] xl:p-[22px] md:p-[21px] sm:p-[20px] xs-p-[19px] p-[18px]";
 
 export const pylg = "2xl:py-[55px] xl:py-[50px] md:py-[45px] sm:py-[40px] xs-py-[35px] py-[30px]";
 export const pyMd = "2xl:py-[30px] xl:py-[28px] md:py-[26px] sm:py-[24px] xs-py-[22px] py-[20px]";
