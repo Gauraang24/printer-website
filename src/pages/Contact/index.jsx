@@ -13,7 +13,7 @@ import {
   YoutubeOutlined,
 } from "@ant-design/icons";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
-import { fontmd, fontsm, fontxs, mblg, mtlg, plg, pMd, pSm } from "../../utils/constant";
+import { fontmd, fontsm, fontxs, mblg, plg, pSm } from "../../utils/constant";
 
 const Contact = () => {
   const [form] = Form.useForm();
