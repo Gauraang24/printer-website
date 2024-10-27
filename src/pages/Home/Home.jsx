@@ -38,7 +38,7 @@ const Home = () => {
       </div>
       {/* CERTIFICATE SECTION */}
       <div>
-        <div className={`flex w-[90%] gap-4 sm:w-[80%] sm:max-w-[1200px] mx-auto justify-between items-center ${pylg}`}>
+        <div className={`flex gap-4 w-[90%]  sm:w-[80%] sm:max-w-[1200px] mx-auto justify-between items-center ${pylg}`}>
           {certificatesData.map((item) => {
             return (
               <div
