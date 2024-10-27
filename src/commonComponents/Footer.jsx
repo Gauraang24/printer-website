@@ -48,42 +48,42 @@ const Footer = () => {
                         <hr className="w-[50%]" />
                         <div className="flex gap-4 lg:gap-7 lg:mt-11 sm:mt-9 mt-4 cursor-pointer">
                             <img
-                                src="/images/footerIcons/Instagram.svg"
-                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
+                                src="./images/footerIcons/Instagram.svg"
+                                className="lg:w-[62px] lg:h-[62px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
                                 alt="Instagram Logo"
                             />
                             <img
-                                src="/images/footerIcons/Facebook.svg"
-                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
+                                src="./images/footerIcons/Facebook.svg"
+                                className="lg:w-[62px] lg:h-[62px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
                                 alt="Facebook Logo"
                             />
                             <img
-                                src="/images/footerIcons/LinkedIn.svg"
-                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
+                                src="./images/footerIcons/LinkedIn.svg"
+                                className="lg:w-[62px] lg:h-[62px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
                                 alt="LinkedIn Logo"
                             />
                             <img
-                                src="/images/footerIcons/TwitterX.svg"
-                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
+                                src="./images/footerIcons/TwitterX.svg"
+                                className="lg:w-[62px] lg:h-[62px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[32px]"
                                 alt="Twitter Logo"
                             />
                             <img
-                                src="/images/footerIcons/YouTube.svg"
-                                className="lg:w-[62px] lg:h-[62px] w-[50px] h-[50px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[36px]"
+                                src="./images/footerIcons/YouTube.svg"
+                                className="lg:w-[62px] lg:h-[62px] 2xs:w-[42px] 2xs:h-[42px] w-[32px] h-[36px]"
                                 alt="YouTube Logo"
                             />
                         </div>
                         <ul className="max-w-[445px] flex flex-col gap-7 mt-7">
                             <li className="flex items-center gap-4">
-                                <img src="/images/footerIcons/Phone.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px] " alt="Phone Icon" />
+                                <img src="./images/footerIcons/Phone.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px] " alt="Phone Icon" />
                                 <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">1800 212 7110</p>
                             </li>
                             <li className="flex items-center gap-4">
-                                <img src="/images/footerIcons/Mail.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px]" alt="Mail Icon" />
+                                <img src="./images/footerIcons/Mail.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px]" alt="Mail Icon" />
                                 <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">info@ecompusell.com</p>
                             </li>
                             <li className="flex items-center gap-4">
-                                <img src="/images/footerIcons/Location.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px]" alt="Location Icon" />
+                                <img src="./images/footerIcons/Location.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px]" alt="Location Icon" />
                                 <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">
                                     Office No. 13, 1st Floor, Aditya Centeegra, Fergusson College Rd, Shivajinagar, Pune, Maharashtra – 411004
                                 </p>

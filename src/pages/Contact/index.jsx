@@ -15,7 +15,7 @@ import {
 import { CustomDivider } from "../../commonComponents/CustomDivider";
 import { fontmd, fontsm, fontxs, mblg, plg, pSm } from "../../utils/constant";
 //TOAST MESSAGE
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
