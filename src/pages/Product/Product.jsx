@@ -1,4 +1,4 @@
-import { Divider, Segmented } from "antd";
+import { Segmented } from "antd";
 import { useEffect, useState } from "react";
 import {
   cartridgeCollection,
@@ -6,6 +6,8 @@ import {
 } from "../../staticData/productData";
 import { useNavigate } from "react-router-dom";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
+import { CustomDivider } from "../../commonComponents/CustomDivider";
+import { fontsm, mtMd, pblg, ptlg, pylg } from "../../utils/constant";
 
 const constants = {
   PRINTER: "1",
@@ -47,7 +49,7 @@ const Product = () => {
 
       {/* ProductSection */}
 
-      <div className="w-full xl:py-[63px] lg:py-[50px] md:py-[40px] sm:py-[30px] 2xs:py-[20px]">
+      <div className={`w-full ${ptlg}`}>
         <div className="w-max mx-auto">
           <Segmented
             options={options}
@@ -57,18 +59,16 @@ const Product = () => {
           />
         </div>
       </div>
-      <div className="w-[90%] mx-auto xl:pb-20 lg:pb-16 md:pb-14 sm:pb-10 2xs:pb-8">
+      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${pblg}`}>
         {productData.map((i, key) => {
           return (
             <div key={key}>
               <div>
-                <Divider className="!mb-8 !mt-0">
-                  <p className="xl:text-[35px] lg:text-[25px] md:text-[20px] font-bold">{i.heading}</p>
-                </Divider>
+                <CustomDivider title={i?.heading} />
               </div>
 
               {/* Grid layout for product items */}
-              <div className="grid grid-cols-3 2xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  2xs:gap-2 md:gap-6 sm:gap-6 lg:gap-8 justify-center pb-8">
+              <div className="grid grid-cols-3 2xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  2xs:gap-2 md:gap-6 sm:gap-6 lg:gap-8 justify-center">
                 {i.data.map((prod) => {
                   return (
                     <div
@@ -76,7 +76,7 @@ const Product = () => {
                       onClick={() =>
                         navigate(`/product-details/${prod.navigate}`)
                       }
-                      className="aspect-square 2xs:rounded-md md:rounded-lg lg:rounded-2xl bg-white flex flex-col items-center p-4 justify-center border"
+                      className="aspect-square 2xs:rounded-md md:rounded-lg lg:rounded-2xl bg-white flex flex-col items-center p-4 justify-center  h-full"
                     >
                       <div className="h-[100px] w-[100px] xs:h-[150px] xs:w-[150px] sm:w-[200px]  sm:h-[200px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] flex justify-center items-center">
                         <img
@@ -85,7 +85,7 @@ const Product = () => {
                           className="w-auto h-auto object-cover"
                         />
                       </div>
-                      <p className="font-bold xl:text-[22px] lg:text-[18px] md:text-[16px] sm:text-[14px] 2xs:text-[10px] 2xs:mt-3 sm:mt-5 lg:mt-8">{prod.title}</p>
+                      <p className={`font-bold text-center ${fontsm} ${mtMd}`}>{prod.title}</p>
                     </div>
                   );
                 })}

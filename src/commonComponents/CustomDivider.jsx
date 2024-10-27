@@ -6,7 +6,7 @@ export const CustomDivider = ({ title }) => {
     return (
         <div>
             <Divider
-                className={`${pylg}`}
+                className={`${pylg} !my-0`}
                 style={{
                     borderColor: "#000",
                 }}
