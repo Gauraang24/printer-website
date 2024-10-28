@@ -1,12 +1,73 @@
 import { Button, Input, Segmented } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { fontlg, fontmd, fontsm, fontxs, mblg, mylg, pMd, pSm, ptlg, pySm } from "../../utils/constant";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
+//TOAST MESSAGE
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const driverList = ['121PB5020', '225MB5020', '225PB5020', '230P5030', '235PB5020', '305P5040', '310P5040', '320FDMLP9100', '3020', '3020P5020', '3820DNW', '3820M5040', '3820P5010', '3820P5040', 'C311P211', 'C315301', 'Canon LPB121dn', 'M301DNW', 'PC311W']
+
+const manualList = ['305P5040', '320FDMLP9100', '3020P5020', '5040DNW', '2252010', 'C311P211', 'M2010DNW', 'M5030DNW', 'M5040DNW', 'MB5020NW', 'P5010DNW', 'P5030DNW', 'PB5020', 'PB5020NW', 'XOFF']
 
 const Downloads = () => {
   const [activeTab, setActiveTab] = useState("DRIVER");
-  console.log("active tab: ", activeTab)
+
+  const [hrefLink, setHrefLink] = useState("")
+
+  const [inputValue, setInputValue] = useState("")
+
+  useEffect(() => {
+    setHrefLink("")
+    setInputValue("")
+  }, [activeTab])
+
+  const onSubmit = () => {
+    if (activeTab === "DRIVER") {
+      const driverIncluded = driverList.includes(inputValue)
+      if (driverIncluded) {
+        setShowDownload(true)
+        setHrefLink(`/driver/${inputValue}.exe`)
+      } else {
+        toast.error("Driver not found.", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Slide,
+        })
+      }
+    } else if (activeTab === "USER MANUAL") {
+      const manualIncluded = manualList.includes(inputValue)
+
+      if (manualIncluded) {
+        setShowDownload(true)
+        setHrefLink(`/manual/${inputValue}.pdf`)
+      } else {
+
+        toast.error("Manual not found.", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          transition: Slide,
+        })
+
+      }
+
+    }
+  }
+
+
   const menus = [
     {
       label: "DRIVER",
@@ -41,9 +102,7 @@ const Downloads = () => {
             className={`${fontmd} px-4`}
             options={menus}
             onChange={(value) => {
-              console.log("value", value)
               const data = menus.find(i => i.value === value).label
-              console.log("Data", data)
               setActiveTab(data)
             }}
           />
@@ -87,40 +146,77 @@ const Downloads = () => {
                   <Input
                     placeholder="Enter Serial Number"
                     className={`h-14 ${fontmd}  border-0`}
+                    value={inputValue}
+                    onChange={(e) => {
+                      setInputValue(e.target.value)
+                    }}
                   />
                 </div>
 
-                <div>
+                <div className="flex gap-2">
                   <Button
                     type="primary"
                     htmlType="submit"
-                    className="!h-14 !w-52"
+                    disabled={!inputValue.length}
+                    className="!h-14 !w-1/2"
+                    onClick={() => {
+                      onSubmit()
+                    }}
                   >
                     <p className={`${fontxs} font-semibold`}>Submit</p>
                   </Button>
+
+                  <a href={hrefLink} download className="w-1/2">
+
+                    <Button
+                      type="primary"
+                      disabled={hrefLink === ""}
+                      className="!h-14 !w-full"
+                    >
+                      <p className={`${fontxs} font-medium`}>Download</p>
+                    </Button>
+                  </a>
                 </div>
 
-                <div className="flex items-stretch justify-center w-full gap-1">
-                  <div className={`bg-[#f5f5f5] shadow-down flex-1 flex justify-center items-center ${pySm} rounded-l-xl`}>
+                {/* {showDownload && <div className="flex items-stretch justify-center w-full gap-1"> */}
+                {/* <div className={`bg-[#f5f5f5] shadow-down flex-1 flex justify-center items-center ${pySm} rounded-l-xl`}>
                     <div className="text-center">
                       <p className={`${fontmd} font-medium`}>Model</p>
                       <p className={`${fontxs} font-light`}>CWC P5040DN/W</p>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className={`bg-[#f5f5f5] shadow-down flex-1 flex justify-center items-center ${pySm} rounded-r-xl`}>
-                    <p className={`${fontmd} font-medium`}>Download</p>
-                  </div>
-                </div>
+                {/* <a href={hrefLink} download >
+                    <div className={`bg-[#f5f5f5] shadow-down flex-1 flex justify-center items-center ${pySm} rounded-r-xl`}>
+                      <p className={`${fontmd} font-medium`}>Download</p>
+                    </div>
+                  </a> */}
+
+                {/* </div>} */}
               </>
             )}
           </div>
         </div>
-      </div>
+      </div >
 
       {/* Keep In Touch  */}
-      <KeepInTouch />
-    </section>
+      <>
+        <KeepInTouch />
+      </>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition={Slide}
+      />
+    </section >
   );
 };
 

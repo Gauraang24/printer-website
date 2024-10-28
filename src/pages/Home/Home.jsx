@@ -8,10 +8,12 @@ import {
   serviceSupport,
 } from "../../staticData/Data";
 import HeadingFont from "../../commonComponents/Texts/HeadingFont";
-import { fontmd, fontsm, pblg, pylg } from "../../utils/constant";
+import { fontmd, fontsm, fontxs, pblg, pylg } from "../../utils/constant";
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+  const navigate = useNavigate()
   return (
     <section className=" !h-full bg-[#f6f6f6]">
       {/* Banner Section */}
@@ -204,19 +206,29 @@ const Home = () => {
           <HeadingFont text={'Service & Support'} className={'border-b border-black font-bold'} />
         </div>
 
-        <div className={`flex w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto gap-4 sm:gap-0 justify-center sm:justify-between items-center ${pblg}`}>
+        <div className={`flex flex-col xs:flex-row w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto gap-4 sm:gap-0 justify-center sm:justify-between items-center ${pblg}`}>
           {serviceSupport.map((item, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col justify-center items-center 2xl:w-[350px] 2xl:h-[350px] xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] md:w-[200px] md:h-[200px] sm:h-[150px] sm:w-[150px] 2xs:h-[100px] 2xs:w-[100px]  bg-white rounded-2xl gap-5"
+                className="flex flex-row xs:flex-col p-5 xs:p-0 justify-between xs:justify-center items-center 2xl:w-[350px] 2xl:h-[350px] xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] md:w-[200px] md:h-[200px] sm:h-[150px] sm:w-[150px]  xs:h-[120px] xs:w-[120px] w-full h-auto  bg-white rounded-2xl gap-5  cursor-pointer"
+                onClick={() => {
+
+                  navigate(item?.navigate)
+                }}
               >
-                <img
-                  src={item.link}
-                  alt={`${item.title} logo`}
-                  className="xl:w-[180px] xl:h-[180px] lg:w-[150px] lg:h-[150px] md:w-[120px] md:h-[120px] sm:h-[80px] sm:w-[80px] 2xs:w-[60px] 2xs:h-[60px]"
-                  loading="lazy"
-                />
+                <div className="w-1/2 xs:w-full text-center">
+
+                  <img
+                    src={item.link}
+                    alt={`${item.title} logo`}
+                    className="xl:w-[180px] xl:h-[180px] lg:w-[150px] lg:h-[150px] md:w-[120px] md:h-[120px] sm:h-[80px] sm:w-[80px] 2xs:w-[60px] 2xs:h-[60px] mx-auto"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="w-1/2 xs:w-full text-center">
+                  <p className={`${fontxs}  font-bold`}>{item.title}</p>
+                </div>
               </div>
             );
           })}

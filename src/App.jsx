@@ -20,6 +20,7 @@ const Product = lazy(() => import('./pages/Product/Product.jsx'));
 const Ewaste = lazy(() => import('./pages/EWaste/Ewaste.jsx'));
 const Warranty = lazy(() => import('./pages/Warranty/Warranty.jsx'));
 const Downloads = lazy(() => import("./pages/Downloads/Downloads.jsx"))
+const Operational = lazy(() => import('./pages/Operational/Operational.jsx'))
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/warranty" element={<Warranty />} />
             <Route path="/download" element={<Downloads />} />
+            <Route path='/videos' element={<Operational />} />
 
           </Route>
         </Routes>

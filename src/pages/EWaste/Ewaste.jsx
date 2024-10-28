@@ -1,9 +1,9 @@
 import { Collapse } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
-import { donts, dos } from "../../staticData/ewaste";
+import { donts, dos, eWasteCollectionData } from "../../staticData/ewaste";
 import { CheckCircleFilled, CheckOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
-import { ewasteData } from "../../../public/excel_files/ewastedata";
+// import { eWasteCollectionData } from "./../../staticData/ewaste";
 import { fontlg, fontmd, fontsm, fontxs, mtlg, mylg, ptlg } from "../../utils/constant";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
 
@@ -189,7 +189,7 @@ const Ewaste = () => {
 
         <div className="w-full gap-2 justify-around flex">
           <div className={`${isAboveSM ? "w-1/2 " : "w-full"}`}>
-            {ewasteData.map((item, index) => {
+            {eWasteCollectionData.map((item, index) => {
               if (isAboveSM) {
                 if (index % 2 === 0)
                   return (
@@ -203,7 +203,7 @@ const Ewaste = () => {
             })}
           </div>
           {isAboveSM && <div className="w-1/2">
-            {ewasteData.map((item, index) => {
+            {eWasteCollectionData.map((item, index) => {
               if (index % 2 !== 0)
                 return (
                   returnCollapse(item, index)

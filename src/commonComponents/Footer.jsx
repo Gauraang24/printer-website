@@ -34,11 +34,13 @@ const Footer = () => {
                         <p className="lg:text-[30px] sm:text-[25px] text-[18px] font-bold lg:pb-6 sm:pb-4 pb-2">IMPORTANT&nbsp;LINKS</p>
                         <hr className="w-[50%]" />
                         <ul className="flex flex-col gap-7 lg:mt-11 sm:mt-9 mt-4">
-                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">Company Profile</li>
+                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium cursor-pointer" onClick={() => navigate('/about-us')}>Company Profile</li>
                             <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium cursor-pointer" onClick={() => navigate('/warranty')}>
                                 Warranty Check
                             </li>
-                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">Operation Videos</li>
+                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium cursor-pointer" onClick={() => {
+                                navigate("/videos")
+                            }}>Operation Videos</li>
                         </ul>
                     </div>
 

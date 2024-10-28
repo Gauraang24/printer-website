@@ -9,6 +9,8 @@ export const plg = "2xl:p-[55px] xl:p-[50px] md:p-[45px] sm:p-[40px] xs-p-[35px]
 export const pMd = "2xl:p-[30px] xl:p-[28px] md:p-[26px] sm:p-[24px] xs-p-[22px] p-[20px]";
 export const pSm = "2xl:p-[23px] xl:p-[22px] md:p-[21px] sm:p-[20px] xs-p-[19px] p-[18px]";
 
+export const pXSm = "2xl:p-[20px] xl:p-[18px] md:p-[16px] sm:p-[14px] xs-p-[12px] p-[10px]";
+
 export const pylg = "2xl:py-[55px] xl:py-[50px] md:py-[45px] sm:py-[40px] xs-py-[35px] py-[30px]";
 export const pyMd = "2xl:py-[30px] xl:py-[28px] md:py-[26px] sm:py-[24px] xs-py-[22px] py-[20px]";
 export const pySm = "2xl:py-[23px] xl:py-[22px] md:py-[21px] sm:py-[20px] xs-py-[19px] py-[18px]";

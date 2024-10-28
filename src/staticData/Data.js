@@ -26,16 +26,19 @@ export const serviceSupport = [
         title: "Warranty Check",
         link: "images/home/service-1.svg",
         name: "warranty",
+        navigate: "/warranty"
     },
     {
         title: "Driver",
         link: "images/home/service-2.svg",
         name: "driver",
+        navigate: "/download"
     },
     {
         title: "Operation Video",
         link: "images/home/service-3.svg",
         name: "operationVideo",
+        navigate: "/videos"
     },
 ];
 

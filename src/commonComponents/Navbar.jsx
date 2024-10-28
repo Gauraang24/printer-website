@@ -30,6 +30,8 @@ const Navbar = () => {
             setActiveTab("4");
         } else if (location.pathname === "/contact") {
             setActiveTab("5");
+        } else {
+            setActiveTab("");
         }
 
         updateLogo();
