@@ -33,7 +33,6 @@ const Contact = () => {
       });
 
       const result = await response.text();
-      console.log(result);
 
       if (result.includes("Message sent successfully!")) {
         toast("🦄 Message sent successfully!", {

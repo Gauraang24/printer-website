@@ -65,18 +65,6 @@ const Warranty = () => {
                             To Check Warranty Status, Enter your serial no.
                         </p>
                         <div className="border-b border-black w-full sm:w-[400px]">
-                            {/* <Search
-                                placeholder="Enter Serial Number"
-                                allowClear
-                                enterButton="Subscribe"
-                                size="large"
-                                className="custom-search h-14 text-[22px]"
-                                prefix={<MailTwoTone style={{ fontSize: '26px' }} />}
-                                onSearch={(e) => {
-                                    console.log("Enter Serial Number:", e?.target?.value);
-                                }}
-                            /> */}
-
                             <Input
                                 placeholder="Enter Serial Number"
                                 className={`h-14 ${fontmd} border-0`}
@@ -86,7 +74,6 @@ const Warranty = () => {
                             />
 
                         </div>
-
                         <div>
                             <Button disabled={!inputValue.length} type="primary" htmlType="submit" className={`2xs:h-8 xs:h-10 sm:h-12 lg:h-14 !w-52`} onClick={() => {
                                 onSubmit()
