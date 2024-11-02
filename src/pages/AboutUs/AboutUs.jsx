@@ -23,7 +23,7 @@ const AboutUs = () => {
         />
 
 
-        <div className="w-full flex lg:flex-row flex-col-reverse gap-4">
+        <div className="w-full flex lg:flex-row flex-col-reverse gap-6">
           <div className="lg:w-[45%] w-full flex flex-col justify-between">
             <p
               className={`${fontlg} font-bold mb-3`}
@@ -35,9 +35,27 @@ const AboutUs = () => {
               {aboutUs.companyProfile.desc}
             </p>
           </div>
-          <div className="lg:w-[55%] border-2">
-            {/* <img src="" alt="Logo" /> */}
-            IMAGE LOGO GOES HERE
+          <div className="lg:w-[55%] flex items-center">
+
+            <div
+              className="border border-gray-300 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              <div className="aspect-video overflow-hidden ">
+                <iframe
+                  className="w-full h-full"
+                  src={'https://www.youtube.com/embed/7OmRHGHMGsk?si=yM3VrCjptfV5CtJU&amp;start=1'}
+                  title={'CWC Logo Reveal: Unleashing Our Energy and Passion'}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-800 truncate">CWC Logo Reveal: Unleashing Our Energy and Passion</h3>
+                <p className="text-gray-600 text-sm mt-2 truncate">The CWC Laser Printer is a remarkable achievement for the Indian technology industry, as it showcases the ability of Indian engineers to innovate and develop cutting-edge technology. The printer is built using high-quality components and has been designed to deliver superior print quality, reliability, and affordability.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
