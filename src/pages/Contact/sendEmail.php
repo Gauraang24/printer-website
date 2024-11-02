@@ -6,7 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars(trim($_POST['intro']));
 
     // Set the recipient email
-    // $to = "your-email@hostinger.com";  // Replace with your Hostinger email
     $to = "garryappdroid@gmail.com";  // Replace with your Hostinger email
 
     // Subject of the email

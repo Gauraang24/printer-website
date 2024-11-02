@@ -3,6 +3,8 @@ import { Input } from 'antd';
 import HeadingFont from './Texts/HeadingFont';
 import { fontsm, pylg } from '../utils/constant';
 const { Search } = Input;
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const KeepInTouch = () => {
     return (
@@ -10,23 +12,53 @@ const KeepInTouch = () => {
             backgroundImage: 'url(/images/keep_in_touch_bg.svg)',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            // backgroundSize: 'cover', // Ensures the image scales properly
         }}>
-            <div className={`flex flex-col gap-3 justify-center items-center w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${pylg} `} >
+            <div className={`flex flex-col gap-3 justify-center items-center w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${pylg}`}>
                 <HeadingFont text={'Lets Keep In Touch!'} className={'border-b border-black font-bold'} />
-                <p className={`font-semibold ${fontsm} text-center`}>Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!</p>
+                <p className={`font-semibold ${fontsm} text-center`}>
+                    Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!
+                </p>
                 <Search
                     placeholder="Enter Email ID"
                     allowClear
                     enterButton="Subscribe"
                     size="large"
-                    className=''
-                    prefix={<MailTwoTone className='' style={{ fontSize: '26px' }} />}
-                    onSearch={(e) => {
-                        console.log("KEEP IN TOUCH COMPONENT :", e?.target?.value);
+                    prefix={<MailTwoTone style={{ fontSize: '26px' }} />}
+                    onSearch={(email) => {
+                        if (email) {
+                            // Redirect to mailto link with pre-filled content
+                            window.location.href = `mailto:garryappdroid@gmail.com?subject=Subscription Request&body=I would like to subscribe to your email. My email is: ${email}`;
+                        } else {
+                            // alert("");
+                            toast.error("Please enter a valid email address!", {
+                                position: "top-right",
+                                autoClose: 5000,
+                                hideProgressBar: false,
+                                closeOnClick: true,
+                                pauseOnHover: true,
+                                draggable: true,
+                                progress: undefined,
+                                theme: "colored",
+                                transition: Slide,
+                            });
+                            form.resetFields();
+                        }
                     }}
                 />
             </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+                transition={Slide}
+            />
         </div>
     );
 };
