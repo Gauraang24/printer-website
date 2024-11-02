@@ -1,11 +1,11 @@
 import { Collapse } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
-import { donts, dos, eWasteCollectionData } from "../../staticData/ewaste";
+import { donts, dos } from "../../staticData/ewaste";
 import { CheckCircleFilled, CheckOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
-// import { eWasteCollectionData } from "./../../staticData/ewaste";
 import { fontlg, fontmd, fontsm, fontxs, mtlg, mylg, ptlg } from "../../utils/constant";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
+import { ewasteData } from "../../staticData/ewastedata";
 
 const Ewaste = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
@@ -189,7 +189,8 @@ const Ewaste = () => {
 
         <div className="w-full gap-2 justify-around flex">
           <div className={`${isAboveSM ? "w-1/2 " : "w-full"}`}>
-            {eWasteCollectionData.map((item, index) => {
+            {ewasteData.map((item, index) => {
+              console.log("item :", item)
               if (isAboveSM) {
                 if (index % 2 === 0)
                   return (
@@ -203,7 +204,7 @@ const Ewaste = () => {
             })}
           </div>
           {isAboveSM && <div className="w-1/2">
-            {eWasteCollectionData.map((item, index) => {
+            {ewasteData.map((item, index) => {
               if (index % 2 !== 0)
                 return (
                   returnCollapse(item, index)
