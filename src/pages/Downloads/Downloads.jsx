@@ -15,6 +15,7 @@ const Downloads = () => {
   const [activeTab, setActiveTab] = useState("DRIVER");
 
   const [hrefLink, setHrefLink] = useState("")
+  console.log("href :", hrefLink)
 
   const [inputValue, setInputValue] = useState("")
 
@@ -27,8 +28,7 @@ const Downloads = () => {
     if (activeTab === "DRIVER") {
       const driverIncluded = driverList.includes(inputValue)
       if (driverIncluded) {
-        setShowDownload(true)
-        setHrefLink(`/driver/${inputValue}.exe`)
+        setHrefLink(`/drivers/${inputValue}.exe`)
       } else {
         toast.error("Driver not found.", {
           position: "top-right",
@@ -46,7 +46,6 @@ const Downloads = () => {
       const manualIncluded = manualList.includes(inputValue)
 
       if (manualIncluded) {
-        setShowDownload(true)
         setHrefLink(`/manual/${inputValue}.pdf`)
       } else {
 
@@ -149,6 +148,7 @@ const Downloads = () => {
                     value={inputValue}
                     onChange={(e) => {
                       setInputValue(e.target.value)
+                      setHrefLink("")
                     }}
                   />
                 </div>
