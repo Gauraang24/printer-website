@@ -13,7 +13,7 @@ const KeepInTouch = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
         }}>
-            <div className={`flex flex-col gap-3 justify-center items-center w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${pylg}`}>
+            <div className={`flex flex-col gap-3 justify-center items-center w-[90%] sm:max-w-[1200px] mx-auto ${pylg}`}>
                 <HeadingFont text={'Lets Keep In Touch!'} className={'border-b border-black font-bold'} />
                 <p className={`font-semibold ${fontsm} text-center`}>
                     Subscribe To Our Weekly Newsletter And Receive Exclusive Offers On Products You Love!

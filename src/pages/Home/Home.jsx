@@ -116,7 +116,7 @@ const Home = () => {
       </div>
 
       {/* PRODUCT SECTION */}
-      <div className="!w-[90%] sm:!w-[80%] !max-w-[1200px] mx-auto h-auto">
+      <div className="!w-[90%] !max-w-[1200px] mx-auto h-auto">
         <div className={`w-max mx-auto ${pylg}`}>
           <HeadingFont text={'Product'} className={'border-b border-black font-bold'} />
         </div>

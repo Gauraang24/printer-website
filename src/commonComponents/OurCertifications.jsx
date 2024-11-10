@@ -8,7 +8,7 @@ const OurCertifications = () => {
 
     const certificates = [...certificateData, ...certificateData,]
     return (
-        <div className="w-[80%] mx-auto">
+        <div className="w-[90%] sm:max-w-[1200px] mx-auto">
 
             <div className={`w-max mx-auto ${mtlg}`}>
                 <HeadingFont text={'OUR CERTIFICATION'} className={'border-b border-black font-bold'} />

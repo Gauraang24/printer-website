@@ -59,7 +59,7 @@ const Product = () => {
           />
         </div>
       </div>
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${pblg}`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${pblg}`}>
         {productData.map((i, key) => {
           return (
             <div key={key}>

@@ -77,7 +77,7 @@ const Operational = () => {
                 </div>
             </div>
 
-            <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+            <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
                 <CustomDivider title={activeTab} />
 
                 <div className="flex gap-5">

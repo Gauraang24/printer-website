@@ -88,6 +88,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "M5030DNW"
     },
     "cwc-m5040dnw": {
         title: "CWC M5040DN/W Multifunction Laser Printer",
@@ -195,6 +196,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "M5040DNW"
     },
     "cwc-m2010dnw": {
         title: "CWC M2010DN/W Multifunction Laser Printer",
@@ -273,6 +275,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "M2010DNW"
     },
 
     "cwc-mb5020nw": {
@@ -346,6 +349,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "MB5020NW"
     },
     "cwc-m1005nw": {
         title: "CWC 1020N/W Laser Printer",
@@ -414,6 +418,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "M1005NW"
     },
 
     //LASER PRINTER BELOW
@@ -522,6 +527,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "P5040DNW"
     },
     "cwc-p5030dnw": {
         title: "CWC M5030DN/W Multifunction Laser Printer",
@@ -612,6 +618,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "P5030DNW"
     },
     "cwc-p5010dnw": {
         title: "CWC P5010DN/W Laser Printer",
@@ -689,8 +696,9 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "P5010DNW"
     },
-    "cwc-PB5040dnw": {
+    "cwc-pb5040nw": {
         title: "CWC PB5020N/W Laser Printer",
         specSummary: [
             "Printing speed (A4): 23ppm",
@@ -761,6 +769,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "P5020" //update later
     },
     "cwc-p5020": {
         title: "CWC PB5020N/W Laser Printer",
@@ -833,6 +842,7 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "P5020"
     },
     "cwc-1020nw": {
         title: "CWC 1020N/W Laser Printer",
@@ -900,5 +910,6 @@ export const printerDetails = {
                 },
             ],
         },
+        imgFolderName: "1020NW"
     },
 };
