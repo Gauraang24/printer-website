@@ -17,6 +17,7 @@ const Downloads = () => {
   const [hrefLink, setHrefLink] = useState("")
 
   const [inputValue, setInputValue] = useState("")
+  // const [showDownload, setShowDownload] = useState(true)
 
   useEffect(() => {
     setHrefLink("")
@@ -27,7 +28,7 @@ const Downloads = () => {
     if (activeTab === "DRIVER") {
       const driverIncluded = driverList.includes(inputValue)
       if (driverIncluded) {
-        setShowDownload(true)
+        // setShowDownload(true)
         setHrefLink(`/driver/${inputValue}.exe`)
       } else {
         toast.error("Driver not found.", {
@@ -46,7 +47,7 @@ const Downloads = () => {
       const manualIncluded = manualList.includes(inputValue)
 
       if (manualIncluded) {
-        setShowDownload(true)
+        // setShowDownload(true)
         setHrefLink(`/manual/${inputValue}.pdf`)
       } else {
 

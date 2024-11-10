@@ -69,17 +69,17 @@ export const homeCarousalData = [
     {
         key: 1,
         alt: "Banner",
-        link: "images/home/home_main_banner.svg",
+        link: "images/home/home_main_banner_01.webp",
     },
     {
         key: 2,
         alt: "Banner",
-        link: "images/home/home_main_banner.svg",
+        link: "images/home/home_main_banner_02.webp",
     },
     {
         key: 3,
         alt: "Banner",
-        link: "images/home/home_main_banner.svg",
+        link: "images/home/home_main_banner_03.webp",
     },
 ];
 

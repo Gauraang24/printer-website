@@ -7,7 +7,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
-import { fontsm, mtMd, pblg, ptlg, pylg } from "../../utils/constant";
+import { fontsm, mtMd, pblg, ptlg } from "../../utils/constant";
 
 const constants = {
   PRINTER: "1",

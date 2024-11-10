@@ -190,7 +190,6 @@ const Ewaste = () => {
         <div className="w-full gap-2 justify-around flex">
           <div className={`${isAboveSM ? "w-1/2 " : "w-full"}`}>
             {ewasteData.map((item, index) => {
-              console.log("item :", item)
               if (isAboveSM) {
                 if (index % 2 === 0)
                   return (

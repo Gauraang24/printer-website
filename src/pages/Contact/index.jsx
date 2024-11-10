@@ -17,6 +17,7 @@ import { fontmd, fontsm, fontxs, mblg, plg, pSm } from "../../utils/constant";
 //TOAST MESSAGE
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Reveal from "../../commonComponents/Animation/Reveal";
 
 
 const Contact = () => {
@@ -103,9 +104,11 @@ const Contact = () => {
 
       {/* Service and Consultation */}
       <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] h-auto mx-auto`}>
-        <CustomDivider
-          title={'SERVICE AND CONSULTATION'}
-        />
+        <Reveal>
+          <CustomDivider
+            title={'SERVICE AND CONSULTATION'}
+          />
+        </Reveal>
 
         <div className="w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-around items-center bg-white rounded-2xl shadow-2xl">
           <div className={`flex flex-col justify-center items-center m-4 ${pSm}`}>

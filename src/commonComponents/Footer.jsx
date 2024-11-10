@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import FlipLink from "./Animation/FlipLink";
 
 
 const Footer = () => {
@@ -25,7 +26,7 @@ const Footer = () => {
                         <p className="lg:text-[30px] sm:text-[25px] text-[18px] font-bold lg:pb-6 sm:pb-4 pb-2">SHOP&nbsp;ONLINE</p>
                         <hr className="w-[50%]" />
                         <ul className="flex flex-col gap-7 lg:mt-11 sm:mt-9 mt-4">
-                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">AMAZON</li>
+                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium"> <FlipLink lineHeight="15px">AMAZON</FlipLink></li>
                         </ul>
                     </div>
 
@@ -34,13 +35,20 @@ const Footer = () => {
                         <p className="lg:text-[30px] sm:text-[25px] text-[18px] font-bold lg:pb-6 sm:pb-4 pb-2">IMPORTANT&nbsp;LINKS</p>
                         <hr className="w-[50%]" />
                         <ul className="flex flex-col gap-7 lg:mt-11 sm:mt-9 mt-4">
-                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium cursor-pointer" onClick={() => navigate('/about-us')}>Company Profile</li>
+                            <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium cursor-pointer" onClick={() => navigate('/about-us')}>
+                                <FlipLink lineHeight="15px">Company Profile</FlipLink>
+                            </li>
                             <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium cursor-pointer" onClick={() => navigate('/warranty')}>
-                                Warranty Check
+
+                                <FlipLink lineHeight="16px">Warranty Check</FlipLink>
                             </li>
                             <li className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium cursor-pointer" onClick={() => {
                                 navigate("/videos")
-                            }}>Operation Videos</li>
+                            }}>
+                                <FlipLink lineHeight="16px">Operational  Vids</FlipLink>
+
+                            </li>
+
                         </ul>
                     </div>
 
@@ -78,15 +86,15 @@ const Footer = () => {
                         <ul className="max-w-[445px] flex flex-col gap-7 mt-7">
                             <li className="flex items-center gap-4">
                                 <img src="./images/footerIcons/Phone.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px] " alt="Phone Icon" />
-                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">1800 212 7110</p>
+                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium text-[#ffffffa0]">1800 212 7110 </p>
                             </li>
                             <li className="flex items-center gap-4">
                                 <img src="./images/footerIcons/Mail.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px]" alt="Mail Icon" />
-                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">info@ecompusell.com</p>
+                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium text-[#ffffffa0]">info@ecompusell.com</p>
                             </li>
                             <li className="flex items-center gap-4">
                                 <img src="./images/footerIcons/Location.svg" className="lg:w-[40px] lg:h-[40px] sm:w-[35px] sm:h-[35px] w-[25px] h-[25px]" alt="Location Icon" />
-                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium">
+                                <p className="lg:text-[18px] sm:text-[14px] text-[10px] font-medium text-[#ffffffa0]">
                                     Office No. 13, 1st Floor, Aditya Centeegra, Fergusson College Rd, Shivajinagar, Pune, Maharashtra – 411004
                                 </p>
                             </li>
