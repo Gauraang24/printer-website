@@ -13,6 +13,7 @@ const AboutUs = () => {
           src="./images/aboutUs/Banner.png"
           alt="Banner"
           className="w-full h-auto"
+          loading="lazy"
         />
       </div>
 
@@ -66,6 +67,7 @@ const AboutUs = () => {
           src="images/aboutUs/about_1.png"
           className="w-full h-auto "
           alt="banner"
+          loading="lazy"
         />
       </div>
 
@@ -82,6 +84,7 @@ const AboutUs = () => {
           src="images/aboutUs/about_2.png"
           className="w-full h-auto"
           alt="banner"
+          loading="lazy"
         />
       </div>
 
@@ -99,16 +102,18 @@ const AboutUs = () => {
             src="images/aboutUs/mission.png"
             alt="our mission"
             className="lg:w-[47%] w-full h-auto mb-6"
+            loading="lazy"
           />
           <img
             src="images/aboutUs/vision.png"
             alt="our vision"
             className="lg:w-[47%] w-full h-auto mb-6"
+            loading="lazy"
           />
         </div>
 
         <div>
-          <img src="images/aboutUs/aim.png" alt="aim" className="w-full h-auto" />
+          <img src="images/aboutUs/aim.png" alt="aim" className="w-full h-auto" loading="lazy" />
         </div>
       </div>
 

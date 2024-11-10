@@ -61,6 +61,7 @@ const Operational = () => {
                     src="./images/download/downloadBanner.png"
                     alt="Banner"
                     className="w-full h-auto"
+                    loading="lazy"
                 />
             </div>
 

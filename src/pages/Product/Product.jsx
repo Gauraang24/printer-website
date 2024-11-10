@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
 import { fontsm, mtMd, pblg, ptlg } from "../../utils/constant";
+import Reveal from "../../commonComponents/Animation/Reveal";
 
 const constants = {
   PRINTER: "1",
@@ -39,24 +40,29 @@ const Product = () => {
   return (
     <section className="bg-[#f7f7f7]">
       {/* Banner Section */}
-      <div className="w-full mt-[100px] sm:mt-0">
-        <img
-          src="./images/productPage/Banner.jpg"
-          alt="Banner"
-          className="w-full h-auto"
-        />
-      </div>
+      <Reveal width="w-full">
+        <div className="w-full mt-[100px] sm:mt-0">
+          <img
+            src="./images/productPage/Banner.jpg"
+            alt="Banner"
+            className="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      </Reveal>
 
       {/* ProductSection */}
 
       <div className={`w-full ${ptlg}`}>
         <div className="w-max mx-auto">
-          <Segmented
-            options={options}
-            onChange={(value) => {
-              setActiveTab(value);
-            }}
-          />
+          <Reveal width="w-max">
+            <Segmented
+              options={options}
+              onChange={(value) => {
+                setActiveTab(value);
+              }}
+            />
+          </Reveal>
         </div>
       </div>
       <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${pblg}`}>
@@ -83,6 +89,7 @@ const Product = () => {
                           src={prod.link}
                           alt={prod.title}
                           className="w-auto h-auto object-cover"
+                          loading="lazy"
                         />
                       </div>
                       <p className={`font-bold text-center ${fontsm} ${mtMd}`}>{prod.title}</p>

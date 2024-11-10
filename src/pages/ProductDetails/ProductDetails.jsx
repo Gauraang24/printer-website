@@ -34,6 +34,7 @@ const ProductDetails = () => {
           src="./images/productPage/Banner.jpg"
           alt="Banner"
           className="w-full h-auto"
+          loading="lazy"
         />
       </div>
 
@@ -57,7 +58,7 @@ const ProductDetails = () => {
                       setCurrentImg(i?.link);
                     }}
                   >
-                    <img src={i?.link} alt="" className="" />
+                    <img src={i?.link} alt="" className="" loading="lazy" />
                   </div>
                 </>
               );
@@ -76,7 +77,7 @@ const ProductDetails = () => {
                       setCurrentImg(i?.link);
                     }}
                   >
-                    <img src={i?.link} alt="" className="" />
+                    <img src={i?.link} alt="" className="" loading="lazy" />
                   </div>
                 </>
               );
@@ -84,7 +85,7 @@ const ProductDetails = () => {
           </div>
           <div className="w-[90%]  sm:w-[80%] sm:max-w-[1200px]">
             <div className="w-full aspect-square bg-white rounded-lg flex items-center justify-center p-4 shadow-xl">
-              <img src={currentImg} alt="" className="w-full" />
+              <img src={currentImg} alt="" className="w-full" loading="lazy" />
             </div>
           </div>
         </div>

@@ -78,12 +78,13 @@ const Navbar = () => {
         <>
             <nav className={` w-full py-3 ${scrolled ? "bg-white shadow-2xl" : "bg-white sm:bg-transparent"} transition-colors duration-300`}>
                 <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center px-4">
-                    <img src={logoSrc} alt="LogoCWC " className="lg:w-28 lg:h-[65px] sm:w-24 sm:h-[50px] xs:w-20 xs:h-[40px] w-18 h-[32px] ms-3" />
+                    <img src={logoSrc} alt="LogoCWC " className="lg:w-28 lg:h-[65px] sm:w-24 sm:h-[50px] xs:w-20 xs:h-[40px] w-18 h-[32px] ms-3" loading="lazy" />
                     <img
                         src="./images/home/Menu.svg"
                         alt="Menu"
                         onClick={showDrawer}
                         className="cursor-pointer block sm:hidden xs:w-10 w-8 me-2"
+                        loading="lazy"
                     />
                     <ul className='hidden sm:flex gap-3 md:gap-5 lg:gap-6 ml-4 md:ml-6'>
                         {navList.map(list => (
@@ -110,6 +111,7 @@ const Navbar = () => {
                                 alt="Close Icon"
                                 onClick={closeDrawer}
                                 className="w-[35px] h-[35px] cursor-pointer"
+                                loading="lazy"
                             />
                         </div>
 
@@ -117,7 +119,7 @@ const Navbar = () => {
                             {navList.map(list => (
                                 <li key={list.key} className={`flex justify-between items-center font-bold text-xl py-4 border-b ${activeTab === list.key ? 'border-b-2 border-blue-500 text-blue-500' : 'text-black'}`}>
                                     <Link to={list.link} className='flex-1' onClick={() => handleNavClick(list.key)}>{list.title}</Link>
-                                    <img src="./images/home/arrow.svg" alt="Arrow Icon" className="ml-3 w-[30px]" />
+                                    <img src="./images/home/arrow.svg" alt="Arrow Icon" className="ml-3 w-[30px]" loading="lazy" />
                                 </li>
                             ))}
                         </ul>

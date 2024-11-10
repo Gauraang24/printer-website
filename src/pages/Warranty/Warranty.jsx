@@ -49,6 +49,7 @@ const Warranty = () => {
                     src="./images/warranty/Warranty.png"
                     alt="Banner"
                     className="w-full h-auto"
+                    loading="lazy"
                 />
             </div>
 
