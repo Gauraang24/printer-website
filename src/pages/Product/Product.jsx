@@ -82,7 +82,7 @@ const Product = () => {
                       onClick={() =>
                         navigate(`/product-details/${prod.navigate}`)
                       }
-                      className="aspect-square 2xs:rounded-md md:rounded-lg lg:rounded-2xl bg-white flex flex-col items-center p-4 justify-center  h-full"
+                      className="aspect-square 2xs:rounded-md md:rounded-lg lg:rounded-2xl bg-white flex flex-col items-center p-4 justify-center h-full transition-all duration-500 ease-in-out hover:shadow-2xl hover:border border-gray-300"
                     >
                       <div className="h-[100px] w-[100px] xs:h-[150px] xs:w-[150px] sm:w-[200px]  sm:h-[200px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] flex justify-center items-center">
                         <img

@@ -32,7 +32,7 @@ const FlipLink = ({ children, href, lineHeight }) => {
                             delay: STAGGER * i,
                         }}
                         // Apply `group-hover` to show border when the parent is hovered
-                        className="text-[#ffffffa0] inline-block border-transparent group-hover:border-white border-b-2"
+                        className="text-[#ffffffa0] inline-block border-transparent"
                         key={i}
                     >
                         {l === " " ? "\u00A0" : l}
@@ -56,7 +56,7 @@ const FlipLink = ({ children, href, lineHeight }) => {
                             delay: STAGGER * i,
                         }}
                         // Apply `group-hover` to show border when the parent is hovered
-                        className="inline-block border-transparent group-hover:border-white border-b-2"
+                        className="inline-block border-transparent text-blue-500"
                         key={i}
                     >
                         {l === " " ? "\u00A0" : l}

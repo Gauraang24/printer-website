@@ -197,3 +197,22 @@ body {
   opacity: 1;
   border-radius: 16px;
 }
+
+
+/* //3d hover effect  */
+
+/* Outer shadow for 3D effect */
+.outer-shadow {
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3), -6px -6px 10px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Inner shadow for recessed effect */
+.inner-shadow {
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Hover effect for a more pronounced 3D feel */
+.hover-3d:hover {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4), -8px -8px 12px rgba(255, 255, 255, 0.6);
+}

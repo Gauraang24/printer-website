@@ -1,6 +1,7 @@
 export const printerDetails = {
     "cwc-m5030dnw": {
         title: "CWC M5030DN/W Multifunction Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 33ppm",
             "Connection method: Network, WiFi and USB",
@@ -92,6 +93,7 @@ export const printerDetails = {
     },
     "cwc-m5040dnw": {
         title: "CWC M5040DN/W Multifunction Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 43ppm",
             "Connection method: Network, WiFi and USB",
@@ -200,6 +202,7 @@ export const printerDetails = {
     },
     "cwc-m2010dnw": {
         title: "CWC M2010DN/W Multifunction Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 23ppm",
             "Connection method: Network, WiFi and USB",
@@ -277,9 +280,9 @@ export const printerDetails = {
         },
         imgFolderName: "M2010DNW"
     },
-
     "cwc-mb5020nw": {
         title: "CWC MB5020N/W Multifunction Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 23ppm",
             "Connection method: Network, WiFi and USB",
@@ -353,6 +356,7 @@ export const printerDetails = {
     },
     "cwc-m1005nw": {
         title: "CWC 1020N/W Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 20ppm",
             "Connection method: Network and USB",
@@ -424,6 +428,7 @@ export const printerDetails = {
     //LASER PRINTER BELOW
     "cwc-p5040dnw": {
         title: "CWC P5040DN/W Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 43ppm",
             "Connection method: Network, WiFi and USB",
@@ -531,6 +536,7 @@ export const printerDetails = {
     },
     "cwc-p5030dnw": {
         title: "CWC M5030DN/W Multifunction Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 33ppm",
             "Connection method: Network, WiFi and USB",
@@ -622,6 +628,7 @@ export const printerDetails = {
     },
     "cwc-p5010dnw": {
         title: "CWC P5010DN/W Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 23ppm",
             "Connection method: Network, WiFi and USB",
@@ -700,6 +707,7 @@ export const printerDetails = {
     },
     "cwc-pb5040nw": {
         title: "CWC PB5020N/W Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 23ppm",
             "Connection method: Network, WiFi and USB",
@@ -773,6 +781,7 @@ export const printerDetails = {
     },
     "cwc-p5020": {
         title: "CWC PB5020N/W Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 23ppm",
             "Connection method: Network, WiFi and USB",
@@ -846,6 +855,7 @@ export const printerDetails = {
     },
     "cwc-1020nw": {
         title: "CWC 1020N/W Laser Printer",
+        type: "printer",
         specSummary: [
             "Printing speed (A4): 20ppm",
             "Connection method: Network and USB",
@@ -912,4 +922,134 @@ export const printerDetails = {
         },
         imgFolderName: "1020NW"
     },
+
+    //CARTRIDGES DATA
+    "cwc-tw502S": {
+        title: "CWC TW502S Cartridge",
+        type: "cartridge",
+
+        specSummary: [
+            "test: test",
+            "test: test",
+            "test:test",
+        ],
+        details: {
+            test: [
+                {
+                    title: "test",
+                    desc: "test",
+                },
+            ],
+            test1: [
+                {
+                    title: "test1",
+                    desc: "test1",
+                },
+            ],
+
+        },
+        imgFolderName: "1020NW"
+    },
+    "cwc-te201l": {
+        title: "CWC TW502S Cartridge",
+        type: "cartridge",
+        specSummary: [
+            "test: test",
+            "test: test",
+            "test:test",
+        ],
+        details: {
+            test: [
+                {
+                    title: "test",
+                    desc: "test",
+                },
+            ],
+            test1: [
+                {
+                    title: "test1",
+                    desc: "test1",
+                },
+            ],
+
+        },
+        imgFolderName: "1020NW"
+    },
+    "cwc-te503s": {
+        title: "CWC TW502S Cartridge",
+        type: "cartridge",
+        specSummary: [
+            "test: test",
+            "test: test",
+            "test:test",
+        ],
+        details: {
+            test: [
+                {
+                    title: "test",
+                    desc: "test",
+                },
+            ],
+            test1: [
+                {
+                    title: "test1",
+                    desc: "test1",
+                },
+            ],
+
+        },
+        imgFolderName: "1020NW"
+    },
+    "cwc-te504s": {
+        title: "CWC TW502S Cartridge",
+        type: "cartridge",
+        specSummary: [
+            "test: test",
+            "test: test",
+            "test:test",
+        ],
+        details: {
+            test: [
+                {
+                    title: "test",
+                    desc: "test",
+                },
+            ],
+            test1: [
+                {
+                    title: "test1",
+                    desc: "test1",
+                },
+            ],
+
+        },
+        imgFolderName: "1020NW"
+    },
+    "cwc-102-2k": {
+        title: "CWC TW502S Cartridge",
+        type: "cartridge",
+        specSummary: [
+            "test: test",
+            "test: test",
+            "test:test",
+        ],
+        details: {
+            test: [
+                {
+                    title: "test",
+                    desc: "test",
+                },
+            ],
+            test1: [
+                {
+                    title: "test1",
+                    desc: "test1",
+                },
+            ],
+
+        },
+        imgFolderName: "1020NW"
+    }
+
+
 };

@@ -98,6 +98,7 @@ const ProductDetails = () => {
           </div>
         </div>
 
+
         <div className="mt-5 sm:mt-0 sm:pl-8 w-full sm:w-1/2 flex flex-col justify-between ">
           <div className="flex flex-col 2xs:gap-4 lg:gap-8">
             <p className={`font-bold ${fontlg}`}>
@@ -115,13 +116,14 @@ const ProductDetails = () => {
             </div>
           </div>
           <div className={`flex gap-2 ${mtMd}`}>
-            <Button className="w-1/2 rounded-sm sm:rounded-md md:rounded-lg lg:rounded-xl xl:rounded-2x h-12 xs:h-14 xmd:h-14 sm:h-14 lg:h-16 xl:h-20 shadow-xl " onClick={() => {
+            {printerDetails[params.productId]?.type === "printer" && <Button className="w-1/2 rounded-sm sm:rounded-md md:rounded-lg lg:rounded-xl xl:rounded-2x h-12 xs:h-14 xmd:h-14 sm:h-14 lg:h-16 xl:h-20 shadow-xl " onClick={() => {
               navigate("/download")
             }}>
               <p className={`${fontsm} font-bold`}>
                 Get Drivers
               </p>
-            </Button>
+            </Button>}
+
             <Button
               className="w-1/2 rounded-sm sm:rounded-md md:rounded-lg lg:rounded-xl xl:rounded-2xl h-12 xs:h-14 xmd:h-14 sm:h-14 lg:h-16 xl:h-20 shadow-xl "
               title="Enquire Now"
