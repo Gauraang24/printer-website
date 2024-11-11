@@ -15,6 +15,7 @@ const Downloads = () => {
   const [activeTab, setActiveTab] = useState("DRIVER");
 
   const [hrefLink, setHrefLink] = useState("")
+  console.log("href :", hrefLink)
 
   const [inputValue, setInputValue] = useState("")
   // const [showDownload, setShowDownload] = useState(true)
@@ -151,6 +152,7 @@ const Downloads = () => {
                     value={inputValue}
                     onChange={(e) => {
                       setInputValue(e.target.value)
+                      setHrefLink("")
                     }}
                   />
                 </div>
