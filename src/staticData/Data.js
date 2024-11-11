@@ -83,6 +83,7 @@ export const homeCarousalData = [
     },
 ];
 
+
 export const productCarousalData = [
     {
         imgLink: "images/home/printer.svg",
