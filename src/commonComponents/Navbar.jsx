@@ -4,7 +4,7 @@ import { Drawer } from "antd";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
-    const [logoSrc, setLogoSrc] = useState('./images/nav-logo.svg');
+    const [logoSrc, setLogoSrc] = useState('/images/nav-logo.svg');
     const [drawerVisible, setDrawerVisible] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.outerWidth);
     const [activeTab, setActiveTab] = useState("1");
@@ -46,9 +46,9 @@ const Navbar = () => {
 
     const updateLogo = () => {
         if (screenWidth < 640) {
-            setLogoSrc('./images/home/cwc-logo-copyright.svg');
+            setLogoSrc('/images/home/cwc-logo-copyright.svg');
         } else {
-            setLogoSrc('./images/nav-logo.svg');
+            setLogoSrc('/images/nav-logo.svg');
         }
     };
 
@@ -76,7 +76,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={` w-full py-3 ${scrolled ? "bg-white shadow-2xl" : "bg-white sm:bg-transparent"} transition-colors duration-300`}>
+            <nav className={` w-full py-3 ${scrolled ? "bg-white shadow-2xl" : "bg-white bg-opacity-25"} transition-colors duration-300`}>
                 <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center px-4">
                     <img src={logoSrc} alt="LogoCWC " className="lg:w-28 lg:h-[65px] sm:w-24 sm:h-[50px] xs:w-20 xs:h-[40px] w-18 h-[32px] ms-3" loading="lazy" />
                     <img

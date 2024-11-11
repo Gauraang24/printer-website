@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { printerDetails } from "../../staticData/productDetailData";
 import { Button, Carousel } from "antd";
 import { convertToPrintSpecification } from "../../utils/functions";
@@ -9,29 +9,37 @@ import { CustomDivider } from "../../commonComponents/CustomDivider";
 
 const ProductDetails = () => {
   const params = useParams();
-  const [currentImg, setCurrentImg] = useState(
-    "./images/productPage/CWC_M2.png"
-  );
-  const staticData = [
-    {
-      key: "1",
-      link: "./images/productPage/CWC_M1.png",
-    },
-    {
-      key: "1",
-      link: "./images/productPage/CWC_M2.png",
-    },
-    {
-      key: "1",
-      link: "./images/productPage/CWC_M3.png",
-    },
-  ];
+  const navigate = useNavigate()
+  const [currentImg, setCurrentImg] = useState('');
+  const [sidePics, setSidePics] = useState([])
+  useEffect(() => {
+    const data = printerDetails[params?.productId]
+    setCurrentImg(`/images/productDetail/${data?.imgFolderName}/img1.webp`)
+
+    const staticData = [
+      {
+        key: "1",
+        link: `/images/productDetail/${data?.imgFolderName}/img1.webp`,
+      },
+      {
+        key: "2",
+        link: `/images/productDetail/${data?.imgFolderName}/img2.webp`,
+      },
+      {
+        key: "3",
+        link: `/images/productDetail/${data?.imgFolderName}/img3.webp`,
+      },
+    ];
+
+    setSidePics(staticData)
+  }, [params.productId])
+
   return (
     <section className="bg-[#f7f7f7]">
       {/* Banner Section */}
       <div className="w-full mt-[100px] sm:mt-0">
         <img
-          src="./images/productPage/Banner.jpg"
+          src="/images/productPage/Banner.jpg"
           alt="Banner"
           className="w-full h-auto"
           loading="lazy"
@@ -39,7 +47,7 @@ const ProductDetails = () => {
       </div>
 
       {/* Images and Summarized Info Section  */}
-      <div className={`w-[90%]  sm:w-[80%] sm:max-w-[1200px] mx-auto flex flex-col sm:flex-row gap-1 ${mylg} `}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto flex flex-col sm:flex-row gap-1 ${mylg} `}>
         <div className="w-full sm:hidden">
           <Carousel
             Carousel
@@ -48,7 +56,7 @@ const ProductDetails = () => {
             autoplay
             className="customArrows flex justify-between "
           >
-            {staticData.map((i) => {
+            {sidePics.map((i) => {
               return (
                 <>
                   <div
@@ -58,7 +66,7 @@ const ProductDetails = () => {
                       setCurrentImg(i?.link);
                     }}
                   >
-                    <img src={i?.link} alt="" className="" loading="lazy" />
+                    <img src={i?.link} alt="Printer Image" className="" loading="lazy" />
                   </div>
                 </>
               );
@@ -67,7 +75,7 @@ const ProductDetails = () => {
         </div>
         <div className="w-full sm:w-1/2  hidden sm:flex gap-3 justify-evenly  h-max">
           <div className="flex flex-col justify-between gap-2 w-[15%] sm:w-[20%]">
-            {staticData.map((i) => {
+            {sidePics.map((i) => {
               return (
                 <>
                   <div
@@ -77,15 +85,15 @@ const ProductDetails = () => {
                       setCurrentImg(i?.link);
                     }}
                   >
-                    <img src={i?.link} alt="" className="" loading="lazy" />
+                    <img src={i?.link} alt="Printer Image" className="" loading="lazy" />
                   </div>
                 </>
               );
             })}
           </div>
-          <div className="w-[90%]  sm:w-[80%] sm:max-w-[1200px]">
+          <div className="w-[90%] sm:max-w-[1200px]">
             <div className="w-full aspect-square bg-white rounded-lg flex items-center justify-center p-4 shadow-xl">
-              <img src={currentImg} alt="" className="w-full" loading="lazy" />
+              <img src={currentImg} alt="Printer Image" className="w-full" loading="lazy" />
             </div>
           </div>
         </div>
@@ -107,7 +115,9 @@ const ProductDetails = () => {
             </div>
           </div>
           <div className={`flex gap-2 ${mtMd}`}>
-            <Button className="w-1/2 rounded-sm sm:rounded-md md:rounded-lg lg:rounded-xl xl:rounded-2x h-12 xs:h-14 xmd:h-14 sm:h-14 lg:h-16 xl:h-20 shadow-xl ">
+            <Button className="w-1/2 rounded-sm sm:rounded-md md:rounded-lg lg:rounded-xl xl:rounded-2x h-12 xs:h-14 xmd:h-14 sm:h-14 lg:h-16 xl:h-20 shadow-xl " onClick={() => {
+              navigate("/download")
+            }}>
               <p className={`${fontsm} font-bold`}>
                 Get Drivers
               </p>
@@ -115,6 +125,9 @@ const ProductDetails = () => {
             <Button
               className="w-1/2 rounded-sm sm:rounded-md md:rounded-lg lg:rounded-xl xl:rounded-2xl h-12 xs:h-14 xmd:h-14 sm:h-14 lg:h-16 xl:h-20 shadow-xl "
               title="Enquire Now"
+              onClick={() => {
+                navigate("/contact")
+              }}
             >
               <p className={`${fontsm} font-bold`}>
                 Enquire Now
@@ -126,7 +139,7 @@ const ProductDetails = () => {
 
       {/* Detailed Summary Section  */}
 
-      <div className="w-[90%]  sm:w-[80%] sm:max-w-[1200px] m-auto mb-16">
+      <div className="w-[90%] sm:max-w-[1200px] m-auto mb-16">
         <CustomDivider title={'PRODUCT SPECIFICATION'} />
         <div>
           {Object.entries(printerDetails?.[params.productId]?.details).map(

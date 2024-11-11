@@ -18,7 +18,7 @@ const AboutUs = () => {
       </div>
 
       {/* Company Profile  */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
         <CustomDivider
           title={'Company Profile'}
         />
@@ -62,7 +62,7 @@ const AboutUs = () => {
       </div>
 
       {/* Image Section 1st */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg} `}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg} `}>
         <img
           src="images/aboutUs/about_1.png"
           className="w-full h-auto "
@@ -72,14 +72,14 @@ const AboutUs = () => {
       </div>
 
       {/* Mid Info Section */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
         <p className={`${fontmd} font-semibold text-justify`}>
           {aboutUs?.info}
         </p>
       </div>
 
       {/* Image Section 2nd */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
         <img
           src="images/aboutUs/about_2.png"
           className="w-full h-auto"
@@ -89,14 +89,14 @@ const AboutUs = () => {
       </div>
 
       {/* Mid Info Section 2nd */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
         <p className={`${fontmd} font-semibold text-justify`}>
           {aboutUs?.info2}
         </p>
       </div>
 
       {/* Image Section 3rd */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
         <div className="flex flex-col lg:flex-row justify-between">
           <img
             src="images/aboutUs/mission.png"

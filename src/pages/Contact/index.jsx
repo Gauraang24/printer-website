@@ -104,14 +104,14 @@ const Contact = () => {
       </div>
 
       {/* Service and Consultation */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] h-auto mx-auto`}>
+      <div className={`w-[90%] sm:max-w-[1200px] h-auto mx-auto`}>
         <Reveal>
           <CustomDivider
             title={'SERVICE AND CONSULTATION'}
           />
         </Reveal>
 
-        <div className="w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-around items-center bg-white rounded-2xl shadow-2xl">
+        <div className="w-[90%] sm:max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-around items-center bg-white rounded-2xl shadow-2xl">
           <div className={`flex flex-col justify-center items-center m-4 ${pSm}`}>
             <div className="text-5xl"><MailOutlined /></div>
             <div className="mt-2">Complaints</div>
@@ -130,12 +130,12 @@ const Contact = () => {
 
 
       {/* Contact Details */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto`}>
         <CustomDivider
           title={'CONTACT DETAILS'}
         />
 
-        <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] bg-white ${plg} mx-auto rounded-2xl shadow-2xl flex flex-col lg:flex-row`}>
+        <div className={`w-[90%] sm:max-w-[1200px] bg-white ${plg} mx-auto rounded-2xl shadow-2xl flex flex-col lg:flex-row`}>
           <div className="pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 mt-6 lg:mt-0">
             <div className="flex flex-col gap-5 flex-1">
               {contactDetails.mobileNumbers.map((mobile, index) => (
@@ -188,7 +188,7 @@ const Contact = () => {
       </div>
 
       {/* FORM */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto`}>
         <CustomDivider
           title={'PLEASE SUBMIT YOUR REQUEST'}
         />
@@ -248,7 +248,7 @@ const Contact = () => {
       </div>
 
       {/* MAP */}
-      <div className="w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto">
+      <div className="w-[90%] sm:max-w-[1200px] mx-auto">
         <CustomDivider
           title={'WHERE TO FIND US'}
         />

@@ -55,7 +55,7 @@ const Warranty = () => {
 
             {/* Warranty Section  */}
 
-            <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mylg}`}>
+            <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mylg}`}>
 
                 <CustomDivider title={'WARRANTY'} />
 

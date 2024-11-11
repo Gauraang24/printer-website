@@ -77,7 +77,7 @@ const Ewaste = () => {
         />
       </div>
       {/* RoHS Compliance */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mtlg}`}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mtlg}`}>
         <CustomDivider title={'RoHS Compliance'} />
 
         <p className={`text-justify lg:text-center ${fontmd}`}>
@@ -91,7 +91,7 @@ const Ewaste = () => {
 
       {/* Dos and Donts  */}
       <div className={`w-full ${mtlg}`}>
-        <div className="w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto">
+        <div className="w-[90%] sm:max-w-[1200px] mx-auto">
           <CustomDivider title={"Do's and Don’ts"} />
         </div>
 
@@ -171,7 +171,7 @@ const Ewaste = () => {
       </div>
 
       {/* E-Waste Collection */}
-      <div className={`w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto ${mylg} `}>
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mylg} `}>
 
         <CustomDivider title={"E-Waste Collection"} />
 
