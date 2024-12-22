@@ -19,7 +19,6 @@ import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Reveal from "../../commonComponents/Animation/Reveal";
 
-
 const Contact = () => {
   const [form] = Form.useForm();
 
@@ -89,8 +88,6 @@ const Contact = () => {
     }
   };
 
-
-
   return (
     <section className="bg-[#f7f7f7]">
       {/* Banner Section */}
@@ -108,51 +105,66 @@ const Contact = () => {
       {/* Service and Consultation */}
       <div className={`w-[90%] sm:max-w-[1200px] h-auto mx-auto`}>
         {/* <Reveal className={"w-full mx-auto"}> */}
-        <CustomDivider
-          title={'SERVICE AND CONSULTATION'}
-        />
+        <CustomDivider title={"SERVICE AND CONSULTATION"} />
         {/* </Reveal> */}
         <div className="w-[90%] sm:max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-around items-center bg-white rounded-2xl shadow-2xl">
-          <Reveal width="w-full" className={'!w-full'}>
-            <div className={`flex flex-col justify-center items-center m-4 ${pSm}`}>
-              <div className="text-5xl"><MailOutlined /></div>
+          <Reveal width="w-full" className={"!w-full"}>
+            <div
+              className={`flex flex-col justify-center items-center m-4 ${pSm}`}
+            >
+              <div className="text-5xl">
+                <MailOutlined />
+              </div>
               <div className="mt-2">Complaints</div>
-              <div className={`font-extrabold ${fontxs}`}>service@ecompusell.com</div>
+              <div className={`font-extrabold ${fontxs}`}>
+                service@ecompusell.com
+              </div>
             </div>
           </Reveal>
 
           <div className="border-r-2 border-black h-28 hidden lg:block mx-4" />
 
-          <Reveal width="w-full" className={'!w-full'}>
-            <div className={`flex flex-col justify-center items-center m-4 ${pSm}`}>
-              <div className="text-5xl"><MailOutlined /></div>
+          <Reveal width="w-full" className={"!w-full"}>
+            <div
+              className={`flex flex-col justify-center items-center m-4 ${pSm}`}
+            >
+              <div className="text-5xl">
+                <MailOutlined />
+              </div>
               <div className="mt-2">Business</div>
-              <div className={`font-extrabold ${fontxs}`}>info@ecompusell.com</div>
+              <div className={`font-extrabold ${fontxs}`}>
+                info@ecompusell.com
+              </div>
             </div>
           </Reveal>
         </div>
       </div>
 
-
       {/* Contact Details */}
       <div className={`w-[90%] sm:max-w-[1200px] mx-auto`}>
-        <CustomDivider
-          title={'CONTACT DETAILS'}
-        />
+        <CustomDivider title={"CONTACT DETAILS"} />
 
-        <div className={`w-[90%] sm:max-w-[1200px] bg-white ${plg} mx-auto rounded-2xl shadow-2xl flex flex-col lg:flex-row`}>
+        <div
+          className={`w-[90%] sm:max-w-[1200px] bg-white ${plg} mx-auto rounded-2xl shadow-2xl flex flex-col lg:flex-row`}
+        >
           <div className="pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 mt-6 lg:mt-0">
             <div className="flex flex-col gap-5 flex-1">
               {contactDetails.mobileNumbers.map((mobile, index) => (
-                <Reveal width="w-full">
-                  <div key={index} className="flex items-center gap-5">
+                <Reveal width="w-full" key={index}>
+                  <div className="flex items-center gap-5">
                     <div className="transform rotate-[105deg]">
                       <PhoneTwoTone style={{ fontSize: "30px" }} />
                     </div>
                     <div>
                       <p className={`${fontxs} font-medium`}>{mobile.name}</p>
                       {mobile.number.map((number, idx) => (
-                        <p key={idx} className={`${fontxs} font-medium`}>{number}</p>
+                        <a
+                          key={idx}
+                          href={`tel:${number.replace(/\s+/g, "")}`}
+                          className={`${fontxs} font-medium block`}
+                        >
+                          {number}
+                        </a>
                       ))}
                     </div>
                   </div>
@@ -165,10 +177,16 @@ const Contact = () => {
 
           <div className="pl-0 md:pl-10 flex flex-col w-full lg:w-1/2 gap-2 mt-6 lg:mt-0">
             <Reveal width="w-full">
-
               <div className="flex items-center gap-5">
                 <EnvironmentOutlined style={{ fontSize: "30px" }} />
-                <p className={`${fontxs} font-medium`}>{contactDetails?.address}</p>
+                <a
+                  href="https://maps.app.goo.gl/1AeQrtuzjWHGS1qPA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${fontxs} font-medium`}
+                >
+                  {contactDetails?.address}
+                </a>
               </div>
             </Reveal>
 
@@ -178,20 +196,31 @@ const Contact = () => {
                 <div className="flex justify-between gap-3">
                   {contactDetails?.socialMedia?.map((social, index) => {
                     const icons = {
-                      instagram: <InstagramOutlined style={{ fontSize: "30px" }} />,
-                      facebook: <FacebookOutlined style={{ fontSize: "30px" }} />,
-                      linkedIn: <LinkedinOutlined style={{ fontSize: "30px" }} />,
+                      instagram: (
+                        <InstagramOutlined style={{ fontSize: "30px" }} />
+                      ),
+                      facebook: (
+                        <FacebookOutlined style={{ fontSize: "30px" }} />
+                      ),
+                      linkedIn: (
+                        <LinkedinOutlined style={{ fontSize: "30px" }} />
+                      ),
                       youtube: <YoutubeOutlined style={{ fontSize: "30px" }} />,
                       twitter: <XOutlined style={{ fontSize: "30px" }} />,
                     };
 
                     return (
                       <div key={index}>
-                        {icons[social.title]}
+                        <a
+                          href={social?.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {icons[social.title]}
+                        </a>
                       </div>
                     );
                   })}
-
                 </div>
               </div>
             </Reveal>
@@ -201,12 +230,16 @@ const Contact = () => {
 
       {/* FORM */}
       <div className={`w-[90%] sm:max-w-[1200px] mx-auto`}>
-        <CustomDivider
-          title={'PLEASE SUBMIT YOUR REQUEST'}
-        />
+        <CustomDivider title={"PLEASE SUBMIT YOUR REQUEST"} />
 
         <Reveal width="w-full" className={"!w-full"}>
-          <Form form={form} name="validateOnly" layout="vertical" autoComplete="off" onFinish={handleFormSubmit}>
+          <Form
+            form={form}
+            name="validateOnly"
+            layout="vertical"
+            autoComplete="off"
+            onFinish={handleFormSubmit}
+          >
             <div className="flex flex-col md:flex-row md:gap-10">
               <Form.Item
                 name="name"
@@ -251,7 +284,11 @@ const Contact = () => {
               ]}
               className={`mb-10  ${fontmd} font-semibold`}
             >
-              <Input.TextArea showCount maxLength={500} className={`${fontsm}`} />
+              <Input.TextArea
+                showCount
+                maxLength={500}
+                className={`${fontsm}`}
+              />
             </Form.Item>
 
             <Button type="primary" htmlType="submit" className="h-10">
@@ -263,11 +300,8 @@ const Contact = () => {
 
       {/* MAP */}
       <div className="w-[90%] sm:max-w-[1200px] mx-auto">
-        <CustomDivider
-          title={'WHERE TO FIND US'}
-        />
+        <CustomDivider title={"WHERE TO FIND US"} />
         <Reveal width="w-full" className={"!w-full"}>
-
           <div className={`w-full ${mblg}`}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.058919603211!2d73.8415649!3d18.5262394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbb9c65eeb5e6516!2sAditya%20Centeegra!5e0!3m2!1sen!2sin!4v1667854641152!5m2!1sen!2sin"
@@ -297,7 +331,6 @@ const Contact = () => {
       />
     </section>
   );
-}
-
+};
 
 export default Contact;

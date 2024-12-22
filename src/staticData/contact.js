@@ -1,5 +1,3 @@
-
-
 export const contactDetails = {
   mobileNumbers: [
     {
@@ -8,11 +6,11 @@ export const contactDetails = {
     },
     {
       name: "Office Toll Free No",
-      number: ["1800-212-7110"],
+      number: ["1800 212 7110"],
     },
     {
       name: "Telephone Number",
-      number: ["020-2970-1984"],
+      number: ["020 2970 1984"],
     },
   ],
 
@@ -22,7 +20,7 @@ export const contactDetails = {
   socialMedia: [
     {
       title: "instagram",
-      link: "",
+      link: "https://www.instagram.com/ecompusell/",
     },
     {
       title: "facebook",
@@ -30,15 +28,15 @@ export const contactDetails = {
     },
     {
       title: "linkedIn",
-      link: "",
+      link: "https://www.linkedin.com/company/ecompusell-pvt-ltd/",
     },
     {
       title: "youtube",
-      link: "",
+      link: "https://www.youtube.com/@cwcprinters ",
     },
     {
       title: "twitter",
-      link: "",
+      link: "https://x.com/Ecompusell1",
     },
   ],
 };

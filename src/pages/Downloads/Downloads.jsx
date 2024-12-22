@@ -1,36 +1,83 @@
 import { Button, Input, Segmented } from "antd";
 import { useEffect, useState } from "react";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
-import { fontlg, fontmd, fontsm, fontxs, mblg, mylg, pMd, pSm, ptlg, pySm } from "../../utils/constant";
+import {
+  fontlg,
+  fontmd,
+  fontsm,
+  fontxs,
+  mblg,
+  mylg,
+  pMd,
+  pSm,
+  ptlg,
+  pySm,
+} from "../../utils/constant";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
 //TOAST MESSAGE
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const driverList = ['121PB5020', '225MB5020', '225PB5020', '230P5030', '235PB5020', '305P5040', '310P5040', '320FDMLP9100', '3020', '3020P5020', '3820DNW', '3820M5040', '3820P5010', '3820P5040', 'C311P211', 'C315301', 'Canon LPB121dn', 'M301DNW', 'PC311W']
+const driverList = [
+  "121PB5020",
+  "225MB5020",
+  "225PB5020",
+  "230P5030",
+  "235PB5020",
+  "305P5040",
+  "310P5040",
+  "320FDMLP9100",
+  "3020",
+  "3020P5020",
+  "3820DNW",
+  "3820M5040",
+  "3820P5010",
+  "3820P5040",
+  "C311P211",
+  "C315301",
+  "Canon LPB121dn",
+  "M301DNW",
+  "PC311W",
+];
 
-const manualList = ['305P5040', '320FDMLP9100', '3020P5020', '5040DNW', '2252010', 'C311P211', 'M2010DNW', 'M5030DNW', 'M5040DNW', 'MB5020NW', 'P5010DNW', 'P5030DNW', 'PB5020', 'PB5020NW', 'XOFF']
+const manualList = [
+  "305P5040",
+  "320FDMLP9100",
+  "3020P5020",
+  "5040DNW",
+  "2252010",
+  "C311P211",
+  "M2010DNW",
+  "M5030DNW",
+  "M5040DNW",
+  "MB5020NW",
+  "P5010DNW",
+  "P5030DNW",
+  "PB5020",
+  "PB5020NW",
+  "XOFF",
+];
 
 const Downloads = () => {
   const [activeTab, setActiveTab] = useState("DRIVER");
 
-  const [hrefLink, setHrefLink] = useState("")
-  console.log("href :", hrefLink)
+  const [hrefLink, setHrefLink] = useState("");
+  console.log("href :", hrefLink);
 
-  const [inputValue, setInputValue] = useState("")
+  const [inputValue, setInputValue] = useState("");
   // const [showDownload, setShowDownload] = useState(true)
 
   useEffect(() => {
-    setHrefLink("")
-    setInputValue("")
-  }, [activeTab])
+    setHrefLink("");
+    setInputValue("");
+  }, [activeTab]);
 
   const onSubmit = () => {
     if (activeTab === "DRIVER") {
-      const driverIncluded = driverList.includes(inputValue)
+      const driverIncluded = driverList.includes(inputValue);
       if (driverIncluded) {
         // setShowDownload(true)
-        setHrefLink(`/driver/${inputValue}.exe`)
+        setHrefLink(`/driver/${inputValue}.exe`);
       } else {
         toast.error("Driver not found.", {
           position: "top-right",
@@ -42,16 +89,15 @@ const Downloads = () => {
           progress: undefined,
           theme: "colored",
           transition: Slide,
-        })
+        });
       }
     } else if (activeTab === "USER MANUAL") {
-      const manualIncluded = manualList.includes(inputValue)
+      const manualIncluded = manualList.includes(inputValue);
 
       if (manualIncluded) {
         // setShowDownload(true)
-        setHrefLink(`/manual/${inputValue}.pdf`)
+        setHrefLink(`/manual/${inputValue}.pdf`);
       } else {
-
         toast.error("Manual not found.", {
           position: "top-right",
           autoClose: 5000,
@@ -62,13 +108,10 @@ const Downloads = () => {
           progress: undefined,
           theme: "colored",
           transition: Slide,
-        })
-
+        });
       }
-
     }
-  }
-
+  };
 
   const menus = [
     {
@@ -105,8 +148,8 @@ const Downloads = () => {
             className={`${fontmd} px-4`}
             options={menus}
             onChange={(value) => {
-              const data = menus.find(i => i.value === value).label
-              setActiveTab(data)
+              const data = menus.find((i) => i.value === value).label;
+              setActiveTab(data);
             }}
           />
         </div>
@@ -117,14 +160,18 @@ const Downloads = () => {
 
         <div className="flex gap-5">
           {/* Menu Section  */}
-          <div className={`w-[30%] hidden sm:block h-max rounded-2xl ${pMd} bg-white`}>
+          <div
+            className={`w-[30%] hidden sm:block h-max rounded-2xl ${pMd} bg-white`}
+          >
             {menus.map((i) => {
               return (
                 <div
                   key={i.key}
-                  className={`cursor-pointer ${i.label !== "APP" && "border-b-2"
-                    }  border-black ${pSm} ${fontsm} font-bold ${activeTab === i?.label ? "text-blue-600" : ""
-                    }`}
+                  className={`cursor-pointer ${
+                    i.label !== "APP" && "border-b-2"
+                  }  border-black ${pSm} ${fontsm} font-bold ${
+                    activeTab === i?.label ? "text-blue-600" : ""
+                  }`}
                   onClick={() => {
                     setActiveTab(i.label);
                   }}
@@ -136,10 +183,14 @@ const Downloads = () => {
           </div>
 
           {/* Left Section  */}
-          <div className={`w-full sm:w-[70%] bg-white rounded-2xl ${pMd} flex flex-col gap-5 sm:gap-10`}>
+          <div
+            className={`w-full sm:w-[70%] bg-white rounded-2xl ${pMd} flex flex-col gap-5 sm:gap-10`}
+          >
             {activeTab === "APP" ? (
               <div className="h-full flex items-center justify-center">
-                <p className={`${fontlg} font-bold`}>Our App is Launching Soon!</p>
+                <p className={`${fontlg} font-bold`}>
+                  Our App is Launching Soon!
+                </p>
               </div>
             ) : (
               <>
@@ -147,12 +198,16 @@ const Downloads = () => {
 
                 <div className="border-b border-black">
                   <Input
-                    placeholder="Enter Serial Number"
+                    placeholder={
+                      activeTab === "DRIVER"
+                        ? "ENTER MODEL NUMBER"
+                        : "ENTER MODEL NUMBER"
+                    }
                     className={`h-14 ${fontmd}  border-0`}
                     value={inputValue}
                     onChange={(e) => {
-                      setInputValue(e.target.value)
-                      setHrefLink("")
+                      setInputValue(e.target.value);
+                      setHrefLink("");
                     }}
                   />
                 </div>
@@ -164,14 +219,13 @@ const Downloads = () => {
                     disabled={!inputValue.length}
                     className="!h-14 !w-1/2"
                     onClick={() => {
-                      onSubmit()
+                      onSubmit();
                     }}
                   >
                     <p className={`${fontxs} font-semibold`}>Submit</p>
                   </Button>
 
                   <a href={hrefLink} download className="w-1/2">
-
                     <Button
                       type="primary"
                       disabled={hrefLink === ""}
@@ -201,7 +255,7 @@ const Downloads = () => {
             )}
           </div>
         </div>
-      </div >
+      </div>
 
       {/* Keep In Touch  */}
       <>
@@ -220,7 +274,7 @@ const Downloads = () => {
         theme="colored"
         transition={Slide}
       />
-    </section >
+    </section>
   );
 };
 
