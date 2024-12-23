@@ -69,19 +69,19 @@ export const certificateData = [
 export const serviceSupport = [
   {
     title: "Warranty Check",
-    link: "images/home/service-1.svg",
+    link: "images/home/service-1",
     name: "warranty",
     navigate: "/warranty",
   },
   {
     title: "Driver",
-    link: "images/home/service-2.svg",
+    link: "images/home/service-2",
     name: "driver",
     navigate: "/download",
   },
   {
     title: "Operation Video",
-    link: "images/home/service-3.svg",
+    link: "images/home/service-3",
     name: "operationVideo",
     navigate: "/videos",
   },

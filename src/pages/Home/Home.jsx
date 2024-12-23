@@ -12,10 +12,11 @@ import { fontmd, fontsm, fontxs, pblg, pylg, pyMd } from "../../utils/constant";
 import { useNavigate } from "react-router-dom";
 import Reveal from "../../commonComponents/Animation/Reveal";
 import DynamicTiltCard from "../../commonComponents/Animation/DynamicTilt";
-
+import { useState } from "react";
 
 const Home = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const [isHovered, setIsHovered] = useState("");
   return (
     <section className=" !h-full bg-[#f6f6f6]">
       {/* Banner Section */}
@@ -44,10 +45,17 @@ const Home = () => {
         </Reveal>
       </div>
       {/* CERTIFICATE SECTION */}
-      <div className={`flex gap-4 w-[90%]  sm:w-[80%] sm:max-w-[1200px] mx-auto justify-between items-center ${pyMd}`}>
+      <div
+        className={`flex gap-4 w-[90%]  sm:w-[80%] sm:max-w-[1200px] mx-auto justify-between items-center ${pyMd}`}
+      >
         {certificatesData.map((item) => {
           return (
-            <Reveal width="w-full" className={' transition-all duration-500 ease-in-out hover:shadow-xl rounded-2xl'}>
+            <Reveal
+              width="w-full"
+              className={
+                " transition-all duration-500 ease-in-out hover:shadow-xl rounded-2xl"
+              }
+            >
               <div
                 key={item.key}
                 className="indGradient flex justify-center items-center 2xl:w-[280px] 2xl:h-[280px] xl:w-[240px] xl:h-[240px] lg:w-[190px] lg:h-[190px] md:w-[140px] md:h-[140px] sm:w-[115px] sm:h-[115px] 2xs:h-[55px] 2xs:w-[55px] bg-white rounded-2xl xs:gap-5 transition-all duration-1000 ease-in-out "
@@ -64,7 +72,6 @@ const Home = () => {
         })}
       </div>
 
-
       {/* ABOUT US SECTION  */}
       <Reveal width="w-full">
         <div
@@ -79,9 +86,14 @@ const Home = () => {
           <Reveal width="w-full">
             <div className=" w-[90%] sm:w-[80%] sm:max-w-[1200px]  mx-auto">
               <div className={`w-max mx-auto ${pylg}`}>
-                <HeadingFont text={'About Us'} className={'border-b border-black font-bold'} />
+                <HeadingFont
+                  text={"About Us"}
+                  className={"border-b border-black font-bold"}
+                />
               </div>
-              <div className={`flex flex-col sm:flex-row justify-between gap-5 items-center ${pblg}`}>
+              <div
+                className={`flex flex-col sm:flex-row justify-between gap-5 items-center ${pblg}`}
+              >
                 <div className="w-1/3 lg:w-1/2 flex justify-center items-center mb-5 sm:mb-0">
                   <img
                     src="./images/home/printer.svg"
@@ -92,16 +104,17 @@ const Home = () => {
                 </div>
                 <div className="w-2/3 lg:w-1/2 2xs:hidden sm:flex">
                   <p className={`${fontmd} sm:leading-[25px] text-justify`}>
-                    The &quot;<b>CWC</b>&quot; brand is a product brand that serves
-                    as a testament to the reliability of E-Compusell Pvt. Ltd. It is
-                    a dynamic and innovative Start-up specializing in designing,
-                    developing, and manufacturing high-quality <b>Make-In-India</b>{" "}
-                    Laser Printers & Laser Multifunction Printers (MFPs) for a wide
-                    range of customers. CWC team comprises of experts in the
-                    printing industry who have years of experience and knowledge to
-                    draw upon. We leverage our knowledge of the industry and invest
-                    in research and development to create products that will meet
-                    the evolving needs of customers.
+                    The &quot;<b>CWC</b>&quot; brand is a product brand that
+                    serves as a testament to the reliability of E-Compusell Pvt.
+                    Ltd. It is a dynamic and innovative Start-up specializing in
+                    designing, developing, and manufacturing high-quality{" "}
+                    <b>Make-In-India</b> Laser Printers & Laser Multifunction
+                    Printers (MFPs) for a wide range of customers. CWC team
+                    comprises of experts in the printing industry who have years
+                    of experience and knowledge to draw upon. We leverage our
+                    knowledge of the industry and invest in research and
+                    development to create products that will meet the evolving
+                    needs of customers.
                   </p>
                 </div>
               </div>
@@ -111,20 +124,18 @@ const Home = () => {
       </Reveal>
 
       <Reveal width="w-full">
-
         <div className="sm:hidden w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto">
-          <p
-            className="text-[14px] leading-[20px] text-justify 2xs:py-4 xs:py-6"
-          >
+          <p className="text-[14px] leading-[20px] text-justify 2xs:py-4 xs:py-6">
             The &quot;<b>CWC</b>&quot; brand is a product brand that serves as a
-            testament to the reliability of E-Compusell Pvt. Ltd. It is a dynamic
-            and innovative Start-up specializing in designing, developing, and
-            manufacturing high-quality <b>Make-In-India</b> Laser Printers & Laser
-            Multifunction Printers (MFPs) for a wide range of customers. CWC team
-            comprises of experts in the printing industry who have years of
-            experience and knowledge to draw upon. We leverage our knowledge of
-            the industry and invest in research and development to create products
-            that will meet the evolving needs of customers.
+            testament to the reliability of E-Compusell Pvt. Ltd. It is a
+            dynamic and innovative Start-up specializing in designing,
+            developing, and manufacturing high-quality <b>Make-In-India</b>{" "}
+            Laser Printers & Laser Multifunction Printers (MFPs) for a wide
+            range of customers. CWC team comprises of experts in the printing
+            industry who have years of experience and knowledge to draw upon. We
+            leverage our knowledge of the industry and invest in research and
+            development to create products that will meet the evolving needs of
+            customers.
           </p>
         </div>
       </Reveal>
@@ -133,8 +144,10 @@ const Home = () => {
       <div className="!w-[90%] !max-w-[1200px] mx-auto h-auto">
         <div className={`w-max mx-auto ${pylg}`}>
           <Reveal width="w-full">
-
-            <HeadingFont text={'Product'} className={'border-b border-black font-bold'} />
+            <HeadingFont
+              text={"Product"}
+              className={"border-b border-black font-bold"}
+            />
           </Reveal>
         </div>
 
@@ -163,8 +176,13 @@ const Home = () => {
                     </div>
                     <div className="w-[80%] sm:w-1/2 ">
                       <div className="2xs:mb-4 sm:mb-6 md:mb-8 lg:mb-12">
-                        <HeadingFont text={i?.printerName} className={'text-center sm:text-left font-bold'} />
-                        <p className={`text-center sm:text-left ${fontmd} font-bold`}>
+                        <HeadingFont
+                          text={i?.printerName}
+                          className={"text-center sm:text-left font-bold"}
+                        />
+                        <p
+                          className={`text-center sm:text-left ${fontmd} font-bold`}
+                        >
                           {i?.type}
                         </p>
                       </div>
@@ -179,7 +197,9 @@ const Home = () => {
                               <p className={`${fontsm} font-medium w-1/2`}>
                                 {spec?.title}
                               </p>
-                              <p className={`${fontsm} font-medium w-1/2 text-left`}>
+                              <p
+                                className={`${fontsm} font-medium w-1/2 text-left`}
+                              >
                                 {spec?.desc}
                               </p>
                             </div>
@@ -188,9 +208,7 @@ const Home = () => {
                       </div>
 
                       <div className="flex justify-center sm:justify-normal items-center gap-5 sm:gap-4 md:gap-5 lg:gap-7">
-                        <p className={` ${fontmd} font-bold`}>
-                          Available on
-                        </p>
+                        <p className={` ${fontmd} font-bold`}>Available on</p>
                         {i?.availableOn.map((img) => {
                           return (
                             <img
@@ -221,31 +239,37 @@ const Home = () => {
           // backgroundSize: 'cover', // Ensures the image scales properly
         }}
       >
-
         <div className={`w-max mx-auto ${pylg}`}>
           <Reveal width="w-full">
-            <HeadingFont text={'Service & Support'} className={'border-b border-black font-bold'} />
+            <HeadingFont
+              text={"Service & Support"}
+              className={"border-b border-black font-bold"}
+            />
           </Reveal>
         </div>
 
-
-        <div className={`flex flex-col xs:flex-row w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto gap-4 sm:gap-0 justify-center sm:justify-between items-center ${pblg}`}>
+        <div
+          className={`flex flex-col xs:flex-row w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto gap-4 sm:gap-0 justify-center sm:justify-between items-center ${pblg}`}
+        >
           {serviceSupport.map((item, index) => {
             return (
-              <DynamicTiltCard>
+              <DynamicTiltCard key={index}>
                 <div
-                  key={index}
-                  className="flex flex-row xs:flex-col p-5 xs:p-0 justify-between xs:justify-center items-center 2xl:w-[350px] 2xl:h-[350px] xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] md:w-[200px] md:h-[200px] sm:h-[150px] sm:w-[150px]  xs:h-[120px] xs:w-[120px] w-full h-auto  bg-white rounded-2xl gap-5  cursor-pointer shadow-2xl"
+                  className="flex flex-row xs:flex-col p-5 xs:p-0 justify-between xs:justify-center items-center 2xl:w-[350px] 2xl:h-[350px] xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] md:w-[200px] md:h-[200px] sm:h-[150px] sm:w-[150px] xs:h-[120px] xs:w-[120px] w-full h-auto bg-white rounded-2xl gap-5 cursor-pointer shadow-2xl"
                   onClick={() => {
-
-                    navigate(item?.navigate)
+                    navigate(item?.navigate);
                   }}
+                  onMouseEnter={() => setIsHovered(item.name)}
+                  onMouseLeave={() => setIsHovered("")}
                 >
                   <Reveal width="w-full">
                     <div className="w-1/2 xs:w-full text-center">
-
                       <img
-                        src={item.link}
+                        src={
+                          isHovered === item?.name
+                            ? `${item.link}-hover.svg`
+                            : `${item.link}.svg`
+                        }
                         alt={`${item.title} logo`}
                         className="xl:w-[180px] xl:h-[180px] lg:w-[150px] lg:h-[150px] md:w-[120px] md:h-[120px] sm:h-[80px] sm:w-[80px] 2xs:w-[60px] 2xs:h-[60px] mx-auto"
                         loading="lazy"
@@ -253,9 +277,8 @@ const Home = () => {
                     </div>
                   </Reveal>
                   <Reveal width="w-full">
-
                     <div className="w-1/2 xs:w-full text-center">
-                      <p className={`${fontxs}  font-bold`}>{item.title}</p>
+                      <p className={`${fontxs} font-bold`}>{item.title}</p>
                     </div>
                   </Reveal>
                 </div>
