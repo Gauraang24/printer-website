@@ -13,7 +13,15 @@ import {
   YoutubeOutlined,
 } from "@ant-design/icons";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
-import { fontmd, fontsm, fontxs, mblg, plg, pSm } from "../../utils/constant";
+import {
+  fontmd,
+  fontsm,
+  fontxs,
+  mblg,
+  plg,
+  pSm,
+  ptMd,
+} from "../../utils/constant";
 //TOAST MESSAGE
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -226,6 +234,23 @@ const Contact = () => {
             </Reveal>
           </div>
         </div>
+      </div>
+
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto`}>
+        <CustomDivider title={"SERVICE CENTER"} />
+
+        <p className={` ${fontmd} font-bold text-justify`}>
+          Our printers feature the latest technology for exceptional reliability
+          and performance, backed by a dedicated team for outstanding customer
+          service. With authorized CWC service centers across India, we offer
+          prompt, reliable support nationwide.
+        </p>
+
+        <img
+          src="/images/contactUs/ServiceCenter.svg"
+          alt="Service Centers"
+          className={`${ptMd} w-full`}
+        />
       </div>
 
       {/* FORM */}

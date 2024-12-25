@@ -1,8 +1,8 @@
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import OurCertifications from "../../commonComponents/OurCertifications";
-import { aboutUs } from "../../staticData/aboutUs";
+import { aboutUs, OurCertificationsAbout } from "../../staticData/aboutUs";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
-import { fontlg, fontmd, mblg } from "../../utils/constant";
+import { fontlg, fontmd, mblg, mbMd } from "../../utils/constant";
 import Reveal from "../../commonComponents/Animation/Reveal";
 
 const AboutUs = () => {
@@ -22,12 +22,9 @@ const AboutUs = () => {
 
       {/* Company Profile  */}
       <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
-        <CustomDivider
-          title={'Company Profile'}
-        />
+        <CustomDivider title={"Company Profile"} />
 
-
-        <Reveal width="w-full" className={'!w-full'}>
+        <Reveal width="w-full" className={"!w-full"}>
           <div className="w-full flex lg:flex-row flex-col-reverse gap-6">
             <div className="lg:w-[45%] w-full flex flex-col justify-between">
               <p
@@ -41,15 +38,14 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="lg:w-[55%] flex items-center">
-
-              <div
-                className="border border-gray-300 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
-              >
+              <div className="border border-gray-300 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="aspect-video overflow-hidden ">
                   <iframe
                     className="w-full h-full"
-                    src={'https://www.youtube.com/embed/7OmRHGHMGsk?si=yM3VrCjptfV5CtJU&amp;start=1'}
-                    title={'CWC Logo Reveal: Unleashing Our Energy and Passion'}
+                    src={
+                      "https://www.youtube.com/embed/7OmRHGHMGsk?si=yM3VrCjptfV5CtJU&amp;start=1"
+                    }
+                    title={"CWC Logo Reveal: Unleashing Our Energy and Passion"}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     referrerPolicy="strict-origin-when-cross-origin"
@@ -57,8 +53,17 @@ const AboutUs = () => {
                   ></iframe>
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-gray-800 truncate">CWC Logo Reveal: Unleashing Our Energy and Passion</h3>
-                  <p className="text-gray-600 text-sm mt-2 truncate">The CWC Laser Printer is a remarkable achievement for the Indian technology industry, as it showcases the ability of Indian engineers to innovate and develop cutting-edge technology. The printer is built using high-quality components and has been designed to deliver superior print quality, reliability, and affordability.</p>
+                  <h3 className="text-lg font-semibold text-gray-800 truncate">
+                    CWC Logo Reveal: Unleashing Our Energy and Passion
+                  </h3>
+                  <p className="text-gray-600 text-sm mt-2 truncate">
+                    The CWC Laser Printer is a remarkable achievement for the
+                    Indian technology industry, as it showcases the ability of
+                    Indian engineers to innovate and develop cutting-edge
+                    technology. The printer is built using high-quality
+                    components and has been designed to deliver superior print
+                    quality, reliability, and affordability.
+                  </p>
                 </div>
               </div>
             </div>
@@ -80,7 +85,6 @@ const AboutUs = () => {
 
       {/* Mid Info Section */}
       <Reveal width="w-full">
-
         <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
           <p className={`${fontmd} font-semibold text-justify`}>
             {aboutUs?.info}
@@ -134,14 +138,44 @@ const AboutUs = () => {
 
         <div>
           <Reveal width="w-full">
-            <img src="images/aboutUs/aim.png" alt="aim" className="w-full h-auto" loading="lazy" />
+            <img
+              src="images/aboutUs/aim.png"
+              alt="aim"
+              className="w-full h-auto"
+              loading="lazy"
+            />
           </Reveal>
         </div>
       </div>
       {/* </Reveal> */}
 
       {/* Certifications */}
-      <OurCertifications />
+
+      {/* <OurCertifications /> */}
+      <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+        <CustomDivider title={"Our Certification"} />
+        {OurCertificationsAbout.map((i) => {
+          return (
+            <div>
+              <p className={` ${fontmd} font-bold text-justify text-[#1D9BD7]`}>
+                {i?.heading}
+              </p>
+              <p className={`${mbMd} ${fontmd} font-medium text-justify`}>
+                {i?.desc}
+              </p>
+            </div>
+          );
+        })}
+
+        <p className={` ${fontmd} font-bold`}>
+          *Note: If you need the soft copy please mail us{" "}
+        </p>
+      </div>
+
+      {/* <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${mblg}`}>
+        <CustomDivider title={"Gallery"} />
+        <div className="w-full aspect-video rounded-3xl bg-[#d9d9d9]"></div>
+      </div> */}
 
       {/* Keep In Touch */}
       <KeepInTouch />
