@@ -19,25 +19,21 @@ import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const driverList = [
-  "121PB5020",
-  "225MB5020",
-  "225PB5020",
-  "230P5030",
-  "235PB5020",
-  "305P5040",
-  "310P5040",
-  "320FDMLP9100",
-  "3020",
-  "3020P5020",
-  "3820DNW",
-  "3820M5040",
-  "3820P5010",
-  "3820P5040",
-  "C311P211",
-  "C315301",
-  "Canon LPB121dn",
-  "M301DNW",
-  "PC311W",
+  "320",
+  "CWCP",
+  "CWCM",
+  "X2305",
+  "X3105",
+  "XC315",
+  "S3820",
+  "RC311",
+  "RB320",
+  "R311",
+  "R320",
+  "R6430",
+  "C121",
+  "7180",
+  "10205",
 ];
 
 const manualList = [
@@ -74,10 +70,18 @@ const Downloads = () => {
 
   const onSubmit = () => {
     if (activeTab === "DRIVER") {
-      const driverIncluded = driverList.includes(inputValue);
+      const driverIncluded = driverList.includes(inputValue.toUpperCase());
       if (driverIncluded) {
         // setShowDownload(true)
-        setHrefLink(`/driver/${inputValue}.exe`);
+        setHrefLink(
+          `/driver/${inputValue.toUpperCase()}.${
+            inputValue === "320" ||
+            inputValue === "7180" ||
+            inputValue.toUpperCase() === "S3820"
+              ? ".exe"
+              : ".zip"
+          }`
+        );
       } else {
         toast.error("Driver not found.", {
           position: "top-right",
