@@ -520,7 +520,7 @@ export const printerDetails = {
             consumable: [
                 {
                     title: "Consumable type",
-                    desc: "Separate drum and toner",
+                    desc: "Separate drum and toner / Composite",
                 },
                 {
                     title: "Toner Cartridge",
@@ -612,7 +612,7 @@ export const printerDetails = {
             consumable: [
                 {
                     title: "Consumable type",
-                    desc: "Separate drum and toner",
+                    desc: "Separate drum and toner / Composite",
                 },
                 {
                     title: "Toner Cartridge",
