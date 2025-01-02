@@ -73,15 +73,7 @@ const Downloads = () => {
       const driverIncluded = driverList.includes(inputValue.toUpperCase());
       if (driverIncluded) {
         // setShowDownload(true)
-        setHrefLink(
-          `/driver/${inputValue.toUpperCase()}.${
-            inputValue === "320" ||
-            inputValue === "7180" ||
-            inputValue.toUpperCase() === "S3820"
-              ? ".exe"
-              : ".zip"
-          }`
-        );
+        setHrefLink(`/drivers/${inputValue.toUpperCase()}.zip`);
       } else {
         toast.error("Driver not found.", {
           position: "top-right",
