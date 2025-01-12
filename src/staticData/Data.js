@@ -130,7 +130,7 @@ export const homeCarousalData = [
 
 export const productCarousalData = [
   {
-    imgLink: "images/home/printer.svg",
+    imgLink: "images/productDetail/M5040DNW/img3.webp",
     printerName: "CWC M5040DN/W",
     type: "Multifunction Laser Printer",
     specification: [
@@ -142,7 +142,7 @@ export const productCarousalData = [
       {
         title: "Print Resolution",
         key: "2",
-        desc: "2400 x 1200 dpi",
+        desc: "1200 x 1200 dpi",
       },
       {
         title: "Paper Tray Capacity",
@@ -179,9 +179,58 @@ export const productCarousalData = [
     ],
   },
   {
-    imgLink: "images/home/printer.svg",
-    printerName: "CWC M5040DN/W",
+    imgLink: "images/productDetail/M5030DNW/img1.webp",
+    printerName: "CWC M5030DN/W",
     type: "Multifunction Laser Printer",
+    specification: [
+      {
+        title: "Print Speed",
+        key: "1",
+        desc: "33ppm",
+      },
+      {
+        title: "Print Resolution",
+        key: "2",
+        desc: "1200 x 1200 dpi",
+      },
+      {
+        title: "Paper Tray Capacity",
+        key: "3",
+        desc: "250 sheets(A4)",
+      },
+      {
+        title: "RAM",
+        key: "4",
+        desc: "512MB",
+      },
+      {
+        key: "5",
+        title: "Connectivity",
+        desc: "Network, WiFi and USB port",
+      },
+      {
+        key: "6",
+        title: "Country Of Origin",
+        desc: "India (Make In India)",
+      },
+    ],
+    availableOn: [
+      {
+        key: "img1",
+        title: "gem logo",
+        link: "images/home/GemLogo.svg",
+      },
+      {
+        key: "img2",
+        title: "Amazon Logo",
+        link: "images/home/amazon.svg",
+      },
+    ],
+  },
+  {
+    imgLink: "images/productDetail/P5040DNW/img1.webp",
+    printerName: "CWC P5040DN/W",
+    type: "Laser Printer",
     specification: [
       {
         title: "Print Speed",
@@ -191,7 +240,154 @@ export const productCarousalData = [
       {
         title: "Print Resolution",
         key: "2",
-        desc: "2400 x 1200 dpi",
+        desc: "1200 x 1200 dpi",
+      },
+      {
+        title: "Paper Tray Capacity",
+        key: "3",
+        desc: "250 sheets(A4)",
+      },
+      {
+        title: "RAM",
+        key: "4",
+        desc: "512MB",
+      },
+      {
+        key: "5",
+        title: "Connectivity",
+        desc: "Network, WiFi and USB port",
+      },
+      {
+        key: "6",
+        title: "Country Of Origin",
+        desc: "India (Make In India)",
+      },
+    ],
+    availableOn: [
+      {
+        key: "img1",
+        title: "gem logo",
+        link: "images/home/GemLogo.svg",
+      },
+      {
+        key: "img2",
+        title: "Amazon Logo",
+        link: "images/home/amazon.svg",
+      },
+    ],
+  },
+  {
+    imgLink: "images/productDetail/P5030DNW/img1.webp",
+    printerName: "CWC P5030DN/W",
+    type: "Multifunction Laser Printer",
+    specification: [
+      {
+        title: "Print Speed",
+        key: "1",
+        desc: "33ppm",
+      },
+      {
+        title: "Print Resolution",
+        key: "2",
+        desc: "1200 x 1200 dpi",
+      },
+      {
+        title: "Paper Tray Capacity",
+        key: "3",
+        desc: "250 sheets(A4)",
+      },
+      {
+        title: "RAM",
+        key: "4",
+        desc: "512MB",
+      },
+      {
+        key: "5",
+        title: "Connectivity",
+        desc: "Network, WiFi and USB port",
+      },
+      {
+        key: "6",
+        title: "Country Of Origin",
+        desc: "India (Make In India)",
+      },
+    ],
+    availableOn: [
+      {
+        key: "img1",
+        title: "gem logo",
+        link: "images/home/GemLogo.svg",
+      },
+      {
+        key: "img2",
+        title: "Amazon Logo",
+        link: "images/home/amazon.svg",
+      },
+    ],
+  },
+  {
+    imgLink: "images/productDetail/M2010DNW/img1.webp",
+    printerName: "CWC M2010DN/W",
+    type: "Multifunction Laser Printer",
+    specification: [
+      {
+        title: "Print Speed",
+        key: "1",
+        desc: "23ppm",
+      },
+      {
+        title: "Print Resolution",
+        key: "2",
+        desc: "2400 x 600 dpi",
+      },
+      {
+        title: "Paper Tray Capacity",
+        key: "3",
+        desc: "250 sheets(A4)",
+      },
+      {
+        title: "RAM",
+        key: "4",
+        desc: "128MB",
+      },
+      {
+        key: "5",
+        title: "Connectivity",
+        desc: "Network, WiFi and USB port",
+      },
+      {
+        key: "6",
+        title: "Country Of Origin",
+        desc: "India (Make In India)",
+      },
+    ],
+    availableOn: [
+      {
+        key: "img1",
+        title: "gem logo",
+        link: "images/home/GemLogo.svg",
+      },
+      {
+        key: "img2",
+        title: "Amazon Logo",
+        link: "images/home/amazon.svg",
+      },
+    ],
+  },
+  {
+    imgLink: "images/productDetail/P5010DNW/img1.webp",
+    printerName: "CWC P5010DN/W",
+    type: "Multifunction Laser Printer",
+    specification: [
+      {
+        title: "Print Speed",
+        key: "1",
+        desc: "23ppm",
+      },
+      {
+        title: "Print Resolution",
+        key: "2",
+        desc: "2400 x 600 dpi",
       },
       {
         title: "Paper Tray Capacity",
