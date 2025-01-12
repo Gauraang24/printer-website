@@ -100,34 +100,73 @@ export const cartridgeCollection = [
     heading: "Cartridges",
     data: [
       {
-        title: "CWC TW502S",
-        link: "images/productPage/Cartridge_T1.png",
+        title: "CWC TE502S",
+        link: "images/productDetail/CARTRIDGES/502S/img1.webp",
         key: "T1",
-        navigate: "cwc-tw502S",
+        navigate: "cwc-te502S",
       },
       {
         title: "CWC TE201L",
-        link: "images/productPage/Cartridge_T2.png",
+        link: "images/productDetail/CARTRIDGES/201/img1.webp",
         key: "T2",
         navigate: "cwc-te201l",
       },
       {
         title: "CWC TE503S",
-        link: "images/productPage/Cartridge_T3.png",
+        link: "images/productDetail/CARTRIDGES/503/img1.webp",
         key: "T3",
         navigate: "cwc-te503s",
       },
       {
         title: "CWC TE504S",
-        link: "images/productPage/Cartridge_T4.png",
+        link: "images/productDetail/CARTRIDGES/504/img1.webp",
         key: "T4",
         navigate: "cwc-te504s",
       },
       {
         title: "CWC 102-2K",
-        link: "images/productPage/Cartridge_T5.png",
+        link: "images/productDetail/CARTRIDGES/201/img1.webp",
         key: "T5",
         navigate: "cwc-102-2k",
+      },
+
+      //NEW
+
+      {
+        title: "CWC-T4843",
+        link: "images/productDetail/CARTRIDGES/T4843/img1.webp",
+        key: "cwc-t4843",
+        navigate: "cwc-t4843",
+      },
+      {
+        title: "CWC T0235",
+        link: "images/productDetail/CARTRIDGES/T0235/img1.webp",
+        key: "cwc-t0235",
+        navigate: "cwc-t0235",
+      },
+      {
+        title: "CWC DM504",
+        link: "images/productDetail/CARTRIDGES/DM504/img1.webp",
+        key: "cwc-dm504",
+        navigate: "cwc-dm504",
+      },
+      {
+        title: "CWC DM503",
+        link: "images/productDetail/CARTRIDGES/DM503/img1.webp",
+        key: "cwc-dm503",
+        navigate: "cwc-dm503",
+      },
+      {
+        title: "CWC D0235",
+        link: "images/productDetail/CARTRIDGES/D0235/img1.webp",
+        key: "cwc-d0235",
+        navigate: "cwc-d0235",
+      },
+      {
+        title: "CWC D4843",
+        link: "images/productDetail/CARTRIDGES/D4843/img1.webp",
+        key: "cwc-d4843",
+        navigate: "cwc-d4843",
       },
     ],
   },

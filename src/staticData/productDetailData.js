@@ -1397,105 +1397,154 @@ export const printerDetails = {
   },
 
   //CARTRIDGES DATA
-  "cwc-tw502S": {
-    title: "CWC TW502S Cartridge",
+  "cwc-te502S": {
+    title: "CWC TE502S",
     type: "cartridge",
-
-    specSummary: ["test: test", "test: test", "test:test"],
-    details: {
-      test: [
-        {
-          title: "test",
-          desc: "test",
-        },
-      ],
-      test1: [
-        {
-          title: "test1",
-          desc: "test1",
-        },
-      ],
-    },
-    imgFolderName: "1020NW",
+    specSummary: [
+      "Cartridge Type : Toner",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model :  TE502S",
+      "Yield of Cartridge : 1500",
+      "Consumable is suitable : CWC P5020, CWC PB5020N/W, CWC MB5020N/W",
+    ],
+    imgFolderName: "CARTRIDGES/502S",
   },
   "cwc-te201l": {
-    title: "CWC TW502S Cartridge",
+    title: "CWC-TE201L/201S",
     type: "cartridge",
-    specSummary: ["test: test", "test: test", "test:test"],
-    details: {
-      test: [
-        {
-          title: "test",
-          desc: "test",
-        },
-      ],
-      test1: [
-        {
-          title: "test1",
-          desc: "test1",
-        },
-      ],
-    },
-    imgFolderName: "1020NW",
+    specSummary: [
+      "Cartridge Type : Toner",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model :  TE201L/201S",
+      "Yield of Cartridge : 2000",
+      "Consumable is suitable : CWC P5010DN/W, CWC M2010DN/W",
+    ],
+    imgFolderName: "CARTRIDGES/201",
   },
   "cwc-te503s": {
-    title: "CWC TW502S Cartridge",
+    title: "CWC TE503S",
     type: "cartridge",
-    specSummary: ["test: test", "test: test", "test:test"],
-    details: {
-      test: [
-        {
-          title: "test",
-          desc: "test",
-        },
-      ],
-      test1: [
-        {
-          title: "test1",
-          desc: "test1",
-        },
-      ],
-    },
-    imgFolderName: "1020NW",
+    specSummary: [
+      "Cartridge Type : Toner",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model :  TE503S",
+      "Yield of Cartridge : 3000",
+      "Consumable is suitable : CWC M5030DN/W, CWC P5030DN/W",
+    ],
+    imgFolderName: "CARTRIDGES/503",
   },
   "cwc-te504s": {
-    title: "CWC TW502S Cartridge",
+    title: "CWC TE504S",
     type: "cartridge",
-    specSummary: ["test: test", "test: test", "test:test"],
-    details: {
-      test: [
-        {
-          title: "test",
-          desc: "test",
-        },
-      ],
-      test1: [
-        {
-          title: "test1",
-          desc: "test1",
-        },
-      ],
-    },
-    imgFolderName: "1020NW",
+    specSummary: [
+      "Cartridge Type : Toner",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model :  TE504S",
+      "Yield of Cartridge : 3000",
+      "Consumable is suitable : CWC M5040DN/W, CWC P5040DN/W",
+    ],
+    imgFolderName: "CARTRIDGES/504",
   },
   "cwc-102-2k": {
-    title: "CWC TW502S Cartridge",
+    title: "CWC-TE201L/201S",
     type: "cartridge",
-    specSummary: ["test: test", "test: test", "test:test"],
-    details: {
-      test: [
-        {
-          title: "test",
-          desc: "test",
-        },
-      ],
-      test1: [
-        {
-          title: "test1",
-          desc: "test1",
-        },
-      ],
-    },
-    imgFolderName: "1020NW",
+    specSummary: [
+      "Cartridge Type : Toner",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model :  102-2K",
+      "Yield of Cartridge : 2000",
+      "Consumable is suitable : CWC 1020, CWC 1020NW, CWC M1005, CWC M1005NW",
+    ],
+    imgFolderName: "CARTRIDGES/201",
+  },
+
+  //new
+  "cwc-t4843": {
+    title: "CWC-T4843",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : T4843",
+      "Yield of Cartridge : 3000",
+      "Consumable is suitable : CWC M4843",
+    ],
+    imgFolderName: "CARTRIDGES/T4843",
+  },
+
+  "cwc-t0235": {
+    title: "CWC-T0235",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : T0235",
+      "Yield of Cartridge : 3000",
+      "Consumable is suitable : CWC M235",
+    ],
+    imgFolderName: "CARTRIDGES/T0235",
+  },
+
+  "cwc-dm504": {
+    title: "CWC DM504",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : DM504",
+      "Yield of Cartridge : 30000",
+      "Consumable is suitable : CWC P5040DN/W,  CWC M5040DN/W",
+    ],
+    imgFolderName: "CARTRIDGES/DM504",
+  },
+
+  "cwc-dm503": {
+    title: "CWC DM503",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : DM503",
+      "Yield of Cartridge : 12000",
+      "Consumable is suitable : CWC P5030DN/W,  CWC M5030DN/W",
+    ],
+    imgFolderName: "CARTRIDGES/DM503",
+  },
+
+  "cwc-d0235": {
+    title: "CWC D0235",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : D0235",
+      "Yield of Cartridge : 12000",
+      "Consumable is suitable : CWC M235",
+    ],
+    imgFolderName: "CARTRIDGES/D0235",
+  },
+
+  "cwc-d4843": {
+    title: "CWC D4843",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : D4843",
+      "Yield of Cartridge : 30000",
+      "Consumable is suitable : CWC M4843",
+    ],
+    imgFolderName: "CARTRIDGES/D4843",
   },
 };
