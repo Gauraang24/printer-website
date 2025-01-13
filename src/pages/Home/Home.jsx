@@ -2,6 +2,7 @@ import { Carousel } from "antd";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import OurCertifications from "../../commonComponents/OurCertifications";
 import {
+  authorizedChannels,
   certificatesData,
   homeCarousalData,
   productCarousalData,
@@ -283,6 +284,46 @@ const Home = () => {
                   </Reveal>
                 </div>
               </DynamicTiltCard>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Authorized Channel partners */}
+
+      <div>
+        <div className={`w-max mx-auto ${pylg}`}>
+          <Reveal width="w-full">
+            <HeadingFont
+              text={"Authorized Channel Partner"}
+              className={"border-b border-black font-bold"}
+            />
+          </Reveal>
+        </div>
+
+        <div
+          className={`flex gap-4 w-[90%]  sm:w-[80%] sm:max-w-[1200px] mx-auto justify-evenly items-center ${pyMd}`}
+        >
+          {authorizedChannels.map((item) => {
+            return (
+              <Reveal
+                width="w-full"
+                className={
+                  " transition-all duration-500 ease-in-out hover:shadow-xl rounded-2xl"
+                }
+              >
+                <div
+                  key={item.key}
+                  className=" flex justify-center items-center  2xl:w-[350px] 2xl:h-[350px] xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] md:w-[200px] md:h-[200px] sm:h-[150px] sm:w-[150px] xs:h-[120px] xs:w-[120px] w-full h-auto bg-white rounded-2xl xs:gap-5 transition-all duration-1000 ease-in-out "
+                >
+                  <img
+                    src={item.link}
+                    alt={`${item.title} logo`}
+                    className="aspect-square xl:w-[200px] xl:h-[200px] lg:w-[160px] lg:h-[160px] md:w-[140px] md:h-[140px] sm:h-[120px] sm:w-[120px] 2xs:w-[100px] 2xs:h-[100px]"
+                    loading="lazy"
+                  />
+                </div>
+              </Reveal>
             );
           })}
         </div>

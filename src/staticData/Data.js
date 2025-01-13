@@ -87,6 +87,19 @@ export const serviceSupport = [
   },
 ];
 
+export const authorizedChannels = [
+  {
+    title: "Ricoh",
+    key: "1",
+    link: "images/home/ricoh.svg",
+  },
+  {
+    title: "Xerox",
+    link: "images/home/xerox.svg",
+    key: "2",
+  },
+];
+
 export const certificatesData = [
   {
     title: "Make In India",
