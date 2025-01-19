@@ -295,7 +295,7 @@ const Home = () => {
         <div className={`w-max mx-auto ${pylg}`}>
           <Reveal width="w-full">
             <HeadingFont
-              text={"Authorized Channel Partner"}
+              text={"Authorised Sales and Service Partner"}
               className={"border-b border-black font-bold"}
             />
           </Reveal>

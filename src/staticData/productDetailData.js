@@ -17,16 +17,46 @@ export const printerDetails = {
           desc: "33 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "75000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
         },
         {
           title: "Duplex printing",
           desc: "Automatic",
         },
         {
+          title: "Feeder Type",
+          desc: "ADF",
+        },
+        {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "ADF : 17PPM",
+        },
+        {
+          title: "Copy speed",
+          desc: "ADF : 1. Multi pages copy-17ppm ; 2, Single page-28ppm",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 dpi (Max) 300 dpi(Default)",
+        },
+        {
+          title: "Max. scan size",
+          desc: "21.6 x 29.7cm",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "50 Pgs",
         },
       ],
       paper_handling: [
@@ -57,16 +87,36 @@ export const printerDetails = {
           desc: "512MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Bypass Tray / ADF",
           desc: "YES",
         },
         {
+          title: "Bypass Tray Capacity",
+          desc: "100",
+        },
+        {
           title: "Interface",
           desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "40.5 x 33.5 x 36cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "53.8 x 43.8 x 48 cm",
+        },
+        {
+          title: "Weight",
+          desc: "11.7 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "13 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "400W(printing), 3W(sleep Mode)",
         },
         {
           title: "Power Supply",
@@ -78,6 +128,10 @@ export const printerDetails = {
         {
           title: "Consumable type",
           desc: "Separate drum and toner / Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Pgs",
         },
         {
           title: "Toner Cartridge",
@@ -109,16 +163,46 @@ export const printerDetails = {
           desc: "43 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "100000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
         },
         {
           title: "Duplex printing",
           desc: "Automatic",
         },
         {
+          title: "Feeder Type",
+          desc: "ADF",
+        },
+        {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "ADF : 17PPM",
+        },
+        {
+          title: "Copy speed",
+          desc: "ADF : 1. Multi pages copy-17ppm ; 2, Single page-38ppm",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 dpi (Max) 300 dpi(Default)",
+        },
+        {
+          title: "Max. scan size",
+          desc: "21.6 x 29.7cm",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "50 Pgs",
         },
       ],
       paper_handling: [
@@ -149,25 +233,19 @@ export const printerDetails = {
           desc: "512MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Bypass Tray / ADF",
           desc: "YES",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "100",
         },
         {
           title: "Interface",
           desc: "Network, WiFi and USB port",
         },
         {
-          title: "Power Supply",
-          desc: "220-240V AC, ~50/60Hz (110V optional)",
-        },
-      ],
-      package_specification: [
-        {
-          title: "Dimension (D×W×H)",
+          title: "Dimension",
           desc: "44 x 36 x 42.3cm (WxDxH)",
         },
         {
@@ -175,18 +253,31 @@ export const printerDetails = {
           desc: "53.5 x 47.7 x 54.5 cm",
         },
         {
-          title: "Product Weight (with cartridge)",
+          title: "Weight",
           desc: "14.3 kg",
         },
         {
-          title: "Gross Weight ",
+          title: "Gross Weight",
           desc: "17.14 kg",
         },
+        {
+          title: "Power comsumption",
+          desc: "700W(printing), 3W(sleep Mode)",
+        },
+        {
+          title: "Power Supply",
+          desc: "220-240V AC, ~50/60Hz (110V optional)",
+        },
       ],
+
       consumable: [
         {
           title: "Consumable type",
           desc: "Separate drum and toner / Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Pgs",
         },
         {
           title: "Toner Cartridge",
@@ -218,8 +309,12 @@ export const printerDetails = {
           desc: "23 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "20000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
         },
         {
           title: "Duplex printing",
@@ -227,13 +322,27 @@ export const printerDetails = {
         },
         {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "5 seconds per page",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 dpi (Max) 300 dpi(Default)",
+        },
+        {
+          title: "Max. scan size",
+          desc: "21.6 x 29.7 cm",
         },
       ],
       paper_handling: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Paper output tray",
@@ -247,7 +356,7 @@ export const printerDetails = {
       general: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Processor",
@@ -258,12 +367,28 @@ export const printerDetails = {
           desc: "128MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Interface",
           desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "39 x 30 x 25.2cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "47.5 x 39 x 35 cm",
+        },
+        {
+          title: "Weight",
+          desc: "8.36 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "9.96 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "360W (printing), 1.8W (sleep mode)",
         },
         {
           title: "Power Supply",
@@ -273,12 +398,142 @@ export const printerDetails = {
 
       consumable: [
         {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "2000 Pgs",
+        },
+        {
           title: "Toner Cartridge",
           desc: "CWC TE201S",
         },
       ],
     },
     imgFolderName: "M2010DNW",
+  },
+  "cwc-m305": {
+    title: "CWC M305 Multifunction Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 30ppm",
+      "Connection method: Network, WiFi and USB",
+      "Basic function: Print, Copy, Scan",
+      "Automatic duplex printing",
+      "Automatic double-sided printing",
+      "Security features protect against cyber threats",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "30 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "30000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "5 seconds per page",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 dpi (Max) 300 dpi(Default)",
+        },
+        {
+          title: "Max. scan size",
+          desc: "21.6 x 29.7 cm",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "100 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive,A5, Envelope - Monarch, 60~120g/m²",
+        },
+      ],
+      general: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Processor",
+          desc: "1.2GHz",
+        },
+        {
+          title: "RAM",
+          desc: " 128MB / 256MB",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "39 x 30 x 25.2cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "47.5 x 39 x 35 cm",
+        },
+        {
+          title: "Weight",
+          desc: "8.36 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "9.96 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "360W (printing), 1.8W (sleep mode)",
+        },
+        {
+          title: "Power Supply",
+          desc: "220-240V AC, ~50/60Hz (110V optional)",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "2000 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC TE201S",
+        },
+      ],
+    },
+    imgFolderName: "M305",
   },
   "cwc-mb5020nw": {
     title: "CWC MB5020N/W Multifunction Laser Printer",
@@ -296,18 +551,40 @@ export const printerDetails = {
           desc: "23 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "15000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Manual",
         },
         {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "Less than 12seconds",
+        },
+        {
+          title: "Scan resolution",
+          desc: "1200 x 1200 dpi",
+        },
+        {
+          title: "Max. scan size",
+          desc: "21.6 x 29.7 cm",
         },
       ],
       paper_handling: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Paper output tray",
@@ -321,7 +598,7 @@ export const printerDetails = {
       general: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Processor",
@@ -332,12 +609,28 @@ export const printerDetails = {
           desc: "128MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Interface",
           desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "36.8 x 26.2 x 22 cm(WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "43 x 33.3 x 29.6 cm",
+        },
+        {
+          title: "Weight",
+          desc: "5.6 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "6.8 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "360W (printing), 1.8W (sleep mode)",
         },
         {
           title: "Power Supply",
@@ -347,6 +640,14 @@ export const printerDetails = {
 
       consumable: [
         {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1600 Pgs",
+        },
+        {
           title: "Toner Cartridge",
           desc: "CWC TE502S",
         },
@@ -354,6 +655,7 @@ export const printerDetails = {
     },
     imgFolderName: "MB5020NW",
   },
+
   "cwc-m1005nw": {
     title: "CWC 1020N/W Laser Printer",
     type: "printer",
@@ -916,8 +1218,12 @@ export const printerDetails = {
           desc: "43 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "100000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
         },
         {
           title: "Duplex printing",
@@ -925,7 +1231,7 @@ export const printerDetails = {
         },
         {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
         },
       ],
       paper_handling: [
@@ -956,44 +1262,51 @@ export const printerDetails = {
           desc: "512MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Bypass Tray / ADF",
           desc: "YES",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "100",
         },
         {
           title: "Interface",
           desc: "Network, WiFi and USB port",
         },
         {
+          title: "Dimension",
+          desc: "37 x 37 x 26.3cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "45 x 45 x 40cm",
+        },
+        {
+          title: "Weight",
+          desc: "10.04 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "12.08 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "700W(printing), 3W(sleep Mode)",
+        },
+        {
           title: "Power Supply",
           desc: "220-240V AC, ~50/60Hz (110V optional)",
         },
       ],
-      package_specification: [
-        {
-          title: "Dimension (D×W×H)",
-          desc: "44 x 36 x 42.3cm (WxDxH)",
-        },
-        {
-          title: "Package size (D×W×H)",
-          desc: "53.5 x 47.7 x 54.5 cm",
-        },
-        {
-          title: "Product Weight (with cartridge)",
-          desc: "14.3 kg",
-        },
-        {
-          title: "Gross Weight ",
-          desc: "17.14 kg",
-        },
-      ],
+
       consumable: [
         {
           title: "Consumable type",
           desc: "Separate drum and toner / Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Pgs",
         },
         {
           title: "Toner Cartridge",
@@ -1025,8 +1338,12 @@ export const printerDetails = {
           desc: "33 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "75000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
         },
         {
           title: "Duplex printing",
@@ -1034,7 +1351,7 @@ export const printerDetails = {
         },
         {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
         },
       ],
       paper_handling: [
@@ -1065,16 +1382,36 @@ export const printerDetails = {
           desc: "512MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Bypass Tray / ADF",
           desc: "YES",
         },
         {
+          title: "Bypass Tray Capacity",
+          desc: "100",
+        },
+        {
           title: "Interface",
           desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "37 x 34 x 20.5cm (WxDxH)    ",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "45.5 x 44.6 x 30.5cm",
+        },
+        {
+          title: "Weight",
+          desc: "7.42 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "9.04 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "400W(printing), 3W(sleep Mode)",
         },
         {
           title: "Power Supply",
@@ -1086,6 +1423,10 @@ export const printerDetails = {
         {
           title: "Consumable type",
           desc: "Separate drum and toner / Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Pgs",
         },
         {
           title: "Toner Cartridge",
@@ -1116,8 +1457,12 @@ export const printerDetails = {
           desc: "23 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "20000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
         },
         {
           title: "Duplex printing",
@@ -1125,13 +1470,13 @@ export const printerDetails = {
         },
         {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
         },
       ],
       paper_handling: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Paper output tray",
@@ -1145,7 +1490,7 @@ export const printerDetails = {
       general: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Processor",
@@ -1156,12 +1501,28 @@ export const printerDetails = {
           desc: "128MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Interface",
           desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "35 x 25 x 19cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "44.5 x 35 x 29 cm",
+        },
+        {
+          title: "Weight",
+          desc: "5.78 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "6.96 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "360W (printing), 1.8W (sleep mode)",
         },
         {
           title: "Power Supply",
@@ -1170,6 +1531,14 @@ export const printerDetails = {
       ],
 
       consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "2000 Pgs",
+        },
         {
           title: "Toner Cartridge",
           desc: "CWC TE201S",
@@ -1194,18 +1563,22 @@ export const printerDetails = {
           desc: "23 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "15000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
         },
         {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
         },
       ],
       paper_handling: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Paper output tray",
@@ -1219,7 +1592,7 @@ export const printerDetails = {
       general: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Processor",
@@ -1230,12 +1603,28 @@ export const printerDetails = {
           desc: "128MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Interface",
           desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "32 x 23 x 18 cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "39 x 30 x 26.5 cm",
+        },
+        {
+          title: "Weight",
+          desc: "4 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "5.06 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "360W (printing), 1.8W (sleep mode)",
         },
         {
           title: "Power Supply",
@@ -1245,6 +1634,14 @@ export const printerDetails = {
 
       consumable: [
         {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1600 Pgs",
+        },
+        {
           title: "Toner Cartridge",
           desc: "CWC TE502S",
         },
@@ -1252,13 +1649,12 @@ export const printerDetails = {
     },
     imgFolderName: "P5020", //update later
   },
-  "cwc-p5040": {
-    title: "CWC PB5020N/W Laser Printer",
+  "cwc-p5020": {
+    title: "CWC P5020 Laser Printer",
     type: "printer",
     specSummary: [
       "Printing speed (A4): 23ppm",
-      "Connection method: Network, WiFi and USB",
-      "Automatic double-sided printing",
+      "Connection method: USB",
       "Security features protect against cyber threats",
     ],
     details: {
@@ -1268,18 +1664,22 @@ export const printerDetails = {
           desc: "23 ppm",
         },
         {
-          title: "First print out time",
-          desc: "Less than 8 Seconds",
+          title: "Monthly Duty Cycle",
+          desc: "15000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
         },
         {
           title: "Operating system compatibility",
-          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）Linux(BOSS), Maya, Fedora.",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
         },
       ],
       paper_handling: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Paper output tray",
@@ -1293,7 +1693,7 @@ export const printerDetails = {
       general: [
         {
           title: "Paper input tray",
-          desc: "150 sheets",
+          desc: "250 sheets",
         },
         {
           title: "Processor",
@@ -1304,12 +1704,28 @@ export const printerDetails = {
           desc: "128MB",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 1200 dpi",
-        },
-        {
           title: "Interface",
           desc: "USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "32 x 23 x 18 cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "39 x 30 x 26.5 cm",
+        },
+        {
+          title: "Weight",
+          desc: "4 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "5.06 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "360W (printing), 1.8W (sleep mode)",
         },
         {
           title: "Power Supply",
@@ -1318,6 +1734,14 @@ export const printerDetails = {
       ],
 
       consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1600 Pgs",
+        },
         {
           title: "Toner Cartridge",
           desc: "CWC TE502S",
