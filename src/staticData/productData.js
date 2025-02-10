@@ -52,9 +52,15 @@ export const printersCollection = [
       },
       {
         title: "CWC M235",
-        link: "images//productDetail/M235/img1.webp",
+        link: "images/productDetail/M235/img1.webp",
         key: "M8",
         navigate: "cwc-m235",
+      },
+      {
+        title: "cwc-m5045",
+        link: "images/productDetail/M5045/img1.webp",
+        key: "M9",
+        navigate: "cwc-m5045",
       },
     ],
   },

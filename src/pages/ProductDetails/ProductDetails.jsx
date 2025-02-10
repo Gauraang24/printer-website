@@ -117,13 +117,16 @@ const ProductDetails = () => {
           )}
           <div className="w-[90%] sm:max-w-[1200px]">
             <Reveal width="w-full" className={"!w-full h-full"}>
-              <div className="w-full aspect-square bg-white rounded-lg flex items-center justify-center p-4 shadow-xl">
+              <div className="w-full aspect-square bg-white rounded-lg flex flex-col items-center justify-center p-4 shadow-xl">
                 <img
                   src={currentImg}
                   alt="Printer Image"
                   className="w-full"
                   loading="lazy"
                 />
+                {/* <p className={`${mtMd} text-xs italic`}>
+                  Actual Images may vary from the given picture
+                </p> */}
               </div>
             </Reveal>
           </div>

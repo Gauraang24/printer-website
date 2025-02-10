@@ -1200,6 +1200,431 @@ export const printerDetails = {
     imgFolderName: "M235",
   },
 
+  "cwc-m5045": {
+    title: "CWC M5045 Multifunction Laser Printer",
+    type: "printer",
+    imgFolderName: "M5045",
+    specSummary: [
+      "Printing speed (A4): 50ppm",
+      "Connection method: Network, WiFi, and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "50 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "200000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit) Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "100 sheets",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "100",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive,A5, Envelope - Monarch, 60~120g/m²",
+        },
+      ],
+
+      Scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "24 ppm(A4) / 25 ppm(Letter)",
+        },
+        {
+          title: "Copy speed",
+          desc: "40cpm(A4) / 42cpm(Letter)",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 dpi (Max) 300 dpi(Default)",
+        },
+        {
+          title: "Feeder type",
+          desc: "DADF/RADF",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "50 Pgs.",
+        },
+        {
+          title: "Max. scan size",
+          desc: "21.6 x 29.7cm",
+        },
+        {
+          title: "Output function",
+          desc: "Scan to PC, email, FTP, SMB, USB flash drive, APP",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy and Fax(Optional)",
+        },
+        {
+          title: "Processor",
+          desc: "800Mhz",
+        },
+        {
+          title: "RAM",
+          desc: "2048 / 1024 / 512MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200dpi / 600 x 2400",
+        },
+        {
+          title: "Bypass Tray / ADF",
+          desc: "YES",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface type",
+          desc: "High-speed USB 2.0; Wired network: IEEE 802.3 10/100/1000Base-Tx; Wireless WiFi (2.4G/5G): IEEE 802.11a/b/g/n",
+        },
+        {
+          title: "Power consumption",
+          desc: "≤650W",
+        },
+        {
+          title: "Power Supply",
+          desc: "220V：AC220-240V 50/60Hz，7A",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "41.5 x 36,5 x 37cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "53.5 x 47.7 x 54.5 cm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: "12.5 kg",
+        },
+        {
+          title: "Gross Weight ",
+          desc: "15.14 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate drum and toner / Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Pgs.",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC T5045",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC D5045-12K",
+        },
+      ],
+    },
+  },
+
+  "cwc-m315": {
+    title: "CWC M315 Color Multifunction Laser Printer",
+    type: "printer",
+    imgFolderName: "M315",
+    specSummary: [
+      "Printing speed (A4): 31/33ppm",
+      "Connection method: Network, WiFi, and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "31/33ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "60000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit) Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "50",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive,A5, Envelope - Monarch, 60~120g/m²",
+        },
+      ],
+
+      package_specification: [
+        {
+          title: "Scan speed",
+          desc: "B/W: 30PPM, Colour : 15PPM",
+        },
+        {
+          title: "Copy speed",
+          desc: "B/W: 30PPM, Colour : 16PPM",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 dpi (Max) 300 dpi(Default)",
+        },
+        {
+          title: "Feeder type",
+          desc: "SPDF",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "50 Pgs.",
+        },
+        {
+          title: "Max. scan size",
+          desc: "Legal",
+        },
+        {
+          title: "Output function",
+          desc: "Scan to PC, Email, USB",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy and Fax",
+        },
+        {
+          title: "Processor",
+          desc: "667Mhz",
+        },
+        {
+          title: "RAM",
+          desc: "512MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "600 x 2400 Dpi",
+        },
+        {
+          title: "Bypass Tray / ADF",
+          desc: "YES",
+        },
+        {
+          title: "Interface",
+          desc: "High-speed USB 2.0; Wired network: IEEE 802.3 10/100/1000Base-Tx; Wireless WiFi (2.4G/5G): IEEE 802.11a/b/g/n",
+        },
+        {
+          title: "Power consumption",
+          desc: "≤900W",
+        },
+        {
+          title: "Power Supply",
+          desc: "220V：AC220-240V 50/60Hz，10A",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty	",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "410*430*366 mm",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "42 x 54 x 47 cm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: "21.2 kg",
+        },
+        {
+          title: "Gross Weight ",
+          desc: "24 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate drum and toner",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "Black:2000, CMY:1000",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T0315-3K Black,CWC-T0315-2K Cyan,CWC-T0315-2K Magenta,CWC-T0315-2K Yellow",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D0315-50 CMYK",
+        },
+      ],
+    },
+  },
+
+  "cwc-1020": {
+    title: "CWC 1020 Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 21ppm",
+      "Connection method: USB and Wifi",
+      "Security features protect against cyber threats",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "21 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "20000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi (Up to 1200 x 1200 enhanced image quality)",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "1 sheets",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "50",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive,A5, Envelope - Monarch, 60~120g/m²",
+        },
+      ],
+      general: [
+        {
+          title: "Processor",
+          desc: "600 MHz",
+        },
+        {
+          title: "RAM",
+          desc: "128MB",
+        },
+        {
+          title: "Interface",
+          desc: "Wi-Fi b/g/n, High-Speed USB 2.0",
+        },
+        {
+          title: "Bypass Tray / ADF",
+          desc: "YES",
+        },
+        {
+          title: "Dimension (D×W×H)",
+          desc: "33.274 x 21.59 x 18.796 cm",
+        },
+        {
+          title: "Weight",
+          desc: "4.1 kg",
+        },
+        {
+          title: "Power consumption",
+          desc: "Operating: 313 W, Standby: 37 W, Power save: 2.3 W",
+        },
+        {
+          title: "Power Supply",
+          desc: " 110-127 VAC, 50/60 Hz, 5.0 A or 220-240 VAC, 50/60 Hz, 2.5 A",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1500 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC 1020(X)",
+        },
+      ],
+    },
+  },
+
   //LASER PRINTER BELOW
   "cwc-p5040dnw": {
     title: "CWC P5040DN/W Laser Printer",
