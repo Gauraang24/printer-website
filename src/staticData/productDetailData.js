@@ -92,7 +92,7 @@ export const printerDetails = {
         },
         {
           title: "Bypass Tray Capacity",
-          desc: "100",
+          desc: "1",
         },
         {
           title: "Interface",
@@ -769,7 +769,7 @@ export const printerDetails = {
         },
         {
           title: "Bypass Tray Capacity",
-          desc: "100",
+          desc: "1",
         },
         {
           title: "Media sizes",
@@ -1083,7 +1083,7 @@ export const printerDetails = {
         },
         {
           title: "Bypass Tray Capacity",
-          desc: "100",
+          desc: "1",
         },
         {
           title: "Media sizes",
@@ -1321,12 +1321,11 @@ export const printerDetails = {
     imgFolderName: "P5040DNW",
   },
   "cwc-p5030dnw": {
-    title: "CWC M5030DN/W Multifunction Laser Printer",
+    title: "CWC P5030DN/W Laser Printer",
     type: "printer",
     specSummary: [
       "Printing speed (A4): 33ppm",
       "Connection method: Network, WiFi and USB",
-      "Basic function: Print, Copy, Scan",
       "Automatic duplex printing",
       "Automatic double-sided printing",
       "Security features protect against cyber threats",
@@ -1387,7 +1386,7 @@ export const printerDetails = {
         },
         {
           title: "Bypass Tray Capacity",
-          desc: "100",
+          desc: "1",
         },
         {
           title: "Interface",
@@ -1547,7 +1546,7 @@ export const printerDetails = {
     },
     imgFolderName: "P5010DNW",
   },
-  "cwc-pb5040dnw": {
+  "cwc-pb5020dnw": {
     title: "CWC PB5020N/W Laser Printer",
     type: "printer",
     specSummary: [
@@ -1649,8 +1648,8 @@ export const printerDetails = {
     },
     imgFolderName: "P5020", //update later
   },
-  "cwc-p5020": {
-    title: "CWC P5020 Laser Printer",
+  "cwc-pb5020": {
+    title: "CWC PB5020 Laser Printer",
     type: "printer",
     specSummary: [
       "Printing speed (A4): 23ppm",

@@ -64,6 +64,11 @@ export const certificateData = [
     alt: "zed_logo",
     link: "images/home/Cert/Zed.webp",
   },
+  {
+    id: 14,
+    alt: "BEE",
+    link: "images/home/Cert/BEE_Letter.svg",
+  },
 ];
 
 export const serviceSupport = [
