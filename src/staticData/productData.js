@@ -86,16 +86,16 @@ export const printersCollection = [
         navigate: "cwc-p5010dnw",
       },
       {
-        title: "CWC PB5020DN/W",
+        title: "CWC P5020N/W",
         link: "images/productPage/CWC_P4.png",
         key: "P4",
-        navigate: "cwc-pb5020dnw",
+        navigate: "cwc-pb5020nw",
       },
       {
-        title: "CWC PB5020",
+        title: "CWC P5020",
         link: "images/productPage/CWC_P5.png",
         key: "P5",
-        navigate: "cwc-pb5020",
+        navigate: "cwc-p5020",
       },
       {
         title: "CWC 1020N/W",

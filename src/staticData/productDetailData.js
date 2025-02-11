@@ -1971,7 +1971,7 @@ export const printerDetails = {
     },
     imgFolderName: "P5010DNW",
   },
-  "cwc-pb5020dnw": {
+  "cwc-pb5020nw": {
     title: "CWC PB5020N/W Laser Printer",
     type: "printer",
     specSummary: [
@@ -2073,8 +2073,8 @@ export const printerDetails = {
     },
     imgFolderName: "P5020", //update later
   },
-  "cwc-pb5020": {
-    title: "CWC PB5020 Laser Printer",
+  "cwc-p5020": {
+    title: "CWC P5020 Laser Printer",
     type: "printer",
     specSummary: [
       "Printing speed (A4): 23ppm",
