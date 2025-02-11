@@ -1531,6 +1531,7 @@ export const printerDetails = {
   "cwc-1020": {
     title: "CWC 1020 Laser Printer",
     type: "printer",
+    imgFolderName: "1020",
     specSummary: [
       "Printing speed (A4): 21ppm",
       "Connection method: USB and Wifi",
