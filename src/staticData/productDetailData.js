@@ -1238,7 +1238,7 @@ export const printerDetails = {
         },
         {
           title: "Paper output tray",
-          desc: "100 sheets",
+          desc: "150 sheets",
         },
         {
           title: "Bypass Tray Capacity",
@@ -1330,7 +1330,7 @@ export const printerDetails = {
       package_specification: [
         {
           title: "Dimension (D×W×H)",
-          desc: "41.5 x 36,5 x 37cm (WxDxH)",
+          desc: "41.5 x 36.5 x 37cm (WxDxH)",
         },
         {
           title: "Package size (D×W×H)",
@@ -1390,7 +1390,7 @@ export const printerDetails = {
         },
         {
           title: "Duplex printing",
-          desc: "Automatic",
+          desc: "Automatic Double-Sided",
         },
         {
           title: "Operating system compatibility",
@@ -1470,6 +1470,10 @@ export const printerDetails = {
         },
         {
           title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
           desc: "High-speed USB 2.0; Wired network: IEEE 802.3 10/100/1000Base-Tx; Wireless WiFi (2.4G/5G): IEEE 802.11a/b/g/n",
         },
         {
@@ -1548,10 +1552,6 @@ export const printerDetails = {
           desc: "20000*",
         },
         {
-          title: "Print Resolution",
-          desc: "2400 x 600 dpi (Up to 1200 x 1200 enhanced image quality)",
-        },
-        {
           title: "Operating system compatibility",
           desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
         },
@@ -1563,11 +1563,11 @@ export const printerDetails = {
         },
         {
           title: "Paper output tray",
-          desc: "1 sheets",
+          desc: "100 sheets",
         },
         {
           title: "Bypass Tray Capacity",
-          desc: "50",
+          desc: "1",
         },
         {
           title: "Media sizes",
@@ -1584,20 +1584,12 @@ export const printerDetails = {
           desc: "128MB",
         },
         {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi (Up to 1200 x 1200 enhanced image quality)",
+        },
+        {
           title: "Interface",
           desc: "Wi-Fi b/g/n, High-Speed USB 2.0",
-        },
-        {
-          title: "Bypass Tray / ADF",
-          desc: "YES",
-        },
-        {
-          title: "Dimension (D×W×H)",
-          desc: "33.274 x 21.59 x 18.796 cm",
-        },
-        {
-          title: "Weight",
-          desc: "4.1 kg",
         },
         {
           title: "Power consumption",
@@ -1605,7 +1597,26 @@ export const printerDetails = {
         },
         {
           title: "Power Supply",
-          desc: " 110-127 VAC, 50/60 Hz, 5.0 A or 220-240 VAC, 50/60 Hz, 2.5 A",
+          desc: "110-127 VAC, 50/60 Hz, 5.0 A or 220-240 VAC, 50/60 Hz, 2.5 A",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty	",
+        },
+      ],
+
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "33.274 x 21.59 x 18.796 cm",
+        },
+        {
+          title: "Weight",
+          desc: "4.1 kg",
         },
       ],
 
