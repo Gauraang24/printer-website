@@ -1416,7 +1416,7 @@ export const printerDetails = {
         },
       ],
 
-      package_specification: [
+      scan_specification: [
         {
           title: "Scan speed",
           desc: "B/W: 30PPM, Colour : 15PPM",
@@ -1585,7 +1585,7 @@ export const printerDetails = {
         },
         {
           title: "Print Resolution",
-          desc: "2400 x 600 dpi (Up to 1200 x 1200 enhanced image quality)",
+          desc: "600 x 600 dpi (Up to 1200 x 1200 enhanced image quality)",
         },
         {
           title: "Interface",
