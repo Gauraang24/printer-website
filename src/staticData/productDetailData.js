@@ -1637,6 +1637,336 @@ export const printerDetails = {
     },
   },
 
+  "cwc-m5036": {
+    title: "CWC M5036 Multifunction Laser Printer",
+
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 36ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "36 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "50000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: " Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit) Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "1",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4/Letter, A5, A6, JIS B5, Oficio, Statement, Executive, Folio, Legal, and Custom sizes: 3 x 5 in to 8.5 x 14 in/98 x 148 mm to 216 x 356 mm",
+        },
+      ],
+
+      Scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "A4/Letter: B&W: 23/25 ipm, Color 7/8 ipm",
+        },
+        {
+          title: "Copy speed",
+          desc: "34cpm(A4) / 36cpm(Letter)",
+        },
+        {
+          title: "Scan resolution",
+          desc: "1200 x 1200 dpi B&W, 600 x 600 dpi color",
+        },
+        {
+          title: "Feeder Type",
+          desc: "ADF",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "50 Pgs.",
+        },
+        {
+          title: "Max. scan size",
+          desc: "Letter/Legal A6 - A4 (105 x 148 mm) to (216 x 356 mm)",
+        },
+        {
+          title: "Output function",
+          desc: "Scan to PC, Email, USB",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy and Fax(Optional)",
+        },
+        {
+          title: "Processor",
+          desc: "1Ghz",
+        },
+        {
+          title: "RAM",
+          desc: "512MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "600 x 600 dpi, 1200 Image Quality",
+        },
+        {
+          title: "Bypass Tray / ADF",
+          desc: "YES",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "Hi-Speed USB 2.0 (Type B), Ethernet 10/100/1000 BaseTX, Wireless 802.11 b/g/n, Hi-Speed USB 2.0 (Type A - Thumbdrive)",
+        },
+        {
+          title: "Power comsumption",
+          desc: "≤650W",
+        },
+        {
+          title: "Power Supply",
+          desc: "220V：AC220-240V 50/60Hz，7A",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "352 x 415 x 360 mm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "41 x 47 x 42 cm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: "10 kg",
+        },
+        {
+          title: "Gross Weight ",
+          desc: "13 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate drum and toner / Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "700 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC T5036",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC D5036-12K(Optional)",
+        },
+      ],
+    },
+    imgFolderName: "M5036",
+  },
+
+  "cwc-m251": {
+    title: "CWC M251 Multifunction Laser Printer",
+
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 25/26ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "25/26 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "40000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Double-Sided",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 7, Winodws 2008 Sever R2.8, Windows 8.1, Windows 10, Windows 11, Linux (BOSS）",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "100 sheets",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "1",
+        },
+        {
+          title: "Media sizes",
+          desc: "Letter/A4, A5, A6 and Custom sizes: 3.94 x 5.83 in to 8.5 x 14 in/100 x 148 mm to 216 x 340 mm",
+        },
+      ],
+
+      Scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "B/W: 21PPM, Colour : 20PPM",
+        },
+        {
+          title: "Copy speed",
+          desc: "B/W: 21PPM, Colour : 20PPM",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 x 600 dpi",
+        },
+        {
+          title: "Feeder Type",
+          desc: "ADF",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "50 Pgs.",
+        },
+        {
+          title: "Max. scan size",
+          desc: "A4",
+        },
+        {
+          title: "Output function",
+          desc: "Scan to PC, Email, USB",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print,Scan,Copy,Fax",
+        },
+        {
+          title: "Processor",
+          desc: "1Ghz",
+        },
+        {
+          title: "RAM",
+          desc: "256/512MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "600 x 600 dpi, 4800 Color Quality",
+        },
+        {
+          title: "Bypass Tray / ADF",
+          desc: "YES",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "Hi-Speed USB 2.0 (Type B), Ethernet 10/100/1000 BaseTX, Wireless 802.11 b/g/n, Hi-Speed USB 2.0 (Type A - Thumbdrive)",
+        },
+        {
+          title: "Power comsumption",
+          desc: "≤750W",
+        },
+        {
+          title: "Power Supply",
+          desc: "220V：AC220-240V 50/60Hz，7A",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "344*411*394 mm(WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "40 x 48 x 45 cm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: "19.4 kg",
+        },
+        {
+          title: "Gross Weight ",
+          desc: "22 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "Black:700, CMY:700pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T0251-1.5K Black,CWC-T0251-1.5K Cyan,CWC-T0251-1.5K Magenta,CWC-T0251-1.5K Yellow",
+        },
+      ],
+    },
+    imgFolderName: "M251",
+  },
+
   //LASER PRINTER BELOW
   "cwc-p5040dnw": {
     title: "CWC P5040DN/W Laser Printer",
