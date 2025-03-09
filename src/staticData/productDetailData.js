@@ -1804,6 +1804,334 @@ export const printerDetails = {
     imgFolderName: "M5036",
   },
 
+  "cwc-m5023": {
+    title: "CWC M5023 Multifunction Laser Printer",
+
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 25ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "25 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "110000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Mobile printing capability",
+          desc: "Apple AirPrint, Mopria",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 7/8/8.1/10, Windows Server 2003/2008/2012/2016",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Standard: 650 sheets; Maximum: 3,140 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "250 Sheets",
+        },
+        {
+          title: "Paper weight",
+          desc: "20 to 25 lb. bond/752 to 90 gsm",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "1",
+        },
+        {
+          title: "Media sizes",
+          desc: "Thin Paper, Plain Paper 1, Plain Paper 2, Recycled, Color Paper, Special Paper, Middle Thick Paper, Prepunched Paper, Letterhead, Bond Paper, Cardstock, Thick Paper 1, Thick Paper 2, Label Paper, OHP, Envelope",
+        },
+      ],
+
+      Scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "25 cpm",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 x 600 dpi",
+        },
+        {
+          title: "Feeder Type",
+          desc: "DADF/SPDF",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "130 Pgs.",
+        },
+        {
+          title: "File formats",
+          desc: "JPG, TIFF, PDF, Searchable PDF via Optical Character Recognition (OCR), Password-protected PDF, Linearized PDF and PDF/A",
+        },
+        {
+          title: "Output function",
+          desc: "Scan to PC, Email, USB",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy",
+        },
+        {
+          title: "Operation panel",
+          desc: "7” Touch Screen Display",
+        },
+        {
+          title: "RAM",
+          desc: "4GB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
+        },
+        {
+          title: "Warm-up time",
+          desc: "As fast as 12 seconds",
+        },
+        {
+          title: "First output speed",
+          desc: "As fast as 6.2 seconds",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "Hi-Speed USB 2.0 (Type B), Ethernet 10/100/1000 BaseTX, Wireless 802.11 b/g/n(Optional), Hi-Speed USB 2.0 (Type A - Thumbdrive)",
+        },
+        {
+          title: "Power comsumption",
+          desc: "25 ppm = 0.39 kWh or less; or less; 30 ppm = 0.48 kWh 35 ppm = 0.57 kWh or less",
+        },
+        {
+          title: "Sleep Mode",
+          desc: "0.4 watts or less",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "590 x 670.8 x 766.5 mm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: "54.2 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate drum and toner",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "15000 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T5023",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D5023",
+        },
+      ],
+    },
+    imgFolderName: "M5023",
+  },
+
+  "cwc-m5025": {
+    title: "CWC M5025 Multifunction Laser Printer",
+
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 27 ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "27 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "60000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Mobile printing capability",
+          desc: "Apple AirPrint, Mopria",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 7/8/8.1/10, Windows Server 2003/2008/2012/2016",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Standard: 500 sheets; Maximum: 1,600 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "250 Sheets",
+        },
+        {
+          title: "Paper weight",
+          desc: "52 - 216g/m2",
+        },
+        {
+          title: "Media sizes",
+          desc: "Thin Paper, Plain Paper 1, Plain Paper 2, Recycled, Color Paper, Special Paper, Middle Thick Paper, Prepunched Paper, Letterhead, Bond Paper, Cardstock, Thick Paper 1, Thick Paper 2, Label Paper, OHP, Envelope",
+        },
+      ],
+
+      Scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "Mono: 18ipm Color: 6ipm",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 x 600 dpi",
+        },
+        {
+          title: "Feeder Type",
+          desc: "DADF/RADF",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "100 Pgs.",
+        },
+        {
+          title: "File formats",
+          desc: "JPG, TIFF, PDF, Searchable PDF via Optical Character Recognition (OCR), Password-protected PDF, Linearized PDF and PDF/A",
+        },
+        {
+          title: "Output function",
+          desc: "Scan to PC, Email, USB",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy",
+        },
+        {
+          title: "Operation panel",
+          desc: "7” Touch Screen Display",
+        },
+        {
+          title: "RAM",
+          desc: "512MB/ 1GB/ 2GB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
+        },
+        {
+          title: "Warm-up time",
+          desc: "19 seconds",
+        },
+        {
+          title: "First output speed",
+          desc: "6.5 seconds",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "Hi-Speed USB 2.0 (Type B), Ethernet 10/100/1000 BaseTX, Wireless 802.11 b/g/n(Optional), Hi-Speed USB 2.0 (Type A - Thumbdrive)",
+        },
+        {
+          title: "Power comsumption",
+          desc: "Maximum: Less Than 1,550W Ready mode: 94W Sleep mode: 0.97W",
+        },
+        {
+          title: "Sleep Mode",
+          desc: "Less than 1.3 kWh",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "587 x 581 x 639 mm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: "39kg or less",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate drum and toner",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "4000 pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T2702",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D2702",
+        },
+      ],
+    },
+    imgFolderName: "M5025",
+  },
+
   "cwc-m251": {
     title: "CWC M251 Multifunction Laser Printer",
 
@@ -2584,6 +2912,121 @@ export const printerDetails = {
       ],
     },
     imgFolderName: "1020NW",
+  },
+  "cwc-p230": {
+    title: "CWC P230 Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 33/35PPM(A4/Letter)",
+      "Connection method: Network, WiFi and USB",
+      "Automatic duplex printing",
+      "One-step driver installation",
+      "Silent printing, reduce noise",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "33/35PPM(A4/Letter)",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "60000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows： Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive,A5, Envelope - Monarch, 60~120g/m²",
+        },
+      ],
+      general: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Processor",
+          desc: "1.600GHz",
+        },
+        {
+          title: "RAM",
+          desc: "256MB",
+        },
+        {
+          title: "Bypass Tray / ADF",
+          desc: "YES",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "1",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "35.4 x 34 x 23.2cm (WxDxH)     ",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "45.5 x 44.6 x 30.5cm",
+        },
+        {
+          title: "Weight",
+          desc: "6.82kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "8.15kg  ",
+        },
+        {
+          title: "Power comsumption",
+          desc: "525W(printing), 2W(sleep Mode)",
+        },
+        {
+          title: "Power Supply",
+          desc: "220-240V AC, ~50/60Hz (110V optional)",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1500 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T230",
+        },
+      ],
+    },
+    imgFolderName: "P230",
   },
 
   //CARTRIDGES DATA

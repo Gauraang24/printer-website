@@ -1,3 +1,5 @@
+import { link } from "framer-motion/client";
+
 export const printersCollection = [
   {
     heading: "CWC Multifunction Laser Printer Series",
@@ -80,6 +82,18 @@ export const printersCollection = [
         key: "M12",
         navigate: "cwc-m251",
       },
+      {
+        title : "CWC M5023",
+        link : "images/productDetail/M5023/img1.webp",
+        key : "M13",
+        navigate : "cwc-m5023"
+      },
+      {
+        title : "CWC M5025",
+        link : "images/productDetail/M5025/img1.webp",
+        key : "M14",
+        navigate : "cwc-m5025"
+      }
     ],
   },
   {
@@ -127,6 +141,12 @@ export const printersCollection = [
         key: "P7",
         navigate: "cwc-1020",
       },
+      {
+        title : "CWC P230",
+        link : "images/productDetail/P230/img1.webp",
+        key : "P8",
+        navigate : "cwc-p230"
+      }
     ],
   },
 ];
