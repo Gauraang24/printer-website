@@ -2295,6 +2295,172 @@ export const printerDetails = {
     imgFolderName: "M251",
   },
 
+  "cwc-m320": {
+    title: "CWC M320 Multifunction Laser Printer",
+
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 21 ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "21 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "60000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Mobile printing capability",
+          desc: "Apple AirPrint, Mopria",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 7/8/8.1/10, Windows Server 2003/2008/2012/2016",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Standard:  350 sheets; Maximum:  1,350 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "250 Sheets",
+        },
+        {
+          title: "Paper weight",
+          desc: " 52 - 105 g/m²",
+        },
+        {
+          title: "Media sizes",
+          desc: " Thin Paper, Plain Paper 1, Plain Paper 2, Recycled, Color Paper, Special Paper, Middle Thick Paper, Prepunched Paper, Letterhead, Bond Paper, Cardstock, Thick Paper 1, Thick Paper 2, Label Paper, OHP, Envelope",
+        },
+      ],
+
+      Scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "Color 6ppm; Mono 15ppm",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 x 600 dpi",
+        },
+        {
+          title: "Bundled drivers",
+          desc: "TWAIN, SANE, Network TWAIN (Option)",
+        },
+        {
+          title: "Feeder Type",
+          desc: "Platen/DADF",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: " 1/100",
+        },
+        {
+          title: "File formats",
+          desc: " TIFF, JPEG, PDF",
+        },
+        {
+          title: "Output function",
+          desc: "Scan to Email / Folder (Option)",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy",
+        },
+        {
+          title: "Operation panel",
+          desc: "Touch Screen Display",
+        },
+        {
+          title: "RAM",
+          desc: "256MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "600 x 600 dpi",
+        },
+        {
+          title: "Warm-up time",
+          desc: "31 seconds",
+        },
+        {
+          title: "First output speed",
+          desc: " 8.8 seconds",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "Hi-Speed USB 2.0 (Type B), Ethernet 10/100/1000 BaseTX, Wireless 802.11 b/g/n(Optional), Hi-Speed USB 2.0 (Type A - Thumbdrive)",
+        },
+        {
+          title: "Power comsumption",
+          desc: " Less than 950W; Ready mode: 92/ 100/ 110 W; TEC (Typical Electricity Consumption): 1,480/ 1,500/ 1,520 W/h",
+        },
+        {
+          title: "Sleep Mode",
+          desc: " 2.7/ 2.8/ 2.8 W",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: " 587 x 581 x 461 mm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: " 28.5/ 29/ 33.5 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate drum and toner",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "4000 pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T320",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D320",
+        },
+      ],
+    },
+    imgFolderName: "M320",
+  },
+
   //LASER PRINTER BELOW
   "cwc-p5040dnw": {
     title: "CWC P5040DN/W Laser Printer",

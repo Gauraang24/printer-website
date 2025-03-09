@@ -93,6 +93,12 @@ export const printersCollection = [
         link : "images/productDetail/M5025/img1.webp",
         key : "M14",
         navigate : "cwc-m5025"
+      },
+      {
+        title : "CWC M320",
+        link : "images/productDetail/M320/img1.webp",
+        key : "M15",
+        navigate : "cwc-m320"
       }
     ],
   },
