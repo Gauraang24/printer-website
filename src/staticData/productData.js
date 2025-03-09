@@ -68,6 +68,18 @@ export const printersCollection = [
         key: "M10",
         navigate: "cwc-m315",
       },
+      {
+        title: "CWC M5036",
+        link: "images/productDetail/M5036/img1.webp",
+        key: "M11",
+        navigate: "cwc-m5036",
+      },
+      {
+        title: "CWC M251",
+        link: "images/productDetail/M251/img1.webp",
+        key: "M12",
+        navigate: "cwc-m251",
+      },
     ],
   },
   {
