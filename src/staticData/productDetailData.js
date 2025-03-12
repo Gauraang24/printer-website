@@ -2595,7 +2595,7 @@ export const printerDetails = {
       print_specification: [
         {
           title: "Print speed",
-          desc: "33 ppm",
+          desc: "33/35 ppm",
         },
         {
           title: "Monthly Duty Cycle",
