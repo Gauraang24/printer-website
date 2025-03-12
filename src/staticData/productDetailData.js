@@ -2585,7 +2585,7 @@ export const printerDetails = {
     title: "CWC P5030DN/W Laser Printer",
     type: "printer",
     specSummary: [
-      "Printing speed (A4): 33ppm",
+      "Printing speed (A4): 33/35ppm",
       "Connection method: Network, WiFi and USB",
       "Automatic duplex printing",
       "Automatic double-sided printing",
@@ -2639,7 +2639,7 @@ export const printerDetails = {
         },
         {
           title: "RAM",
-          desc: "512MB",
+          desc: "256/512MB",
         },
         {
           title: "Bypass Tray / ADF",
