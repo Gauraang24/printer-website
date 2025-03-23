@@ -415,28 +415,25 @@ export const printerDetails = {
   },
   "cwc-m305": {
     title: "CWC M305 Multifunction Laser Printer",
+
     type: "printer",
     specSummary: [
-      "Printing speed (A4): 30ppm",
+      "Printing speed (A4): 30/32 PPM (A4/Letter)",
       "Connection method: Network, WiFi and USB",
-      "Basic function: Print, Copy, Scan",
-      "Automatic duplex printing",
-      "Automatic double-sided printing",
-      "Security features protect against cyber threats",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
     ],
     details: {
       print_specification: [
         {
           title: "Print speed",
-          desc: "30 ppm",
+          desc: "30/32 PPM (A4/Letter)",
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "30000*",
-        },
-        {
-          title: "Print Resolution",
-          desc: "2400 x 600 dpi",
+          desc: "60000*",
         },
         {
           title: "Duplex printing",
@@ -444,21 +441,7 @@ export const printerDetails = {
         },
         {
           title: "Operating system compatibility",
-          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
-        },
-      ],
-      scan_specification: [
-        {
-          title: "Scan speed",
-          desc: "5 seconds per page",
-        },
-        {
-          title: "Scan resolution",
-          desc: "600 dpi (Max) 300 dpi(Default)",
-        },
-        {
-          title: "Max. scan size",
-          desc: "21.6 x 29.7 cm",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11(32/64 bit),Kali Linux, Linux(BOSS), Maya, Fedora.",
         },
       ],
       paper_handling: [
@@ -472,64 +455,93 @@ export const printerDetails = {
         },
         {
           title: "Media sizes",
-          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive,A5, Envelope - Monarch, 60~120g/m²",
+          desc: "Letter/A4, A5, A6 and Custom sizes: 3.94 x 5.83 in to 8.5 x 14 in/100 x 148 mm to 216 x 340 mm",
         },
       ],
+
+      Scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "5 seconds per page",
+        },
+        {
+          title: "Scan resolution",
+          desc: "600 dpi (Max) 300 dpi(Default)",
+        },
+        {
+          title: "Max. scan size",
+          desc: "21.6 x 29.7 cm",
+        },,
+      ],
+
       general: [
         {
-          title: "Paper input tray",
-          desc: "250 sheets",
+          title: "Function",
+          desc: "Print,Scan,Copy,Fax",
         },
         {
           title: "Processor",
-          desc: "1.2GHz",
+          desc: "525MHz",
         },
         {
           title: "RAM",
-          desc: " 128MB / 256MB",
+          desc: "128MB / 256MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
+        },
+        {
+          title: "First output speed",
+          desc: "≤7.8s",
         },
         {
           title: "Interface",
           desc: "Network, WiFi and USB port",
         },
         {
-          title: "Dimension",
-          desc: "39 x 30 x 25.2cm (WxDxH)",
-        },
-        {
-          title: "Package size (D×W×H)",
-          desc: "47.5 x 39 x 35 cm",
-        },
-        {
-          title: "Weight",
-          desc: "8.36 kg",
-        },
-        {
-          title: "Gross Weight",
-          desc: "9.96 kg",
+          title: "Interface Type",
+          desc: "Hi-Speed USB 2.0 (Type B), Ethernet 10/100/1000 BaseTX, Wireless 802.11 b/g/n(Optional), Hi-Speed USB 2.0 (Type A - Thumbdrive)",
         },
         {
           title: "Power comsumption",
-          desc: "360W (printing), 1.8W (sleep mode)",
+          desc: "550W (printing), 1.8W (sleep mode)",
         },
         {
-          title: "Power Supply",
-          desc: "220-240V AC, ~50/60Hz (110V optional)",
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
         },
       ],
-
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "36.58 x 41.4 x 30.99 cm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: "10.26 kg",
+        },
+      ],
       consumable: [
         {
           title: "Consumable type",
-          desc: "Composite",
+          desc: "Separate Drum and Toner/Composite",
         },
         {
           title: "Minimum Cartridge Yield(Starter)",
-          desc: "2000 Pgs",
+          desc: "1500 Pgs",
         },
         {
           title: "Toner Cartridge",
-          desc: "CWC TE201S",
+          desc: "CWC-T0305",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CCWC- D0305",
         },
       ],
     },
@@ -3193,6 +3205,117 @@ export const printerDetails = {
       ],
     },
     imgFolderName: "P230",
+  },
+  "cwc-p330": {
+    title: "CWC P330 Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 30/32 PPM (A4/Letter)",
+      "Connection method: High-speed USB 2.0",
+      "Automatic duplex printing",
+      "One-step driver installation",
+      "Silent printing, reduce noise",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "30/32 PPM (A4/Letter)",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "60000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: " Windows Server2003 / 2008 / 2012 / /2016 / XP/Vista /Win 7/Win 8/Win8.1/ Win10/Win11 ；Mac OS 10.7～12; Linux（ubuntu12.04与14.04&16.04&18.04&20.04）",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Oficio, Statement, Japanese Postcard, ZL, Big 16K, Big 32K, 16K, 32K, B6, Yougata4, Postcard, Younaga3, Nagagata3, Yougata2",
+        },
+      ],
+      general: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Processor",
+          desc: "1.350MHz",
+        },
+        {
+          title: "RAM",
+          desc: "128MB",
+        },
+        {
+          title: "Warm-up time",
+          desc: "19 seconds",
+        },
+        {
+          title: "First output speed",
+          desc: "≤7.8s",
+        },
+        {
+          title: "Interface",
+          desc: "High-speed USB 2.0",
+        },
+        {
+          title: "Dimension",
+          desc: "3354 x334x 218mm",
+        },
+        {
+          title: "Weight",
+          desc: "6.8kg ",
+        },
+        {
+          title: "Power comsumption",
+          desc: "Print: Average 525W ；Standby: 50W ；Dormant：Less than 2 W",
+        },
+        {
+          title: "Power Supply",
+          desc: "220-240V AC, ~50/60Hz (110V optional)",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite / Separate Drum and Toner",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1500 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T0330",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D0330",
+        },
+      ],
+    },
+    imgFolderName: "P330",
   },
 
   //CARTRIDGES DATA
