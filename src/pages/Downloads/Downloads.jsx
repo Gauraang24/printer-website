@@ -53,6 +53,11 @@ const manualList = [
   "PB5020NW",
   "XOFF",
   "CWCMB5020",
+  "CWC010",
+  "CWC020",
+  "CWC030",
+  "CWC040",
+  "CWC20",
 ];
 
 const Downloads = () => {
