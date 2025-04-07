@@ -3145,7 +3145,7 @@ export const printerDetails = {
         },
         {
           title: "Processor",
-          desc: "1.600GHz",
+          desc: "600MHz",
         },
         {
           title: "RAM",
@@ -3220,15 +3220,15 @@ export const printerDetails = {
       print_specification: [
         {
           title: "Print speed",
-          desc: "30/32 PPM (A4/Letter)",
+          desc: "35 PPM (A4/Letter)",
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "60000*",
+          desc: "80000*",
         },
         {
           title: "Print Resolution",
-          desc: "2400 x 600 dpi",
+          desc: "1200 x 1200 dpi",
         },
         {
           title: "Duplex printing",
@@ -3260,11 +3260,11 @@ export const printerDetails = {
         },
         {
           title: "Processor",
-          desc: "1.350MHz",
+          desc: "525MHz",
         },
         {
           title: "RAM",
-          desc: "128MB",
+          desc: "256MB / 512MB",
         },
         {
           title: "Warm-up time",
@@ -3303,7 +3303,7 @@ export const printerDetails = {
         },
         {
           title: "Minimum Cartridge Yield(Starter)",
-          desc: "1500 Pgs",
+          desc: "3000 Pgs",
         },
         {
           title: "Toner Cartridge",
