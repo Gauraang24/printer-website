@@ -948,4 +948,204 @@ export const warranty = [
         purchaseDate: '28/03/2025',
         warrantyDate: '27/03/2030',
     },
+    {
+        serialNo: 'M5045022025BROA543',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347676',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347715',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347667',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347685',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347649',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N356266',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347652',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347693',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N348209',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N356270',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347663',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347707',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347675',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347681',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347717',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N348181',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347719',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347671',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347606',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347715',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347662',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347702',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N341041',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347691',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347999',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347677',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347680',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N348195',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347667',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347657',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347698',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347714',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347713',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347688',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347606',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347695',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347653',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N347635',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'E81699K4N341031',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
 ];
