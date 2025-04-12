@@ -734,4 +734,218 @@ export const warranty = [
         purchaseDate: '12/01/2024',
         warrantyDate: '11/01/2025',
     },
+    {
+        serialNo: 'MS045022025BROA501',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'MS045022025BROA502',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'MS045022025BROA503',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'MS04502202SBROAS04',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'MS04502202SBROA505',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA506',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA507',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA508',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA509',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },    {
+        serialNo: 'M5045022025BROA510',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA511',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA012',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA513',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA514',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA515',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA516',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA517',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA518',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA519',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA520',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA521',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA522',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA523',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA524',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA525',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA526',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA527',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA528',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA529',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA530',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA531',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA532',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA533',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA534',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA535',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA536',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA537',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA538',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA539',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA540',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA541',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA542',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
+    {
+        serialNo: 'M5045022025BROA543',
+        purchaseDate: '28/03/2025',
+        warrantyDate: '27/03/2030',
+    },
 ];
