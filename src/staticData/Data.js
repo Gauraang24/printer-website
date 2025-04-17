@@ -103,6 +103,11 @@ export const authorizedChannels = [
     link: "images/home/xerox.svg",
     key: "2",
   },
+  {
+    title: "Brother",
+    link: "images/home/brother.svg",
+    key: "3",
+  },
 ];
 
 export const certificatesData = [
