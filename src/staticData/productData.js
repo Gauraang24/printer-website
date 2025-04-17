@@ -83,23 +83,29 @@ export const printersCollection = [
         navigate: "cwc-m251",
       },
       {
-        title : "CWC M5023",
-        link : "images/productDetail/M5023/img1.webp",
-        key : "M13",
-        navigate : "cwc-m5023"
+        title: "CWC M5023",
+        link: "images/productDetail/M5023/img1.webp",
+        key: "M13",
+        navigate: "cwc-m5023",
       },
       {
-        title : "CWC M5025",
-        link : "images/productDetail/M5025/img1.webp",
-        key : "M14",
-        navigate : "cwc-m5025"
+        title: "CWC M5025",
+        link: "images/productDetail/M5025/img1.webp",
+        key: "M14",
+        navigate: "cwc-m5025",
       },
       {
-        title : "CWC M320",
-        link : "images/productDetail/M320/img1.webp",
-        key : "M15",
-        navigate : "cwc-m320"
-      }
+        title: "CWC M320",
+        link: "images/productDetail/M320/img1.webp",
+        key: "M15",
+        navigate: "cwc-m320",
+      },
+      {
+        title: "CWC P211",
+        link: "images/productDetail/P211/img1.webp",
+        key: "",
+        navigate: "cwc-p211",
+      },
     ],
   },
   {
@@ -148,16 +154,22 @@ export const printersCollection = [
         navigate: "cwc-1020",
       },
       {
-        title : "CWC P230",
-        link : "images/productDetail/P230/img1.webp",
-        key : "P8",
-        navigate : "cwc-p230"
+        title: "CWC P230",
+        link: "images/productDetail/P230/img1.webp",
+        key: "P8",
+        navigate: "cwc-p230",
       },
       {
-        title : "CWC P330",
-        link : "images/productDetail/P330/img1.webp",
-        key : "P9",
-        navigate : "cwc-p330"
+        title: "CWC P330",
+        link: "images/productDetail/P330/img1.webp",
+        key: "P9",
+        navigate: "cwc-p330",
+      },
+      {
+        title : "CWC P4843DN/W",
+        link : "images/productDetail/P4843/img1.webp",
+        key : "P10",
+        navigate : "cwc-p4843dnw"
       }
     ],
   },

@@ -2474,6 +2474,129 @@ export const printerDetails = {
   },
 
   //LASER PRINTER BELOW
+  "cwc-p211": {
+    title: "CWC P211 Laser Printer",
+
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 25/26ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "25/26 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "40000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Double-Sided",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 7, Winodws 2008 Sever R2.8, Windows 8.1, Windows 10, Windows 11, Linux (BOSS）",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "100 sheets",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "1",
+        },
+        {
+          title: "Media sizes",
+          desc: "Letter/A4, A5, A6 and Custom sizes: 3.94 x 5.83 in to 8.5 x 14 in/100 x 148 mm to 216 x 340 mm",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print",
+        },
+        {
+          title: "Processor",
+          desc: "1Ghz",
+        },
+        {
+          title: "RAM",
+          desc: "256MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "600 x 600 dpi, 4800 Color Quality",
+        },
+        {
+          title: "Bypass Tray",
+          desc: "YES",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "Hi-Speed USB 2.0 (Type B), Ethernet 10/100/1000 BaseTX, Wireless 802.11 b/g/n, Hi-Speed USB 2.0 (Type A - Thumbdrive)",
+        },
+        {
+          title: "Power comsumption",
+          desc: "≤417W",
+        },
+        {
+          title: "Power Supply",
+          desc: "220V：AC220-240V 50/60Hz，7A",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "243.7 x 411.2 x 394.1 mm",
+        },
+        {
+          title: "Product Weight",
+          desc: "16.1 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "Black:700, CMY:700pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T0251-1.5K Black,CWC-T0251-1.5K Cyan,CWC-T0251-1.5K Magenta,CWC-T0251-1.5K Yellow",
+        },
+      ],
+    },
+    imgFolderName: "P211",
+  },
   "cwc-p5040dnw": {
     title: "CWC P5040DN/W Laser Printer",
     type: "printer",
@@ -2593,6 +2716,121 @@ export const printerDetails = {
     },
     imgFolderName: "P5040DNW",
   },
+  "cwc-p4843dnw": {
+    title: "CWC P4843 Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 43ppm",
+      "Connection method: Network, WiFi and USB",
+      "Automatic duplex printing",
+      "One-step driver installation",
+      "Silent printing, reduce noise",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "43 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "100000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "100 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive,A5, Envelope - Monarch, 60~120g/m²",
+        },
+      ],
+      general: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Processor",
+          desc: "1.2GHz",
+        },
+        {
+          title: "RAM",
+          desc: "512MB",
+        },
+        {
+          title: "Bypass Tray",
+          desc: "YES",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "100",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Dimension",
+          desc: "37 x 37 x 26.3cm (WxDxH)",
+        },
+        {
+          title: "Package size (D×W×H)",
+          desc: "45 x 45 x 40cm",
+        },
+        {
+          title: "Weight",
+          desc: "10.04 kg",
+        },
+        {
+          title: "Gross Weight",
+          desc: "12.08 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "700W(printing), 3W(sleep Mode)",
+        },
+        {
+          title: "Power Supply",
+          desc: "220-240V AC, ~50/60Hz (110V optional)",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC T4843",
+        },
+      ],
+    },
+    imgFolderName: "P4843",
+  },
   "cwc-p5030dnw": {
     title: "CWC P5030DN/W Laser Printer",
     type: "printer",
@@ -2654,7 +2892,7 @@ export const printerDetails = {
           desc: "256/512MB",
         },
         {
-          title: "Bypass Tray / ADF",
+          title: "Bypass Tray",
           desc: "YES",
         },
         {
@@ -3152,7 +3390,7 @@ export const printerDetails = {
           desc: "256MB",
         },
         {
-          title: "Bypass Tray / ADF",
+          title: "Bypass Tray",
           desc: "YES",
         },
         {
@@ -3220,19 +3458,19 @@ export const printerDetails = {
       print_specification: [
         {
           title: "Print speed",
-          desc: "35 PPM (A4/Letter)",
+          desc: "30/32 PPM (A4/Letter)",
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "80000*",
+          desc: "60000*",
         },
         {
           title: "Print Resolution",
-          desc: "1200 x 1200 dpi",
+          desc: " 2400 x 600 dpi",
         },
         {
           title: "Duplex printing",
-          desc: "Automatic",
+          desc: "Automatic Duplex Printing",
         },
         {
           title: "Operating system compatibility",
@@ -3255,16 +3493,16 @@ export const printerDetails = {
       ],
       general: [
         {
-          title: "Paper input tray",
-          desc: "250 sheets",
+          title: "Function",
+          desc: "Print",
         },
         {
           title: "Processor",
-          desc: "525MHz",
+          desc: "350MHz",
         },
         {
           title: "RAM",
-          desc: "256MB / 512MB",
+          desc: "128MB",
         },
         {
           title: "Warm-up time",
@@ -3280,7 +3518,7 @@ export const printerDetails = {
         },
         {
           title: "Dimension",
-          desc: "3354 x334x 218mm",
+          desc: "354 x 334 x 218mm",
         },
         {
           title: "Weight",
