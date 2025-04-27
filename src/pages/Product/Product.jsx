@@ -7,7 +7,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
-import { fontsm, mtMd, pblg, ptlg } from "../../utils/constant";
+import { fontsm, fontxs, mtMd, pblg, ptlg, pyMd } from "../../utils/constant";
 import Reveal from "../../commonComponents/Animation/Reveal";
 
 const constants = {
@@ -54,7 +54,7 @@ const Product = () => {
       {/* ProductSection */}
 
       <div className={`w-full ${ptlg}`}>
-        <div className="w-max mx-auto">
+        <div className="w-max mx-auto flex items-center flex-col">
           <Reveal width="w-max">
             <Segmented
               options={options}
@@ -63,12 +63,16 @@ const Product = () => {
               }}
             />
           </Reveal>
+          <Reveal>
+            <p className={`font-semibold ${fontxs} ${pyMd} text-center pt-4`}>
+              Note : We Can Customize The Printers/MFP As Per Customer
+              Requirement & Specifications.
+            </p>
+          </Reveal>
         </div>
       </div>
 
-
       <div className={`w-[90%] sm:max-w-[1200px] mx-auto ${pblg}`}>
-
         {productData.map((i, key) => {
           return (
             <div key={key}>
@@ -96,14 +100,17 @@ const Product = () => {
                             loading="lazy"
                           />
                         </div>
-                        <p className={`font-bold text-center ${fontsm} ${mtMd}`}>{prod.title}</p>
+                        <p
+                          className={`font-bold text-center ${fontsm} ${mtMd}`}
+                        >
+                          {prod.title}
+                        </p>
                       </div>
                     );
                   })}
                 </div>
               </Reveal>
             </div>
-
           );
         })}
       </div>
