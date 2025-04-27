@@ -166,11 +166,17 @@ export const printersCollection = [
         navigate: "cwc-p330",
       },
       {
-        title : "CWC P4843DN/W",
-        link : "images/productDetail/P4843/img1.webp",
-        key : "P10",
-        navigate : "cwc-p4843dnw"
-      }
+        title: "CWC P4843DN/W",
+        link: "images/productDetail/P4843/img1.webp",
+        key: "P10",
+        navigate: "cwc-p4843dnw",
+      },
+      {
+        title: "CWC P5022",
+        link: "images/productDetail/P5022/img1.webp",
+        key: "P11",
+        navigate: "cwc-p5022",
+      },
     ],
   },
 ];

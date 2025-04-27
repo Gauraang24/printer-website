@@ -2615,7 +2615,7 @@ export const printerDetails = {
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "100000*",
+          desc: "200000*",
         },
         {
           title: "Print Resolution",
@@ -3554,6 +3554,106 @@ export const printerDetails = {
       ],
     },
     imgFolderName: "P330",
+  },
+
+  "cwc-p5022": {
+    title: "CWC P5022 Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 30/32 PPM (A4/Letter)",
+      "Connection method: High-speed USB 2.0",
+      "Automatic duplex printing",
+      "One-step driver installation",
+      "Silent printing, reduce noise",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "26ppm (A3/A4)",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "25000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "2400 x 600 dpi",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Duplex Printing",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: " Windows Server2003 / 2008 / 2012 / /2016 / XP/Vista /Win 7/Win 8/Win8.1/ Win10/Win11 ；Mac OS 10.7～12; Linux（ubuntu12.04与14.04&16.04&18.04&20.04）",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "100 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Oficio, Statement, Japanese Postcard, ZL, Big 16K, Big 32K, 16K, 32K, B6, Yougata4, Postcard, Younaga3, Nagagata3, Yougata2",
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Print",
+        },
+        {
+          title: "Processor",
+          desc: "1.2GHz",
+        },
+        {
+          title: "RAM",
+          desc: "128MB",
+        },
+        {
+          title: "Interface",
+          desc: "High-speed USB 2.0",
+        },
+        {
+          title: "Dimension",
+          desc: "449 x 552 x 360 mm",
+        },
+        {
+          title: "Weight",
+          desc: "15kg ",
+        },
+        {
+          title: "Power comsumption",
+          desc: "360W (printing), 1.8W (sleep mode)",
+        },
+        {
+          title: "Power Supply",
+          desc: "220-240V AC, ~50/60Hz (110V optional)",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1600 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-TE201S",
+        },
+      ],
+    },
+    imgFolderName: "P5022",
   },
 
   //CARTRIDGES DATA
