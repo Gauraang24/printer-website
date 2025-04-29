@@ -3560,8 +3560,8 @@ export const printerDetails = {
     title: "CWC P5022 Laser Printer",
     type: "printer",
     specSummary: [
-      "Printing speed (A4): 30/32 PPM (A4/Letter)",
-      "Connection method: High-speed USB 2.0",
+      "Printing speed (A4): 26 PPM (A3/A4)",
+      "Connection method:  Network, WiFi and USB",
       "Automatic duplex printing",
       "One-step driver installation",
       "Silent printing, reduce noise",
@@ -3618,7 +3618,7 @@ export const printerDetails = {
         },
         {
           title: "Interface",
-          desc: "High-speed USB 2.0",
+          desc: " Network, WiFi and USB",
         },
         {
           title: "Dimension",
