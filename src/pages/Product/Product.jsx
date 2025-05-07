@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import {
   cartridgeCollection,
   printersCollection,
+  scannerCollection,
 } from "../../staticData/productData";
 import { useNavigate } from "react-router-dom";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
@@ -13,6 +14,7 @@ import Reveal from "../../commonComponents/Animation/Reveal";
 const constants = {
   PRINTER: "1",
   CARTRIDGE: "2",
+  SCANNER: "3",
 };
 const Product = () => {
   const [activeTab, setActiveTab] = useState(constants.PRINTER);
@@ -21,8 +23,10 @@ const Product = () => {
   useEffect(() => {
     if (activeTab === constants.PRINTER) {
       setProductData(printersCollection);
-    } else {
+    } else if (activeTab === constants.CARTRIDGE) {
       setProductData(cartridgeCollection);
+    } else {
+      setProductData(scannerCollection);
     }
   }, [activeTab]);
 
@@ -34,6 +38,10 @@ const Product = () => {
     {
       label: "Cartridge",
       value: constants.CARTRIDGE,
+    },
+    {
+      label: "Scanner",
+      value: constants.SCANNER,
     },
   ];
   const navigate = useNavigate();

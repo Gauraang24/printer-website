@@ -130,7 +130,7 @@ export const printersCollection = [
         navigate: "cwc-p5010dnw",
       },
       {
-        title: "CWC P5020N/W",
+        title: "CWC PB5020N/W",
         link: "images/productPage/CWC_P4.png",
         key: "P4",
         navigate: "cwc-pb5020nw",
@@ -257,3 +257,22 @@ export const cartridgeCollection = [
     ],
   },
 ];
+
+export const scannerCollection = [{
+  heading: "Scanner",
+  data: [
+    {
+      title: "CWC 3100",
+      link: "images/productDetail/3100/img1.webp",
+      key: "cwc-3100",
+      navigate: "cwc-3100",
+    },
+    {
+      title: "CWC S1130",
+      link: "images/productDetail/S1130/img1.webp",
+      key: "cwc-S1130",
+      navigate: "cwc-S1130",
+    },
+
+  ]
+}]

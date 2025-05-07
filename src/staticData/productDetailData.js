@@ -3063,7 +3063,7 @@ export const printerDetails = {
     specSummary: [
       "Printing speed (A4): 23ppm",
       "Connection method: Network, WiFi and USB",
-      "Automatic double-sided printing",
+      // "Automatic double-sided printing",
       "Security features protect against cyber threats",
     ],
     details: {
@@ -3555,7 +3555,6 @@ export const printerDetails = {
     },
     imgFolderName: "P330",
   },
-
   "cwc-p5022": {
     title: "CWC P5022 Laser Printer",
     type: "printer",
@@ -3654,6 +3653,204 @@ export const printerDetails = {
       ],
     },
     imgFolderName: "P5022",
+  },
+
+  "cwc-3100": {
+    title: "CWC 3100 Document Scanner",
+    type: "scanner",
+    specSummary: [
+      "Scanner speed (A4): Up to 40ppm",
+      "Connection method: USB 3.0, USB 2.0",
+      " Sheet Fed Desktop Document Scanner",
+      "One-step driver installation",
+      "Dual CIS, LED Array Light Source",
+    ],
+    details: {
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "Up to 40 (pages per minute)",
+        },
+        {
+          title: "Scan Speeds 2-sided",
+          desc: "Up to 80 (images per minute)",
+        },
+        {
+          title: "Scan Resolution",
+          desc: "Up to 1,200 x 1,200dpi",
+        },
+        {
+          title: "Product Form Factor",
+          desc: "Sheet Fed Desktop Document Scanner",
+        },
+        {
+          title: "Control Panel",
+          desc: "LED, 4 Keys",
+        },
+        {
+          title: "Colour Depth",
+          desc: "48-bit internal; 24-bit external",
+        },
+        {
+          title: "Grey Scale",
+          desc: " 256 levels (8 bit)",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Automatic Document Feeder (ADF)",
+          desc: "60 sheets",
+        },
+        {
+          title: "Media",
+          desc: "Paper Weight 40 - 200gsm Plastic Card Thickness Up to 1.32mm embossed, Up to 1.10mm without emboss",
+        },
+        {
+          title: "Media Types",
+          desc: "Plain Paper, Thin Paper, Thick Paper, Thicker Paper, Recycled Paper, Business Card, Plastic Card",
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Scanner",
+        },
+        {
+          title: "Image Processing",
+          desc: "Auto Deskew(Feed), Auto Image Rotation 5 Auto Colour Detect Adjust, Blank Page Removal, Auto Scan Size, Scan Margin, Background Processing5, Colour Drop Remove Ruled Line, 2in1 Scan, 1to2 Scan, Plastic Card Mode, Single Page Scan, Custom TWAIN Profiles",
+        },
+        {
+          title: "File Format Support",
+          desc: "Including PDF (single, multi, PDF/A-1b, secured, signed), JPEG,s TIFF (single, multi)",
+        },
+        {
+          title: "Direct Scan",
+          desc: "Scan directly to a USB (acceptable memory size upto 128GB)",
+        },
+        {
+          title: "Feed Control",
+          desc: "Separation Switch",
+        },
+        {
+          title: "Standard Functions",
+          desc: "Scan to PC, Image ",
+        },
+        {
+          title: "Power Supply",
+          desc: "220-240V AC, ~50/60Hz (110V optional)",
+        },
+        {
+          title: "Scanner With Carton",
+          desc: "391 x 243 x 320 mm",
+        },
+        {
+          title: "Weight With Carton",
+          desc: "3.32kg",
+        },
+        {
+          title: "Power Consumption",
+          desc: "Scanning 23W; Ready 5.4W; Sleep 1.4W; Network Standby 1.4W; Power O 0.1W",
+        },
+      ],
+    },
+    imgFolderName: "3100",
+  },
+
+  "cwc-S1130": {
+    title: "CWC S1130 Document Scanner",
+    type: "scanner",
+    specSummary: [
+      "Scanner speed (A4): Up to 30ppm",
+      "Connection method: USB 3.2 Gen 1x1 / USB 2.0 / USB 1.1; Ethernet",
+      " Sheet Fed Desktop Document Scanner",
+      "One-step driver installation",
+      "Single line CMOS-CIS x 2",
+    ],
+    details: {
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "30 ppm",
+        },
+        {
+          title: "Scan Speeds 2-sided",
+          desc: " 60 ipm(images per minute)",
+        },
+        {
+          title: "Scan Resolution",
+          desc: "50 to 600 dpi; 1,200 dpi",
+        },
+        {
+          title: "Scanner Type",
+          desc: "ADF (Automatic Document Feeder), Duplex",
+        },
+        {
+          title: "Image Sensor Type",
+          desc: "Single line CMOS-CIS x 2 (front x 1, back x 1)",
+        },
+        {
+          title: "Output Format",
+          desc: "Color: 24-bit, Grayscale: 8-bit, Monochrome: 1-bit",
+        },
+        {
+          title: "Multifeed Detection",
+          desc: "Overlap detection (Ultrasonic sensor)",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Automatic Document Feeder (ADF)",
+          desc: "50 sheets",
+        },
+        {
+          title: "Media",
+          desc: " 216 x 355.6 mm (8.5 x 14 in.);  52 x 74 mm (2.0 x 2.9 in.); 3,048 mm (120 in.);",
+        },
+        {
+          title: "Media Weight",
+          desc: " 50 to 209 g/m2 (13.4 to 56 lb); 0.76 mm (0.0299 in.) or less",
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Scanner",
+        },
+        {
+          title: "Image Processing",
+          desc: "Multi image output, Automatic color detection, Automatic page size detection, Blank page detection, Dynamic threshold (iDTC), Advanced DTC, SDTC, Error diffusion, Dither, De-Screen, Emphasis, Dropout color (None/Red/Green/Blue/White/Saturation/Custom), sRGB output, Split image, De-Skew, Edge filler, Vertical streaks reduction, Digital endorser, Background pattern removal, Character thickness, Character augmentation, Character extraction",
+        },
+        {
+          title: "File Format Support",
+          desc: "Including PDF (single, multi, PDF/A-1b, secured, signed), JPEG,s TIFF (single, multi)",
+        },
+        {
+          title: "Interface",
+          desc: "USB 3.2 Gen 1x1 / USB 2.0 / USB 1.1; 10BASE-T,100BASE-TX,1000BASE-T",
+        },
+        {
+          title: "Standard Functions",
+          desc: "Scan to PC, Image ",
+        },
+        {
+          title: "Power Requirements",
+          desc: "AC 100 to 240 V ±10 %",
+        },
+        {
+          title: "Dimensions",
+          desc: "298 x 135 x 133 mm ",
+        },
+        {
+          title: "Weight",
+          desc: "2.5 kg",
+        },
+        {
+          title: "Power Consumption",
+          desc: "Operating Mode 18 W or less; Power Saving Mode 2 W or less; Auto Standby (Off) Mode 0.3 W or less",
+        },
+      ],
+    },
+    imgFolderName: "S1130",
   },
 
   //CARTRIDGES DATA

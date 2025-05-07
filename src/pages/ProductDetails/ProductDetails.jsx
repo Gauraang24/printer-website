@@ -8,6 +8,11 @@ import { fontlg, fontmd, fontsm, mtlg, mtMd, mylg } from "../../utils/constant";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
 import Reveal from "../../commonComponents/Animation/Reveal";
 
+export const PRODUCT_TYPE = {
+  PRINTER: "printer",
+  SCANNER: "scanner",
+  CARTRIDGE: 'cartridge'
+}
 const ProductDetails = () => {
   const params = useParams();
   const navigate = useNavigate();
@@ -53,7 +58,7 @@ const ProductDetails = () => {
       <div
         className={`w-[90%] sm:max-w-[1200px] mx-auto flex flex-col sm:flex-row gap-1 ${mylg}`}
       >
-        {printerDetails[params.productId]?.type === "printer" && (
+        {printerDetails[params.productId]?.type !== PRODUCT_TYPE.CARTRIDGE && (
           <Reveal width="w-full" className={"!w-full sm:hidden"}>
             <div className="w-full sm:hidden">
               <Carousel
@@ -89,7 +94,7 @@ const ProductDetails = () => {
         )}
 
         <div className="w-full sm:w-1/2  hidden sm:flex gap-3 justify-evenly  h-max">
-          {printerDetails[params.productId]?.type === "printer" && (
+          {printerDetails[params.productId]?.type !== PRODUCT_TYPE.CARTRIDGE && (
             <div className="flex flex-col justify-between gap-2 w-[15%] sm:w-[20%]">
               {sidePics?.map((i) => {
                 return (
@@ -154,7 +159,7 @@ const ProductDetails = () => {
           </div>
           <Reveal width="w-full" className={"!w-full"}>
             <div className={`flex gap-2 ${mtMd}`}>
-              {printerDetails[params.productId]?.type === "printer" && (
+              {printerDetails[params.productId]?.type !== PRODUCT_TYPE.CARTRIDGE && (
                 <Button
                   className="flex-1 rounded-sm sm:rounded-md md:rounded-lg lg:rounded-xl xl:rounded-2x h-12 xs:h-14 xmd:h-14 sm:h-14 lg:h-16 xl:h-20 shadow-xl "
                   onClick={() => {
@@ -181,7 +186,7 @@ const ProductDetails = () => {
 
       {/* Detailed Summary Section  */}
 
-      {printerDetails[params.productId]?.type === "printer" && (
+      {printerDetails[params.productId]?.type !== PRODUCT_TYPE.CARTRIDGE && (
         <div div className="w-[90%] sm:max-w-[1200px] m-auto mb-16">
           <CustomDivider title={"PRODUCT SPECIFICATION"} />
           <div>
