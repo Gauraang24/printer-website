@@ -177,6 +177,12 @@ export const printersCollection = [
         key: "P11",
         navigate: "cwc-p5022",
       },
+      {
+        title : "CWC P5045",
+        link :"images/productDetail/P5045/img1.webp",
+        key : "P12",
+        navigate : "cwc-p5045"
+      }
     ],
   },
 ];
@@ -273,6 +279,12 @@ export const scannerCollection = [{
       key: "cwc-S1130",
       navigate: "cwc-S1130",
     },
+    {
+      title : "CWC S4300",
+      link : "images/productDetail/S4300/img1.webp ",
+      key : "cwc-S4300",
+      navigate : "cwc-S4300"
+    }
 
   ]
 }]

@@ -3655,6 +3655,114 @@ export const printerDetails = {
     imgFolderName: "P5022",
   },
 
+  "cwc-p5045": {
+    title: "CWC P5045 Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 50 PPM",
+      "Connection method: High-speed USB 2.0",
+      "Automatic duplex printing",
+      "One-step driver installation",
+      "Silent printing, reduce noise",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "50 PPM",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "200000*",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200dpi / 600 x 2400dpi",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Duplex Printing",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 7, Winodws 2008 Sever R2.8, Windows 8.1, Windows 10, Windows 11, Linux (BOSS）",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Oficio, Statement, Japanese Postcard, ZL, Big 16K, Big 32K, 16K, 32K, B6, Yougata4, Postcard, Younaga3, Nagagata3, Yougata2",
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Print",
+        },
+        {
+          title: "Processor",
+          desc: "800MHz",
+        },
+        {
+          title: "RAM",
+          desc: "512MB/1GB",
+        },
+        {
+          title: "First output speed",
+          desc: "≤6.9 Seconds",
+        },
+        {
+          title: "Interface",
+          desc: "High-speed USB 2.0; Wired network: IEEE 802.3 10/100/1000Base-Tx; Wireless WiFi (2.4G/5G): IEEE 802.11a/b/g/n",
+        },
+        {
+          title: "Dimension",
+          desc: "364*344*257 mm",
+        },
+        {
+          title: "Weight",
+          desc: "9.3 kg",
+        },
+        {
+          title: "Power comsumption",
+          desc: "≤650W",
+        },
+        {
+          title: "Power Supply",
+          desc: "220V：AC220-240V 50/60Hz ，7A",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite / Separate Drum and Toner",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T5045",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D5045",
+        },
+      ],
+    },
+    imgFolderName: "P5045",
+  },
+
   "cwc-3100": {
     title: "CWC 3100 Document Scanner",
     type: "scanner",
@@ -3851,6 +3959,107 @@ export const printerDetails = {
       ],
     },
     imgFolderName: "S1130",
+  },
+
+    "cwc-S4300": {
+    title: "CWC S4300 Document Scanner",
+    type: "scanner",
+    specSummary: [
+      "Scanner speed (A4): Up to 45ppm",
+      "Connection method: USB 2.0 / USB 1.1",
+      " Sheet Fed Desktop Document Scanner",
+      "One-step driver installation",
+      "Single line CMOS-CIS x 2",
+    ],
+    details: {
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "45 ppm",
+        },
+        {
+          title: "Scan Speeds 2-sided",
+          desc: "90 ipm",
+        },
+        {
+          title: "Flatbed",
+          desc: "4 seconds (200/300 dpi)",
+        },
+        {
+          title: "Scan Resolution",
+          desc: "50 to 600 dpi; 1,200 dpi",
+        },
+        {
+          title: "Scanner Type",
+          desc: "ADF (Automatic Document Feeder) / Flatbed, Duplex",
+        },
+        {
+          title: "Image Sensor Type",
+          desc: "Single line CMOS-CIS x 2 (front / flatbed x 1, back x 1)",
+        },
+        {
+          title: "Output Format",
+          desc: "Color: 24-bit, Grayscale: 8-bit, Monochrome: 1-bit",
+        },
+        {
+          title: "Multifeed Detection",
+          desc: "Overlap detection (Ultrasonic sensor)",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Automatic Document Feeder (ADF)",
+          desc: "50 sheets",
+        },
+        {
+          title: "Media",
+          desc: " 216 x 355.6 mm (8.5 x 14 in.);  52 x 74 mm (2.0 x 2.9 in.); 3,048 mm (120 in.);",
+        },
+        {
+          title: "Media Weight",
+          desc: " 50 to 209 g/m2 (13.4 to 56 lb); 0.76 mm (0.0299 in.) or less",
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Scanner",
+        },
+        {
+          title: "Image Processing",
+          desc: "Multi image output, Automatic color detection, Automatic page size detection, Blank page detection, Dynamic threshold (iDTC), Advanced DTC, SDTC, Error diffusion, Dither, De-Screen, Emphasis, Dropout color (None/Red/Green/Blue/White/Saturation/Custom), sRGB output, Split image, De-Skew, Edge filler, Vertical streaks reduction, Digital endorser, Background pattern removal, Character thickness, Character augmentation, Character extraction",
+        },
+        {
+          title: "Daily Volume",
+          desc: "4,000 Sheets",
+        },
+        {
+          title: "Interface",
+          desc: "USB 2.0 / USB 1.1",
+        },
+        {
+          title: "Environmental Compliance",
+          desc: "BEE, RoHS",
+        },
+        {
+          title: "Power Requirements",
+          desc: "AC 100 to 240 V ±10 %",
+        },
+        {
+          title: "Dimensions",
+          desc: "454 x 331 x 129 mm",
+        },
+        {
+          title: "Weight",
+          desc: "4.3 kg (9.5 lb)",
+        },
+        {
+          title: "Power Consumption",
+          desc: "Operating Mode 16 W or less; Power Saving Mode 2.9 W or less; Auto Standby (Off) Mode 0.5 W or less",
+        },
+      ],
+    },
+    imgFolderName: "S4300",
   },
 
   //CARTRIDGES DATA
