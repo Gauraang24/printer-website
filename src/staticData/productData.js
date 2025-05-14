@@ -100,12 +100,6 @@ export const printersCollection = [
         key: "M15",
         navigate: "cwc-m320",
       },
-      {
-        title: "CWC P211",
-        link: "images/productDetail/P211/img1.webp",
-        key: "",
-        navigate: "cwc-p211",
-      },
     ],
   },
   {
@@ -178,9 +172,15 @@ export const printersCollection = [
         navigate: "cwc-p5022",
       },
       {
+        title: "CWC P211",
+        link: "images/productDetail/P211/img1.webp",
+        key: "p12",
+        navigate: "cwc-p211",
+      },
+      {
         title : "CWC P5045",
         link :"images/productDetail/P5045/img1.webp",
-        key : "P12",
+        key : "P13",
         navigate : "cwc-p5045"
       }
     ],
