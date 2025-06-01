@@ -100,6 +100,12 @@ export const printersCollection = [
         key: "M15",
         navigate: "cwc-m320",
       },
+      {
+        title: "CWC 7100S",
+        link: "images/productDetail/M5023/img1.webp",
+        key: "M16",
+        navigate: "cwc-7100s",
+      },
     ],
   },
   {
@@ -178,11 +184,17 @@ export const printersCollection = [
         navigate: "cwc-p211",
       },
       {
-        title : "CWC P5045",
-        link :"images/productDetail/P5045/img1.webp",
-        key : "P13",
-        navigate : "cwc-p5045"
-      }
+        title: "CWC P5045",
+        link: "images/productDetail/P5045/img1.webp",
+        key: "P13",
+        navigate: "cwc-p5045",
+      },
+      {
+        title: "CWC P311",
+        link: "images/productDetail/P311/img1.webp",
+        key: "P14",
+        navigate: "cwc-p311",
+      },
     ],
   },
 ];
@@ -264,27 +276,28 @@ export const cartridgeCollection = [
   },
 ];
 
-export const scannerCollection = [{
-  heading: "Scanner",
-  data: [
-    {
-      title: "CWC 3100",
-      link: "images/productDetail/3100/img1.webp",
-      key: "cwc-3100",
-      navigate: "cwc-3100",
-    },
-    {
-      title: "CWC S1130",
-      link: "images/productDetail/S1130/img1.webp",
-      key: "cwc-S1130",
-      navigate: "cwc-S1130",
-    },
-    {
-      title : "CWC S4300",
-      link : "images/productDetail/S4300/img1.webp ",
-      key : "cwc-S4300",
-      navigate : "cwc-S4300"
-    }
-
-  ]
-}]
+export const scannerCollection = [
+  {
+    heading: "Scanner",
+    data: [
+      {
+        title: "CWC 3100",
+        link: "images/productDetail/3100/img1.webp",
+        key: "cwc-3100",
+        navigate: "cwc-3100",
+      },
+      {
+        title: "CWC S1130",
+        link: "images/productDetail/S1130/img1.webp",
+        key: "cwc-S1130",
+        navigate: "cwc-S1130",
+      },
+      {
+        title: "CWC S4300",
+        link: "images/productDetail/S4300/img1.webp ",
+        key: "cwc-S4300",
+        navigate: "cwc-S4300",
+      },
+    ],
+  },
+];

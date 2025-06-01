@@ -471,7 +471,8 @@ export const printerDetails = {
         {
           title: "Max. scan size",
           desc: "21.6 x 29.7 cm",
-        },,
+        },
+        ,
       ],
 
       general: [
@@ -891,6 +892,143 @@ export const printerDetails = {
         },
       ],
     },
+  },
+  "cwc-7100s": {
+    title: "CWC 7100S MFP Colour Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 30 / 25 / 20 ppm",
+      "First Print Out Time: As fast as 6.7 seconds color / 4.4 seconds black and white",
+      "Basic function: Print, Copy, Scan",
+      "Automatic duplex printing",
+      "One-step driver installation",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "30 / 25 / 20 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "Up to 90000 to 130000 images/month",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 2400 dpi",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Standard",
+        },
+        {
+          title: "Mobile printing capability",
+          desc: "AirPrint®, Mopria® Print Service and Mopria® Scan",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Citrix, Fedora Core 24, HP-UX® 11iv3, IBM® AIX® 7.2, Linux, Mac OS® X 10.10, 10.11, 10.12, 12, Oracle® Solaris 11.3, Redhat Enterprise, SUSE® 13.2, Windows® 10, Windows® 11, Windows® 2003 Server, Windows® 2008 Server, Windows® 7, Windows® 8, Windows® Server 2012, Xerox® Global Print Driver®",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "30 / 25 / 20 cpm",
+        },
+        {
+          title: "Feeder Capacity",
+          desc: "upto 130 Sheets",
+        },
+        {
+          title: "Feeder Type",
+          desc: "DADF/RADF/SPDF",
+        },
+        {
+          title: "File formats",
+          desc: "JPG, Linearized PDF (set via embedded web server) and PDF/A, PDF (single and multi-page), Password-protected PDF, Searchable PDF, TIFF (single and multi-page)",
+        },
+        {
+          title: "Output function",
+          desc: "Scan to Email, Scan to Home, Scan to Network (Browse FTP or Browse SMB), Scan to USB",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper Size",
+          desc: "A4,Legal,A3",
+        },
+        {
+          title: "Paper input tray",
+          desc: "Tray 1: 520 sheets Tray 2: 520 sheets(Optional)",
+        },
+        {
+          title: "Paper output tray",
+          desc: "500-sheet Center Tray",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "100 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "5.5 x 7.17 in to 11.69 x 17 in/139.7 x 182 mm to 297 x 431.8 mm",
+        },
+      ],
+      general: [
+        {
+          title: "Paper input tray",
+          desc: "620 sheets | Maximum - 4,180 sheets",
+        },
+        {
+          title: "Processor",
+          desc: "1.05 GHz Dual core",
+        },
+        {
+          title: "RAM",
+          desc: "4 GB Memory",
+        },
+        {
+          title: "HDD",
+          desc: "128/256/320/500/1000 GB",
+        },
+        {
+          title: "Bypass Tray / ADF",
+          desc: "YES",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "100",
+        },
+        {
+          title: "Interface",
+          desc: "Ethernet 10/100/1000 Base-T, High-speed USB 3.0, NFC Tap-to-Pair, Wireless WiFi : IEEE 802.11a/b/g/n(Optional)",
+        },
+        {
+          title: "Power comsumption",
+          desc: "Operating: 1,100 W Standby: 94 W Power save: 0.4 W",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate Drum and Toner(Dual Component)",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "15000 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T7100",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D7100",
+        },
+      ],
+    },
+    imgFolderName: "M5023",
   },
   "cwc-m4843": {
     title: "CWC M4843 Multifunction Laser Printer",
@@ -1821,7 +1959,7 @@ export const printerDetails = {
 
     type: "printer",
     specSummary: [
-      "Printing speed (A4): 25ppm",
+      "Printing speed (A4): 25/30/35ppm",
       "Connection method: Network, WiFi and USB",
       "Print Technology: Laser",
       "Automatic easy duplex printing",
@@ -1831,11 +1969,11 @@ export const printerDetails = {
       print_specification: [
         {
           title: "Print speed",
-          desc: "25 ppm",
+          desc: "(A3/A4) : 25/30/35 PPM",
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "110000*",
+          desc: "110000 to 130000*",
         },
         {
           title: "Duplex printing",
@@ -1853,7 +1991,7 @@ export const printerDetails = {
       paper_handling: [
         {
           title: "Paper input tray",
-          desc: "Standard: 650 sheets; Maximum: 3,140 sheets",
+          desc: "Standard: 620 sheets; Maximum: 4180 sheets",
         },
         {
           title: "Paper output tray",
@@ -1876,7 +2014,7 @@ export const printerDetails = {
       Scan_specification: [
         {
           title: "Scan speed",
-          desc: "25 cpm",
+          desc: "25/30/35 cpm",
         },
         {
           title: "Scan resolution",
@@ -1911,7 +2049,7 @@ export const printerDetails = {
         },
         {
           title: "RAM",
-          desc: "4GB",
+          desc: "2GB/4GB",
         },
         {
           title: "Print Resolution",
@@ -1947,7 +2085,7 @@ export const printerDetails = {
         },
         {
           title: "Warranty",
-          desc: "3 Years Standard Warranty",
+          desc: "1 Years Standard Warranty",
         },
       ],
       package_specification: [
@@ -2596,6 +2734,129 @@ export const printerDetails = {
       ],
     },
     imgFolderName: "P211",
+  },
+  "cwc-p311": {
+    title: "CWC P311 Laser Printer",
+
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 34ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "34 ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "50000 Pages",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Double-Sided",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows® 8.1, Windows® 10, Windows® Server 2012, Windows® Server 2016, Windows® Server 2019,MacOS v10.10-15, v11, Linux™",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "100 sheets",
+        },
+        {
+          title: "Bypass Tray Capacity",
+          desc: "50",
+        },
+        {
+          title: "Media sizes",
+          desc: "Standard tray: A4, A5, A6, B5, B6, Legal, Letter, HLT; Bypass tray: A4, A5, A6, B5, B6, Legal, Letter, HLT; Optional paper tray: A4, A5, B5, Legal, Letter, HLT",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print",
+        },
+        {
+          title: "RAM",
+          desc: "128MB",
+        },
+        {
+          title: "First Print Out Time",
+          desc: "7.1 seconds (Letter)",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1,200 x 1,200 dpi",
+        },
+        {
+          title: "Bypass Tray",
+          desc: "YES",
+        },
+        {
+          title: "Interface Type",
+          desc: "Ethernet 10 base-T / 100 base-TX, USB 2.0, IEEE 802.11 a/b/g/n",
+        },
+        {
+          title: "Mobile Connectivity",
+          desc: "Apple AirPrint™, Mopria®, Smart Device Connector",
+        },
+        {
+          title: "Power comsumption",
+          desc: "Operation - 555 W; Ready - 64.9 W; Sleep - 0.66 W",
+        },
+        {
+          title: "Power Supply",
+          desc: "220V：AC220-240V 50/60Hz，7A",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "1 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "371 x 391 x 262 mm",
+        },
+        {
+          title: "Product Weight",
+          desc: "13 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "7000 pages",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T311320",
+        },
+      ],
+    },
+    imgFolderName: "P311",
   },
   "cwc-p5040dnw": {
     title: "CWC P5040DN/W Laser Printer",
@@ -3961,7 +4222,7 @@ export const printerDetails = {
     imgFolderName: "S1130",
   },
 
-    "cwc-S4300": {
+  "cwc-S4300": {
     title: "CWC S4300 Document Scanner",
     type: "scanner",
     specSummary: [
