@@ -8,7 +8,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import KeepInTouch from "../../commonComponents/KeepInTouch";
 import { CustomDivider } from "../../commonComponents/CustomDivider";
-import { fontsm, fontxs, mtMd, pblg, ptlg, pyMd } from "../../utils/constant";
+import { fontsm, fontxs, mtMd, pblg, ptlg, ptMd, pyMd } from "../../utils/constant";
 import Reveal from "../../commonComponents/Animation/Reveal";
 
 const constants = {
@@ -62,7 +62,7 @@ const Product = () => {
       {/* ProductSection */}
 
       <div className={`w-full ${ptlg}`}>
-        <div className="w-max mx-auto flex items-center flex-col">
+        <div className="w-[90%] sm:max-w-[1200px] mx-auto flex items-center flex-col">
           <Reveal width="w-max">
             <Segmented
               options={options}
@@ -72,9 +72,8 @@ const Product = () => {
             />
           </Reveal>
           <Reveal>
-            <p className={`font-semibold ${fontxs} ${pyMd} text-center pt-4`}>
-              Note : We Can Customize The Printers/MFP As Per Customer
-              Requirement & Specifications.
+            <p className={`font-semibold ${fontxs} ${ptMd} text-center pt-4`}>
+              Note : We Can Customize The Printers/MFP/Scanner As Per Customer Requirement & Specifications.
             </p>
           </Reveal>
         </div>

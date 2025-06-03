@@ -985,7 +985,7 @@ export const printerDetails = {
         },
         {
           title: "RAM",
-          desc: "4 GB Memory",
+          desc: "2GB/4GB/8GB",
         },
         {
           title: "HDD",
