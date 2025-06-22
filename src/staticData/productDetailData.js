@@ -1182,11 +1182,11 @@ export const printerDetails = {
         },
         {
           title: "Toner Cartridge",
-          desc: "CWC T4843",
+          desc: "CWC T4843/T5050",
         },
         {
           title: "Drum Unit",
-          desc: "CWC D4843-30K",
+          desc: "CWC D4843/D5050",
         },
       ],
     },
@@ -4392,13 +4392,13 @@ export const printerDetails = {
 
   //new
   "cwc-t4843": {
-    title: "CWC-T4843",
+    title: "CWC-T4843/T5050",
     type: "cartridge",
     specSummary: [
       "Cartridge Type : Toner",
       "Print Technology : Laser",
       "Print Color : Black",
-      " Model : T4843",
+      "Model : T4843/T5050",
       "Yield of Cartridge : 3000",
       "Consumable is suitable : CWC M4843",
     ],
@@ -4462,13 +4462,13 @@ export const printerDetails = {
   },
 
   "cwc-d4843": {
-    title: "CWC D4843",
+    title: "CWC D4843/D5050",
     type: "cartridge",
     specSummary: [
       "Cartridge Type : Drum",
       "Print Technology : Laser",
       "Print Color : Black",
-      " Model : D4843",
+      " Model : D4843/D5050",
       "Yield of Cartridge : 30000",
       "Consumable is suitable : CWC M4843",
     ],

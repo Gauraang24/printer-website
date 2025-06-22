@@ -237,7 +237,7 @@ export const cartridgeCollection = [
       //NEW
 
       {
-        title: "CWC-T4843",
+        title: "CWC T4843/T5050",
         link: "images/productDetail/CARTRIDGES/T4843/img1.webp",
         key: "cwc-t4843",
         navigate: "cwc-t4843",
@@ -267,7 +267,7 @@ export const cartridgeCollection = [
         navigate: "cwc-d0235",
       },
       {
-        title: "CWC D4843",
+        title: "CWC D4843/D5050",
         link: "images/productDetail/CARTRIDGES/D4843/img1.webp",
         key: "cwc-d4843",
         navigate: "cwc-d4843",
