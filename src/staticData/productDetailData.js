@@ -52,7 +52,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "21.6 x 29.7cm",
+          desc: "A4/Legal",
         },
         {
           title: "Feeder Capacity",
@@ -198,7 +198,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "21.6 x 29.7cm",
+          desc: "A4/Legal",
         },
         {
           title: "Feeder Capacity",
@@ -336,7 +336,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "21.6 x 29.7 cm",
+          desc: "A4/Legal",
         },
       ],
       paper_handling: [
@@ -591,7 +591,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "21.6 x 29.7 cm",
+          desc: "A4/Legal",
         },
       ],
       paper_handling: [
@@ -809,7 +809,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "21.6 x 29.7cm",
+          desc: "A4/Legal",
         },
       ],
 
@@ -1103,7 +1103,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "21.6 x 29.7cm",
+          desc: "A4/Legal",
         },
         {
           title: "Output function",
@@ -1260,7 +1260,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "21.6 x 29.7cm",
+          desc: "A4/Legal",
         },
         {
           title: "Output function",
@@ -1423,7 +1423,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "21.6 x 29.7cm",
+          desc: "A4/Legal",
         },
         {
           title: "Output function",
@@ -1787,9 +1787,8 @@ export const printerDetails = {
     },
   },
 
-  "cwc-m5036": {
-    title: "CWC M5036 Multifunction Laser Printer",
-
+  "cwc-m225": {
+    title: "CWC M225 Multifunction Laser Printer",
     type: "printer",
     specSummary: [
       "Printing speed (A4): 36ppm",
@@ -1943,11 +1942,11 @@ export const printerDetails = {
         },
         {
           title: "Toner Cartridge",
-          desc: "CWC T5036",
+          desc: "CWC T0225",
         },
         {
           title: "Drum Unit",
-          desc: "CWC D5036-12K(Optional)",
+          desc: "CWC D0225(Optional)",
         },
       ],
     },
@@ -2355,7 +2354,7 @@ export const printerDetails = {
         },
         {
           title: "Max. scan size",
-          desc: "A4",
+          desc: "A4/Legal",
         },
         {
           title: "Output function",
@@ -2977,7 +2976,7 @@ export const printerDetails = {
     },
     imgFolderName: "P5040DNW",
   },
-  "cwc-p4843dnw": {
+  "cwc-p4843": {
     title: "CWC P4843 Laser Printer",
     type: "printer",
     specSummary: [

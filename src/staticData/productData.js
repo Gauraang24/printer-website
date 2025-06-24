@@ -166,7 +166,7 @@ export const printersCollection = [
         navigate: "cwc-p330",
       },
       {
-        title: "CWC P4843DN/W",
+        title: "CWC P4843",
         link: "images/productDetail/P4843/img1.webp",
         key: "P10",
         navigate: "cwc-p4843dnw",
