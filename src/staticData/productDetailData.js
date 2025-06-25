@@ -1664,7 +1664,7 @@ export const printerDetails = {
       consumable: [
         {
           title: "Consumable type",
-          desc: "Separate drum and toner",
+          desc: "Separate Drum and Toner / Composite",
         },
         {
           title: "Minimum Cartridge Yield(Starter)",
