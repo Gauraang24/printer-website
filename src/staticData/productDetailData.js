@@ -1823,7 +1823,6 @@ export const printerDetails = {
     },
   },
 
-
   "cwc-4055": {
     title: "CWC 4055 Multifunction Laser Printer",
     type: "printer",
@@ -1958,6 +1957,145 @@ export const printerDetails = {
         {
           title: "Toner Cartridge",
           desc: "CWC-T4843",
+        },
+      ],
+    },
+  },
+
+  "cwc-4620FNW": {
+    title: "CWC 4620FNW Multifunction Laser Printer",
+    type: "printer",
+    imgFolderName: "4620FNW",
+
+    specSummary: [
+      "Printing speed (A4): 46ppm to 50ppm",
+      "Connection method: Newtork, WiFi and USB port",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA"
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "46ppm to 50ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "200000*Pages",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Double-Sided",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 11 (64 bit), Windows 10 (32 bit / 64 bit), Windows Server 2022 (64 bit), Windows Server 2019 (64 bit), Windows Server 2016 (64 bit), Linux",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Standard Tray: 250 sheets + Bypass Tray: 100 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets (face down), 10 sheets (face up)",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive, A5, Envelope - Monarch, 60~120g/m²",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scanning Type",
+          desc: "RADF/DADF/SPDF"
+        },
+        {
+          title: "Scan speed",
+          desc: "B/W: 28 ppm, Colour:  20 ppm"
+        },
+        {
+          title: "Scan resolution",
+          desc: "1,200 x 1,200 dpi (from Flatbed), 600 x 600 dpi (from ADF)"
+        },
+        {
+          title: "Max scan size",
+          desc: "A4/Legal"
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan Copy and Fax",
+        },
+        {
+          title: "Processor",
+          desc: "1.2 GHz",
+        },
+        {
+          title: "RAM",
+          desc: "1 GB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1,200 x 1200 dpi",
+        },
+        {
+          title: "First output speed",
+          desc: "8.7 seconds",
+        },
+        {
+          title: "Interface",
+          desc: "Newtork, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "Ethernet 1000BASE-T / 100BASE-TX / 10BASE-T, USB2.0, Wireless LAN",
+        },
+        {
+          title: "Power consumption",
+          desc: "1280 W",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "1 Years Standard Warranty",
+        },
+      ],
+
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "W 417 x D 461 x H 448 mm",
+        },
+        {
+          title: "Weight",
+          desc: "17.2 kg",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate drum and toner / Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Sheets",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T4620",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D4620",
         },
       ],
     },

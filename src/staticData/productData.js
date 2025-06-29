@@ -117,7 +117,14 @@ export const printersCollection = [
         link: "images/productDetail/4055/img1.webp",
         key: "M18",
         navigate: "cwc-4055"
-      }
+      },
+      {
+        title: "CWC 4620FNW",
+        link: "images/productDetail/4620FNW/img1.webp",
+        key: "M18",
+        navigate: "cwc-4620FNW"
+      },
+
     ],
   },
   {
