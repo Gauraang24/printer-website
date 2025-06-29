@@ -4611,7 +4611,7 @@ export const printerDetails = {
       print_specification: [
         {
           title: "Print speed",
-          desc: "50 PPM",
+          desc: "45 to 50 PPM",
         },
         {
           title: "Monthly Duty Cycle",
@@ -4651,7 +4651,7 @@ export const printerDetails = {
         },
         {
           title: "Processor",
-          desc: "800MHz",
+          desc: "1.2 GHz",
         },
         {
           title: "RAM",
