@@ -106,6 +106,12 @@ export const printersCollection = [
         key: "M16",
         navigate: "cwc-7100s",
       },
+      {
+        title: "CWC 3336",
+        link: "images/productDetail/3336/img1.webp",
+        key: "M17",
+        navigate: "cwc-3336"
+      }
     ],
   },
   {
