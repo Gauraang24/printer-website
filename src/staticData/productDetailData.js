@@ -3168,7 +3168,131 @@ export const printerDetails = {
     imgFolderName: "M320",
   },
 
-  //LASER PRINTER BELOW
+  //LASER PRINTER BELOW ****************************************************************
+  //LASER PRINTER BELOW ****************************************************************
+  //LASER PRINTER BELOW ****************************************************************
+  //LASER PRINTER BELOW ****************************************************************
+
+  "cwc-p310": {
+    title: "CWC P310 Laser Printer",
+
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): 31/35ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "31ppm to 35ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "80000* Pages",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Double-Sided",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Microsoft Windows Server2003 / Server2008 / Server2012XP/Vista/Win7/Win8/Win8.1/Win10/Win11（32/64 Bit) ；Mac OS 10.7-12 ；Linux：Ubuntu 12.04/14.04/16.04/18.04/20.04（32/64 Bit）",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Standard Tray: 250 sheets + Bypass Tray: 1 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Oficio, Statement, Japanese Postcard, ZL, Big 16K, Big32K, 16K, 32K, B6，Yougata4, Postcard, Younaga3,Nagagata3, Yougata2",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print",
+        },
+        {
+          title: "Processor",
+          desc: "800 Mhz",
+        },
+        {
+          title: "RAM",
+          desc: "256MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1,200 x 1200 dpi",
+        },
+        {
+          title: "First output speed",
+          desc: "≤ 8.2 seconds",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "HI-Speed USB 2.0; Net: IEEE 802.3; 10/100Base-Tx; WiFi: IEEE 802.11b/g/n",
+        },
+        {
+          title: "Power comsumption",
+          desc: "525W",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "1 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "364 x 344 x 257mm",
+        },
+        {
+          title: "Product Weight",
+          desc: "9.3 kg (20.5lb)",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate Drum and Toner / Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1500 Sheets",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T310",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D310",
+        },
+      ],
+    },
+    imgFolderName: "P310",
+  },
+
   "cwc-p211": {
     title: "CWC P211 Laser Printer",
 

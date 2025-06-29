@@ -220,6 +220,12 @@ export const printersCollection = [
         key: "P14",
         navigate: "cwc-p311",
       },
+      {
+        title: "CWC P310",
+        link: "images/productDetail/P310/img1.webp",
+        key: "P15",
+        navigate: "cwc-p310",
+      },
     ],
   },
 ];
