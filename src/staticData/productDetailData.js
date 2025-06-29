@@ -2101,6 +2101,145 @@ export const printerDetails = {
     },
   },
 
+  "cwc-dmlp9100": {
+    title: "CWC DMLP9100 Multifunction Laser Printer",
+    type: "printer",
+    imgFolderName: "DMLP9100",
+
+    specSummary: [
+      "Printing speed (A4): 32 ppm (Simplex) , 15 ppm (Duplex)",
+      "Connection method: Newtork, WiFi, Fax and USB port",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA"
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "32 ppm (Simplex) , 15 ppm (Duplex)",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "50,000 Pages Per Month",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Standard",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 8.1, 10, 11, Windows Server, 2012, 2012R2, 2016, 2019, & Linux.",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "250 Sheets (Bypass: 50 Sheets), Maximum: 300 Sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "50",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4 SEF, A5 SEF/LEF, A6 SEF, B5 SEF, LG, Mexican Officio, Legal, Envelopes, Australian Foolscap",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scanning Type",
+          desc: "RADF/DADF/SPDF"
+        },
+        {
+          title: "Scan speed",
+          desc: "13 (ipm) for B&W and 4.5 ipm for Color"
+        },
+        {
+          title: "Scan resolution",
+          desc: "1,200 x 1,200 dp"
+        },
+        {
+          title: "Scan destination",
+          desc: "Scan to email, folder, FTP, USB & TWAIN Scanning"
+        },
+        {
+          title: "Max scan size",
+          desc: "A4/Legal"
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan Copy and Fax",
+        },
+        {
+          title: "HDD",
+          desc: "32 MB ROM",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1,200 x 1200 dpi",
+        },
+        {
+          title: "First output speed",
+          desc: "7.1 seconds or less",
+        },
+        {
+          title: "Interface",
+          desc: "Ethernet, Wifi",
+        },
+        {
+          title: "Interface Type",
+          desc: "10Base-T/100Base-Tx (Ethernet), USB 2.0 Type B x 1—rear, USB 2.0 Type A x 2—1x rear, 1x front, NFC tag",
+        },
+        {
+          title: "Mobile Capability",
+          desc: "Smart Device Connector, Apple AirPrint, Mopria",
+        },
+        {
+          title: "Power consumption",
+          desc: "1,025 W",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "3 Years Standard Warranty",
+        },
+      ],
+
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "405 x 392 x 420 mm",
+        },
+        {
+          title: "Weight",
+          desc: "18 kg",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "70000",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T311320-70B",
+        },
+      ],
+    },
+  },
+
   "cwc-1020": {
     title: "CWC 1020 Laser Printer",
     type: "printer",

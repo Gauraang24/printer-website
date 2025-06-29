@@ -124,6 +124,12 @@ export const printersCollection = [
         key: "M18",
         navigate: "cwc-4620FNW"
       },
+      {
+        title : "CWC DMLP9100",
+        link : "images/productDetail/DMLP9100/img1.webp",
+        key : "M19",
+        navigate : "cwc-dmlp9100"
+      }
 
     ],
   },
