@@ -111,6 +111,12 @@ export const printersCollection = [
         link: "images/productDetail/3336/img1.webp",
         key: "M17",
         navigate: "cwc-3336"
+      },
+      {
+        title: "CWC 4055",
+        link: "images/productDetail/4055/img1.webp",
+        key: "M18",
+        navigate: "cwc-4055"
       }
     ],
   },

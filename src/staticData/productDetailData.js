@@ -1682,8 +1682,8 @@ export const printerDetails = {
     },
   },
 
-  "cwc-3336" : {
-    title : "CWC 3336 Multifunction Laser Printer",
+  "cwc-3336": {
+    title: "CWC 3336 Multifunction Laser Printer",
     type: "printer",
     imgFolderName: "3336",
 
@@ -1728,6 +1728,28 @@ export const printerDetails = {
           desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Oficio, Statement, Japanese Postcard, ZL, Big 16K, Big32K, 16K, 32K, B6，Yougata4, Postcard, Younaga3,Nagagata3, Yougata2",
         },
       ],
+      scan_specification: [
+        {
+          title: "Scanning Type",
+          desc: "RADF/DADF/SPDF( 50-Pages)"
+        },
+        {
+          title: "Scan Speed",
+          desc: "24 ppm(A4) / 25 ppm(Letter)"
+        },
+        {
+          title: "Scan Destination",
+          desc: "Scan to E-mail, PC, FTP, Thumb drive, iOS/Android"
+        },
+        {
+          title: "Scan resolution",
+          desc: "Flatbed : 1200×1200dpi(Max) | ADF : 600×600dpi(Max)"
+        },
+        {
+          title: "Max scan size",
+          desc: "A4/Legal"
+        },
+      ],
       general: [
         {
           title: "Function",
@@ -1770,7 +1792,6 @@ export const printerDetails = {
           desc: "1 Years Standard Warranty",
         },
       ],
-
       package_specification: [
         {
           title: "Dimension (D×W×H)",
@@ -1781,7 +1802,6 @@ export const printerDetails = {
           desc: "11.29kg (24.9lb)",
         },
       ],
-
       consumable: [
         {
           title: "Consumable type",
@@ -1798,6 +1818,146 @@ export const printerDetails = {
         {
           title: "Drum Unit",
           desc: "CWC-D310",
+        },
+      ],
+    },
+  },
+
+
+  "cwc-4055": {
+    title: "CWC 4055 Multifunction Laser Printer",
+    type: "printer",
+    imgFolderName: "4055",
+
+    specSummary: [
+      "Printing speed (A4): 41ppm to 45ppm",
+      "Connection method: Newtork, WiFi, Fax and USB port",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA"
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "41ppm to 45ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "150000*Pages",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Double-Sided",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Microsoft Windows Server2003 / Server2008 / Server2012XP/Vista/Win7/Win8/Win8.1/Win10/Win11（32/64 Bit) ；Mac OS 10.7-12 ；Linux：Ubuntu 12.04/14.04/16.04/18.04/20.04（32/64 Bit）",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Standard Tray: 250 sheets + Bypass Tray: 100 sheets",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Oficio, Statement, Japanese Postcard, ZL, Big 16K, Big32K, 16K, 32K, B6，Yougata4, Postcard, Younaga3,Nagagata3, Yougata2",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scanning Type",
+          desc: "RADF/DADF/SPDF ( 50 - Pages)"
+        },
+        {
+          title: "Scan speed",
+          desc: "24 ppm(A4)/48 ipm(A4) | 25 ppm(Letter)/50 ipm(Letter)"
+        },
+        {
+          title: "Scan destination",
+          desc: "Scan to PC, E-mail, FTP, SMB, USB disk"
+        },
+        {
+          title: "Scan resolution",
+          desc: "1,200 x 1,200 dpi (from Flatbed), 600 x 600 dpi (from ADF)"
+        },
+        {
+          title: "Max scan size",
+          desc: "A4/Legal"
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan Copy and Fax",
+        },
+        {
+          title: "Processor",
+          desc: "1.2 GHz",
+        },
+        {
+          title: "RAM",
+          desc: "512MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1,200 x 1200 dpi",
+        },
+        {
+          title: "First output speed",
+          desc: "≤ 6.9 seconds",
+        },
+        {
+          title: "Interface",
+          desc: "Newtork, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "High-speed USB 2.0; Net: IEEE 802.3 10/100/1000Base-Tx; WiFi(2.4G/5G):IEEE 802.11a/b/g/n",
+        },
+        {
+          title: "Power consumption",
+          desc: "≤650W",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "1 Years Standard Warranty",
+        },
+      ],
+
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "415 x 365 x 370mm",
+        },
+        {
+          title: "Weight",
+          desc: "12.5 kg (27.5lb)",
+        },
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Sheets",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T4843",
         },
       ],
     },
