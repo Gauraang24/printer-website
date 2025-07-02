@@ -2511,6 +2511,8 @@ export const printerDetails = {
     imgFolderName: "M5036",
   },
 
+
+
   "cwc-m5023": {
     title: "CWC M5023 Multifunction Laser Printer",
 
@@ -4805,6 +4807,108 @@ export const printerDetails = {
     },
     imgFolderName: "3100",
   },
+  "cwc-S5302": {
+    title: "CWC S5302 Document Scanner",
+    type: "scanner",
+    specSummary: [
+      "Scanner speed (A4): Up to 50ppm",
+      "Connection method: Network and USB port",
+      " Sheet Fed Desktop Document Scanner",
+      "CIS x  (Front x 1, Back x 1",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: " Simplex: 50 ppm ; Duplex:  100 ipm",
+        },
+        {
+          title: "Duplex",
+          desc: "100 ipm",
+        },
+        {
+          title: "Scan Resolution",
+          desc: "600 dpi",
+        },
+        {
+          title: "Image Sensor Type",
+          desc: "CIS x 2 (front x 1, back x 1)",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Automatic Document Feeder (ADF) Capacity",
+          desc: "100 sheets",
+        },
+        {
+          title: "Paper Weight",
+          desc: "20 to 465 g/m²",
+        },
+        {
+          title: "Document Size",
+          desc: "215.9 x 355.6 mm;  48 x 50 mm; ",
+        },
+        {
+          title: "Daily Volume",
+          desc: "10,000 sheets ",
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Scan",
+        },
+        {
+          title: "Scanner Type",
+          desc: "ADF (Automatic Document Feeder) / Manual Feed, Duplex",
+        },
+        {
+          title: "Light Source",
+          desc: "RGB LED x 2 (front x 1, back x 1)",
+        },
+        {
+          title: "Output Format",
+          desc: "Color: 24-bit, Grayscale: 8-bit, Monochrome: 1-bit",
+        },
+        {
+          title: "Interface",
+          desc: "USB 3.2 Gen1x1 / USB 2.0 / USB 1.1; ETHERNET 10BASE-T, 100BASE-TX, 1000BASE-T",
+        },
+        {
+          title: "Background Color",
+          desc: "White / Black (selectable)",
+        },
+        {
+          title: "Power Consumption",
+          desc: "Operating Mode - 21 W or less / 17 W (Eco mode); Sleep Mode - 2.0 W or less (LAN) / 1.4 W or less (USB); Auto Standby (Off) Mode - 0.2 W or less",
+        },
+        {
+          title: "Country of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "1 year Standard Warranty",
+        },
+        {
+          title: "Power Consumption",
+          desc: "Scanning 23W; Ready 5.4W; Sleep 1.4W; Network Standby 1.4W; Power O 0.1W",
+        },
+      ],
+    },
+    package_specification: [
+      {
+        title: "Dimension",
+        desc: "300 x 170 x 163mm"
+      },
+      {
+        title: "Product Weight",
+        desc: "4 kg (8.8lb)"
+      },
+    ],
+    imgFolderName: "",
+  },
 
   "cwc-S1130": {
     title: "CWC S1130 Document Scanner",
@@ -5155,4 +5259,216 @@ export const printerDetails = {
     ],
     imgFolderName: "CARTRIDGES/D4843",
   },
+
+  "cwc-t310": {
+    title: "CWC T310",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-T310",
+      "Yield of Cartridge : 1500",
+      "Consumable is suitable : CWC 3336",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T310",
+  },
+
+  "cwc-t4055": {
+    title: "CWC T4055",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-T4055",
+      "Yield of Cartridge : 3000",
+      "Consumable is suitable : CWC 4055",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T4055",
+  },
+
+  "cwc-t3300": {
+    title: "CWC T3300",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-T3300",
+      "Yield of Cartridge : 3000",
+      "Consumable is suitable : CWC 3300S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T3300",
+  },
+
+  "cwc-t4555": {
+    title: "CWC T4555",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-T4555",
+      "Yield of Cartridge : 3000",
+      "Consumable is suitable : CWC 4555",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T4555",
+  },
+
+
+  "cwc-t4620": {
+    title: "CWC T4620",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-T4620",
+      "Yield of Cartridge : 6000",
+      "Consumable is suitable : CWC 4620FNW",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T4620",
+  },
+
+  "cwc-t4650": {
+    title: "CWC T4650",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-T4650",
+      "Yield of Cartridge : 6000",
+      "Consumable is suitable : CWC 4650",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T4650",
+  },
+  "cwc-t5100": {
+    title: "CWC T5100",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-T5100",
+      "Yield of Cartridge : 30000",
+      "Consumable is suitable : CWC 5100S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T5100",
+  },
+
+  "cwc-t2100cmyk": {
+    title: "CWC T2100 CMYK",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Color",
+      "Model : CWC-T2100 CMYK",
+      "Yield of Cartridge : Black - 1500 | Color - 1000",
+      "Consumable is suitable : CWC 2100S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T2100-CMYK",
+  },
+
+  "cwc-t2101cmyk": {
+    title: "CWC T2101 CMYK",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Color",
+      "Model : CWC-T2101 CMYK",
+      "Yield of Cartridge : Black - 1500 | Color - 1000",
+      "Consumable is suitable : CWC 2101S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T2101-CMYK",
+  },
+
+  "cwc-t7100cmyk": {
+    title: "CWC T2101 CMYK",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Color",
+      "Model : CWC-T7100 CMYK",
+      "Yield of Cartridge : Black - 33000 | Color - 18000",
+      "Consumable is suitable : CWC 7100S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-T710-CMYK",
+  },
+
+  "cwc-d310": {
+    title: "Drum Unit",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum Unit",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-D310",
+      "Yield of Cartridge : 12000",
+      "Consumable is suitable : CWC 3336",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D310",
+  },
+
+  "cwc-d4055": {
+    title: "Drum Unit",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum Unit",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-D4055",
+      "Yield of Cartridge : 12000",
+      "Consumable is suitable : CWC 4055",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D4055",
+  },
+
+  "cwc-d3300": {
+    title: "Drum Unit",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum Unit",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-3300",
+      "Yield of Cartridge : 12000",
+      "Consumable is suitable : CWC 3300S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D3300",
+  },
+
+  "cwc-d4555": {
+    title: "Drum Unit",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum Unit",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-D4555",
+      "Yield of Cartridge : 12000",
+      "Consumable is suitable : CWC 4555",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D4555",
+  },
+
+  "cwc-D4620": {
+    title: "Drum Unit",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum Unit",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      "Model : CWC-D4620",
+      "Yield of Cartridge : 73000",
+      "Consumable is suitable : CWC 4620FNW",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D4620",
+  },
+
+
 };
