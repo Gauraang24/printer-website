@@ -428,25 +428,25 @@ export const cartridgeCollection = [
       },
       {
         title: "CWC T7100",
-        link: "images/productDetail/CARTRIDGES/CARTRIDGES/T7100/img1.webp",
+        link: "images/productDetail/CARTRIDGES/T7100/img1.webp",
         key: "cwc-t7100",
         navigate: "cwc-t7100"
       },
       {
         title: "CWC T4846",
-        link: "images/productDetail/CARTRIDGES/CARTRIDGES/T4846/img1.webp",
+        link: "images/productDetail/CARTRIDGES/T4846/img1.webp",
         key: "cwc-t4846",
         navigate: "cwc-t4846"
       },
       {
         title: "CWC T3333",
-        link: "images/productDetail/CARTRIDGES/CARTRIDGES/T3333/img1.webp",
+        link: "images/productDetail/CARTRIDGES/T3333/img1.webp",
         key: "cwc-t3333",
         navigate: "cwc-t3333"
       },
       {
         title: "CWC T3336",
-        link: "images/productDetail/CARTRIDGES/CARTRIDGES/T3336/img1.webp",
+        link: "images/productDetail/CARTRIDGES/T3336/img1.webp",
         key: "cwc-t3336",
         navigate: "cwc-t3336"
       },
