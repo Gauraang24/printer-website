@@ -5316,7 +5316,6 @@ export const printerDetails = {
     imgFolderName: "CARTRIDGES/CWC-T4555",
   },
 
-
   "cwc-t4620": {
     title: "CWC T4620",
     type: "cartridge",
@@ -5470,5 +5469,144 @@ export const printerDetails = {
     imgFolderName: "CARTRIDGES/CWC-D4620",
   },
 
+  "cwc-d7100": {
+    title: "CWC-D7100 CMYK",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Color",
+      " Model : D7100 CMYK",
+      "Yield of Cartridge : 109000",
+      "Consumable is suitable : CWC 7100S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D7100-CMYK",
+  },
+
+  "cwc-d2101": {
+    title: "CWC-D2101",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : D2101",
+      "Yield of Cartridge : 30000",
+      "Consumable is suitable : CWC 2101S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D2101",
+  },
+
+  "cwc-d2100": {
+    title: "CWC-D2100",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : D2100",
+      "Yield of Cartridge : 30000",
+      "Consumable is suitable : CWC 2100S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D2100",
+  },
+
+  "cwc-d4650": {
+    title: "CWC-D4650",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : D4650",
+      "Yield of Cartridge : 73000",
+      "Consumable is suitable : CWC 4650",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D4650",
+  },
+
+  "cwc-d5100": {
+    title: "CWC-D5100",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : D5100",
+      "Yield of Cartridge : 80000",
+      "Consumable is suitable : CWC 5100S",
+    ],
+    imgFolderName: "CARTRIDGES/CWC-D5100",
+  },
+
+  "cwc-d7100S": {
+    title: "CWC-D7100",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Drum",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : D7100",
+      "Yield of Cartridge : 80000",
+      "Consumable is suitable : CWC 7100S",
+    ],
+    imgFolderName: "CARTRIDGES/D7100",
+  },
+
+  "cwc-t7100": {
+    title: "CWC-T7100",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : D7100",
+      "Yield of Cartridge : 34000",
+      "Consumable is suitable : CWC 7100S",
+    ],
+    imgFolderName: "CARTRIDGES/T7100",
+  },
+
+  "cwc-t4846": {
+    title: "CWC-T4846",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : T4846",
+      "Yield of Cartridge : 6000",
+      "Consumable is suitable : CWC 4055",
+    ],
+    imgFolderName: "CARTRIDGES/T4846",
+  },
+
+  "cwc-t3333": {
+    title: "CWC-T3333",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : T3333",
+      "Yield of Cartridge : 3000",
+      "Consumable is suitable : CWC 3336",
+    ],
+    imgFolderName: "CARTRIDGES/T3333",
+  },
+
+  "cwc-t3336": {
+    title: "CWC-T3336",
+    type: "cartridge",
+    specSummary: [
+      "Cartridge Type : Toner Cartridge",
+      "Print Technology : Laser",
+      "Print Color : Black",
+      " Model : T3336",
+      "Yield of Cartridge : 6000",
+      "Consumable is suitable : CWC 3336",
+    ],
+    imgFolderName: "CARTRIDGES/T3336",
+  },
 
 };

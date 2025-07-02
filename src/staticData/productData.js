@@ -390,6 +390,66 @@ export const cartridgeCollection = [
         key: "cwc-d4620",
         navigate: "cwc-d4620"
       },
+      {
+        title: "CWC D7100 CMYK",
+        link: "images/productDetail/CARTRIDGES/CWC-D7100-CMYK/img1.webp",
+        key: "cwc-d7100",
+        navigate: "cwc-d7100"
+      },
+      {
+        title: "CWC D2101",
+        link: "images/productDetail/CARTRIDGES/CWC-D2101/img1.webp",
+        key: "cwc-d2101",
+        navigate: "cwc-d2101"
+      },
+      {
+        title: "CWC D2100",
+        link: "images/productDetail/CARTRIDGES/CWC-D2100/img1.webp",
+        key: "cwc-d2100",
+        navigate: "cwc-d2100"
+      },
+      {
+        title: "CWC D4650",
+        link: "images/productDetail/CARTRIDGES/CWC-D4650/img1.webp",
+        key: "cwc-d4650",
+        navigate: "cwc-d4650"
+      },
+      {
+        title: "CWC D5100",
+        link: "images/productDetail/CARTRIDGES/CWC-D5100/img1.webp",
+        key: "cwc-d5100",
+        navigate: "cwc-d5100"
+      },
+      {
+        title: "CWC D7100S",
+        link: "images/productDetail/CARTRIDGES/D7100/img1.webp",
+        key: "cwc-d7100S",
+        navigate: "cwc-d7100S"
+      },
+      {
+        title: "CWC T7100",
+        link: "images/productDetail/CARTRIDGES/CARTRIDGES/T7100/img1.webp",
+        key: "cwc-t7100",
+        navigate: "cwc-t7100"
+      },
+      {
+        title: "CWC T4846",
+        link: "images/productDetail/CARTRIDGES/CARTRIDGES/T4846/img1.webp",
+        key: "cwc-t4846",
+        navigate: "cwc-t4846"
+      },
+      {
+        title: "CWC T3333",
+        link: "images/productDetail/CARTRIDGES/CARTRIDGES/T3333/img1.webp",
+        key: "cwc-t3333",
+        navigate: "cwc-t3333"
+      },
+      {
+        title: "CWC T3336",
+        link: "images/productDetail/CARTRIDGES/CARTRIDGES/T3336/img1.webp",
+        key: "cwc-t3336",
+        navigate: "cwc-t3336"
+      },
     ],
   },
 ];
