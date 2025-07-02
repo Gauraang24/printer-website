@@ -542,7 +542,7 @@ export const printerDetails = {
         },
         {
           title: "Drum Unit",
-          desc: "CCWC- D0305",
+          desc: "CWC- D0305",
         },
       ],
     },
@@ -3180,7 +3180,7 @@ export const printerDetails = {
 
     type: "printer",
     specSummary: [
-      "Printing speed (A4): 31/35ppm",
+      "Printing speed (A4): 31ppm to 35ppm",
       "Connection method: Network, WiFi and USB",
       "Print Technology: Laser",
       "Automatic easy duplex printing",
@@ -3664,9 +3664,10 @@ export const printerDetails = {
     title: "CWC P4843 Laser Printer",
     type: "printer",
     specSummary: [
-      "Printing speed (A4): 43ppm",
+      "Printing speed (A4): 41ppm to 45ppm",
       "Connection method: Network, WiFi and USB",
-      "Automatic duplex printing",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
       "One-step driver installation",
       "Silent printing, reduce noise",
     ],
@@ -3674,88 +3675,87 @@ export const printerDetails = {
       print_specification: [
         {
           title: "Print speed",
-          desc: "43 ppm",
+          desc: "41ppm to 45ppm",
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "100000*",
-        },
-        {
-          title: "Print Resolution",
-          desc: "1200 x 1200 dpi",
+          desc: "150000* Pages",
         },
         {
           title: "Duplex printing",
-          desc: "Automatic",
+          desc: "Automatic Double-Sided",
         },
         {
           title: "Operating system compatibility",
-          desc: "Windows: Server 2012/2016/2019/XP/Win7/Win8.1/Win10/Win11（32/64 bit）, Kali Linux, Linux(BOSS), Maya, Fedora.",
+          desc: "Microsoft Windows Server2003 / Server2008 / Server2012XP/Vista/Win7/Win8/Win8.1/Win10/Win11（32/64 Bit) ；Mac OS 10.7-12 ；Linux：Ubuntu 12.04/14.04/16.04/18.04/20.04（32/64 Bit）",
         },
       ],
       paper_handling: [
         {
           title: "Paper input tray",
-          desc: "250 sheets",
+          desc: "Standard Tray: 250 sheets + Bypass Tray: 100 sheets",
         },
         {
           title: "Paper output tray",
-          desc: "100 sheets",
+          desc: "150 sheets",
         },
         {
           title: "Media sizes",
-          desc: "A4, Letter, Legal, B5 (ISO), B5 (JIS), Executive,A5, Envelope - Monarch, 60~120g/m²",
+          desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Oficio, Statement, Japanese Postcard, ZL, Big 16K, Big32K, 16K, 32K, B6，Yougata4, Postcard, Younaga3,Nagagata3, Yougata2",
         },
       ],
       general: [
         {
-          title: "Paper input tray",
-          desc: "250 sheets",
+          title: "Function",
+          desc: "Print"
         },
         {
           title: "Processor",
-          desc: "1.2GHz",
+          desc: "1.2 Ghz",
         },
         {
           title: "RAM",
           desc: "512MB",
         },
         {
-          title: "Bypass Tray",
-          desc: "YES",
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
         },
         {
-          title: "Bypass Tray Capacity",
-          desc: "100",
+          title: "First output speed",
+          desc: "≤ 6.9 seconds",
         },
         {
           title: "Interface",
           desc: "Network, WiFi and USB port",
         },
         {
-          title: "Dimension",
-          desc: "37 x 37 x 26.3cm (WxDxH)",
+          title: "Interface Type",
+          desc: "High-speed USB 2.0; Net: IEEE 802.3 10/100/1000Base-Tx; WiFi(2.4G/5G):IEEE 802.11a/b/g/n",
         },
         {
-          title: "Package size (D×W×H)",
-          desc: "45 x 45 x 40cm",
+          title: "Power Comsumption",
+          desc: "650W",
+        },
+        {
+          title: "Country of origin",
+          desc: "India",
         },
         {
           title: "Weight",
-          desc: "10.04 kg",
+          desc: "1 years Standard Warranty",
+        },
+      ],
+
+      package_specification: [
+        {
+          title: "Dimension",
+          desc: "364 x 344 x 257mm"
         },
         {
-          title: "Gross Weight",
-          desc: "12.08 kg",
-        },
-        {
-          title: "Power comsumption",
-          desc: "700W(printing), 3W(sleep Mode)",
-        },
-        {
-          title: "Power Supply",
-          desc: "220-240V AC, ~50/60Hz (110V optional)",
-        },
+          title: "Product Weight",
+          desc: "9.3 kg (20.5lb)"
+        }
       ],
 
       consumable: [
@@ -4907,7 +4907,7 @@ export const printerDetails = {
         desc: "4 kg (8.8lb)"
       },
     ],
-    imgFolderName: "",
+    imgFolderName: "S5302",
   },
 
   "cwc-S1130": {
