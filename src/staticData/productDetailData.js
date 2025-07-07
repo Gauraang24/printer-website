@@ -478,7 +478,7 @@ export const printerDetails = {
       general: [
         {
           title: "Function",
-          desc: "Print,Scan,Copy,Fax",
+          desc: "Print,Scan,Copy",
         },
         {
           title: "Processor",
@@ -1693,7 +1693,7 @@ export const printerDetails = {
       "Print Technology: Laser",
       "Automatic easy duplex printing",
       "One-step driver installation",
-      "MAKE IN INDIA"
+      "MAKE IN INDIA",
     ],
     details: {
       print_specification: [
@@ -1731,23 +1731,23 @@ export const printerDetails = {
       scan_specification: [
         {
           title: "Scanning Type",
-          desc: "RADF/DADF/SPDF( 50-Pages)"
+          desc: "RADF/DADF/SPDF( 50-Pages)",
         },
         {
           title: "Scan Speed",
-          desc: "24 ppm(A4) / 25 ppm(Letter)"
+          desc: "24 ppm(A4) / 25 ppm(Letter)",
         },
         {
           title: "Scan Destination",
-          desc: "Scan to E-mail, PC, FTP, Thumb drive, iOS/Android"
+          desc: "Scan to E-mail, PC, FTP, Thumb drive, iOS/Android",
         },
         {
           title: "Scan resolution",
-          desc: "Flatbed : 1200×1200dpi(Max) | ADF : 600×600dpi(Max)"
+          desc: "Flatbed : 1200×1200dpi(Max) | ADF : 600×600dpi(Max)",
         },
         {
           title: "Max scan size",
-          desc: "A4/Legal"
+          desc: "A4/Legal",
         },
       ],
       general: [
@@ -1834,7 +1834,7 @@ export const printerDetails = {
       "Print Technology: Laser",
       "Automatic easy duplex printing",
       "One-step driver installation",
-      "MAKE IN INDIA"
+      "MAKE IN INDIA",
     ],
     details: {
       print_specification: [
@@ -1872,23 +1872,23 @@ export const printerDetails = {
       scan_specification: [
         {
           title: "Scanning Type",
-          desc: "RADF/DADF/SPDF ( 50 - Pages)"
+          desc: "RADF/DADF/SPDF ( 50 - Pages)",
         },
         {
           title: "Scan speed",
-          desc: "24 ppm(A4)/48 ipm(A4) | 25 ppm(Letter)/50 ipm(Letter)"
+          desc: "24 ppm(A4)/48 ipm(A4) | 25 ppm(Letter)/50 ipm(Letter)",
         },
         {
           title: "Scan destination",
-          desc: "Scan to PC, E-mail, FTP, SMB, USB disk"
+          desc: "Scan to PC, E-mail, FTP, SMB, USB disk",
         },
         {
           title: "Scan resolution",
-          desc: "1,200 x 1,200 dpi (from Flatbed), 600 x 600 dpi (from ADF)"
+          desc: "1,200 x 1,200 dpi (from Flatbed), 600 x 600 dpi (from ADF)",
         },
         {
           title: "Max scan size",
-          desc: "A4/Legal"
+          desc: "A4/Legal",
         },
       ],
       general: [
@@ -1973,7 +1973,7 @@ export const printerDetails = {
       "Print Technology: Laser",
       "Automatic easy duplex printing",
       "One-step driver installation",
-      "MAKE IN INDIA"
+      "MAKE IN INDIA",
     ],
     details: {
       print_specification: [
@@ -2011,19 +2011,19 @@ export const printerDetails = {
       scan_specification: [
         {
           title: "Scanning Type",
-          desc: "RADF/DADF/SPDF"
+          desc: "RADF/DADF/SPDF",
         },
         {
           title: "Scan speed",
-          desc: "B/W: 28 ppm, Colour:  20 ppm"
+          desc: "B/W: 28 ppm, Colour:  20 ppm",
         },
         {
           title: "Scan resolution",
-          desc: "1,200 x 1,200 dpi (from Flatbed), 600 x 600 dpi (from ADF)"
+          desc: "1,200 x 1,200 dpi (from Flatbed), 600 x 600 dpi (from ADF)",
         },
         {
           title: "Max scan size",
-          desc: "A4/Legal"
+          desc: "A4/Legal",
         },
       ],
       general: [
@@ -2112,7 +2112,7 @@ export const printerDetails = {
       "Print Technology: Laser",
       "Automatic easy duplex printing",
       "One-step driver installation",
-      "MAKE IN INDIA"
+      "MAKE IN INDIA",
     ],
     details: {
       print_specification: [
@@ -2150,23 +2150,23 @@ export const printerDetails = {
       scan_specification: [
         {
           title: "Scanning Type",
-          desc: "RADF/DADF/SPDF"
+          desc: "RADF/DADF/SPDF",
         },
         {
           title: "Scan speed",
-          desc: "13 (ipm) for B&W and 4.5 ipm for Color"
+          desc: "13 (ipm) for B&W and 4.5 ipm for Color",
         },
         {
           title: "Scan resolution",
-          desc: "1,200 x 1,200 dp"
+          desc: "1,200 x 1,200 dp",
         },
         {
           title: "Scan destination",
-          desc: "Scan to email, folder, FTP, USB & TWAIN Scanning"
+          desc: "Scan to email, folder, FTP, USB & TWAIN Scanning",
         },
         {
           title: "Max scan size",
-          desc: "A4/Legal"
+          desc: "A4/Legal",
         },
       ],
       general: [
@@ -2511,15 +2511,14 @@ export const printerDetails = {
     imgFolderName: "M5036",
   },
 
-
-
-  "cwc-m5023": {
-    title: "CWC M5023 Multifunction Laser Printer",
+  "cwc-7100s-mono": {
+    title: "CWC 7100S MFP Mono Laser Printer",
 
     type: "printer",
     specSummary: [
-      "Printing speed (A4): 25/30/35ppm",
+      "Printing speed: 25/30/35ppm",
       "Connection method: Network, WiFi and USB",
+      "First Print Out Time: As fast as 4.4 seconds black and white",
       "Print Technology: Laser",
       "Automatic easy duplex printing",
       "MAKE IN INDIA",
@@ -2528,11 +2527,11 @@ export const printerDetails = {
       print_specification: [
         {
           title: "Print speed",
-          desc: "(A3/A4) : 25/30/35 PPM",
+          desc: "25/30/35 PPM",
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "110000 to 130000*",
+          desc: "Up to 110000 to 155000",
         },
         {
           title: "Duplex printing",
@@ -2668,11 +2667,11 @@ export const printerDetails = {
         },
         {
           title: "Toner Cartridge",
-          desc: "CWC-T5023",
+          desc: "CWC-T7100",
         },
         {
           title: "Drum Unit",
-          desc: "CWC-D5023",
+          desc: "CWC-D7100",
         },
       ],
     },
@@ -3707,7 +3706,7 @@ export const printerDetails = {
       general: [
         {
           title: "Function",
-          desc: "Print"
+          desc: "Print",
         },
         {
           title: "Processor",
@@ -3750,12 +3749,12 @@ export const printerDetails = {
       package_specification: [
         {
           title: "Dimension",
-          desc: "364 x 344 x 257mm"
+          desc: "364 x 344 x 257mm",
         },
         {
           title: "Product Weight",
-          desc: "9.3 kg (20.5lb)"
-        }
+          desc: "9.3 kg (20.5lb)",
+        },
       ],
 
       consumable: [
@@ -4900,11 +4899,11 @@ export const printerDetails = {
     package_specification: [
       {
         title: "Dimension",
-        desc: "300 x 170 x 163mm"
+        desc: "300 x 170 x 163mm",
       },
       {
         title: "Product Weight",
-        desc: "4 kg (8.8lb)"
+        desc: "4 kg (8.8lb)",
       },
     ],
     imgFolderName: "S5302",
@@ -5608,5 +5607,4 @@ export const printerDetails = {
     ],
     imgFolderName: "CARTRIDGES/T3336",
   },
-
 };

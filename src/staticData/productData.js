@@ -83,10 +83,10 @@ export const printersCollection = [
         navigate: "cwc-m251",
       },
       {
-        title: "CWC M5023",
+        title: "CWC 7100S(Mono)",
         link: "images/productDetail/M5023/img1.webp",
         key: "M13",
-        navigate: "cwc-m5023",
+        navigate: "cwc-7100s-mono",
       },
       {
         title: "CWC M5025",
@@ -101,7 +101,7 @@ export const printersCollection = [
         navigate: "cwc-m320",
       },
       {
-        title: "CWC 7100S",
+        title: "CWC 7100S(Color)",
         link: "images/productDetail/M5023/img1.webp",
         key: "M16",
         navigate: "cwc-7100s",
@@ -110,27 +110,26 @@ export const printersCollection = [
         title: "CWC 3336",
         link: "images/productDetail/3336/img1.webp",
         key: "M17",
-        navigate: "cwc-3336"
+        navigate: "cwc-3336",
       },
       {
         title: "CWC 4055",
         link: "images/productDetail/4055/img1.webp",
         key: "M18",
-        navigate: "cwc-4055"
+        navigate: "cwc-4055",
       },
       {
         title: "CWC 4620FNW",
         link: "images/productDetail/4620FNW/img1.webp",
         key: "M18",
-        navigate: "cwc-4620FNW"
+        navigate: "cwc-4620FNW",
       },
       {
         title: "CWC DMLP9100",
         link: "images/productDetail/DMLP9100/img1.webp",
         key: "M19",
-        navigate: "cwc-dmlp9100"
-      }
-
+        navigate: "cwc-dmlp9100",
+      },
     ],
   },
   {
@@ -304,151 +303,157 @@ export const cartridgeCollection = [
         title: "CWC T310",
         link: "images/productDetail/CARTRIDGES/CWC-T310/img1.webp",
         key: "cwc-t310",
-        navigate: "cwc-t310"
+        navigate: "cwc-t310",
       },
       {
         title: "CWC T4055",
         link: "images/productDetail/CARTRIDGES/CWC-T4055/img1.webp",
         key: "cwc-t4055",
-        navigate: "cwc-t4055"
+        navigate: "cwc-t4055",
       },
       {
         title: "CWC T3300",
         link: "images/productDetail/CARTRIDGES/CWC-T3300/img1.webp",
         key: "cwc-t3300",
-        navigate: "cwc-t3300"
+        navigate: "cwc-t3300",
       },
       {
         title: "CWC T4555",
         link: "images/productDetail/CARTRIDGES/CWC-T4555/img1.webp",
         key: "cwc-t4555",
-        navigate: "cwc-t4555"
+        navigate: "cwc-t4555",
       },
       {
         title: "CWC T4620",
         link: "images/productDetail/CARTRIDGES/CWC-T4620/img1.webp",
         key: "cwc-t4620",
-        navigate: "cwc-t4620"
+        navigate: "cwc-t4620",
       },
       {
         title: "CWC T4650",
         link: "images/productDetail/CARTRIDGES/CWC-T4650/img1.webp",
         key: "cwc-t4650",
-        navigate: "cwc-t4650"
+        navigate: "cwc-t4650",
       },
       {
         title: "CWC T5100",
         link: "images/productDetail/CARTRIDGES/CWC-T5100/img1.webp",
         key: "cwc-t5100",
-        navigate: "cwc-t5100"
+        navigate: "cwc-t5100",
       },
       {
         title: "CWC T2100 CMYK",
         link: "images/productDetail/CARTRIDGES/CWC-T2100-CMYK/img1.webp",
         key: "cwc-t2100cmyk",
-        navigate: "cwc-t2100cmyk"
+        navigate: "cwc-t2100cmyk",
       },
       {
         title: "CWC T2101 CMYK",
         link: "images/productDetail/CARTRIDGES/CWC-T2101-CMYK/img1.webp",
         key: "cwc-t2101cmyk",
-        navigate: "cwc-t2101cmyk"
+        navigate: "cwc-t2101cmyk",
       },
       {
         title: "CWC T7100 CMYK",
         link: "images/productDetail/CARTRIDGES/CWC-T710-CMYK/img1.webp",
         key: "cwc-t7100cmyk",
-        navigate: "cwc-t7100cmyk"
+        navigate: "cwc-t7100cmyk",
       },
       {
         title: "CWC D310",
         link: "images/productDetail/CARTRIDGES/CWC-D310/img1.webp",
         key: "cwc-d310",
-        navigate: "cwc-d310"
+        navigate: "cwc-d310",
       },
       {
         title: "CWC D4055",
         link: "images/productDetail/CARTRIDGES/CWC-D4055/img1.webp",
         key: "cwc-d4055",
-        navigate: "cwc-d4055"
+        navigate: "cwc-d4055",
       },
       {
         title: "CWC D3300",
         link: "images/productDetail/CARTRIDGES/CWC-D3300/img1.webp",
         key: "cwc-d3300",
-        navigate: "cwc-d3300"
+        navigate: "cwc-d3300",
       },
       {
         title: "CWC D4555",
         link: "images/productDetail/CARTRIDGES/CWC-D4555/img1.webp",
         key: "cwc-d4555",
-        navigate: "cwc-d4555"
+        navigate: "cwc-d4555",
       },
       {
         title: "CWC D4620",
         link: "images/productDetail/CARTRIDGES/CWC-D4620/img1.webp",
         key: "cwc-d4620",
-        navigate: "cwc-d4620"
+        navigate: "cwc-d4620",
       },
       {
         title: "CWC D7100 CMYK",
         link: "images/productDetail/CARTRIDGES/CWC-D7100-CMYK/img1.webp",
         key: "cwc-d7100",
-        navigate: "cwc-d7100"
+        navigate: "cwc-d7100",
       },
       {
         title: "CWC D2101",
         link: "images/productDetail/CARTRIDGES/CWC-D2101/img1.webp",
         key: "cwc-d2101",
-        navigate: "cwc-d2101"
+        navigate: "cwc-d2101",
       },
       {
         title: "CWC D2100",
         link: "images/productDetail/CARTRIDGES/CWC-D2100/img1.webp",
         key: "cwc-d2100",
-        navigate: "cwc-d2100"
+        navigate: "cwc-d2100",
       },
       {
         title: "CWC D4650",
         link: "images/productDetail/CARTRIDGES/CWC-D4650/img1.webp",
         key: "cwc-d4650",
-        navigate: "cwc-d4650"
+        navigate: "cwc-d4650",
       },
       {
         title: "CWC D5100",
         link: "images/productDetail/CARTRIDGES/CWC-D5100/img1.webp",
         key: "cwc-d5100",
-        navigate: "cwc-d5100"
+        navigate: "cwc-d5100",
       },
       {
-        title: "CWC D7100S",
+        title: "CWC D7100S(Color)",
         link: "images/productDetail/CARTRIDGES/D7100/img1.webp",
-        key: "cwc-d7100S",
-        navigate: "cwc-d7100S"
+        key: "cwc-d7100s",
+        navigate: "cwc-d7100s",
+      },
+      {
+        title: "CWC D7100S(Color)",
+        link: "images/productDetail/CARTRIDGES/D7100/img1.webp",
+        key: "cwc-d7100s",
+        navigate: "cwc-d7100s",
       },
       {
         title: "CWC T7100",
         link: "images/productDetail/CARTRIDGES/T7100/img1.webp",
         key: "cwc-t7100",
-        navigate: "cwc-t7100"
+        navigate: "cwc-t7100",
       },
       {
         title: "CWC T4846",
         link: "images/productDetail/CARTRIDGES/T4846/img1.webp",
         key: "cwc-t4846",
-        navigate: "cwc-t4846"
+        navigate: "cwc-t4846",
       },
       {
         title: "CWC T3333",
         link: "images/productDetail/CARTRIDGES/T3333/img1.webp",
         key: "cwc-t3333",
-        navigate: "cwc-t3333"
+        navigate: "cwc-t3333",
       },
       {
         title: "CWC T3336",
         link: "images/productDetail/CARTRIDGES/T3336/img1.webp",
         key: "cwc-t3336",
-        navigate: "cwc-t3336"
+        navigate: "cwc-t3336",
       },
     ],
   },
@@ -477,11 +482,11 @@ export const scannerCollection = [
         navigate: "cwc-S4300",
       },
       {
-        title : "CWC S5302",
-        link : "images/productDetail/S5302/img1.webp",
-        key : "cwc-S5302",
-        navigate : "cwc-S5302"
-      }
+        title: "CWC S5302",
+        link: "images/productDetail/S5302/img1.webp",
+        key: "cwc-S5302",
+        navigate: "cwc-S5302",
+      },
     ],
   },
 ];
