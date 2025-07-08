@@ -2580,7 +2580,7 @@ export const printerDetails = {
       general: [
         {
           title: "Function",
-          desc: "Print, Scan, Copy and Fax",
+          desc: "Print, Scan, and Copy",
         },
         {
           title: "Processor",
