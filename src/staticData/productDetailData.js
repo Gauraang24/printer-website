@@ -2508,7 +2508,142 @@ export const printerDetails = {
         },
       ],
     },
+    imgFolderName: "M225",
+  },
+
+  "cwc-m5036": {
+    title: "CWC M5036 Multifunction Laser Printer",
+    type: "printer",
+
+    specSummary: [
+      "Printing speed: Up to 35ppm",
+      "Connection method: Network, WiFi and USB",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
     imgFolderName: "M5036",
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "35 PPM",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "80000* Pages",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Double-Sided",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows 11 (64 bit), Windows 10 (32 bit / 64 bit), Windows Server 2022 (64 bit), Windows Server 2019 (64 bit), Windows Server 2016 (64 bit), Linux",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "ADF / Bypass Tray Capacity",
+          desc: "50/1 Pages",
+        },
+        {
+          title: "Paper output tray",
+          desc: "250 Sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Of icio, Statement, Japanese Postcard, ZL, Big 16K,Big 32K, 16K, 32K, B6, Yougata4, Postcard,  ounaga3,Nagagata3, Yougata2",
+        },
+      ],
+
+      Scan_specification: [
+        {
+          title: "Scanning Type",
+          desc: "ADF",
+        },
+        {
+          title: "Scan speed",
+          desc: "B/W: 28 ppm, Colour:  20 ppm",
+        },
+        {
+          title: "Scan resolution",
+          desc: "1,200 x 1,200 dpi (from Flatbed), 600 x 600 dpi (from ADF)",
+        },
+        {
+          title: "Max. scan size",
+          desc: "A4/Legal",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy and Fax",
+        },
+        {
+          title: "Processor",
+          desc: "525Mhz",
+        },
+        {
+          title: "RAM",
+          desc: "256MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200 dpi",
+        },
+        {
+          title: "First output speed",
+          desc: "As fast as 8.2 seconds",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface Type",
+          desc: "Ethernet IEEE 802.3 10/100Base-Tx, USB2.0, IEEE 802.11b/g/n Wireless LAN",
+        },
+        {
+          title: "Power consumption",
+          desc: "printing: 550W; ready: less than 50W; sleep: less than  2W",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "1 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "415 x 365 x 350mm",
+        },
+        {
+          title: "Product Weight (with cartridge)",
+          desc: "8.36 kg",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "3000 Pgs",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T5036",
+        },
+      ],
+    },
   },
 
   "cwc-7100s-mono": {

@@ -72,7 +72,7 @@ export const printersCollection = [
       },
       {
         title: "CWC M225",
-        link: "images/productDetail/M5036/img1.webp",
+        link: "images/productDetail/M225/img1.webp",
         key: "M11",
         navigate: "cwc-m225",
       },
@@ -129,6 +129,12 @@ export const printersCollection = [
         link: "images/productDetail/DMLP9100/img1.webp",
         key: "M19",
         navigate: "cwc-dmlp9100",
+      },
+      {
+        title: "CWC M5036",
+        link: "images/productDetail/M5036/img1.webp",
+        key: "M20",
+        navigate: "cwc-m5036",
       },
     ],
   },
