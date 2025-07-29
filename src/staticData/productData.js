@@ -231,6 +231,12 @@ export const printersCollection = [
         key: "P15",
         navigate: "cwc-p310",
       },
+      {
+        title : "CWC P5036",
+        link : "images/productDetail/P5036/img1.webp",
+        key : "P16",
+        navigate : "cwc-p5036"
+      },
     ],
   },
 ];

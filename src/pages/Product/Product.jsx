@@ -67,6 +67,7 @@ const Product = () => {
             <Segmented
               options={options}
               onChange={(value) => {
+                setProductData([])
                 setActiveTab(value);
               }}
             />
