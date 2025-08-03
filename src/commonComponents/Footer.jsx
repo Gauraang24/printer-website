@@ -193,7 +193,7 @@ const Footer = () => {
         {/* Copyright and Design/Development Section */}
         <div className="flex lg:justify-between justify-center gap-3 items-center flex-col lg:flex-row text-white lg:text-[18px] sm:text-[14px] text-[10px]">
           <p className="sm:mb-4 lg:mb-0 lg:font-bold font-medium text-center">
-            Copyright © 2024 E-Compusell Private Limited. All Rights Reserved
+            Copyright © {new Date().getFullYear()} E-Compusell Limited. All Rights Reserved
           </p>
           <p className="lg:font-bold text-center font-medium">
             Design & Development by 8Bit Creation

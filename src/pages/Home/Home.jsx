@@ -106,7 +106,7 @@ const Home = () => {
                 <div className="w-2/3 lg:w-1/2 2xs:hidden sm:flex">
                   <p className={`${fontmd} sm:leading-[25px] text-justify`}>
                     The &quot;<b>CWC</b>&quot; brand is a product brand that
-                    serves as a testament to the reliability of E-Compusell Pvt.
+                    serves as a testament to the reliability of E-Compusell
                     Ltd. It is a dynamic and innovative Start-up specializing in
                     designing, developing, and manufacturing high-quality{" "}
                     <b>Make-In-India</b> Laser Printers & Laser Multifunction
@@ -128,7 +128,7 @@ const Home = () => {
         <div className="sm:hidden w-[90%] sm:w-[80%] sm:max-w-[1200px] mx-auto">
           <p className="text-[14px] leading-[20px] text-justify 2xs:py-4 xs:py-6">
             The &quot;<b>CWC</b>&quot; brand is a product brand that serves as a
-            testament to the reliability of E-Compusell Pvt. Ltd. It is a
+            testament to the reliability of E-Compusell Ltd. It is a
             dynamic and innovative Start-up specializing in designing,
             developing, and manufacturing high-quality <b>Make-In-India</b>{" "}
             Laser Printers & Laser Multifunction Printers (MFPs) for a wide
