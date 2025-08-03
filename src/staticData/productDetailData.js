@@ -669,6 +669,123 @@ export const printerDetails = {
     imgFolderName: "MB5020NW",
   },
 
+  "cwc-2100s": {
+    title: "CWC 2100S Multifunction Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): Up to 30PPM (Mono) and 26PPM (Colour)",
+      "Connection method: Hi-Speed USB 2.0,  Wired / Wireless LAN",
+      "Print Technology: Ink Tank",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "Up to 30PPM (Mono) and 26PPM (Colour)",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic (Up to A4/LTR)",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows: 7 SP1/ 8.1 / 10, Server: 2008/2008 R2/2012/2012 R2/2016/2019 macOS‡ : v10.13.6 / 10.14.x / 10.15.x",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scan speed",
+          desc: "From 3.35 sec/4.38 sec (A4 size, 100 x 100 dpi)",
+        },
+        {
+          title: "Scan resolution",
+          desc: "Optical: Up to 1200 x 2400 dpi, (ADF: Upto 1200 x 600 dpi)",
+        },
+        {
+          title: "Max. scan size",
+          desc: "Up to A4",
+        },
+        {
+          title: "Scan To",
+          desc: "Image, OCR, Email, File",
+        },        
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Up to 150 Sheets (80g/m) + Bypass Tray: 80 sheets (Plain Paper - 80g/m)",
+        },
+        {
+          title: "Paper output tray",
+          desc: "Up to 50 Sheets (up to A4)",
+        },
+        {
+          title: "Media sizes",
+          desc: " A4, LTR, EXE, A5, A6, Indexcard 5” x 8”, Photo 3.5 x 5”,  4” x 6”, 5” x 7” ,  C 5 Envelope, Com-10, DL Envelope,  Monarch, LGL, Folio, Indian Legal",
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy",
+        },
+        {
+          title: "Display",
+          desc: "1 Line LCD",
+        },
+        {
+          title: "RAM",
+          desc: "128MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "Up to 1200 x 6000 dpi",
+        },    
+        {
+          title: "First output speed",
+          desc: "Up to 6 sec (mono) and 6.5 sec (colour)",
+        },             
+        {
+          title: "Interface",
+          desc: "Hi-Speed USB 2.0, Wired / Wireless LAN",
+        },
+        {
+          title: "Dimension",
+          desc: " 435 mm (W) x 439 mm (D) x 195mm (H)",
+        },
+        {
+          title: "Weight",
+          desc: "9.6 kg",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },  
+        {
+          title: "Warranty",
+          desc: "1 Year Standard Warranty",
+        },                 
+      ],
+
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Ink Cartridge",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "Black-7500, CMY-5000",
+        },
+        {
+          title: "Ink Cartridge/Bottle",
+          desc: "CWC-T2100-K, CWC-T2100-C, CWC-T2100-M, CWC-T2100-Y",
+        },
+      ],
+    },
+    imgFolderName: "2100S",
+  },
+
   "cwc-m1005nw": {
     title: "CWC 1020N/W Laser Printer",
     type: "printer",
@@ -1536,7 +1653,7 @@ export const printerDetails = {
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "60000*",
+          desc: "90000*",
         },
         {
           title: "Duplex printing",
@@ -2692,7 +2809,7 @@ export const printerDetails = {
         },
         {
           title: "Paper weight",
-          desc: "20 to 25 lb. bond/752 to 90 gsm",
+          desc: "20 to 25 lb. bond/75 to 90 gsm",
         },
         {
           title: "Bypass Tray Capacity",
@@ -2976,7 +3093,7 @@ export const printerDetails = {
   },
 
   "cwc-m251": {
-    title: "CWC M251 Multifunction Laser Printer",
+    title: "CWC M251 Color Multifunction Laser Printer",
 
     type: "printer",
     specSummary: [

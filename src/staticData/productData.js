@@ -136,6 +136,12 @@ export const printersCollection = [
         key: "M20",
         navigate: "cwc-m5036",
       },
+      {
+        title: "CWC 2100s",
+        link: "images/productDetail/2100S/img1.webp",
+        key: "M21",
+        navigate: "cwc-2100s",
+      },
     ],
   },
   {
