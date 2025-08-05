@@ -12,7 +12,7 @@ const AboutUs = () => {
       <Reveal width="w-full">
         <div className="w-full mt-[100px] sm:mt-0">
           <img
-            src="./images/aboutUs/Banner.webp"
+            src="./images/aboutUs/AboutBanner.webp"
             alt="Banner"
             className="w-full h-auto"
             loading="lazy"
