@@ -3260,7 +3260,7 @@ export const printerDetails = {
 
     type: "printer",
     specSummary: [
-      "Printing speed (A4): 21 ppm",
+      "Printing speed (A4): 23 ppm",
       "Connection method: Network, WiFi and USB",
       "Print Technology: Laser",
       "Automatic easy duplex printing",
@@ -3270,7 +3270,7 @@ export const printerDetails = {
       print_specification: [
         {
           title: "Print speed",
-          desc: "21 ppm",
+          desc: "23 ppm",
         },
         {
           title: "Monthly Duty Cycle",
@@ -3350,7 +3350,7 @@ export const printerDetails = {
         },
         {
           title: "RAM",
-          desc: "256MB",
+          desc: "256MB/512MB",
         },
         {
           title: "Print Resolution",
