@@ -709,7 +709,7 @@ export const printerDetails = {
         {
           title: "Scan To",
           desc: "Image, OCR, Email, File",
-        },        
+        },
       ],
       paper_handling: [
         {
@@ -741,11 +741,11 @@ export const printerDetails = {
         {
           title: "Print Resolution",
           desc: "Up to 1200 x 6000 dpi",
-        },    
+        },
         {
           title: "First output speed",
           desc: "Up to 6 sec (mono) and 6.5 sec (colour)",
-        },             
+        },
         {
           title: "Interface",
           desc: "Hi-Speed USB 2.0, Wired / Wireless LAN",
@@ -761,11 +761,11 @@ export const printerDetails = {
         {
           title: "Country Of Origin",
           desc: "India",
-        },  
+        },
         {
           title: "Warranty",
           desc: "1 Year Standard Warranty",
-        },                 
+        },
       ],
 
       consumable: [
@@ -3677,7 +3677,7 @@ export const printerDetails = {
         },
         {
           title: "Monthly Duty Cycle",
-          desc: "40000*",
+          desc: "50000*",
         },
         {
           title: "Duplex printing",
@@ -3718,7 +3718,7 @@ export const printerDetails = {
         },
         {
           title: "RAM",
-          desc: "256MB",
+          desc: "256MB / 512MB",
         },
         {
           title: "Print Resolution",
