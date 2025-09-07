@@ -1922,7 +1922,7 @@ export const printerDetails = {
       consumable: [
         {
           title: "Consumable type",
-          desc: "Separate Drum and Toner / Composite",
+          desc: "Composite",
         },
         {
           title: "Minimum Cartridge Yield(Starter)",
@@ -1930,12 +1930,12 @@ export const printerDetails = {
         },
         {
           title: "Toner Cartridge",
-          desc: "CWC-T310",
+          desc: "CWC-T310, CWC-T3333 & CWC-T3336",
         },
-        {
-          title: "Drum Unit",
-          desc: "CWC-D310",
-        },
+        // {
+        //   title: "Drum Unit",
+        //   desc: "CWC-D310",
+        // },
       ],
     },
   },
@@ -3311,7 +3311,8 @@ export const printerDetails = {
       Scan_specification: [
         {
           title: "Scan speed",
-          desc: "Color 6ppm; Mono 15ppm",
+          // desc: "Color 6ppm; Mono 15ppm",
+          desc: "Mono/Color : 21 to 30",
         },
         {
           title: "Scan resolution",
@@ -3406,7 +3407,7 @@ export const printerDetails = {
         },
         {
           title: "Minimum Cartridge Yield(Starter)",
-          desc: "4000 pgs",
+          desc: "5000 pgs",
         },
         {
           title: "Toner Cartridge",
