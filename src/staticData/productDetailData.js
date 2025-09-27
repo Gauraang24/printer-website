@@ -1932,10 +1932,10 @@ export const printerDetails = {
           title: "Toner Cartridge",
           desc: "CWC-T310, CWC-T3333 & CWC-T3336",
         },
-        // {
-        //   title: "Drum Unit",
-        //   desc: "CWC-D310",
-        // },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D310",
+        },
       ],
     },
   },
