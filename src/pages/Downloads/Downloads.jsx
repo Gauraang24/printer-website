@@ -34,6 +34,7 @@ const driverList = [
   "C121",
   "7180",
   "10205",
+  "CWC2010",
 ];
 
 const manualList = [
