@@ -3422,6 +3422,141 @@ export const printerDetails = {
     imgFolderName: "M320",
   },
 
+  "cwc-3300s": {
+    title: "CWC 3300S Multifunction Laser Printer",
+    specSummary: [
+      "Printing speed (A4): 31ppm to 35ppm",
+      "Connection method: Network, WiFi and USB port",
+      "Print Technology: Laser",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "31 to 35 PPM",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "80000*",
+        },
+        {
+          title: "Duplex printing",
+          desc: "Automatic Double-Sided",
+        },
+        {
+          title: "OS compatibility",
+          desc: "Microsoft Windows Server2003 / Server2008 / Server2012, XP/Vista/Win7/Win8/Win8.1/Win10/Win11（32/64 Bit) ；Mac OS 10.7-12 ；Linux：Ubuntu 12.04/14.04/16.04/18.04/20.04（32/64 Bit）",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Standard Tray: 250 sheets + Bypass Tray: 1 sheet",
+        },
+        {
+          title: "Paper output tray",
+          desc: "150 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "A4, A5, JIS B5, IS0 B5 , A6, Letter, Legal,Executive, Folio, Oficio, Statement, Japanese Postcard, ZL, Big 16K, Big 32K, 16K, 32K, B6，Yougata4, Postcard, Younaga3, Nagagata3, Yougata2",
+        },
+      ],
+      scan_specification: [
+        {
+          title: "Scanning Type",
+          desc: "RADF/DADF/SPDF(50-Pages)",
+        },
+        {
+          title: "Scan Speeds",
+          desc: "24 ppm(A4) / 25 ppm(Letter)",
+        },
+        {
+          title: "Scan Destination",
+          desc: "Scan to E-mail, PC, FTP, Thumb drive, iOS/Android",
+        },
+        {
+          title: "Scan Resolution",
+          desc: "Flatbed : 1200×1200dpi(Max) | ADF : 600×600dpi(Max)",
+        },
+        {
+          title: "Max Scan Size",
+          desc: "A4/Legal",
+        },
+      ],
+      general: [
+        {
+          title: "Function",
+          desc: "Print, Scan, Copy",
+        },
+        {
+          title: "Processor",
+          desc: "800Mhz",
+        },
+        {
+          title: "RAM",
+          desc: "512MB",
+        },
+        {
+          title: "Print Resolution",
+          desc: "1200 x 1200dpi",
+        },
+        {
+          title: "First output speed",
+          desc: "≤ 8.2 seconds",
+        },
+        {
+          title: "Interface",
+          desc: "Network, WiFi and USB port",
+        },
+        {
+          title: "Interface type",
+          desc: "HI-Speed USB 2.0; Net: IEEE 802.3; 10/100Base-Tx; WiFi: IEEE 802.11b/g/n",
+        },
+        {
+          title: "Power Consumption",
+          desc: "550W",
+        },
+        {
+          title: "Country of origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "1 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension",
+          desc: "415 x 365 x 350mm",
+        },
+        {
+          title: "Product Weight",
+          desc: "11.29kg (24.9 lb)",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Composite",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "1500 Sheets",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T310, CWC-T3333 & CWC-T3336",
+        },
+      ],
+    },
+    imgFolderName: "3300S",
+  },
+
   //LASER PRINTER BELOW ****************************************************************
   //LASER PRINTER BELOW ****************************************************************
   //LASER PRINTER BELOW ****************************************************************

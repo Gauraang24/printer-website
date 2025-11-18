@@ -142,6 +142,12 @@ export const printersCollection = [
         key: "M21",
         navigate: "cwc-2100s",
       },
+      {
+        title: "CWC 3300s",
+        link: "images/productDetail/3300S/img1.webp",
+        key: "M22",
+        navigate: "cwc-3300s",
+      },
     ],
   },
   {
@@ -238,10 +244,10 @@ export const printersCollection = [
         navigate: "cwc-p310",
       },
       {
-        title : "CWC P5036",
-        link : "images/productDetail/P5036/img1.webp",
-        key : "P16",
-        navigate : "cwc-p5036"
+        title: "CWC P5036",
+        link: "images/productDetail/P5036/img1.webp",
+        key: "P16",
+        navigate: "cwc-p5036",
       },
     ],
   },
