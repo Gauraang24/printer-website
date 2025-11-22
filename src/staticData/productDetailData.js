@@ -3563,7 +3563,7 @@ export const printerDetails = {
   //LASER PRINTER BELOW ****************************************************************
 
   "cwc-7000s": {
-    title: "CWC 7000S Laser Printer",
+    title: "CWC 7000S Color Laser Printer",
     type: "printer",
     specSummary: [
       "Printing speed (A4): Up to 35ppm",
