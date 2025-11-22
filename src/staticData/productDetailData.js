@@ -3562,6 +3562,124 @@ export const printerDetails = {
   //LASER PRINTER BELOW ****************************************************************
   //LASER PRINTER BELOW ****************************************************************
 
+  "cwc-7000s": {
+    title: "CWC 7000S Laser Printer",
+    type: "printer",
+    specSummary: [
+      "Printing speed (A4): Up to 35ppm",
+      "Connection method: Hi-Speed USB 3.0,  Gigabit Ethernet / Wireless LAN(Optional)",
+      "Print Technology: Laser Printer",
+      "Automatic easy duplex printing",
+      "One-step driver installation",
+      "MAKE IN INDIA",
+    ],
+    details: {
+      print_specification: [
+        {
+          title: "Print speed",
+          desc: "Up to 35ppm",
+        },
+        {
+          title: "Monthly Duty Cycle",
+          desc: "Up to 153,000 Pages",
+        },
+        {
+          title: "Duplex printing",
+          desc: " Automatic (Up to A4/LTR)",
+        },
+        {
+          title: "Operating system compatibility",
+          desc: "Windows: 7 SP1/ 8.1 / 10 / 11, Server: 2008/2008 R2/2012/ 2012 R2/2016/2019 macOS‡ : v10.13.6 / 10.14.x / 10.15.x, Citrix, Fedora Core 24, Linux, Mac OS®.",
+        },
+      ],
+      paper_handling: [
+        {
+          title: "Paper input tray",
+          desc: "Tray 1-520 sheets / Tray 2-520 sheets(Optional)",
+        },
+        {
+          title: "Paper output tray",
+          desc: "500 sheets",
+        },
+        {
+          title: "Media sizes",
+          desc: "Bypass Tray: 100 sheets; Custom sizes: 3.5 x 3.87 in. to 11.69 x 17 in./88.9 x 98.4 mm to 297 x 431.8 mm ray 1: 520 sheets; Custom sizes: 5.5 x 7.17 in. to 11.69 x 17 in./139.7 x 182 mm to 297 x 431.8 mm",
+        },
+      ],
+
+      general: [
+        {
+          title: "Function",
+          desc: "Print",
+        },
+        {
+          title: "Processor",
+          desc: "1.05 GHz Dual-Core",
+        },
+        {
+          title: "Display",
+          desc: "1 Line LCD",
+        },
+        {
+          title: "RAM",
+          desc: "2 GB Memory",
+        },
+        {
+          title: "Print Resolution",
+          desc: "Up to 1,200 x 2400 dpi",
+        },
+        {
+          title: "First output speed",
+          desc: "As fast as 7.6 seconds color/5.1 seconds black-and-white",
+        },
+        {
+          title: "Mobile Printing",
+          desc: "Apple AirPrint, Google Cloud Print™, Mopria® Certified, Mopria® Print Service Plug-in for Android",
+        },
+        {
+          title: "Interface",
+          desc: "Ethernet 10/100/1000 Base-T, High-speed USB 3.0, Wi-Fi and Wi-Fi Direct with optional Wi-Fi Kit, NFC Tap-to-Pair",
+        },
+        {
+          title: "Country Of Origin",
+          desc: "India",
+        },
+        {
+          title: "Warranty",
+          desc: "1 Years Standard Warranty",
+        },
+      ],
+      package_specification: [
+        {
+          title: "Dimension (D×W×H)",
+          desc: "590 x 670.8 x 637 mm",
+        },
+        {
+          title: "Product Weight",
+          desc: "119.71 lbs (54.3 kg)",
+        },
+      ],
+      consumable: [
+        {
+          title: "Consumable type",
+          desc: "Separate Drum and Toner",
+        },
+        {
+          title: "Minimum Cartridge Yield(Starter)",
+          desc: "10000 Sheets",
+        },
+        {
+          title: "Toner Cartridge",
+          desc: "CWC-T7000",
+        },
+        {
+          title: "Drum Unit",
+          desc: "CWC-D7000",
+        },
+      ],
+    },
+    imgFolderName: "7000S",
+  },
   "cwc-p310": {
     title: "CWC P310 Laser Printer",
 

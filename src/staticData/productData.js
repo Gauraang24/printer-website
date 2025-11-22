@@ -249,6 +249,12 @@ export const printersCollection = [
         key: "P16",
         navigate: "cwc-p5036",
       },
+      {
+        title: "CWC 7000S",
+        link: "images/productDetail/7000S/img1.webp",
+        key: "P17",
+        navigate: "cwc-7000s",
+      },
     ],
   },
 ];
